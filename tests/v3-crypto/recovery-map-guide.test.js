@@ -10,7 +10,7 @@ test('Homepage enters the Recovery Map guide rather than a form deep link',()=>{
   assert.match(product,/\[data-recovery-map\][\s\S]*canonicalCreateUrl\(\)/);
   assert.match(app,/const entryView=versionUpdateMode\?'version-update-loading':testRecoveryMap\?'accounts':'guide'/);
 });
-test('guide exposes six accessible accordion modules and pricing CTAs',()=>{
+test('guide exposes six accessible accordion modules and authoritative entitlement CTAs',()=>{
   for(const id of ['accounts','conditions','locations','instructions','assistants','message'])assert.match(app,new RegExp(`${id}:\\{summary:`));
   assert.match(app,/data-guide-accordion/);assert.match(app,/开始建立 Recovery Map/);
   assert.match(app,/aria-expanded="false"/);
@@ -18,7 +18,7 @@ test('guide exposes six accessible accordion modules and pricing CTAs',()=>{
   assert.match(app,/accordionItems\.forEach/);
   assert.doesNotMatch(app,/class="puzzle-grid"/);
   assert.doesNotMatch(app,/class="guide-module-sections"/);
-  assert.match(app,/guide-start-top.*guide-start.*canonicalPricingUrl\(\)/s);
+  assert.match(app,/guide-start-top.*guide-start.*enterAuthoritativeRecoveryMapCreation/s);
   for(const phrase of ['Recovery Map 不是一份资产清单','有什么','需要什么','在哪里','怎么做','谁协助','留下什么说明','六个模块，组成一条完整的恢复路径','Recovery Clues','Recovery Ready','Keep It Current'])assert.match(app,new RegExp(phrase));
 });
 test('guide uses homepage green, restrained accordion states and responsive layouts',()=>{

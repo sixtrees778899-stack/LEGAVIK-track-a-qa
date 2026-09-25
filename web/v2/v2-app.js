@@ -27,6 +27,7 @@ import {createVersionUpdateDraft,removeVersionUpdateAccount} from '../../src/pro
 import {summarizeVersionUpdateRuntime} from '../../src/product-v2/version-update-diagnostics.js';
 import {canonicalAccountUrl,canonicalCreateUrl,canonicalHomeUrl,canonicalPricingUrl,canonicalRecoveryUrl,CURRENT_TEST_RELEASE} from '../../src/ui/canonical-customer-links.js';
 import {customerBrand} from '../../src/ui/brand-contract.js';
+import {readAuthoritativeServiceEntitlement,canCreateRecoveryMap} from '../../src/account/service-entitlement.js';
 
 const app=document.querySelector('#app'),escape=value=>String(value??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])),uid=prefix=>`${prefix}-${crypto.randomUUID()}`,load=async path=>{const response=await fetch(path);if(!response.ok)throw new Error('本地配置加载失败');return response.json();};
 const [templates,rules,passwordPolicy,attachmentPolicy]=await Promise.all([load('../../config/recovery-map/v2/platform-templates-v2.json'),load('../../config/recovery-map/v2/living-rules-v2.json'),load('../../config/security/recovery-password-v1.json'),load('../../config/attachments/v1.json')]);
@@ -46,6 +47,20 @@ const internalMainnetTest=queryParams.get('internal_mainnet_test')==='1';
 const mainnetExperienceTest=localTestHost&&!internalMainnetTest&&(queryParams.get('mainnet_experience_test')==='1'||testRecoveryMap);
 const defaultPurchaseState=()=>({selectedPlan:null,accountState:'SIGNED_OUT',email:'',emailVerified:false,paymentState:'IDLE',purchaseCompleted:false,paymentMethod:'card'});
 let purchaseState=defaultPurchaseState();
+async function enterAuthoritativeRecoveryMapCreation(){
+  const supabase=globalThis.LEGAVIK_SUPABASE_CLIENT;
+  if(!supabase)return location.assign(canonicalPricingUrl());
+  try{
+    const entitlement=await readAuthoritativeServiceEntitlement(supabase);
+    if(!canCreateRecoveryMap(entitlement))return location.assign(canonicalPricingUrl());
+    purchaseState={...purchaseState,selectedPlan:'Standard',purchaseCompleted:true};
+    v3State.introduced=true;
+    persistDraft();
+    navTo('accounts');
+  }catch{
+    location.assign(canonicalPricingUrl());
+  }
+}
 function readVersionOperationContexts(){try{return JSON.parse(localStorage.getItem(VERSION_OPERATION_CONTEXT_KEY)??'{}');}catch{return{};}}
 function rememberVersionOperationContext(operationId,context=versionUpdateContext){if(!operationId||!context?.recoveryMapId)return;const records=readVersionOperationContexts();records[operationId]={recoveryMapId:context.recoveryMapId,sourceVersionNumber:context.sourceVersionNumber};localStorage.setItem(VERSION_OPERATION_CONTEXT_KEY,JSON.stringify(records));}
 function versionOperationContext(operationId){return readVersionOperationContexts()[operationId]??null;}
@@ -385,7 +400,7 @@ function renderRecoveryGuide(){
   app.innerHTML=`<section class="recovery-guide-page"><header class="guide-intro"><p class="eyebrow">RECOVERY MAP GUIDE</p><h1><span>重要的资产恢复信息，不应只留在你的记忆里。</span><span>让未来的你，和你指定的恢复人，都能找到。</span></h1><div class="guide-lead"><p>重要数字资产、账户和身份信息往往分散在不同平台、设备和位置，而真正影响恢复的，是资产在哪里、需要什么条件、关键资料在哪里，以及应该先做什么。</p><p>LEGAVIK 通过六个相互关联的模块，把这些信息整理成一条清晰、可执行的 Recovery Map。</p></div><button class="guide-top-cta" id="guide-start-top">开始建立 Recovery Map <span>→</span></button></header><section class="guide-definition"><p class="eyebrow">A COMPLETE RECOVERY PATH</p><h2>Recovery Map 不是一份资产清单。</h2><p>它把资产、恢复条件、资料位置、操作步骤和协助关系连接起来，让未来真正需要恢复的人知道从哪里开始。</p></section><section class="guide-path" aria-label="Recovery Path">${path.map(([en,zh],index)=>`<div><small>${en}</small><strong>${zh}</strong>${index<path.length-1?'<span aria-hidden="true">→</span>':''}</div>`).join('')}</section><section class="guide-modules-overview" id="guide-modules"><header class="guide-modules-heading"><p class="eyebrow">SIX MODULES</p><h2>六个模块，组成一条完整的恢复路径</h2><p>从“有什么”，到“在哪里、需要什么、怎么恢复、谁能协助”，六个模块共同完成 Recovery Map。</p></header><div class="guide-accordion">${modules}</div></section><section class="guide-footer"><div class="guide-values"><p><b>Recovery Clues</b><span>记录恢复线索，不集中保存核心秘密</span></p><p><b>Recovery Ready</b><span>让未来的你和指定恢复人知道从哪里开始</span></p><p><b>Keep It Current</b><span>当资产和恢复条件变化时，及时更新</span></p></div><div class="guide-primary"><button id="guide-start">开始建立 Recovery Map <span>→</span></button><button class="guide-knowledge-link" id="guide-knowledge">查看详细填写指南 →</button></div></section></section>`;
   const accordionItems=[...document.querySelectorAll('[data-guide-accordion]')];
   accordionItems.forEach(item=>item.querySelector('.guide-accordion-trigger').onclick=()=>{const open=!item.classList.contains('is-open');accordionItems.forEach(entry=>{entry.classList.remove('is-open');entry.querySelector('.guide-accordion-trigger').setAttribute('aria-expanded','false');entry.querySelector('.guide-accordion-panel').hidden=true;});if(open){item.classList.add('is-open');item.querySelector('.guide-accordion-trigger').setAttribute('aria-expanded','true');item.querySelector('.guide-accordion-panel').hidden=false;}});
-  document.querySelector('#guide-start-top').onclick=document.querySelector('#guide-start').onclick=()=>location.assign(canonicalPricingUrl());
+  document.querySelector('#guide-start-top').onclick=document.querySelector('#guide-start').onclick=()=>enterAuthoritativeRecoveryMapCreation();
   document.querySelector('#guide-knowledge').onclick=()=>{location.href='../v3-crypto/index.html#knowledge';};
 }
 
@@ -395,7 +410,7 @@ function renderModuleDetail(moduleId){
   const prompts={accounts:['准备好进入下一步了吗？','现在开始整理你的数字资产与账户，为未来留下一张清晰、可依赖的恢复地图。','开始记录资产与账户'],conditions:['准备好进入下一步了吗？','现在开始整理你的恢复所需条件与资料，为未来留下一份清晰、可依赖的恢复地图。','开始记录恢复条件与资料'],locations:['准备好补充查找线索了吗？','现在开始整理资料位置与查找路径，为未来留下更清晰、可执行的恢复说明。','开始记录位置与查找'],instructions:['准备好进入下一步了吗？','现在开始整理你的恢复与转移步骤，为未来留下清晰、可执行的操作路径。','开始记录恢复与转移步骤'],assistants:['准备好进入下一步了吗？','现在开始整理你的协助人信息，为未来留下可联系、可协作的支持网络。','开始记录协助人信息'],message:['准备好进入下一步了吗？','现在开始整理你的留言与嘱托，为未来留下更温和、更清晰的恢复说明。','开始记录嘱托内容']}[id];
   app.innerHTML=`<article class="module-detail-page" data-module-detail="${id}"><button class="detail-breadcrumb" id="detail-back">RECOVERY MAP&nbsp; / &nbsp;模块详解</button><div class="detail-number">${String(index).padStart(2,'0')} <span>/ 06</span></div><section class="detail-hero"><div class="detail-copy"><p class="detail-kicker">MODULE ${String(index).padStart(2,'0')}</p><h1>${labels[id]}</h1><p>${item.hero}</p><strong><span aria-hidden="true">✓</span>${item.emphasis}</strong></div><aside class="detail-side"><p class="detail-side-index">${String(index).padStart(2,'0')}</p><h2>${item.sideTitle}</h2>${item.side.map((value,sideIndex)=>`<p><i aria-hidden="true">${String(sideIndex+1).padStart(2,'0')}</i><b>${escape(value)}</b><span aria-hidden="true">›</span></p>`).join('')}</aside></section><section class="detail-cards">${item.cards.map(([title,body],cardIndex)=>`<article><span>${String(cardIndex+1).padStart(2,'0')}</span><i aria-hidden="true">${['▤','◆','◉','◌'][cardIndex]}</i><h2>${title}</h2><p>${body}</p></article>`).join('')}</section><section class="detail-cta"><div><i aria-hidden="true">▤</i><p><strong>${prompts[0]}</strong><span>${prompts[1]}</span></p></div><button id="detail-start">${prompts[2]} <span>→</span></button></section></article>`;
   document.querySelector('#detail-back').onclick=()=>navTo('guide');
-  document.querySelector('#detail-start').onclick=()=>purchaseState.purchaseCompleted?navTo(id):location.assign(canonicalPricingUrl());
+  document.querySelector('#detail-start').onclick=()=>enterAuthoritativeRecoveryMapCreation();
 }
 
 function renderBeforeBegin(){app.innerHTML=`<section class="before-begin"><p class="eyebrow">BEFORE YOU BEGIN</p><h1>开始前，先花一分钟了解你的恢复地图</h1><p class="before-lead">Recovery Map由六个部分组成。它不是要求你保存秘密，而是帮助未来的自己或指定恢复人理解：你拥有什么、恢复需要什么、重要资料在哪里，以及应该如何开始。</p><ol>${Object.entries(labels).map(([id,label],index)=>`<li><b>${String(index+1).padStart(2,'0')}</b><div><strong>${escape(label)}</strong><span>${({accounts:'确认重要数字资产与账户。',conditions:'梳理未来恢复需要满足的条件。',locations:'说明重要资料与设备在哪里。',instructions:'留下清晰、可执行的开始路径。',assistants:'明确谁可以帮助以及权限边界。',message:'补充未来恢复人需要知道的事情。'})[id]}</span></div></li>`).join('')}</ol><section class="security-note"><div><strong>请不要记录秘密</strong><span>不填写私钥、助记词、OTP、Authenticator Seed或完整密码。</span></div><p>附件仅用于辅助说明、设备资料、操作指南与证明材料。</p></section><div class="before-actions"><button class="secondary" id="intro-back">返回</button><button id="intro-start">正式开始</button></div></section>`;document.querySelector('#intro-back').onclick=()=>navTo('dashboard');document.querySelector('#intro-start').onclick=()=>{v3State.introduced=true;persistDraft();navTo('accounts');};}
