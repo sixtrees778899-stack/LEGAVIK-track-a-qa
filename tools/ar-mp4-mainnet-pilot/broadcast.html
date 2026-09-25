@@ -1,0 +1,7 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>CJAS MP4 Mainnet Pilot — Broadcast Gate</title><link rel="stylesheet" href="./style.css"></head><body><main>
+<h1>CJAS MP4 Mainnet Pilot — 单次广播门</h1><p class="stop">仅限当前已加密 MP4 Archive。费用硬上限 0.11 AR；只允许一次签名和一次广播。</p>
+<section class="card"><h2>1. 导入当前 Archive</h2><label>选择已下载的 MP4 Archive<input id="archive" type="file" accept=".cjasmp4archive,application/octet-stream"></label><div id="archive-result" class="summary" hidden></div></section>
+<section class="card"><h2>2. 钱包与费用复核</h2><button id="quote" disabled>连接钱包并复核报价</button><div id="quote-result" class="summary" hidden></div></section>
+<section class="card"><h2>3. CEO 单次签名与广播</h2><button id="broadcast" disabled>请求一次钱包签名并广播</button><div id="broadcast-result" class="success" hidden></div><button id="download-evidence" disabled>下载 Mainnet Evidence / 上链凭证</button></section>
+<section class="card"><details><summary>技术详情</summary><pre id="evidence"></pre></details></section><div id="status" role="status"></div>
+<script type="module" src="./broadcast.js"></script></main></body></html>

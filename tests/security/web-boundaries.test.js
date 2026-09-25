@@ -1,0 +1,6 @@
+import test from 'node:test';import assert from 'node:assert/strict';import { readFile } from 'node:fs/promises';
+const files=['web/app.js','web/recover.js','web/map-view.js','web/index.html','web/recover.html'];
+test('Web app does not use persistent browser storage or telemetry',async()=>{for(const file of files){const text=await readFile(file,'utf8');assert.doesNotMatch(text,/\b(localStorage|sessionStorage|indexedDB|sendBeacon|analytics|telemetry)\b/i,file);}});
+test('independent recovery entry has no wallet SDK, signing, broadcast or CDN dependency',async()=>{const html=await readFile('web/recover.html','utf8'),script=await readFile('web/recover.js','utf8'),source=`${html}\n${script}`;assert.doesNotMatch(source,/arconnect|wander|arweaveWallet|createTransaction|transactions\.(?:sign|post)|broadcastMainnetArchive|https?:\/\/[^'" ]*(?:cdn|unpkg)/i);assert.match(source,/verifyMainnetArchive/);});
+test('Web app contains no console output',async()=>{for(const file of files)assert.doesNotMatch(await readFile(file,'utf8'),/\bconsole\s*\./,file);});
+test('legacy v1 page is not imported or embedded',async()=>{for(const file of files)assert.doesNotMatch(await readFile(file,'utf8'),/\.\.\/index\.html|src=["']\/index\.html/,file);});

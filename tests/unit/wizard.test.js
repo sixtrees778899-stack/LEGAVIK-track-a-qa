@@ -1,0 +1,18 @@
+import test from 'node:test';import assert from 'node:assert/strict';import { readFile } from 'node:fs/promises';
+import { buildWizardConfiguration } from '../../src/wizard/config-loader.js';import { WizardFlowEngine } from '../../src/wizard/wizard-engine.js';
+const read=async(path)=>JSON.parse(await readFile(new URL(`../../${path}`,import.meta.url),'utf8'));
+const flow=await read('config/wizard/v1.json'),content=await read('config/content/zh-CN.json');
+const templates=await Promise.all(flow.modules.map((m)=>read(`config/templates/${m.template}.json`)));
+const config=buildWizardConfiguration(flow,templates,content);
+test('loads five pluggable templates',()=>assert.equal(config.modules.length,5));
+test('sorts modules by configuration order',()=>assert.deepEqual(config.modules.map((m)=>m.order),[10,20,30,40,50]));
+test('content is separate from template logic',()=>assert.equal(config.modules[0].steps[0].label,'是否有需要建立恢复路径的钱包或链上资产？'));
+test('required step cannot be skipped',()=>assert.throws(()=>new WizardFlowEngine(config).skip(),/cannot be skipped/));
+test('next rejects missing required answer',()=>assert.throws(()=>new WizardFlowEngine(config).next(),/Required answer/));
+test('conditional branch hides wallet details for no',()=>{const engine=new WizardFlowEngine(config);engine.answer('no');engine.next();assert.notEqual(engine.current().id,'wallet-label');});
+test('conditional branch shows wallet details for yes',()=>{const engine=new WizardFlowEngine(config);engine.answer('yes');engine.next();assert.equal(engine.current().id,'wallet-label');});
+test('back navigation returns previous visible step',()=>{const engine=new WizardFlowEngine(config);engine.answer('yes');engine.next();assert.equal(engine.back().id,'wallet-exists');});
+test('draft state can be restored',()=>{const engine=new WizardFlowEngine(config);engine.answer('yes');engine.next();engine.answer('我的钱包');const restored=new WizardFlowEngine(config,engine.draft());assert.equal(restored.answers['wallet-label'],'我的钱包');});
+test('disabled module is omitted without code changes',()=>{const changed=structuredClone(flow);changed.modules[1].enabled=false;assert.equal(buildWizardConfiguration(changed,templates,content).modules.length,4);});
+test('module reordering is configuration driven',()=>{const changed=structuredClone(flow);changed.modules[4].order=1;assert.equal(buildWizardConfiguration(changed,templates,content).modules[0].module_id,'recovery-orders-warnings');});
+test('custom fields and attachments are supported step types',()=>{const types=config.modules.flatMap((m)=>m.steps.map((s)=>s.type));assert.ok(types.includes('custom-fields'));assert.ok(types.includes('attachment'));});

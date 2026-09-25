@@ -1,0 +1,10 @@
+{
+  "module_id": "devices-locations",
+  "module_version": 1,
+  "title_key": "module.devices.title",
+  "steps": [
+    { "id": "primary-device", "type": "text", "label_key": "device.primary", "required": true, "skip_allowed": false },
+    { "id": "device-location", "type": "text", "label_key": "device.location", "required": true, "skip_allowed": false },
+    { "id": "device-attachment", "type": "attachment", "label_key": "device.attachment", "required": false, "skip_allowed": true }
+  ]
+}

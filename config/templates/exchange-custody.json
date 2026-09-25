@@ -1,0 +1,9 @@
+{
+  "module_id": "exchange-custody",
+  "module_version": 1,
+  "title_key": "module.exchange.title",
+  "steps": [
+    { "id": "exchange-used", "type": "choice", "label_key": "exchange.used", "required": true, "options": ["yes", "no"], "skip_allowed": false },
+    { "id": "exchange-location", "type": "text", "label_key": "exchange.location", "required": true, "skip_allowed": false, "condition": { "field": "exchange-used", "equals": "yes" } }
+  ]
+}

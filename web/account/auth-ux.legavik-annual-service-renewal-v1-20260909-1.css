@@ -1,0 +1,125 @@
+button,
+.primary-link {
+  transition: transform .12s ease, filter .15s ease, box-shadow .15s ease;
+}
+
+button:hover,
+.primary-link:hover {
+  filter: brightness(1.08);
+  box-shadow: 0 7px 18px rgba(6, 76, 60, .16);
+}
+
+button:active,
+.primary-link:active {
+  transform: translateY(1px) scale(.985);
+  filter: brightness(.96);
+  box-shadow: 0 2px 8px rgba(6, 76, 60, .14);
+}
+
+button:focus-visible,
+.primary-link:focus-visible {
+  outline: 3px solid rgba(72, 227, 154, .38);
+  outline-offset: 3px;
+}
+
+button[aria-busy="true"] {
+  cursor: progress;
+  filter: saturate(.78);
+}
+
+button[aria-busy="true"]::after {
+  content: "";
+  display: inline-block;
+  width: .75em;
+  height: .75em;
+  margin-left: 9px;
+  border: 2px solid rgba(255, 255, 255, .45);
+  border-top-color: #fff;
+  border-radius: 50%;
+  animation: auth-spin .8s linear infinite;
+}
+
+.link-button[aria-busy="true"]::after {
+  border-color: rgba(6, 76, 60, .28);
+  border-top-color: var(--green);
+}
+
+.send-status {
+  min-height: 1.5em;
+  margin: 0;
+  color: #46655b;
+}
+
+.password-policy {
+  margin: 0;
+  color: #52665f;
+}
+
+.auth-card > p:not(.eyebrow),
+.auth-card .form-message,
+.auth-card .send-status,
+.auth-card .password-policy {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.password-control {
+  position: relative;
+  display: block;
+}
+
+.password-control input {
+  padding-right: 52px;
+}
+
+.password-toggle {
+  position: absolute;
+  top: 50%;
+  right: 7px;
+  transform: translateY(-50%);
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border-radius: 9px;
+  background: transparent;
+  color: var(--green);
+  box-shadow: none;
+}
+
+.password-toggle:hover {
+  background: #edf7f1;
+  box-shadow: none;
+}
+
+.password-toggle:active {
+  transform: translateY(calc(-50% + 1px)) scale(.96);
+}
+
+.password-toggle svg {
+  width: 21px;
+  height: 21px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+}
+
+.password-toggle .eye-open { display: none; }
+.password-toggle .eye-closed { display: block; }
+.password-toggle[aria-pressed="true"] .eye-open { display: block; }
+.password-toggle[aria-pressed="true"] .eye-closed { display: none; }
+
+.password-toggle[aria-busy="true"]::after {
+  display: none;
+}
+
+@keyframes auth-spin {
+  to { transform: rotate(360deg); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  button,
+  .primary-link { transition: none; }
+  button[aria-busy="true"]::after { animation: none; }
+}

@@ -1,0 +1,22 @@
+{
+  "rulebook_version": "1.1.0",
+  "effective_date": "2026-08-04",
+  "status": "ACTIVE",
+  "supersedes": "Recovery Map V01 rules at commit b7f9fb547c4db5c9530ab0bbd297cc1b98931ae4",
+  "approved_by": ["CEO", "Product Architect"],
+  "affected_modules": ["assets-accounts", "recovery-conditions", "locations-finding", "recovery-order-exceptions", "contacts-assistance", "evidence-messages", "dashboard", "review", "report"],
+  "compatibility_notes": "Draft-only aggregation and coverage metadata are projected by Mapper into frozen Knowledge Schema v2. Existing Snapshots and generated Versions are never rewritten.",
+  "change_history": [{"version":"1.1.0","date":"2026-08-04","summary":"Aggregate recovery conditions per account, add location coverage modes, make risk notes optional, add Recovery Map Report and unified completion language."}],
+  "requirement_classes": ["REQUIRED", "CONDITIONALLY_REQUIRED", "OPTIONAL"],
+  "temporary_states": ["UNKNOWN", "LATER"],
+  "text_or_attachment_fields": ["locations-finding.finding_instructions", "locations-finding.summary_instructions", "recovery-order-exceptions.action"],
+  "generation_gate": ["ACCOUNT_COMPLETE", "CONDITION_SELECTED", "LOCATION_COVERED", "STEP_COMPLETE", "ATTACHMENTS_VALID", "ACCOUNT_DISTINGUISHABLE", "REVIEW_CLEAR", "REPORT_GENERATED"],
+  "modules": {
+    "assets-accounts": {"required":true,"core_question":"有哪些资产账户、钱包和存储载体？"},
+    "recovery-conditions": {"required":true,"core_question":"恢复每个账户需要哪些条件？","minimum_selected":1,"card_scope":"ACCOUNT"},
+    "locations-finding": {"required":true,"core_question":"已选择的资料、设备和条件在哪里？","modes":["ITEMIZED","SUMMARY","MIXED"]},
+    "recovery-order-exceptions": {"required":true,"core_question":"每个平台或钱包应如何恢复和安全转移？","risk_notes":"OPTIONAL"},
+    "contacts-assistance": {"required":false,"core_question":"是否需要他人协助，以及协助边界是什么？"},
+    "evidence-messages": {"required":false,"core_question":"传承人还有什么个人说明或嘱托？"}
+  }
+}

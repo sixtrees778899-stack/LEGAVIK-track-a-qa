@@ -1,0 +1,30 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import { readFile } from 'node:fs/promises';
+import { validateRecoveryPassword } from '../../src/ui/password-policy.js';
+import { assertFinalGenerationState, runWithBusyButton, userErrorCode } from '../../src/ui/generation-controller.js';
+import { ReviewRevisionTracker } from '../../src/review/review-revision.js';
+
+const policy=JSON.parse(await readFile(new URL('../../config/security/recovery-password-v1.json',import.meta.url),'utf8'));
+const check=(password,confirmation=password,acknowledged=true,vaultName='我的恢复计划')=>validateRecoveryPassword(password,confirmation,acknowledged,{policy,vaultName});
+
+test('password shorter than 12 code points is rejected',()=>assert.ok(check('Abc-123').issues.some(item=>item.code==='PASSWORD_TOO_SHORT')));
+test('password longer than 128 code points is rejected without truncation',()=>{const value=`River-27-${'M'.repeat(130)}`,result=check(value);assert.equal(result.length,[...value].length);assert.ok(result.issues.some(item=>item.code==='PASSWORD_TOO_LONG'));});
+test('12 characters with fewer than three classes is rejected',()=>assert.ok(check('abcdefghijkl').issues.some(item=>item.code==='PASSWORD_CLASSES')));
+test('three character classes pass',()=>assert.equal(check('river-lantern-27').valid,true));
+test('four character classes pass',()=>assert.equal(check('River-Lantern-27').valid,true));
+test('long memorable passphrase passes',()=>assert.equal(check('River-Lantern-27-Mango').status,'较强'));
+test('Chinese and Unicode passphrase counts code points correctly',()=>{const result=check('山河-River-2026!');assert.equal(result.valid,true);assert.equal(result.length,[...'山河-River-2026!'].length);});
+test('mismatched confirmation is rejected',()=>assert.ok(check('River-Lantern-27','River-Lantern-28').issues.some(item=>item.code==='PASSWORD_MISMATCH')));
+test('all-space password is rejected',()=>assert.ok(check('            ').issues.some(item=>item.code==='PASSWORD_BLANK')));
+test('password equal to Vault name is rejected',()=>assert.ok(check('River-Lantern-27','River-Lantern-27',true,'River-Lantern-27').issues.some(item=>item.code==='PASSWORD_EQUALS_VAULT_NAME')));
+test('common weak passwords are rejected case-insensitively',()=>assert.ok(check('Password123!').issues.some(item=>item.code==='PASSWORD_COMMON')));
+test('password result never contains password or confirmation',()=>{const secret='River-Lantern-27';assert.equal(JSON.stringify(check(secret)).includes(secret),false);});
+test('unchecked acknowledgement blocks final generation',()=>assert.throws(()=>assertFinalGenerationState({reviewCurrent:true,knowledge:{},acknowledged:false}),error=>error.code==='PASSWORD_ACK_REQUIRED'));
+test('checked acknowledgement permits a current reviewed Knowledge Map',()=>assert.equal(assertFinalGenerationState({reviewCurrent:true,knowledge:{},acknowledged:true}),true));
+test('stale review is rejected',()=>assert.throws(()=>assertFinalGenerationState({reviewCurrent:false,knowledge:{},acknowledged:true}),error=>error.code==='REVIEW_STALE'));
+test('missing Knowledge Map is rejected',()=>assert.throws(()=>assertFinalGenerationState({reviewCurrent:true,knowledge:null,acknowledged:true}),error=>error.code==='KNOWLEDGE_MISSING'));
+test('password input evaluation does not change draft revision',()=>{const tracker=new ReviewRevisionTracker();tracker.reviewed();check('River-Lantern-27');assert.equal(tracker.isCurrent(),true);});
+test('generation stages map to specific user errors',()=>{for(const[stage,code]of Object.entries({snapshot:'SNAPSHOT_BUILD_FAILED','data-key':'DATA_KEY_GENERATION_FAILED',archive:'ARCHIVE_GENERATION_FAILED','recovery-kit':'RECOVERY_KIT_GENERATION_FAILED'}))assert.equal(userErrorCode({stage}),code);});
+test('failed generation restores button state',async()=>{const button={disabled:false,textContent:'生成恢复材料'};await assert.rejects(()=>runWithBusyButton(button,async()=>{throw new Error('test');}));assert.equal(button.disabled,false);assert.equal(button.textContent,'生成恢复材料');});
+test('password page keeps clickable label and Enter protection',async()=>{const source=await readFile(new URL('../../web/app.js',import.meta.url),'utf8');assert.match(source,/label class="choice" for="ack"/);assert.match(source,/event\.key==='Enter'/);assert.match(source,/preventDefault\(\)/);});

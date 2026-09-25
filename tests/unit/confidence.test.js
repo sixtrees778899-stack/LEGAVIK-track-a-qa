@@ -1,0 +1,14 @@
+import test from 'node:test';import assert from 'node:assert/strict';
+import { checkRecoveryConfidence } from '../../src/confidence/confidence-checker.js';import { CONFIDENCE_STATUS } from '../../src/domain/constants.js';import { loadJson } from '../helpers/load-fixture.js';
+const valid=await loadJson('../fixtures/knowledge-valid.json'),hashes={'attachment-guide-1':valid.attachments[0].sha256},now=new Date('2026-08-01T00:00:00Z');
+test('complete map is ready before rehearsal',()=>assert.equal(checkRecoveryConfidence(valid,{observedAttachmentHashes:hashes,now}).status,CONFIDENCE_STATUS.READY));
+test('complete rehearsed map is verified',()=>assert.equal(checkRecoveryConfidence(valid,{observedAttachmentHashes:hashes,rehearsalCompleted:true,now}).status,CONFIDENCE_STATUS.VERIFIED));
+test('asset without Location needs attention',()=>{const map=structuredClone(valid);map.assets[0].location_refs=[];const result=checkRecoveryConfidence(map,{observedAttachmentHashes:hashes,now});assert.ok(result.issues.some((x)=>x.code==='ASSET_WITHOUT_LOCATION'));});
+test('Location without finding instructions is identified',()=>{const map=structuredClone(valid);map.locations[0].description='';assert.ok(checkRecoveryConfidence(map,{observedAttachmentHashes:hashes,now}).issues.some((x)=>x.code==='LOCATION_WITHOUT_INSTRUCTIONS'));});
+test('Order prerequisites gap is identified',()=>{const map=structuredClone(valid);map.orders[0].prerequisites=[];assert.ok(checkRecoveryConfidence(map,{observedAttachmentHashes:hashes,now}).issues.some((x)=>x.code==='ORDER_WITHOUT_PREREQUISITES'));});
+test('high risk without Warning is critical',()=>{const map=structuredClone(valid);map.orders[0].warning_refs=[];assert.equal(checkRecoveryConfidence(map,{observedAttachmentHashes:hashes,now}).status,CONFIDENCE_STATUS.CRITICAL);});
+test('missing reference is critical',()=>{const map=structuredClone(valid);map.assets[0].location_refs=['missing'];assert.equal(checkRecoveryConfidence(map,{observedAttachmentHashes:hashes,now}).status,CONFIDENCE_STATUS.CRITICAL);});
+test('attachment missing is critical',()=>assert.equal(checkRecoveryConfidence(valid,{observedAttachmentHashes:{},now}).status,CONFIDENCE_STATUS.CRITICAL));
+test('attachment hash mismatch is critical',()=>assert.ok(checkRecoveryConfidence(valid,{observedAttachmentHashes:{'attachment-guide-1':'0'.repeat(64)},now}).issues.some((x)=>x.code==='ATTACHMENT_HASH_MISMATCH')));
+test('stale version needs attention',()=>assert.ok(checkRecoveryConfidence(valid,{observedAttachmentHashes:hashes,now:new Date('2030-01-01')}).issues.some((x)=>x.code==='VERSION_STALE')));
+test('output has no numeric score',()=>assert.equal('score' in checkRecoveryConfidence(valid,{observedAttachmentHashes:hashes,now}),false));

@@ -1,0 +1,24 @@
+{
+  "policy_version":1,
+  "limits":{"max_attachment_bytes":10485760,"max_version_bytes":52428800,"max_attachments":100},
+  "extension_mime":{"pdf":"application/pdf","docx":"application/vnd.openxmlformats-officedocument.wordprocessingml.document","txt":"text/plain","md":"text/markdown","json":"application/json","jpg":"image/jpeg","jpeg":"image/jpeg","png":"image/png","webp":"image/webp","mp3":"audio/mpeg","m4a":"audio/mp4","wav":"audio/wav","mp4":"video/mp4","mov":"video/quicktime","webm":"video/webm","bin":"application/octet-stream"},
+  "allowed_media":[
+    {"category":"文档","mime_prefixes":["application/pdf","application/json","application/vnd.openxmlformats-officedocument.wordprocessingml.document","text/plain","text/markdown"],"extensions":["pdf","docx","txt","md","json"]},
+    {"category":"图片","mime_prefixes":["image/jpeg","image/png","image/webp"],"extensions":["jpg","jpeg","png","webp"]},
+    {"category":"语音说明","mime_prefixes":["audio/mpeg","audio/mp4","audio/x-m4a","audio/wav","audio/x-wav"],"extensions":["mp3","m4a","wav"]},
+    {"category":"短视频说明","mime_prefixes":["video/mp4","video/quicktime","video/webm"],"extensions":["mp4","mov","webm"]},
+    {"category":"自定义二进制","mime_prefixes":["application/octet-stream"],"extensions":["bin"]}
+  ],
+  "guides":[
+    {"id":"asset-list","label":"资产清单","purpose":"帮助确认需要查找的资产或权益。","formats":"PDF、DOCX、TXT 或 JSON","recommended_size":"1 MB 内","example":"脱敏后的资产类别和存在性清单","required":false},
+    {"id":"device-list","label":"设备清单","purpose":"帮助辨认恢复所需设备。","formats":"PDF、TXT、JPG 或 PNG","recommended_size":"3 MB 内","example":"设备简称、外观和存放区域","required":false},
+    {"id":"contact-list","label":"联系人清单","purpose":"说明遇到阻碍时应联系谁。","formats":"PDF、DOCX 或 TXT","recommended_size":"1 MB 内","example":"角色、联系时机和职责边界","required":false},
+    {"id":"recovery-steps","label":"恢复步骤说明","purpose":"提供可以按顺序执行的简短说明。","formats":"PDF、DOCX、TXT、MP3 或 M4A","recommended_size":"5 MB 内","example":"第一步、预期结果和失败动作","required":false},
+    {"id":"location-guide","label":"位置或保管说明","purpose":"帮助找到设备或线下资料。","formats":"TXT、JPG、PNG 或短视频","recommended_size":"8 MB 内","example":"不暴露秘密的设备位置照片","required":false},
+    {"id":"risk-notes","label":"风险与注意事项","purpose":"明确禁止事项和停止条件。","formats":"PDF、DOCX、TXT 或语音","recommended_size":"3 MB 内","example":"遇到钓鱼提示时立即停止","required":false},
+    {"id":"custom-document","label":"自定义文档","purpose":"补充适合自己的恢复线索。","formats":"PDF、DOCX、TXT、JSON 或 BIN","recommended_size":"5 MB 内","example":"脱敏后的自定义说明","required":false},
+    {"id":"image","label":"图片","purpose":"展示设备外观或位置。","formats":"JPG 或 PNG","recommended_size":"5 MB 内","example":"无密码和助记词的设备照片","required":false},
+    {"id":"audio","label":"语音说明","purpose":"留下简短口述恢复说明。","formats":"MP3、M4A 或 WAV","recommended_size":"8 MB 内","example":"说明应先联系谁、不要做什么","required":false},
+    {"id":"video","label":"短视频说明","purpose":"展示设备位置或非敏感操作步骤。","formats":"MP4 或 MOV","recommended_size":"10 MB 内","example":"展示如何找到设备，不拍摄密码或助记词","required":false}
+  ]
+}

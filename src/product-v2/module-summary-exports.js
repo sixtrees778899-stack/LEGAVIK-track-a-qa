@@ -1,0 +1,17 @@
+import {accountLabel,selectedConditions} from './model.js';
+import {createDynamicDocxTemplate} from './dynamic-docx-templates.js';
+
+const CATEGORY_LABELS=Object.freeze({CEX:'中心化交易所',DEX:'DEX / DeFi',DEFI:'DEX / DeFi',HOT_WALLET:'自托管钱包',HARDWARE_WALLET:'自托管钱包',MULTISIG:'多签钱包',CUSTOM:'其他'});
+const TEMPLATE_TYPE_LABELS=Object.freeze({CEX:'中心化交易所',DEX:'DEX / DeFi',DEFI:'DEX / DeFi',HOT_WALLET:'热钱包 / 软件钱包',HARDWARE_WALLET:'冷钱包 / 硬件钱包',MULTISIG:'多签钱包',CUSTOM:'其他'});
+const platformFor=(account,templates)=>templates.platforms.find(item=>item.id===account.platform_id);
+
+export function mapAccountCategory(account,templates){return CATEGORY_LABELS[platformFor(account,templates)?.category]??'其他';}
+function accountRecord(store,account,{platformTemplates,conditionLabels={},conditionLabelForAccount}){return Object.freeze({account_id:account.account_id,platform_or_wallet:accountLabel(account,platformTemplates),category:mapAccountCategory(account,platformTemplates),region:account.region?.value||undefined,account_type:account.account_type?.value||undefined,selected_recovery_conditions:Object.freeze(selectedConditions(store,account.account_id).map(id=>Object.freeze({id,label:conditionLabelForAccount?.(account,id)??conditionLabels[id]??id})))});}
+function templateType(account,platformTemplates){return TEMPLATE_TYPE_LABELS[platformFor(account,platformTemplates)?.category]??'其他';}
+const records=(store,options)=>Object.values(store.accounts).map(account=>accountRecord(store,account,options));
+
+export function buildModule1SummaryPayload(store,options){return Object.freeze({document_title:'资产与账户汇总文档',module_id:'accounts',accounts:Object.freeze(records(store,options).map(({selected_recovery_conditions,...account})=>Object.freeze(account)))});}
+export function buildModule2SummaryPayload(store,options){return Object.freeze({document_title:'恢复条件汇总文档',module_id:'conditions',accounts:Object.freeze(records(store,options).filter(account=>account.selected_recovery_conditions.length).map(account=>Object.freeze(account)))});}
+export function buildFutureModule3TemplatePayload(store,options){return Object.freeze({source_modules:Object.freeze(['accounts','conditions']),accounts:Object.freeze(records(store,options).map(account=>Object.freeze({account_id:account.account_id,platform_or_wallet:account.platform_or_wallet,category:account.category,account_type_label:templateType(store.accounts[account.account_id],options.platformTemplates),selected_recovery_conditions:account.selected_recovery_conditions})))});}
+export function buildFutureModule4TemplatePayload(store,options){return Object.freeze({source_modules:Object.freeze(['accounts','conditions']),accounts:Object.freeze(records(store,options).map(account=>Object.freeze({account_id:account.account_id,platform_or_wallet:account.platform_or_wallet,category:account.category,account_type_label:templateType(store.accounts[account.account_id],options.platformTemplates),selected_recovery_conditions:account.selected_recovery_conditions})))});}
+export async function prepareSystemSummaryDocuments(store,options,{module1CanonicalBytes=null,module2CanonicalBytes=null}={}){const module1=buildModule1SummaryPayload(store,options),module2=buildModule2SummaryPayload(store,options);return Object.freeze({module_1:await createDynamicDocxTemplate(module1,{moduleId:'accounts',canonicalBytes:module1CanonicalBytes}),module_2:await createDynamicDocxTemplate(module2,{moduleId:'conditions',canonicalBytes:module2CanonicalBytes})});}

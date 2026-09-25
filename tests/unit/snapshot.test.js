@@ -1,0 +1,13 @@
+import test from 'node:test';import assert from 'node:assert/strict';
+import { buildSnapshot,parseSnapshot,serializeSnapshot,validateSnapshot } from '../../src/snapshot/snapshot-builder.js';
+import { loadJson } from '../helpers/load-fixture.js';
+const knowledge=await loadJson('../fixtures/knowledge-valid.json'),attachment=new TextEncoder().encode('测试附件');
+const input={snapshotId:'snapshot-001',vaultId:'vault-001',wizardConfigVersion:1,createdAt:'2026-07-31T10:30:00.000Z',knowledgeGraph:knowledge,attachmentPayloads:{'attachment-guide-1':attachment}};
+test('builds complete Snapshot v1',async()=>{const snapshot=await buildSnapshot(input);assert.equal(snapshot.snapshot_schema_version,1);assert.ok(snapshot.attachment_payloads['attachment-guide-1']);});
+test('serialization is deterministic',async()=>{assert.equal(serializeSnapshot(await buildSnapshot(input)),serializeSnapshot(await buildSnapshot(input)));});
+test('Unicode round trip is preserved',async()=>{const serialized=serializeSnapshot(await buildSnapshot(input));assert.equal((await parseSnapshot(serialized)).knowledge_graph.vault_title,'家庭数字资产恢复地图');});
+test('invalid attachment bytes are rejected',async()=>await assert.rejects(buildSnapshot({...input,attachmentPayloads:{'attachment-guide-1':new TextEncoder().encode('wrong')}}),/integrity mismatch/));
+test('missing attachment is rejected',async()=>await assert.rejects(buildSnapshot({...input,attachmentPayloads:{}}),/payload missing/));
+test('tampered snapshot integrity is rejected',async()=>{const snapshot=await buildSnapshot(input);snapshot.knowledge_graph.vault_title='tampered';assert.equal((await validateSnapshot(snapshot)).valid,false);});
+test('unknown snapshot version is rejected',async()=>{const snapshot=await buildSnapshot(input);snapshot.snapshot_schema_version=2;assert.equal((await validateSnapshot(snapshot)).valid,false);});
+test('canonical field ordering is stable',async()=>{const serialized=serializeSnapshot(await buildSnapshot(input));assert.ok(serialized.indexOf('"attachment_payloads"')<serialized.indexOf('"created_at"'));});

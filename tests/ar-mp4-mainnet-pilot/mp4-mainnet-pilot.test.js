@@ -1,0 +1,30 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {readFile} from 'node:fs/promises';
+import {cryptoEngine} from '../../src/crypto/crypto-engine.js';
+import {decodeMp4Archive,MP4_ARCHIVE_LIMITS} from '../../tools/ar-mp4-mainnet-pilot/mp4-archive.js';
+import {assertCustomerMp4,createMp4PilotArtifacts,quoteProjection,recoverMp4Pilot} from '../../tools/ar-mp4-mainnet-pilot/pilot-core.js';
+import {createMp4Delivery} from '../../tools/ar-mp4-mainnet-pilot/recovery-delivery.js';
+
+const html=await readFile('tools/ar-mp4-mainnet-pilot/index.html','utf8'),app=await readFile('tools/ar-mp4-mainnet-pilot/app.js','utf8'),broadcastHtml=await readFile('tools/ar-mp4-mainnet-pilot/broadcast.html','utf8'),broadcastJs=await readFile('tools/ar-mp4-mainnet-pilot/broadcast.js','utf8'),recoverHtml=await readFile('tools/ar-mp4-mainnet-pilot/recover.html','utf8'),recoverJs=await readFile('tools/ar-mp4-mainnet-pilot/recover.js','utf8');
+const header=Uint8Array.from([0,0,0,32,102,116,121,112,105,115,111,109,0,0,0,0]);
+
+test('customer MP4 accepts exact type and rejects invalid container or >10 MiB',()=>{assert.equal(assertCustomerMp4({name:'customer.mp4',type:'video/mp4',size:1024},header),true);assert.throws(()=>assertCustomerMp4({name:'customer.mov',type:'video/mp4',size:1024},header));assert.throws(()=>assertCustomerMp4({name:'customer.mp4',type:'video/mp4',size:MP4_ARCHIVE_LIMITS.max_file_bytes+1},header));assert.throws(()=>assertCustomerMp4({name:'customer.mp4',type:'video/mp4',size:1024},new Uint8Array(16)));});
+
+test('binary Archive stores one ciphertext with near-zero overhead and recovers bytes',async()=>{const bytes=new Uint8Array(1024*1024);crypto.getRandomValues(bytes.subarray(0,65536));bytes.set(header,0);const password='River-Lantern-27-Mango';const result=await createMp4PilotArtifacts({bytes,filename:'customer.mp4',mimeType:'video/mp4',password,createdAt:'2026-08-06T00:00:00.000Z'});assert.ok(result.overheadBytes<4096);assert.ok(result.overheadPercent<0.4);const parsed=decodeMp4Archive(result.archiveBytes);assert.equal(parsed.ciphertext.length,bytes.length+16);const recovered=await recoverMp4Pilot({archiveBytes:result.archiveBytes,kitBytes:result.kitBytes,password});assert.deepEqual(recovered.bytes,bytes);assert.equal(recovered.mimeType,'video/mp4');assert.equal(recovered.filename,'customer.mp4');});
+
+test('tampered Archive and wrong password fail closed',async()=>{const bytes=new Uint8Array(2048);bytes.set(header,0);const result=await createMp4PilotArtifacts({bytes,filename:'customer.mp4',mimeType:'video/mp4',password:'River-Lantern-27-Mango'});const tampered=result.archiveBytes.slice();tampered[tampered.length-1]^=1;await assert.rejects(recoverMp4Pilot({archiveBytes:tampered,kitBytes:result.kitBytes,password:'River-Lantern-27-Mango'}));await assert.rejects(recoverMp4Pilot({archiveBytes:result.archiveBytes,kitBytes:result.kitBytes,password:'Wrong-Password-27-Mango'}));});
+
+test('quote projection reports per-MiB and 50 MiB estimate',()=>{const result=quoteProjection({quoteAR:0.01,archiveBytes:10*1024*1024,balanceAR:1});assert.equal(result.ar_per_mib,0.001);assert.equal(result.projected_balance_ar,0.99);assert.equal(result.estimated_50_mib_ar,0.05);});
+
+test('customer page has no Manifest, fixture, signing, upload, TxID or persistence controls',()=>{assert.match(html,/选择 MP4/);assert.match(html,/浏览器本地加密/);assert.match(html,/下载 Recovery Kit/);assert.match(html,/下载本地加密 Archive/);assert.doesNotMatch(`${html}\n${app}`,/Manifest|合成夹具|ffprobe|createTransaction|SIGN_TRANSACTION|transactions\.sign|transactions\.post|TxID|localStorage|sessionStorage|indexedDB|console\./);assert.match(app,/ACCESS_ADDRESS/);assert.match(app,/\$\('#password'\)\.value=''/);});
+
+test('broadcast gate is limited to one Archive and hard-caps actual fee at 0.11 AR',()=>{assert.match(broadcastHtml,/仅限当前已加密 MP4 Archive/);assert.match(broadcastJs,/MAX_FEE_AR=0\.11/);assert.match(broadcastJs,/state\.broadcastAttempted=true/);assert.match(broadcastJs,/actualFeeAR>MAX_FEE_AR/);assert.match(broadcastJs,/禁止自动重试/);assert.equal((broadcastJs.match(/transactions\.sign/g)??[]).length,1);assert.equal((broadcastJs.match(/transactions\.post/g)??[]).length,1);});
+
+test('broadcast evidence records TxID hashes fees balances signing upload and first downloadability',()=>{for(const token of ['txid','original_mp4_sha256','actual_fee_ar','balance_before_ar','balance_after_ar','signature_wait_ms','broadcast_to_txid_ms','first_downloadable_at','archive_sha256'])assert.match(broadcastJs,new RegExp(token));assert.match(broadcastJs,/cjas-mp4-mainnet-evidence-/);});
+
+test('independent recovery accepts only Evidence Kit and password, never original or local Archive',()=>{assert.match(recoverHtml,/Mainnet Evidence/);assert.match(recoverHtml,/Recovery Kit/);assert.match(recoverHtml,/恢复密码/);assert.doesNotMatch(recoverHtml,/id="original"|id="archive"|accept="\.cjasmp4archive/);assert.doesNotMatch(recoverJs,/createTransaction|SIGN_TRANSACTION|transactions\.sign|transactions\.post/);assert.match(recoverJs,/cache:'no-store'/);});
+
+test('independent recovery pins TxID Archive length and SHA-256',()=>{assert.match(recoverJs,/wELztFMbhqW-dRU58cfdl_R_lQpVCkK8VLfOQBmGrvw/);assert.match(recoverJs,/EXPECTED_ARCHIVE_SIZE=9795318/);assert.match(recoverJs,/61d395192fb52de0575d121a72667126863ec5f8731cecee6f6386307950c836/);});
+
+test('MP4 delivery preserves bytes MIME filename and revokes Object URLs for repeated download',()=>{const bytes=Uint8Array.from([0,1,2,3]),blobs=[],revoked=[],clicks=[],documentRef={body:{appendChild(){}},createElement:()=>({click(){clicks.push(this.download);},remove(){}})},urlApi={createObjectURL(blob){blobs.push(blob);return`blob:${blobs.length}`;},revokeObjectURL(url){revoked.push(url);}};const delivery=createMp4Delivery({bytes,filename:'恢复视频.mp4',sha256:'a'.repeat(64)}),schedule=callback=>callback();delivery.download({documentRef,urlApi,schedule});delivery.download({documentRef,urlApi,schedule});assert.deepEqual(clicks,['恢复视频.mp4','恢复视频.mp4']);assert.equal(blobs[0].type,'video/mp4');assert.equal(blobs[0].size,bytes.length);assert.deepEqual(revoked,['blob:1','blob:2']);});

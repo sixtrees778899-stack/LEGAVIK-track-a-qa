@@ -1,0 +1,12 @@
+{
+  "environment": "TRACK_A_MAIN_PRODUCT_QA",
+  "upstream_candidate_commit": "e933a835d505fa780d1b0d3fdbb5486be81bce7c",
+  "deployment_identity": "legavik-mainline-normal-flow-candidate-20260925-1",
+  "repository": "sixtrees778899-stack/LEGAVIK-track-a-qa",
+  "branch": "main",
+  "pages_base": "/LEGAVIK-track-a-qa",
+  "track_b_repository": "sixtrees778899-stack/SKREK-auth-test",
+  "track_b_branch": "main",
+  "track_b_modified": false,
+  "routing_only_adaptation": true
+}

@@ -1,0 +1,10 @@
+{
+  "status": "MAINNET_VERIFIED",
+  "network": "Arweave Mainnet",
+  "format_version": "CJAS-VAULT-ARCHIVE-V1",
+  "txid": "G3aHpfu-SJTKJvGhaukY7RU0LtbdnTMdtdym6gzNsBw",
+  "archive_filename": "CJAS-Vault-golden-snapshot-technical-format-1-knowledge-schema-1.cjasvault",
+  "archive_size": 5560,
+  "archive_sha256": "c8f3145860abd6478047f6689b17b484a254459d78b9559cd6ccda8e87dd0a01",
+  "recovery_kit_identifier": "golden-snapshot-technical-format-1-knowledge-schema-1"
+}

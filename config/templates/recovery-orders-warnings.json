@@ -1,0 +1,11 @@
+{
+  "module_id": "recovery-orders-warnings",
+  "module_version": 1,
+  "title_key": "module.orders.title",
+  "steps": [
+    { "id": "first-action", "type": "text", "label_key": "order.first_action", "required": true, "skip_allowed": false },
+    { "id": "expected-result", "type": "text", "label_key": "order.expected_result", "required": true, "skip_allowed": false },
+    { "id": "failure-action", "type": "text", "label_key": "order.failure_action", "required": true, "skip_allowed": false },
+    { "id": "risk-warning", "type": "text", "label_key": "warning.risk", "required": true, "skip_allowed": false }
+  ]
+}

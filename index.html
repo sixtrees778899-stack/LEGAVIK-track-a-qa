@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<title>CJAS Mainnet Minimal Loop</title>
+<style>
+body{font-family:system-ui;background:#0d1117;color:#e6edf3;padding:30px;font-size:14px;max-width:900px;margin:0 auto;}
+h2{color:#c49a3c;margin-bottom:4px;}
+.build{color:#555;font-size:11px;margin-bottom:20px;}
+#status{padding:12px;margin:8px 0;border-left:3px solid #3498db;background:rgba(52,152,219,.1);white-space:pre-wrap;}
+#status.ok{border-color:#2ecc71;background:rgba(46,204,113,.1);color:#2ecc71;}
+#status.err{border-color:#e74c3c;background:rgba(231,76,60,.1);color:#e74c3c;}
+#info{width:100%;border-collapse:collapse;margin:10px 0;font-size:13px;}
+#info td{padding:5px 8px;border:1px solid #30363d;}
+#info td:first-child{color:#8b949e;width:180px;}
+button{padding:14px 32px;font-size:15px;font-weight:700;background:#c49a3c;color:#000;border:none;cursor:pointer;margin-top:12px;display:none;}
+button:disabled{opacity:.4;cursor:not-allowed;}
+pre{font-size:11px;background:#000;padding:12px;overflow-x:auto;white-space:pre-wrap;margin-top:12px;border:1px solid #333;}
+</style>
+</head>
+<body>
+<h2>CJAS v2 &middot; Arweave 主网最小闭环</h2>
+<div class="build" id="buildid"></div>
+<div id="status">正在初始化...</div>
+<table id="info" style="display:none;"></table>
+<button id="btn" onclick="go()"></button>
+<pre id="log"></pre>
+<div id="result"></div>
+
+<script>
+const BUILD_ID = 'CJAS-mainnet-1.0-20260729';
+document.getElementById('buildid').textContent = 'Build: ' + BUILD_ID + '  URL: ' + location.href;
+
+// ── file:// 保护 ──
+if (location.protocol === 'file:') {
+  document.getElementById('status').className = 'err';
+  document.getElementById('status').textContent =
+    'BLOCKED: 检测到 file:// 协议。本页面必须通过 http://localhost:8080/ 访问，已停止。';
+  throw new Error('file:// 协议不允许');
+}
+
+const GATEWAYS = ['https://arweave.net', 'https://ar-io.net', 'https://g8way.io'];
+const MAGIC = [67, 74, 65, 83]; // "CJAS"
+const VER = 2, NL = 12, HL = 21, TL = 16;
+const MAX_FEE_AR = 0.01;
+let STATE = {};
+
+function st(msg, cls = '') {
+  const d = document.getElementById('status');
+  d.textContent = msg; d.className = cls || '';
+}
+function L(msg) {
+  const p = document.getElementById('log');
+  p.textContent += '[' + new Date().toLocaleTimeString() + '] ' + msg + '\n';
+}
+function btn(label, show = true) {
+  const b = document.getElementById('btn');
+  b.textContent = label; b.style.display = show ? 'block' : 'none'; b.disabled = false;
+}
+function showInfo(rows) {
+  const t = document.getElementById('info');
+  t.style.display = 'table';
+  t.innerHTML = rows.map(r => '<tr><td>' + r[0] + '</td><td>' + r[1] + '</td></tr>').join('');
+}
+
+// ── SHA-256 ──
+async function H(b) {
+  const h = await crypto.subtle.digest('SHA-256', b);
+  return Array.from(new Uint8Array(h)).map(x => x.toString(16).padStart(2, '0')).join('');
+}
+
+// ── CJAS-v2 加密格式（与 js/crypto.js 已验证格式一致） ──
+function w32(b, o, v) { b[o] = v & 255; b[o + 1] = (v >> 8) & 255; b[o + 2] = (v >> 16) & 255; b[o + 3] = (v >>> 24) & 255; }
+function r32(b, o) { return (b[o] | (b[o + 1] << 8) | (b[o + 2] << 16) | (b[o + 3] << 24)) >>> 0; }
+function b64u(x) { let s = ''; const C = 8192; for (let i = 0; i < x.length; i += C) s += String.fromCharCode(...x.subarray(i, i + C)); return btoa(s).replace(/\+/g, '-').replace(/\//g, '_').replace(/=/g, ''); }
+function fb64u(s) { const p = s.replace(/-/g, '+').replace(/_/g, '/'); return Uint8Array.from(atob(p + '==='.slice((p.length + 3) % 4 || 4)), c => c.charCodeAt(0)); }
+
+async function encrypt(pdf) {
+  const k = new Uint8Array(32); crypto.getRandomValues(k);
+  const kk = b64u(k);
+  const ck = await crypto.subtle.importKey('raw', k, { name: 'AES-GCM' }, false, ['encrypt']);
+  const oh = await H(pdf);
+  const enc = new TextEncoder();
+  const fnb = enc.encode('test.pdf'), mb = enc.encode('application/pdf');
+  const hb = Uint8Array.from(oh.match(/.{2}/g).map(x => parseInt(x, 16)));
+  const pl = new Uint8Array(4 + 32 + 4 + fnb.length + 4 + mb.length + pdf.length); let o = 0;
+  w32(pl, o, pdf.length); o += 4; pl.set(hb, o); o += 32;
+  w32(pl, o, fnb.length); o += 4; pl.set(fnb, o); o += fnb.length;
+  w32(pl, o, mb.length); o += 4; pl.set(mb, o); o += mb.length;
+  pl.set(pdf, o);
+  const nonce = new Uint8Array(NL); crypto.getRandomValues(nonce);
+  const cd = new Uint8Array(await crypto.subtle.encrypt({ name: 'AES-GCM', iv: nonce, tagLength: 128 }, ck, pl));
+  const hdr = new Uint8Array(HL);
+  for (let i = 0; i < 4; i++) hdr[i] = MAGIC[i];
+  hdr[4] = VER; w32(hdr, 5, cd.length); hdr.set(nonce, 9);
+  const cf = new Uint8Array(HL + cd.length); cf.set(hdr, 0); cf.set(cd, HL);
+  return { cf, oh, ch: await H(cf), key: kk };
+}
+
+async function decrypt(cf, k) {
+  if (cf.length < HL + TL + 1) throw new Error('文件过短');
+  for (let i = 0; i < 4; i++) if (cf[i] !== MAGIC[i]) throw new Error('魔数错误');
+  if (cf[4] !== VER) throw new Error('版本错误');
+  const d = r32(cf, 5), a = cf.length - HL;
+  if (d !== a) throw new Error('长度不符:' + d + '/' + a);
+  const raw = fb64u(k);
+  const ck = await crypto.subtle.importKey('raw', raw, { name: 'AES-GCM' }, false, ['decrypt']);
+  let pl;
+  try { pl = await crypto.subtle.decrypt({ name: 'AES-GCM', iv: cf.slice(9, 21), tagLength: 128 }, ck, cf.slice(HL)); }
+  catch { throw new Error('解密失败：密钥错误或密文被篡改'); }
+  const p = new Uint8Array(pl);
+  let pos = 0;
+  const ol = r32(p, pos); pos += 4;
+  const oh = Array.from(p.slice(pos, pos + 32)).map(b => b.toString(16).padStart(2, '0')).join(''); pos += 32;
+  const fl = r32(p, pos); pos += 4; pos += fl;
+  const ml = r32(p, pos); pos += 4; pos += ml;
+  const pdf = p.slice(pos);
+  const rh = await H(pdf);
+  if (rh !== oh) throw new Error('SHA-256不一致，数据可能损坏');
+  return { rh, oh, pdf };
+}
+
+// ── Phase 1: 加载 test.pdf + 加密 + 加载SDK + 等待Wander ──
+async function phase1() {
+  st('正在读取 test.pdf ...');
+  const resp = await fetch('test.pdf');
+  if (!resp.ok) throw new Error('无法读取 test.pdf (HTTP ' + resp.status + ')，请确认文件位于服务器根目录');
+  const pdf = new Uint8Array(await resp.arrayBuffer());
+  STATE.origSize = pdf.length;
+
+  st('正在加密 test.pdf ...');
+  const { cf, oh, ch, key } = await encrypt(pdf);
+  STATE = Object.assign(STATE, { pdf, cf, oh, ch, key, phase: 'init' });
+  L('原始文件: ' + pdf.length + 'B  SHA-256: ' + oh);
+  L('密文文件: ' + cf.length + 'B  SHA-256: ' + ch);
+  L('密钥预览: ' + key.slice(0, 6) + '...' + key.slice(-4) + '（仅本机内存持有，不上传不保存）');
+
+  try {
+    const r = await fetch('https://arweave.net/price/' + cf.length);
+    if (r.ok) { const w = await r.text(); STATE.feeW = w; L('预估费用: ' + (Number(w) / 1e12).toFixed(9) + ' AR'); }
+  } catch { L('费用查询失败，稍后在签名前重试'); }
+
+  await new Promise((ok, fail) => {
+    if (typeof Arweave !== 'undefined') { ok(); return; }
+    const s = document.createElement('script');
+    s.src = 'https://unpkg.com/arweave@1.14.4/bundles/web.bundle.min.js';
+    s.onload = ok; s.onerror = () => fail(new Error('Arweave SDK 加载失败'));
+    document.head.appendChild(s);
+  });
+  STATE.arweave = Arweave.init({ host: 'arweave.net', port: 443, protocol: 'https', timeout: 30000 });
+  L('Arweave SDK 加载完成');
+
+  if (typeof window.arweaveWallet === 'undefined') {
+    await new Promise(resolve => {
+      window.addEventListener('arweaveWalletLoaded', resolve, { once: true });
+      let n = 0; const t = setInterval(() => {
+        if (typeof window.arweaveWallet !== 'undefined') { clearInterval(t); resolve(); }
+        else if (++n >= 50) { clearInterval(t); resolve(); }
+      }, 200);
+    });
+  }
+  if (typeof window.arweaveWallet === 'undefined') {
+    st('❌ 未检测到 Wander，请确认已安装/解锁，且通过 http://localhost:8080 访问', 'err'); return;
+  }
+  L('Wander 已就绪: ' + window.arweaveWallet.walletName + ' ' + window.arweaveWallet.walletVersion);
+
+  // 检查已有权限，已授权则跳过连接
+  let perms = [];
+  try { perms = await window.arweaveWallet.getPermissions(); } catch (e) { L('getPermissions失败: ' + e.message); }
+  L('当前权限: ' + JSON.stringify(perms));
+
+  if (perms.includes('ACCESS_ADDRESS') && perms.includes('SIGN_TRANSACTION')) {
+    L('已具备 ACCESS_ADDRESS + SIGN_TRANSACTION，跳过连接钱包步骤');
+    STATE.addr = await window.arweaveWallet.getActiveAddress();
+    await prepareSignStep();
+  } else {
+    st('✅ 就绪。尚未授权，点击按钮请求钱包权限（首次授权，之后自动跳过）。');
+    STATE.phase = 'connect';
+    btn('连接 Wander 钱包（请求权限）');
+  }
+}
+
+// ── 计算余额/费用并展示，进入签名前状态 ──
+async function prepareSignStep() {
+  let bal = '未知';
+  try { const bw = await STATE.arweave.wallets.getBalance(STATE.addr); bal = STATE.arweave.ar.winstonToAr(bw); STATE.balW = bw; } catch (e) { L('查询余额失败: ' + e.message); }
+  try {
+    const r = await fetch('https://arweave.net/price/' + STATE.cf.length);
+    if (r.ok) STATE.feeW = await r.text();
+  } catch {}
+  const feeAR = (Number(STATE.feeW || '0') / 1e12);
+  const remain = (bal !== '未知') ? (parseFloat(bal) - feeAR).toFixed(9) : '未知';
+
+  showInfo([
+    ['钱包地址', STATE.addr],
+    ['当前余额', bal + ' AR'],
+    ['数据大小', STATE.cf.length + ' B'],
+    ['预计费用', feeAR.toFixed(9) + ' AR'],
+    ['预计剩余余额', remain + ' AR'],
+  ]);
+  L('地址: ' + STATE.addr + '  余额: ' + bal + ' AR  预计费用: ' + feeAR.toFixed(9) + ' AR');
+
+  if (feeAR > MAX_FEE_AR) {
+    st('❌ 预计费用 ' + feeAR.toFixed(9) + ' AR 超过上限 ' + MAX_FEE_AR + ' AR，已停止。', 'err');
+    return;
+  }
+  st('✅ 请核对以上信息，确认无误后点击唯一按钮进行签名与上传（仅此一次）。');
+  STATE.phase = 'sign';
+  btn('🔐 授权签名并上传至 Arweave');
+}
+
+// ── 按钮点击处理 ──
+async function go() {
+  if (STATE.phase === 'connect') {
+    document.getElementById('btn').disabled = true;
+    st('正在请求 Wander 权限（请在弹窗中点击 Connect）...');
+    try {
+      await Promise.race([
+        window.arweaveWallet.connect(['ACCESS_ADDRESS', 'SIGN_TRANSACTION'], { name: 'CJAS Mainnet Test' }),
+        new Promise((_, r) => setTimeout(() => r(new Error('授权等待超时60s')), 60000))
+      ]);
+      STATE.addr = await window.arweaveWallet.getActiveAddress();
+      L('权限已授予，地址: ' + STATE.addr);
+      await prepareSignStep();
+    } catch (e) {
+      st('连接失败: ' + e.message, 'err'); L('错误: ' + e.message);
+      btn('重试连接 Wander');
+    }
+    return;
+  }
+
+  if (STATE.phase === 'sign') {
+    if (STATE.uploaded) { L('已上传，不重复执行'); return; }
+    document.getElementById('btn').disabled = true;
+    st('请在 Wander 弹窗中确认签名...');
+    try {
+      const tx = await STATE.arweave.createTransaction({ data: STATE.cf });
+      tx.addTag('Content-Type', 'application/octet-stream');
+      tx.addTag('App-Name', 'CJAS-Prototype');
+      tx.addTag('Encryption', 'AES-256-GCM');
+      tx.addTag('Format', 'CJAS-v2');
+
+      await Promise.race([
+        STATE.arweave.transactions.sign(tx),
+        new Promise((_, r) => setTimeout(() => r(new Error('签名超时90s')), 90000))
+      ]);
+      STATE.actualFeeAR = STATE.arweave.ar.winstonToAr(tx.reward);
+      L('签名完成: ' + tx.id + '  实际费用: ' + STATE.actualFeeAR + ' AR');
+
+      const resp = await STATE.arweave.transactions.post(tx);
+      if (resp.status !== 200 && resp.status !== 202) throw new Error('广播失败 HTTP ' + resp.status);
+      STATE.txId = tx.id;
+      STATE.uploaded = true;
+      L('✅ 广播成功: ' + tx.id);
+      st('✅ 广播成功，正在等待确认并从网关验证下载...');
+      btn('', false);
+      await phase3(tx.id);
+    } catch (e) {
+      st('失败: ' + e.message, 'err'); L('错误: ' + e.message);
+      if (!STATE.uploaded) btn('重试签名');
+    }
+  }
+}
+
+// ── Phase 3: 轮询确认 + 网关下载校验 + 解密恢复 + 导出 ──
+async function phase3(txId) {
+  L('轮询交易确认（最长20分钟）...');
+  const t0 = Date.now();
+  let confirmed = false;
+  while (Date.now() - t0 < 20 * 60 * 1000) {
+    await new Promise(r => setTimeout(r, 15000));
+    try {
+      const s = await STATE.arweave.transactions.getStatus(txId);
+      if (s.status === 200 && s.confirmed) {
+        L('✅ 已确认。区块=' + s.confirmed.block_height + ' 确认数=' + s.confirmed.number_of_confirmations);
+        confirmed = true; break;
+      }
+      L('等待中... ' + Math.round((Date.now() - t0) / 1000) + 's  状态:' + s.status);
+    } catch (e) { L('查询错误: ' + e.message); }
+  }
+  if (!confirmed) L('⚠ 未在20分钟内观察到确认，继续尝试网关下载（PENDING也可能已可下载）');
+
+  L('尝试从网关下载密文并核验 SHA-256 ...');
+  let gwOk = null;
+  const gwResults = [];
+  for (const gw of GATEWAYS) {
+    try {
+      const r = await fetch(gw + '/' + txId, { signal: AbortSignal.timeout(30000) });
+      const dl = new Uint8Array(await r.arrayBuffer());
+      const dlh = await H(dl);
+      const match = dlh === STATE.ch;
+      gwResults.push({ gw, size: dl.length, hash: dlh, match });
+      L((match ? '✅' : '❌') + ' ' + gw + ' ' + dl.length + 'B ' + (match ? 'SHA-256一致' : 'SHA-256不一致'));
+      if (match && !gwOk) gwOk = { gw, data: dl };
+    } catch (e) { L('❌ ' + gw + ': ' + e.message); gwResults.push({ gw, error: e.message, match: false }); }
+  }
+
+  let recovery = null;
+  if (gwOk) {
+    L('使用 ' + gwOk.gw + ' 的下载数据进行解密恢复...');
+    try {
+      const dec = await decrypt(gwOk.data, STATE.key);
+      const match = dec.rh === STATE.oh;
+      recovery = { gw: gwOk.gw, recoveredHash: dec.rh, match, pdfBytes: dec.pdf };
+      L(match ? '✅ 恢复文件 SHA-256 与原始文件完全一致' : '❌ SHA-256 不一致');
+      if (match) {
+        const blob = new Blob([dec.pdf], { type: 'application/pdf' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url; a.download = 'test_recovered.pdf';
+        document.body.appendChild(a); a.click(); a.remove();
+        L('已触发下载: test_recovered.pdf（请CEO在下载目录中打开确认可读）');
+      }
+    } catch (e) { L('❌ 恢复失败: ' + e.message); recovery = { match: false, error: e.message }; }
+  } else {
+    L('⚠ 首轮暂无网关返回匹配数据，可能仍在传播中，可稍后手动刷新页面重试网关下载步骤');
+  }
+
+  const passGW = gwResults.filter(r => r.match).length;
+  const verdict = (STATE.txId && passGW >= 1 && recovery && recovery.match) ? 'PASS' :
+    (STATE.txId ? 'PENDING/FAIL（网关暂未返回一致数据，可稍后重试）' : 'FAIL');
+
+  const rpt = {
+    运行环境: 'CEO Mac本机 (' + navigator.platform + ')',
+    正式文件路径: '~/Documents/CJAS-mainnet/index.html',
+    唯一URL: location.href,
+    BuildID: BUILD_ID,
+    原始文件大小: STATE.origSize + 'B',
+    原始文件SHA256: STATE.oh,
+    加密文件大小: STATE.cf.length + 'B',
+    加密文件SHA256: STATE.ch,
+    钱包地址: STATE.addr,
+    交易数据大小: STATE.cf.length + 'B',
+    预计费用AR: STATE.feeW ? (Number(STATE.feeW) / 1e12).toFixed(9) : '未知',
+    实际费用AR: STATE.actualFeeAR || '未知',
+    ArweaveTransactionID: txId,
+    广播结果: STATE.uploaded ? '成功' : '失败',
+    交易状态: confirmed ? '已确认' : '待确认',
+    网关结果: gwResults,
+    下载密文SHA256匹配: gwOk ? gwOk.gw : '无',
+    解密结果: recovery ? (recovery.match ? '成功且SHA一致' : '失败或不一致') : '未执行（无可用网关数据）',
+    恢复文件SHA256: recovery && recovery.recoveredHash || null,
+    原始与恢复是否一致: recovery ? recovery.match : false,
+    最终状态: verdict
+  };
+
+  document.getElementById('result').innerHTML =
+    '<div style="margin-top:20px;padding:14px;font-size:16px;font-weight:700;text-align:center;background:rgba(' + (verdict === 'PASS' ? '46,204,113' : '196,154,60') + ',.15);border:1px solid rgba(' + (verdict === 'PASS' ? '46,204,113' : '196,154,60') + ',.3);color:' + (verdict === 'PASS' ? '#2ecc71' : '#c49a3c') + '">' +
+    '最终状态：' + verdict + '<br><span style="font-size:12px;font-weight:normal;opacity:.8">Transaction ID: ' + txId + '</span></div>' +
+    '<pre>' + JSON.stringify(rpt, null, 2) + '</pre>';
+
+  st(verdict === 'PASS' ? '✅ 主网闭环全部通过' : '⚠ ' + verdict, verdict === 'PASS' ? 'ok' : 'err');
+  L('=== 最终状态: ' + verdict + ' ===');
+}
+
+phase1().catch(e => {
+  st('启动失败: ' + e.message, 'err');
+  document.getElementById('log').textContent += (e.stack || e.message);
+});
+</script>
+</body>
+</html>

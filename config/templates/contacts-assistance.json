@@ -1,0 +1,9 @@
+{
+  "module_id": "contacts-assistance",
+  "module_version": 1,
+  "title_key": "module.contacts.title",
+  "steps": [
+    { "id": "has-assistant", "type": "choice", "label_key": "contact.has_assistant", "required": true, "options": ["yes", "no"], "skip_allowed": false },
+    { "id": "assistant-role", "type": "text", "label_key": "contact.role", "required": true, "skip_allowed": false, "condition": { "field": "has-assistant", "equals": "yes" } }
+  ]
+}

@@ -1,0 +1,35 @@
+.graph-flow { display:flex; align-items:center; gap:8px; overflow-x:auto; padding:8px 0; }
+.graph-node { display:grid; gap:4px; min-width:112px; text-align:center; }
+.graph-node span { color:var(--muted); font-size:.75rem; }
+.graph-arrow { color:var(--accent); font-size:1.4rem; font-weight:700; }
+.version-card dl, .attachment-map-row dl { display:grid; grid-template-columns:repeat(4,1fr); gap:12px; margin:0; }
+.version-card dl div, .attachment-map-row dl div { padding:12px; background:#f5f8f6; border-radius:9px; }
+.version-card dt, .attachment-map-row dt { color:var(--muted); font-size:.8rem; }
+.version-card dd, .attachment-map-row dd { margin:4px 0 0; font-weight:700; }
+.attachment-map-row { display:grid; gap:14px; padding:20px 0; border-bottom:1px solid var(--line); }
+.attachment-map-row > div:first-child { display:grid; }
+.attachment-map-row small { color:var(--muted); }
+.attachment-map-row dl { grid-template-columns:1fr 1fr 2fr; }
+.attachment-map-row details label { display:inline-flex; gap:5px; margin:8px 14px 0 0; }
+.attachment-map-row input { width:auto; }
+.choice-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:10px; border:1px solid var(--line); border-radius:9px; margin:12px 0; }
+.choice-grid label,.choice { display:flex; align-items:center; gap:8px; }
+.choice-grid input,.choice input { width:auto; }
+.field-guidance { margin-top:14px; padding:12px; background:#f5f8f6; border-radius:9px; }
+.issue { display:grid; grid-template-columns:1fr auto; gap:16px; align-items:center; border-bottom:1px solid var(--line); padding:14px 0; }
+.issue p { margin:5px 0; }
+.scope-card { border-left:4px solid var(--accent); }
+.drill-grid { display:grid; gap:12px; }
+.conditional-hidden { display:none !important; }
+.review-focus { outline:3px solid #d6a800; outline-offset:4px; background:#fff8d8; }
+.entry-attachments { margin-top:18px; padding:14px; background:#f4f8f6; border-radius:10px; display:grid; gap:10px; }
+.platform-preview,.attachment-filters { display:grid; gap:12px; }
+.platform-preview article { padding:14px; border:1px solid var(--line); border-radius:10px; margin:10px 0; }
+.attachment-filters { grid-template-columns:repeat(auto-fit,minmax(180px,1fr)); }
+@media (max-width:760px) {
+  .version-card dl, .attachment-map-row dl { grid-template-columns:1fr; }
+  .graph-flow { align-items:stretch; }
+  .graph-arrow { align-self:center; }
+  .graph-node { min-width:96px; }
+  .choice-grid,.issue { grid-template-columns:1fr; }
+}

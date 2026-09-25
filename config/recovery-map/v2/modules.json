@@ -1,0 +1,20 @@
+{
+  "config_version": 2,
+  "standard_module_ids": [
+    "assets-accounts",
+    "recovery-conditions",
+    "locations-finding",
+    "contacts-assistance",
+    "recovery-order-exceptions",
+    "evidence-messages"
+  ],
+  "modules": [
+    {"id":"assets-accounts","order":10,"collection":"assets","required":true},
+    {"id":"recovery-conditions","order":20,"collection":"recovery_conditions","required":true},
+    {"id":"locations-finding","order":30,"collection":"locations","required":true},
+    {"id":"contacts-assistance","order":50,"collection":"contacts","required":true},
+    {"id":"recovery-order-exceptions","order":40,"collection":"recovery_steps","required":true},
+    {"id":"evidence-messages","order":60,"collection":"attachments","required":true}
+  ],
+  "custom_modules": {"enabled_by_default":false,"allow_add":true,"allow_rename":true,"allow_reorder":true,"allow_delete":true}
+}

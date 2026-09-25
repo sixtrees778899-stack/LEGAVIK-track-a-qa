@@ -1,0 +1,29 @@
+{
+  "name": "cjas-vault-core",
+  "version": "0.2.0-week2",
+  "private": true,
+  "type": "module",
+  "description": "CJAS Vault Recovery Map core and local test harness",
+  "scripts": {
+    "release:build": "node tools/build-customer-release.mjs",
+    "knowledge:build": "node tools/build-approved-knowledge.mjs",
+    "start": "node tools/build-approved-knowledge.mjs && node tools/static-server.mjs",
+    "test:launch": "node tools/launch-test-environment.mjs",
+    "test": "node --test",
+    "test:compatibility": "node --test tests/compatibility/kdf-compatibility.test.js",
+    "study:kdf": "node tools/run-kdf-study.mjs",
+    "check:security": "node tools/security-scan.mjs",
+    "test:browser": "playwright test",
+    "test:browser:headed": "playwright test --headed"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.62.1"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.112.3",
+    "esbuild": "^0.25.9"
+  }
+}

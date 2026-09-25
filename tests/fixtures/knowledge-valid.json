@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "vault_title": "家庭数字资产恢复地图",
+  "reviewed_at": "2026-07-31T10:00:00.000Z",
+  "next_review_at": "2027-01-31T10:00:00.000Z",
+  "global_instructions": "先确认设备和位置，再按顺序行动。",
+  "assets": [{
+    "id": "asset-wallet-1", "label": "主要冷钱包", "category": "hardware-wallet", "existence_note": "存在一项需要恢复的链上资产", "recovery_goal": "确认设备与恢复材料可定位",
+    "location_refs": ["location-safe-1"], "contact_refs": ["contact-helper-1"], "device_refs": ["device-ledger-1"], "order_refs": ["order-step-1"], "hint_refs": ["hint-device-1"], "warning_refs": ["warning-phishing-1"], "attachment_refs": ["attachment-guide-1"], "custom_field_refs": ["field-network-1"]
+  }],
+  "locations": [{"id":"location-safe-1","label":"家庭保险箱","location_type":"physical","description":"位于书房固定保险箱内","access_prerequisites":["确认本人授权"],"verification_note":"核对设备标签","custom_field_refs":[]}],
+  "contacts": [{"id":"contact-helper-1","label":"可信技术协助人","role":"technical-helper","contact_method":"线下通讯录","when_to_contact":"设备无法识别时","reason_to_contact":"协助识别设备，不提供秘密","knows":"设备类型","does_not_know":"恢复密码","alternate_contact_ref":"","critical":true,"custom_field_refs":[]}],
+  "devices": [{"id":"device-ledger-1","label":"主要硬件设备","device_type":"hardware-wallet","usual_location_ref":"location-safe-1","identifying_features":"银色设备","prerequisites":["确认设备未被拆封"],"risk_note":"不要向任何网页输入助记词","asset_refs":["asset-wallet-1"],"order_refs":["order-step-1"],"custom_field_refs":[]}],
+  "orders": [{"id":"order-step-1","label":"确认设备","sequence":1,"action":"在指定位置确认设备","prerequisites":["确认授权和安全环境"],"prerequisite_order_refs":[],"expected_result":"找到标签一致的设备","failure_action":"停止并联系协助人","risk_level":"high","asset_refs":["asset-wallet-1"],"location_refs":["location-safe-1"],"contact_refs":["contact-helper-1"],"device_refs":["device-ledger-1"],"warning_refs":["warning-phishing-1"],"hint_refs":["hint-device-1"],"attachment_refs":["attachment-guide-1"],"custom_field_refs":[]}],
+  "hints": [{"id":"hint-device-1","label":"设备识别提示","content":"核对标签，不记录秘密","applies_to_refs":["device-ledger-1","order-step-1"],"display_timing":"before-action","misuse_risk":"不要把提示当作密码","custom_field_refs":[]}],
+  "warnings": [{"id":"warning-phishing-1","label":"防钓鱼警告","risk_level":"critical","trigger":"任何网页要求输入助记词","instruction":"立即停止，不输入任何内容","stop_condition":"来源无法核验","contact_refs":["contact-helper-1"],"order_refs":["order-step-1"],"custom_field_refs":[]}],
+  "attachments": [{"id":"attachment-guide-1","display_name":"设备识别说明.txt","media_type":"text/plain","size":12,"sha256":"3c92d48c717740ef482f8200b43da26e2eafd679a90538ebadcccbc1d5a8c309","owner_refs":["asset-wallet-1"],"purpose":"帮助识别设备","sensitive_acknowledged":false,"custom_field_refs":[]}],
+  "custom_categories": [{"id":"category-family-1","label":"家庭重要权益","description":"用户自定义分类","enabled":true}],
+  "custom_fields": [{"id":"field-network-1","label":"网络提示","value":"核对目标网络","description":"非秘密提示","owner_refs":["asset-wallet-1"]}]
+}

@@ -1,0 +1,73 @@
+{
+  "config_version": 1,
+  "supported_platforms": [
+    {"id":"binance","label":"Binance","variant":"Binance Global","exact_regions":[],"claim_file":"../knowledge/recovery/v2/platforms/Binance/14-claims/claims.jsonl"},
+    {"id":"okx","label":"OKX","variant":"OKX US","exact_regions":["United States"],"claim_file":"../knowledge/recovery/v2/platforms/OKX/14-claims/claims.jsonl"},
+    {"id":"coinbase","label":"Coinbase","variant":"Coinbase Retail","exact_regions":["EEA"],"claim_file":"../knowledge/recovery/v2/platforms/Coinbase/14-claims/claims.jsonl"},
+    {"id":"custom","label":"其他/自定义","variant":"Custom","exact_regions":[],"claim_file":null}
+  ],
+  "regions": ["Australia","New Zealand","United States","EEA","United Kingdom","Hong Kong","Singapore","Japan","UAE","Canada","Other"],
+  "account_classes": ["Personal","Institutional"],
+  "client_modes": ["App","Web","Both","Unsure"],
+  "readiness_states": [
+    {"id":"PREPARED","label":"已准备"},
+    {"id":"NOT_PREPARED","label":"尚未准备"},
+    {"id":"UNKNOWN","label":"暂不知道"},
+    {"id":"LATER","label":"稍后补充"},
+    {"id":"NOT_APPLICABLE","label":"不适用"}
+  ],
+  "platform_condition_templates": {
+    "binance":["email","phone","password","authenticator","passkey","security_key","identity","new_device","withdrawal_allowlist","fund_password","other"],
+    "okx":["email","phone","password","authenticator","passkey","security_key","identity","new_device","withdrawal_allowlist","fund_password","other"],
+    "coinbase":["email","phone","password","authenticator","passkey","security_key","identity","new_device","withdrawal_allowlist","fund_password","other"],
+    "custom":["other"]
+  },
+  "attachment_purposes": {
+    "assets-accounts":["asset-list","account-identification","custom-document","image","audio","video"],
+    "recovery-conditions":["condition-material","custom-document","image","audio","video"],
+    "locations-finding":["location-guide","custom-document","image","audio","video"],
+    "recovery-order-exceptions":["recovery-steps","risk-notes","custom-document","image","audio","video"],
+    "contacts-assistance":["contact-list","custom-document","image","audio"],
+    "evidence-messages":["personal-message","image","audio","video"]
+  },
+  "purpose_labels": {
+    "asset-list":"资产清单","account-identification":"账户识别说明","condition-material":"恢复条件资料","location-guide":"位置或保管说明","recovery-steps":"恢复步骤说明","risk-notes":"风险与注意事项","contact-list":"协助人说明","personal-message":"个人嘱托","custom-document":"自定义文档","image":"图片","audio":"语音说明","video":"短视频说明"
+  },
+  "paths": [
+    {"id":"A_HOLDER_RECOVERY","label":"本人恢复","description":"由账户持有人本人使用官方流程恢复访问。"},
+    {"id":"B_OWNER_DIRECTED_EXIT","label":"持有人主动退出","description":"持有人核对接收地址后，先小额验证，再分批转移。"},
+    {"id":"C_OFFICIAL_LEGAL_ESCALATION","label":"官方或法律升级","description":"死亡、失能、身份冲突或第三人参与时，只准备官方或专业协助材料。"}
+  ],
+  "factors": [
+    {"id":"email","label":"注册邮箱","claim_refs":{"binance":["BINP-004"],"okx":["OKXP-006"],"coinbase":["CBP-020"]}},
+    {"id":"phone","label":"注册手机号","claim_refs":{"binance":["BINP-005"],"okx":["OKXP-007"],"coinbase":["CBP-018"]}},
+    {"id":"password","label":"登录密码存在性","claim_refs":{"binance":["BINP-002"],"okx":["OKXP-002"],"coinbase":["CBP-002"]}},
+    {"id":"authenticator","label":"Authenticator","claim_refs":{"binance":["BINP-006"],"okx":["OKXP-008"],"coinbase":["CBP-017"]}},
+    {"id":"passkey","label":"Passkey","claim_refs":{"binance":["BINP-008"],"okx":["OKXP-014"],"coinbase":["CBP-009"]}},
+    {"id":"security_key","label":"Security Key","claim_refs":{"binance":["BINP-007"],"okx":["OKXP-014"],"coinbase":["CBP-007"]}},
+    {"id":"identity","label":"身份验证材料存在性","claim_refs":{"binance":[],"okx":["OKXP-009"],"coinbase":["CBP-022"]}},
+    {"id":"new_device","label":"新设备确认","claim_refs":{"binance":["BINP-012"],"okx":["OKXP-018"],"coinbase":["CBP-030"]}},
+    {"id":"withdrawal_allowlist","label":"提币地址白名单","claim_refs":{"binance":["BINP-019"],"okx":["OKXP-031"],"coinbase":["CBP-032"]}},
+    {"id":"fund_password","label":"资金密码或交易密码","claim_refs":{"binance":[],"okx":[],"coinbase":[]}},
+    {"id":"other","label":"其他自定义条件","claim_refs":{"binance":[],"okx":[],"coinbase":[]}}
+  ],
+  "guidance": {
+    "condition": {
+      "why":"恢复或转移前，需要知道该安全因素是否仍可用。",
+      "what":"只记录启用状态、可用状态、查找位置和失效后的官方备用路径。",
+      "avoid":"不得填写密码、OTP、Authenticator Seed、完整恢复码、API Secret或身份文件原件。",
+      "omissions":"不要只写因素名称；还要说明它属于哪个账户、是否可用以及失效怎么办。",
+      "fallback":"无法使用时，停止尝试猜测或绕过验证，改用当前地区的官方恢复入口。",
+      "escalation":"身份冲突、第三人参与、官方限制或无法确认地区流程时，需要官方或人工升级。"
+    },
+    "conservative":"当前知识库尚未确认该地区和账户类型的完整官方流程。你仍可安全记录账户线索、因素状态和材料位置；执行恢复或转移前，请以当前官方页面或人工支持为准。"
+  },
+  "drill_states": [
+    {"id":"materials_checked","label":"资料检查完成"},
+    {"id":"holder_login_verified","label":"本人登录已验证"},
+    {"id":"security_factors_verified","label":"安全因素已验证"},
+    {"id":"destination_confirmed","label":"接收地址已确认"},
+    {"id":"small_transfer_status","label":"小额转账","options":["未验证","已验证","需要重新验证"]},
+    {"id":"official_escalation_ready","label":"官方升级准备完成"}
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "module_id":"business-systems","module_version":1,"title_key":"module.business.title",
+  "steps":[
+    {"id":"business-exists","type":"choice","label_key":"business.exists","required":true,"options":["yes","no"],"skip_allowed":false},
+    {"id":"business-label","type":"text","label_key":"business.label","required":true,"skip_allowed":false,"condition":{"field":"business-exists","equals":"yes"}},
+    {"id":"business-location","type":"text","label_key":"business.location","required":true,"skip_allowed":false,"condition":{"field":"business-exists","equals":"yes"}},
+    {"id":"business-custom","type":"custom-fields","label_key":"common.custom_fields","required":false,"skip_allowed":true,"condition":{"field":"business-exists","equals":"yes"}}
+  ]
+}

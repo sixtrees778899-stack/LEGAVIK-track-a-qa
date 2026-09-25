@@ -1,0 +1,7 @@
+{
+  "config_version": 2,
+  "allowed_field_types": ["text","long_text","choice","multi_choice","boolean","date","relation","ordered_relation","custom_fields","attachment_refs"],
+  "allowed_condition_operators": ["equals","not_equals","contains","exists"],
+  "custom_field_limits": {"max_fields_per_module":50,"max_label_code_points":120,"max_value_code_points":10000},
+  "template_code_execution": false
+}

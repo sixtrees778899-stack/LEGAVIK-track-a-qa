@@ -1,0 +1,20 @@
+{
+  "vector_id": "technical-format-1-knowledge-schema-2",
+  "technical_format": {
+    "recovery_kit_version": 1,
+    "archive_version": 1,
+    "snapshot_version": 1,
+    "knowledge_map_schema_version": 2
+  },
+  "expected_snapshot_payload_sha256": "a6dd52e955f541d0750c70f1bd2b3f92dbaf60ffb3bc88a946f5e1a48c06ac1f",
+  "expected_knowledge_sha256": "00e9ea423992d1bcd0d1bd11056a3300df8685839623fea5f817160c08a60334",
+  "expected_attachment_count": 1,
+  "expected_attachment_sha256": [
+    {
+      "id": "golden-attachment-v2",
+      "sha256": "fc32df82837a936141116a46c190dee5f6dd914c5a29a5ff2b64e7d19a7ae844"
+    }
+  ],
+  "archive_sha256": "34556eb5162ee1e938cd84a2c9b6d47dc8c69d92a5856892924b48217c515ef4",
+  "archive_size": 3683
+}

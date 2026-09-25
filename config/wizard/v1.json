@@ -1,0 +1,11 @@
+{
+  "config_version": 1,
+  "flow_id": "vault-recovery-map-v1",
+  "modules": [
+    { "template": "wallet-assets", "enabled": true, "order": 10 },
+    { "template": "exchange-custody", "enabled": true, "order": 20 },
+    { "template": "devices-locations", "enabled": true, "order": 30 },
+    { "template": "contacts-assistance", "enabled": true, "order": 40 },
+    { "template": "recovery-orders-warnings", "enabled": true, "order": 50 }
+  ]
+}

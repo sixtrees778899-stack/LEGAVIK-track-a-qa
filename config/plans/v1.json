@@ -1,0 +1,10 @@
+{
+  "plan_catalog_version": 1,
+  "default_plan_id": "crypto-assets",
+  "plans": [
+    {"id":"crypto-assets","title":"加密资产恢复计划","description":"整理钱包、交易平台、设备、位置、联系人和恢复顺序。","recommended":true,"modules":["wallet-assets","exchange-custody","devices-locations","contacts-assistance","recovery-orders-warnings"]},
+    {"id":"digital-accounts","title":"数字账户与网络资产","description":"整理邮箱、社交媒体、网站、域名、内容账号和数字版权线索。","recommended":false,"modules":["digital-accounts","devices-locations","contacts-assistance","recovery-orders-warnings"]},
+    {"id":"business-critical","title":"企业关键资料","description":"整理关键账号、业务系统、授权关系和应急操作路径。","recommended":false,"modules":["business-systems","devices-locations","contacts-assistance","recovery-orders-warnings"]},
+    {"id":"custom","title":"自定义恢复计划","description":"从可用模块中自行组合一条恢复路径。","recommended":false,"modules":["devices-locations","contacts-assistance","recovery-orders-warnings"]}
+  ]
+}

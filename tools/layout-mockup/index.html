@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>SKREK Layout Mockup Tool</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div><strong>SKREK Layout Mockup</strong><span>独立布局模拟工具</span></div>
+    <div class="device-switch" role="group" aria-label="设备预览">
+      <button class="active" data-device="desktop">Desktop</button>
+      <button data-device="ipad">iPad</button>
+      <button data-device="mobile">Mobile</button>
+    </div>
+  </header>
+
+  <main class="app-shell">
+    <aside class="controls" aria-label="布局控制面板">
+      <section>
+        <h2>图片</h2>
+        <label class="file-button">上传/替换背景截图<input id="background-file" type="file" accept="image/*"></label>
+        <label class="file-button">上传/替换前景图片<input id="foreground-file" type="file" accept="image/*"></label>
+      </section>
+
+      <section>
+        <h2>布局参数</h2>
+        <label>Width <span><input id="width-number" type="number" min="20" max="2000" step="1"> px</span></label>
+        <input id="width-range" type="range" min="20" max="1440" step="1">
+        <label>X position <span><input id="x-position" type="number" step="1"> px</span></label>
+        <label>Y position <span><input id="y-position" type="number" step="1"> px</span></label>
+        <label>Border radius <span><input id="radius-number" type="number" min="0" max="24" step="1"> px</span></label>
+        <input id="radius-range" type="range" min="0" max="24" step="1">
+        <label class="check"><input id="lock-ratio" type="checkbox" checked> 锁定原始比例</label>
+        <div class="alignment" role="group" aria-label="水平对齐">
+          <button data-align="left">左对齐</button>
+          <button data-align="center">居中</button>
+          <button data-align="right">右对齐</button>
+        </div>
+      </section>
+
+      <section>
+        <h2>辅助线</h2>
+        <label class="check"><input id="guide-left" type="checkbox" checked> 内容左边界</label>
+        <label class="check"><input id="guide-center" type="checkbox" checked> 页面中心线</label>
+        <label class="check"><input id="guide-custom" type="checkbox"> 自定义参考线</label>
+        <label>自定义 X <span><input id="custom-guide-x" type="number" min="0" step="1" value="320"> px</span></label>
+      </section>
+
+      <section>
+        <h2>实时参数</h2>
+        <pre id="parameter-output"></pre>
+        <button id="copy-parameters" class="primary">复制布局参数</button>
+        <p id="copy-status" role="status" aria-live="polite"></p>
+      </section>
+    </aside>
+
+    <section class="workspace" aria-label="布局预览区">
+      <div class="workspace-meta"><span id="device-label">Desktop · 1440 × 900</span><span>拖动图片移动 · 拖动四角缩放</span></div>
+      <div id="viewport" class="viewport">
+        <div id="stage" class="stage">
+          <div class="empty-state" id="background-empty">上传网页截图作为背景</div>
+          <img id="background-image" class="background-image" alt="模拟背景截图">
+          <div class="guide guide-left" id="left-guide"><span>内容左边界</span></div>
+          <div class="guide guide-center" id="center-guide"><span>中心线</span></div>
+          <div class="guide guide-custom hidden" id="custom-guide"><span>自定义</span></div>
+          <div id="foreground" class="foreground hidden" tabindex="0" aria-label="可拖动前景图片">
+            <img id="foreground-image" alt="前景图片">
+            <i class="resize-handle nw" data-corner="nw"></i>
+            <i class="resize-handle ne" data-corner="ne"></i>
+            <i class="resize-handle sw" data-corner="sw"></i>
+            <i class="resize-handle se" data-corner="se"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script type="module" src="./app.js"></script>
+</body>
+</html>

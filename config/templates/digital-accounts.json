@@ -1,0 +1,9 @@
+{
+  "module_id":"digital-accounts","module_version":1,"title_key":"module.digital.title",
+  "steps":[
+    {"id":"digital-exists","type":"choice","label_key":"digital.exists","required":true,"options":["yes","no"],"skip_allowed":false},
+    {"id":"digital-label","type":"text","label_key":"digital.label","required":true,"skip_allowed":false,"condition":{"field":"digital-exists","equals":"yes"}},
+    {"id":"digital-location","type":"text","label_key":"digital.location","required":true,"skip_allowed":false,"condition":{"field":"digital-exists","equals":"yes"}},
+    {"id":"digital-custom","type":"custom-fields","label_key":"common.custom_fields","required":false,"skip_allowed":true,"condition":{"field":"digital-exists","equals":"yes"}}
+  ]
+}

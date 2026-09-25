@@ -1,0 +1,8 @@
+{
+  "schema_version": 99,
+  "vault_title": "",
+  "reviewed_at": "",
+  "assets": [{"id":"bad id","label":"不完整资产","category":"other","recovery_goal":"","location_refs":["missing-location"],"unknown_secret":"should-reject"}],
+  "locations": [], "contacts": [], "devices": [], "orders": [], "hints": [], "warnings": [], "attachments": [], "custom_categories": [], "custom_fields": [],
+  "unknown_root": true
+}

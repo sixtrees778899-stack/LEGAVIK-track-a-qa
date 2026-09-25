@@ -1,0 +1,12 @@
+.global-header-host{display:block;position:sticky;top:0;z-index:30;height:94px;background:#fbf8f2;border-bottom:1px solid rgba(20,32,29,.08);backdrop-filter:blur(18px)}
+.global-header-host .nav-shell{height:94px;display:flex;align-items:center;gap:28px;padding:0 clamp(28px,3.2vw,48px);background:transparent;border:0;position:static}
+.global-header-host .wordmark{display:flex;align-items:center;width:310px;max-width:25vw;border:0;background:none;text-decoration:none}
+.global-header-host .wordmark img{display:block;width:auto;height:70px;max-width:100%;object-fit:contain;object-position:left center}
+.global-header-host .nav-shell nav{display:flex;align-items:center;gap:2px;margin-left:auto}
+.global-header-host .nav-shell nav a,.global-header-host .text-button{border:0;background:transparent;padding:10px 12px;color:#65706c;border-radius:9px;text-decoration:none;font-size:13px;font-weight:680;white-space:nowrap}
+.global-header-host .nav-shell nav a:hover,.global-header-host .nav-shell nav a.active,.global-header-host .text-button:hover{background:#fff;color:#14201d}
+.global-header-host .nav-actions{display:flex;align-items:center;gap:6px}
+.global-header-host .nav-actions .button{display:inline-flex;align-items:center;min-height:auto;padding:10px 14px;border-radius:12px;background:#0c211c;color:#fff;text-decoration:none;font-size:13px;font-weight:750;box-shadow:0 10px 26px rgba(12,33,28,.14)}
+.global-header-host .menu{display:none;border:0;background:transparent;font-size:22px;box-shadow:none;color:#14201d;padding:8px}
+@media(max-width:980px){.global-header-host .nav-shell nav{display:none}.global-header-host .menu{display:block}.global-header-host.menu-open{height:auto}.global-header-host.menu-open .nav-shell{height:auto;flex-wrap:wrap;padding-top:16px;padding-bottom:16px}.global-header-host.menu-open .nav-shell nav{display:flex;order:3;width:100%;overflow:auto}}
+@media(max-width:640px){.global-header-host{height:72px}.global-header-host .nav-shell{height:72px;padding:0 16px}.global-header-host .wordmark{width:210px;max-width:58vw}.global-header-host .wordmark img{height:52px}.global-header-host .nav-actions .text-button,.global-header-host .nav-actions .button{display:none}.global-header-host.menu-open .nav-actions{display:flex;order:4;width:100%;justify-content:flex-end}.global-header-host.menu-open .nav-actions .text-button,.global-header-host.menu-open .nav-actions .button{display:inline-flex}.global-header-host.menu-open .nav-actions .menu{position:absolute;right:16px;top:14px}}

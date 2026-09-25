@@ -1,0 +1,10 @@
+{
+  "module_id": "wallet-assets",
+  "module_version": 1,
+  "title_key": "module.wallet.title",
+  "steps": [
+    { "id": "wallet-exists", "type": "choice", "label_key": "wallet.exists", "required": true, "options": ["yes", "no"], "skip_allowed": false },
+    { "id": "wallet-label", "type": "text", "label_key": "wallet.label", "required": true, "skip_allowed": false, "condition": { "field": "wallet-exists", "equals": "yes" } },
+    { "id": "wallet-custom", "type": "custom-fields", "label_key": "common.custom_fields", "required": false, "skip_allowed": true, "condition": { "field": "wallet-exists", "equals": "yes" } }
+  ]
+}

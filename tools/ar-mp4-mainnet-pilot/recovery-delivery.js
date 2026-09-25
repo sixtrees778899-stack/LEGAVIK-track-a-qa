@@ -1,0 +1,4 @@
+export function createMp4Delivery({bytes,filename,mimeType='video/mp4',sha256}){
+  if(!(bytes instanceof Uint8Array)||!bytes.length||mimeType!=='video/mp4'||typeof filename!=='string'||!filename.toLowerCase().endsWith('.mp4'))throw new Error('恢复文件无法交付。');
+  const immutable=bytes.slice();return Object.freeze({filename,mimeType,sha256,size:immutable.length,download({documentRef=document,urlApi=URL,schedule=setTimeout}={}){let url;try{url=urlApi.createObjectURL(new Blob([immutable],{type:mimeType}));const link=documentRef.createElement('a');link.href=url;link.download=filename;link.rel='noopener';documentRef.body.appendChild(link);link.click();link.remove();schedule(()=>urlApi.revokeObjectURL(url),1000);return{filename,mimeType,size:immutable.length,sha256};}catch{if(url)urlApi.revokeObjectURL(url);throw new Error('恢复文件下载未能启动，请允许浏览器下载后重试。');}}});
+}

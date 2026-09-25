@@ -1,0 +1,8 @@
+{
+  "fixture_classification": "NON_CUSTOMER_GOLDEN_VECTOR",
+  "generated_by": "tools/build-recovery-golden-vectors.mjs",
+  "vectors": [
+    "technical-format-1-knowledge-schema-1",
+    "technical-format-1-knowledge-schema-2"
+  ]
+}

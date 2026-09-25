@@ -1,0 +1,7 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>CJAS MP4 Mainnet Independent Recovery</title><link rel="stylesheet" href="./style.css"></head><body><main>
+<h1>CJAS MP4 Mainnet Independent Recovery</h1><p class="notice">新会话独立恢复：只使用 Mainnet Evidence、Recovery Kit 和恢复密码。不会读取原始 MP4 或本地 Archive。</p>
+<section class="card"><h2>1. 准备恢复材料</h2><label>Mainnet Evidence<input id="evidence-file" type="file" accept=".json,application/json"></label><label>Recovery Kit<input id="kit-file" type="file" accept=".cjas,application/octet-stream"></label><label>恢复密码<input id="password" type="password" autocomplete="off"></label><button id="recover">从 Arweave Mainnet 下载并恢复</button></section>
+<section class="card"><h2>2. 恢复进度</h2><ol id="stages"></ol></section>
+<section id="success" class="success" hidden><h2>MP4 恢复成功</h2><dl><div><dt>文件名</dt><dd id="result-name"></dd></div><div><dt>大小</dt><dd id="result-size"></dd></div><div><dt>SHA-256</dt><dd id="result-hash"></dd></div><div><dt>来源</dt><dd>Arweave Mainnet</dd></div></dl><button id="download" disabled>下载恢复 MP4</button><button id="download-again" disabled>再次下载</button></section>
+<section class="card"><details><summary>技术详情</summary><pre id="recovery-evidence"></pre></details></section><div id="status" role="status"></div>
+<script type="module" src="./recover.js"></script></main></body></html>

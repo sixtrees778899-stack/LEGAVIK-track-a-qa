@@ -1,0 +1,26 @@
+{
+  "schema_version": 2,
+  "vault_title": "家庭恢复地图 V2",
+  "plan_type": "crypto-assets",
+  "reviewed_at": "2026-08-02T00:00:00.000Z",
+  "standard_modules": [
+    {"id":"assets-accounts","order":10},
+    {"id":"recovery-conditions","order":20},
+    {"id":"locations-finding","order":30},
+    {"id":"contacts-assistance","order":40},
+    {"id":"recovery-order-exceptions","order":50},
+    {"id":"evidence-messages","order":60}
+  ],
+  "custom_modules": [],
+  "assets": [{"id":"asset-main","type":"hardware-wallet","label":"主要硬件钱包","exists":true,"platform_hint":"硬件钱包类别","condition_refs":["condition-device"],"location_refs":["location-safe"],"contact_refs":[],"step_refs":["step-check"],"attachment_refs":[],"custom_field_refs":[]}],
+  "recovery_conditions": [{"id":"condition-device","type":"hardware-device","exists":true,"asset_refs":["asset-main"],"location_refs":["location-safe"],"fallback_path_refs":[],"notes":"确认设备存在，不记录PIN","custom_field_refs":[]}],
+  "fallback_paths": [],
+  "locations": [{"id":"location-safe","label":"上锁文件柜","type":"physical","finding_instructions":"核对文件柜标签后查找设备盒","access_prerequisites":[],"attachment_refs":[],"custom_field_refs":[]}],
+  "assistance": {"needed":false},
+  "contacts": [],
+  "recovery_steps": [{"id":"step-check","sequence":1,"risk_level":"low","action":"核对设备标签","completion_check":"标签与记录一致","failure_action":"","stop_condition":"","asset_refs":["asset-main"],"condition_refs":["condition-device"],"location_refs":["location-safe"],"contact_refs":[],"warning_refs":[],"attachment_refs":[]}],
+  "warnings": [],
+  "attachments": [],
+  "personal_message": null,
+  "custom_fields": []
+}

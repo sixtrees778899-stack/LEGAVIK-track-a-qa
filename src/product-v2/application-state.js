@@ -1,0 +1,8 @@
+export const PRODUCT_FLOW=Object.freeze(['accounts','conditions','locations','instructions','assistants','message','review','report']);
+const MODULES=new Set(PRODUCT_FLOW.slice(0,6));
+export function createApplicationState(){return{active_module_id:null,attachment_context:null,review_context:null};}
+export function enterApplicationView(state,viewId){if(MODULES.has(viewId))state.active_module_id=viewId;return viewId;}
+export function beginAttachmentView(state,context={}){const returnModule=MODULES.has(context.return_module)?context.return_module:null;state.attachment_context={return_module:returnModule,return_view:['dashboard','report','review'].includes(context.return_view)?context.return_view:null,account_id:context.account_id??'',module_id:context.module_id??returnModule??'',purpose:context.purpose??'',covered_condition_ids:[...new Set(context.covered_condition_ids??[])],attachment_id:context.attachment_id??''};return'attachments';}
+export function nextProductView(viewId){const index=PRODUCT_FLOW.indexOf(viewId);if(index<0)throw new Error('VIEW_NOT_IN_PRODUCT_FLOW');return PRODUCT_FLOW[Math.min(index+1,PRODUCT_FLOW.length-1)];}
+export function leaveAttachmentViewAndContinue(state){const source=state.attachment_context?.return_module;if(!MODULES.has(source))throw new Error('ATTACHMENT_RETURN_CONTEXT_MISSING');state.attachment_context=null;return nextProductView(source);}
+export function leaveAttachmentView(state){const source=state.attachment_context?.return_module??state.attachment_context?.return_view;if(!MODULES.has(source)&&!['dashboard','report','review'].includes(source))throw new Error('ATTACHMENT_RETURN_CONTEXT_MISSING');state.attachment_context=null;return source;}

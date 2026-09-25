@@ -1,0 +1,11 @@
+{
+  "rulebook_version":"2.0.0",
+  "status":"APPROVED_FOR_IMPLEMENTATION",
+  "field_states":["EMPTY","UNKNOWN","LATER","VALID","INVALID"],
+  "module_states":["NOT_STARTED","IN_PROGRESS","SUGGESTED","COMPLETE","VERIFIED"],
+  "version_states":["DRAFT","REVIEW_READY","GENERATED","SUPERSEDED","ARCHIVED"],
+  "coverage_modes":["ITEMIZED","SUMMARY"],
+  "limits":{"max_attachment_bytes":10485760,"max_version_bytes":52428800,"max_attachments":100},
+  "required_modules":["accounts","conditions","locations","instructions"],
+  "optional_modules":["assistants","message"]
+}
