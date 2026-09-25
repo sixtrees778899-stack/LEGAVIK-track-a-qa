@@ -66,3 +66,9 @@ test('runtime gate retries transient manifest and bundle failures before custome
   assert.match(gate,/attempts:2/);
   assert.match(gate,/timeoutMs=30000/);
 });
+
+test('runtime watchdog accepts an application that has already reached the matching READY state',()=>{
+  assert.match(gate,/root\?\.dataset\.runtimeState==='READY'/);
+  assert.match(gate,/document\.documentElement\.dataset\[bundleMarker\]===deployment/);
+  assert.match(gate,/if\(applicationReady\(\)\)\{finished=true;return;\}/);
+});

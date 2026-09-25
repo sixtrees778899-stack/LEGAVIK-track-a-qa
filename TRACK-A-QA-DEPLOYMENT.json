@@ -1,9 +1,9 @@
 {
   "environment": "TRACK_A_MAIN_PRODUCT_QA",
-  "upstream_candidate_commit": "2da9b4404ace6de67aa0e23d759499aace5ba66a",
-  "source_commit": "55604da6ec2f06c51669b731a9e6248a71427e26",
+  "upstream_candidate_commit": "bc23a07f1bdd2814682d2adcbd29754e731dba7a",
+  "source_commit": "6e7cf99f6b7a4de97dcbc4374426966291db58ee",
   "historical_baseline": "a58ea66c12bb8ac577d5d98a39cc8c63de422fb8",
-  "deployment_identity": "legavik-mainline-stable-entitlement-20260925-3",
+  "deployment_identity": "legavik-mainline-load-stability-20260925-1",
   "repository": "sixtrees778899-stack/LEGAVIK-track-a-qa",
   "branch": "main",
   "pages_base": "/LEGAVIK-track-a-qa",
