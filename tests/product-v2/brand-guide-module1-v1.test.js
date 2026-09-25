@@ -18,13 +18,13 @@ test('LEGAVIK Brand Master V1 is the shared customer-facing brand asset',()=>{
   }
 });
 
-test('guide is the approved six-section accordion with two pricing CTAs',()=>{
+test('guide is the approved six-section accordion with two authoritative entitlement CTAs',()=>{
   assert.match(app,/data-guide-accordion/);
   assert.match(app,/guide-accordion-item/);
   assert.doesNotMatch(app,/guide-module-sections/);
   assert.match(app,/id="guide-start-top"/);
   assert.match(app,/id="guide-start"/);
-  assert.match(app,/guide-start-top.*guide-start.*canonicalPricingUrl\(\)/s);
+  assert.match(app,/guide-start-top.*guide-start.*enterAuthoritativeRecoveryMapCreation/s);
   assert.match(css,/\.guide-top-cta/);
 });
 

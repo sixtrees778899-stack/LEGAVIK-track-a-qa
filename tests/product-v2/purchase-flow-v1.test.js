@@ -5,9 +5,9 @@ import { readFileSync } from 'node:fs';
 const app = readFileSync(new URL('../../web/v2/v2-app.js', import.meta.url), 'utf8');
 const css = readFileSync(new URL('../../web/v2/product-integration.css', import.meta.url), 'utf8');
 
-test('guide and module detail CTAs enter canonical current Pricing before Recovery Map', () => {
-  assert.match(app, /#guide-start'\)\.onclick=\(\)=>location\.assign\(canonicalPricingUrl\(\)\)/);
-  assert.match(app, /purchaseState\.purchaseCompleted\?navTo\(id\):location\.assign\(canonicalPricingUrl\(\)\)/);
+test('guide and module detail CTAs use authoritative entitlement before Recovery Map', () => {
+  assert.match(app, /#guide-start'\)\.onclick=\(\)=>enterAuthoritativeRecoveryMapCreation\(\)/);
+  assert.match(app, /#detail-start'\)\.onclick=\(\)=>enterAuthoritativeRecoveryMapCreation\(\)/);
 });
 
 test('purchase flow exposes the five approved customer stages', () => {

@@ -10,10 +10,11 @@ const account=read('src/account/supabase-account-app.js');
 const nav=read('src/account/account-nav-bridge.js');
 const metadata=read('src/account/recovery-metadata-client.js');
 
-test('all unpurchased Recovery Map starts hand off to the single canonical Pricing page',()=>{
+test('Recovery Map starts use authoritative entitlement and unentitled users fall back to canonical Pricing',()=>{
   assert.equal(canonicalPricingUrl(),`https://sixtrees778899-stack.github.io/LEGAVIK-track-a-qa/web/v3-crypto/index.html?release=${CURRENT_TEST_RELEASE}#pricing`);
-  assert.match(map,/guide-start-top[\s\S]*location\.assign\(canonicalPricingUrl\(\)\)/);
-  assert.match(map,/purchaseState\.purchaseCompleted\?navTo\(id\):location\.assign\(canonicalPricingUrl\(\)\)/);
+  assert.match(map,/readAuthoritativeServiceEntitlement\(supabase\)/);
+  assert.match(map,/if\(!canCreateRecoveryMap\(entitlement\)\)return location\.assign\(canonicalPricingUrl\(\)\)/);
+  assert.match(map,/guide-start-top[\s\S]*enterAuthoritativeRecoveryMapCreation/);
   assert.match(account,/href:eligible\?recoveryMapCreateUrl:recoveryMapPurchaseUrl,label:eligible\?'开始建立':'选择服务方案'/);
   assert.doesNotMatch(account,/pricing-products-v2/);
 });
