@@ -1,0 +1,22 @@
+{
+  "date": "2026-08-04",
+  "entry_url": "http://127.0.0.1:8080/web/v2/index.html",
+  "test_mode": "VISIBLE_UI_ONLY",
+  "store_injection": false,
+  "application_instances": 1,
+  "draft_revisions": [0, 1, 2, 7, 8, 9, 11, 12, 13, 15, 23, 26, 29],
+  "transition_summaries": [
+    {"from":"Dashboard","to":"资产与账户","accounts":0,"issues":1},
+    {"from":"资产与账户","to":"恢复条件","accounts":1,"account_label":"Binance · 主账户"},
+    {"from":"恢复条件","to":"位置与查找","selected_conditions":4},
+    {"from":"位置与查找","to":"恢复与转移步骤","coverage":{"summary":3,"itemized":1},"attachments":1},
+    {"from":"恢复与转移步骤","to":"协助人","saved_instructions":1},
+    {"from":"协助人","to":"给未来恢复人的嘱托","assistance":"NOT_NEEDED"},
+    {"from":"给未来恢复人的嘱托","to":"Review","issues":0},
+    {"from":"Review","to":"Recovery Report","status":"COMPLETE","generation_gate":true}
+  ],
+  "reentry": {"accounts":true,"conditions":true,"locations":true,"instructions":true},
+  "deliberate_gap": {"module":"位置与查找","condition":"Authenticator","dashboard_issue_count":1,"review_issue_count":1,"precise_navigation":true,"cleared_after_fix":true},
+  "attachment_lifecycle": {"upload":true,"replace":true,"delete":true,"reupload":true},
+  "console_warning_error_count": 0
+}

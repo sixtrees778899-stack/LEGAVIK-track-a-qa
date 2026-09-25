@@ -1,0 +1,155 @@
+{
+  "catalog_version": "1.0",
+  "authority_root": "knowledge/recovery/v1/",
+  "last_updated": "2026-08-02",
+  "categories": [
+    {"id": "CEX", "name": "中心化交易所", "platform_count": 7},
+    {"id": "SOFTWARE_WALLET", "name": "软件钱包", "platform_count": 5},
+    {"id": "HARDWARE_WALLET", "name": "硬件钱包", "platform_count": 5}
+  ],
+  "platforms": [
+    {"id":"binance","name":"Binance","category":"CEX","custody_model":"CUSTODIAL","knowledge_status":"NOT_READY","claims":{"approved":0,"reviewed":4,"draft":4},"official_sources":2,"template_status":"NOT_READY","ai_support":"UNCONFIRMED_ONLY","critical_gap":true},
+    {"id":"okx","name":"OKX","category":"CEX","custody_model":"CUSTODIAL","knowledge_status":"ACCOUNT_HOLDER_ONLY","claims":{"approved":3,"reviewed":1,"draft":2},"official_sources":1,"template_status":"HOLDER_RECOVERY_CANDIDATE","ai_support":"LIMITED","critical_gap":true},
+    {"id":"coinbase","name":"Coinbase","category":"CEX","custody_model":"CUSTODIAL","knowledge_status":"LIMITED_READY","claims":{"approved":5,"reviewed":3,"draft":0},"official_sources":5,"template_status":"LIMITED_HOLDER_RECOVERY","ai_support":"LIMITED_WITH_LEGAL_ESCALATION","critical_gap":true},
+    {"id":"kraken","name":"Kraken","category":"CEX","custody_model":"CUSTODIAL","knowledge_status":"OFFICIAL_OR_LEGAL_PROCESS_REQUIRED","claims":{"approved":3,"reviewed":0,"draft":3},"official_sources":2,"template_status":"NOT_READY","ai_support":"LIMITED_WITH_LEGAL_ESCALATION","critical_gap":true},
+    {"id":"bybit","name":"Bybit","category":"CEX","custody_model":"CUSTODIAL","knowledge_status":"PARTIALLY_RECOVERABLE","claims":{"approved":3,"reviewed":0,"draft":3},"official_sources":2,"template_status":"NOT_READY","ai_support":"LIMITED_CONTROLS","critical_gap":true},
+    {"id":"bitget","name":"Bitget","category":"CEX","custody_model":"CUSTODIAL","knowledge_status":"ACCOUNT_HOLDER_ONLY","claims":{"approved":2,"reviewed":2,"draft":2},"official_sources":2,"template_status":"HOLDER_RECOVERY_CANDIDATE","ai_support":"LIMITED","critical_gap":true},
+    {"id":"kucoin","name":"KuCoin","category":"CEX","custody_model":"CUSTODIAL","knowledge_status":"ACCOUNT_HOLDER_ONLY","claims":{"approved":3,"reviewed":1,"draft":2},"official_sources":2,"template_status":"HOLDER_RECOVERY_CANDIDATE","ai_support":"LIMITED","critical_gap":true},
+    {"id":"metamask","name":"MetaMask","category":"SOFTWARE_WALLET","custody_model":"SELF_CUSTODY","knowledge_status":"CORE_READY","claims":{"approved":5,"reviewed":3,"draft":0},"official_sources":4,"template_status":"CORE_TECHNICAL_READY","ai_support":"CORE_RECOVERY","critical_gap":true},
+    {"id":"trust-wallet","name":"Trust Wallet","category":"SOFTWARE_WALLET","custody_model":"SELF_CUSTODY","knowledge_status":"EVIDENCE_WEAK","claims":{"approved":0,"reviewed":2,"draft":4},"official_sources":1,"template_status":"NOT_READY","ai_support":"NONE","critical_gap":true},
+    {"id":"rabby","name":"Rabby","category":"SOFTWARE_WALLET","custody_model":"SELF_CUSTODY","knowledge_status":"EVIDENCE_WEAK","claims":{"approved":0,"reviewed":1,"draft":5},"official_sources":1,"template_status":"NOT_READY","ai_support":"NONE","critical_gap":true},
+    {"id":"phantom","name":"Phantom","category":"SOFTWARE_WALLET","custody_model":"SELF_CUSTODY","knowledge_status":"COMPLETE_WITH_CONDITIONS","claims":{"approved":5,"reviewed":0,"draft":1},"official_sources":3,"template_status":"CONDITIONAL_READY","ai_support":"CORE_RECOVERY","critical_gap":true},
+    {"id":"okx-wallet","name":"OKX Wallet","category":"SOFTWARE_WALLET","custody_model":"SELF_CUSTODY","knowledge_status":"COMPLETE_WITH_CONDITIONS","claims":{"approved":3,"reviewed":2,"draft":1},"official_sources":3,"template_status":"CONDITIONAL_READY","ai_support":"CORE_RECOVERY","critical_gap":true},
+    {"id":"ledger","name":"Ledger","category":"HARDWARE_WALLET","custody_model":"SELF_CUSTODY","knowledge_status":"CORE_READY","claims":{"approved":6,"reviewed":2,"draft":0},"official_sources":5,"template_status":"CORE_TECHNICAL_READY","ai_support":"CORE_RECOVERY","critical_gap":true},
+    {"id":"trezor","name":"Trezor","category":"HARDWARE_WALLET","custody_model":"SELF_CUSTODY","knowledge_status":"CORE_READY","claims":{"approved":7,"reviewed":1,"draft":0},"official_sources":5,"template_status":"CORE_TECHNICAL_READY","ai_support":"CORE_RECOVERY","critical_gap":true},
+    {"id":"onekey","name":"OneKey","category":"HARDWARE_WALLET","custody_model":"SELF_CUSTODY","knowledge_status":"COMPLETE_WITH_CONDITIONS","claims":{"approved":3,"reviewed":1,"draft":2},"official_sources":3,"template_status":"CONDITIONAL_READY","ai_support":"CORE_RECOVERY","critical_gap":true},
+    {"id":"keystone","name":"Keystone","category":"HARDWARE_WALLET","custody_model":"SELF_CUSTODY","knowledge_status":"EVIDENCE_WEAK","claims":{"approved":0,"reviewed":2,"draft":4},"official_sources":4,"template_status":"NOT_READY","ai_support":"NONE","critical_gap":true},
+    {"id":"safepal","name":"SafePal","category":"HARDWARE_WALLET","custody_model":"SELF_CUSTODY","knowledge_status":"COMPLETE_WITH_CONDITIONS","claims":{"approved":4,"reviewed":0,"draft":2},"official_sources":3,"template_status":"CONDITIONAL_READY","ai_support":"CORE_RECOVERY","critical_gap":true}
+  ],
+  "claims": {
+    "total": 112,
+    "approved": 52,
+    "reviewed": 25,
+    "draft": 35,
+    "rejected": 0,
+    "stale": 0,
+    "product_uses": {"guidance":48,"template":44,"ai_support":48,"rule_engine_candidate":33,"approved_internal_only":4},
+    "approved_by_platform": {"binance":0,"okx":3,"coinbase":5,"kraken":3,"bybit":3,"bitget":2,"kucoin":3,"metamask":5,"rabby":0,"trust-wallet":0,"phantom":5,"okx-wallet":3,"ledger":6,"trezor":7,"onekey":3,"keystone":0,"safepal":4},
+    "decision_files": ["09-atomic-knowledge/CLAIM_APPROVAL_DECISIONS.jsonl","09-atomic-knowledge/ALL17_CLAIM_APPROVAL_DECISIONS.jsonl"]
+  },
+  "rules": [
+    {"rule_id":"RK-001","name":"资产具备类型和公开识别线索","applies_to":"ALL","source_claims":[],"status":"REVIEWED","rule_engine":false},
+    {"rule_id":"RK-002","name":"资产关联实际恢复条件","applies_to":"ALL","source_claims":[],"status":"REVIEWED","rule_engine":false},
+    {"rule_id":"RK-003","name":"控制条件记录存在性和位置","applies_to":"ALL","source_claims":[],"status":"REVIEWED","rule_engine":false},
+    {"rule_id":"RK-004","name":"禁止保存完整秘密与OTP","applies_to":"ALL","source_claims":["AKI-MM-005","AKI-LED-005","AKI-TRZ-006"],"status":"CANDIDATE","rule_engine":true},
+    {"rule_id":"RK-005","name":"CEX区分登录、身份与提币","applies_to":"CEX","source_claims":["AKI-CB-001","AKI-CB-006"],"status":"CANDIDATE_COINBASE","rule_engine":true},
+    {"rule_id":"RK-006","name":"邮箱或手机失效有备用路径","applies_to":"CEX","source_claims":["AKI-CB-001"],"status":"REVIEWED","rule_engine":false},
+    {"rule_id":"RK-007","name":"Authenticator记录设备和丢失路径","applies_to":"CEX","source_claims":[],"status":"REVIEWED","rule_engine":false},
+    {"rule_id":"RK-008","name":"因素重置后复核提币限制","applies_to":"CEX","source_claims":["AKI-CB-006"],"status":"REVIEWED_OVERBROAD","rule_engine":false},
+    {"rule_id":"RK-009","name":"记录白名单或新地址锁","applies_to":"CEX","source_claims":[],"status":"REVIEWED","rule_engine":false},
+    {"rule_id":"RK-010","name":"未确认遗产流程不得承诺继承","applies_to":"CEX","source_claims":["AKI-CB-002","AKI-CB-003","AKI-CB-004"],"status":"INTERNAL","rule_engine":false},
+    {"rule_id":"RK-011","name":"本地钱包密码不是恢复密钥","applies_to":"SOFTWARE_WALLET","source_claims":["AKI-MM-001","AKI-MM-002"],"status":"CANDIDATE","rule_engine":true},
+    {"rule_id":"RK-012","name":"导入账户需要独立恢复材料","applies_to":"SOFTWARE_WALLET","source_claims":["AKI-MM-004"],"status":"CANDIDATE","rule_engine":true},
+    {"rule_id":"RK-013","name":"云或社交钱包记录创建方式","applies_to":"SOFTWARE_WALLET","source_claims":[],"status":"REVIEWED","rule_engine":false},
+    {"rule_id":"RK-014","name":"硬件钱包记录型号和备份格式","applies_to":"HARDWARE_WALLET","source_claims":["AKI-TRZ-001","AKI-LED-001","AKI-LED-002"],"status":"CANDIDATE_SCOPED","rule_engine":true},
+    {"rule_id":"RK-015","name":"Passphrase记录存在性和分离位置","applies_to":"SELF_CUSTODY","source_claims":["AKI-LED-003","AKI-LED-004","AKI-TRZ-004"],"status":"REVIEWED_PARTIAL","rule_engine":false},
+    {"rule_id":"RK-016","name":"分片备份记录份额和门限","applies_to":"HARDWARE_WALLET","source_claims":["AKI-TRZ-005"],"status":"CANDIDATE_TREZOR","rule_engine":true},
+    {"rule_id":"RK-017","name":"设备损坏有恢复或不可恢复说明","applies_to":"HARDWARE_WALLET","source_claims":["AKI-LED-001","AKI-TRZ-002","AKI-TRZ-003"],"status":"CANDIDATE_SCOPED","rule_engine":true},
+    {"rule_id":"RK-018","name":"恢复后先核对公开地址","applies_to":"SELF_CUSTODY","source_claims":["AKI-LED-004","AKI-TRZ-004"],"status":"REVIEWED_GUIDANCE_GAP","rule_engine":false},
+    {"rule_id":"RK-019","name":"首次转移建议小额测试","applies_to":"ALL","source_claims":[],"status":"REVIEWED","rule_engine":false},
+    {"rule_id":"RK-020","name":"网络链地址或授权不确定时停止","applies_to":"ALL","source_claims":[],"status":"REVIEWED_OVERBROAD","rule_engine":false},
+    {"rule_id":"RK-021","name":"客服索取秘密或远程控制时停止","applies_to":"ALL","source_claims":["AKI-MM-005","AKI-LED-005","AKI-TRZ-006"],"status":"CANDIDATE_PILOT","rule_engine":true},
+    {"rule_id":"RK-022","name":"身份验证持续失败转官方支持","applies_to":"CEX","source_claims":[],"status":"REVIEWED","rule_engine":false},
+    {"rule_id":"RK-023","name":"政策记录来源和复核日期","applies_to":"ALL","source_claims":[],"status":"INTERNAL_GOVERNANCE","rule_engine":false},
+    {"rule_id":"RK-024","name":"只有合格知识进入产品","applies_to":"SYSTEM","source_claims":[],"status":"SUPERSEDED_BY_APPROVED_GATE","rule_engine":false}
+  ],
+  "templates": {
+    "generic": [
+      {"id":"CEX_RECOVERY_TEMPLATE","platforms":7,"mandatory":"identity, account, recovery entry","conditional":"enabled factors, KYC, transfer controls","recommended":"fallbacks and sources","optional":"subaccount/region notes","approved_support":"6/7 platforms have scoped Approved claims","ready":false},
+      {"id":"SOFTWARE_WALLET_TEMPLATE","platforms":5,"mandatory":"addresses, wallet type, recovery-material existence","conditional":"imports, social/cloud conditions","recommended":"address verification and device map","optional":"network notes","approved_support":"3/5 platforms have scoped Approved claims","ready":false},
+      {"id":"HARDWARE_WALLET_TEMPLATE","platforms":5,"mandatory":"model, backup type, addresses","conditional":"Passphrase, threshold, companion app","recommended":"rehearsal and device map","optional":"firmware notes","approved_support":"4/5 platforms have scoped Approved claims","ready":false},
+      {"id":"MULTI_WALLET_TEMPLATE","platforms":17,"mandatory":"account list, control source, order","conditional":"child-template conditions","recommended":"risk separation and deduplication","optional":"advanced coordination","approved_support":"44 template-eligible claims across 13 platforms","ready":false}
+    ],
+    "platform_candidates": [
+      {"platform":"binance","status":"NOT_READY"},{"platform":"okx","status":"HOLDER_RECOVERY_CANDIDATE"},{"platform":"coinbase","status":"LIMITED_HOLDER_RECOVERY"},{"platform":"kraken","status":"NOT_READY_LEGAL_ONLY"},{"platform":"bybit","status":"NOT_READY_PARTIAL"},{"platform":"bitget","status":"HOLDER_RECOVERY_CANDIDATE"},{"platform":"kucoin","status":"HOLDER_RECOVERY_CANDIDATE"},{"platform":"metamask","status":"CONDITIONAL_READY"},{"platform":"trust-wallet","status":"NOT_READY"},{"platform":"rabby","status":"NOT_READY"},{"platform":"phantom","status":"CONDITIONAL_READY"},{"platform":"okx-wallet","status":"CONDITIONAL_READY"},{"platform":"ledger","status":"CONDITIONAL_READY"},{"platform":"trezor","status":"CONDITIONAL_READY"},{"platform":"onekey","status":"CONDITIONAL_READY"},{"platform":"keystone","status":"NOT_READY"},{"platform":"safepal","status":"CONDITIONAL_READY"}
+    ]
+  },
+  "guidance": [
+    {"type":"WHY_FILL","name":"为什么需要填写","status":"REVIEWED_CANDIDATE"},
+    {"type":"WHAT_TO_RECORD","name":"建议填写什么","status":"PARTIAL_APPROVED"},
+    {"type":"WHAT_NOT_TO_RECORD","name":"不要填写什么","status":"APPROVED_PILOT_SUPPORT"},
+    {"type":"FAILED_CONDITION","name":"条件失效怎么办","status":"PARTIAL_APPROVED"},
+    {"type":"COMMON_GAPS","name":"常见遗漏","status":"PARTIAL_APPROVED"},
+    {"type":"ATTACHMENTS","name":"推荐附件","status":"REVIEWED_CANDIDATE"},
+    {"type":"HIGH_RISK","name":"高风险提醒","status":"APPROVED_PILOT_SUPPORT"},
+    {"type":"ESCALATION","name":"何时联系官方或专业人士","status":"PARTIAL_LEGAL_ESCALATION"}
+  ],
+  "ai_support": {
+    "approved_claim_filter": true,
+    "offline_cases": 22,
+    "retest_pass": 22,
+    "categories": [
+      {"scenario":"邮箱无法访问","platforms":["coinbase"],"coverage":"APPROVED","human_escalation":"OTHER_PLATFORMS","limitations":"retail/account-state"},
+      {"scenario":"手机丢失","platforms":[],"coverage":"NONE","human_escalation":"REQUIRED","limitations":"platform/region"},
+      {"scenario":"Authenticator丢失","platforms":[],"coverage":"NONE","human_escalation":"REQUIRED","limitations":"Binance gap"},
+      {"scenario":"忘记钱包密码","platforms":["metamask"],"coverage":"APPROVED","human_escalation":"CONDITIONAL","limitations":"SRP wallet"},
+      {"scenario":"丢失SRP","platforms":["metamask"],"coverage":"APPROVED_LIMIT","human_escalation":"CONDITIONAL","limitations":"creation type"},
+      {"scenario":"导入账户恢复","platforms":["metamask"],"coverage":"APPROVED","human_escalation":"ADDRESS_MISMATCH","limitations":"account source"},
+      {"scenario":"硬件钱包损坏","platforms":["ledger","trezor"],"coverage":"APPROVED","human_escalation":"MODEL_UNKNOWN","limitations":"model/backup format"},
+      {"scenario":"Passphrase遗失","platforms":["ledger","trezor"],"coverage":"APPROVED","human_escalation":"SAFETY_ONLY","limitations":"exact passphrase"},
+      {"scenario":"已故账户流程","platforms":["coinbase"],"coverage":"APPROVED_INTERNAL_ONLY","human_escalation":"ALWAYS","limitations":"legal/jurisdiction"},
+      {"scenario":"为什么不能上传助记词","platforms":["metamask","ledger","trezor"],"coverage":"APPROVED","human_escalation":"ABNORMAL_REQUEST","limitations":"Pilot 5"},
+      {"scenario":"为什么登录不等于可以提币","platforms":["coinbase"],"coverage":"APPROVED_SCOPED","human_escalation":"OTHER_PLATFORMS","limitations":"ID recovery/time-sensitive"}
+    ]
+  },
+  "sources": {
+    "official_records": 48,
+    "unique_urls": 47,
+    "by_platform": {"binance":2,"okx":1,"coinbase":5,"kraken":2,"bybit":2,"bitget":2,"kucoin":2,"metamask":4,"rabby":1,"trust-wallet":1,"phantom":3,"okx-wallet":3,"ledger":5,"trezor":5,"onekey":3,"keystone":4,"safepal":3}
+  },
+  "open_questions": [
+    {"priority":"P0","topic":"Binance lost email, Authenticator and post-recovery withdrawal evidence","blocks":"template_and_ai"},
+    {"priority":"P0","topic":"Binance atomic stop conditions and operational official sources","blocks":"safety_rule_and_ai"},
+    {"priority":"P1","topic":"Coinbase active handoff and legal-authority boundary","blocks":"deterministic_handoff"},
+    {"priority":"P1","topic":"Direct official address-verification guidance for MetaMask and Ledger","blocks":"formal_guidance"},
+    {"priority":"P1","topic":"Per-CEX evidence separating login and withdrawal","blocks":"generic_ai_and_rule"},
+    {"priority":"P2","topic":"Rabby official recovery documentation","blocks":"rabby_atomicization"},
+    {"priority":"P2","topic":"Trust Wallet cloud and Phantom seedless scope","blocks":"version_accuracy"},
+    {"priority":"P2","topic":"Ledger, OneKey and Keystone model/firmware differences","blocks":"template_precision"},
+    {"priority":"P2","topic":"Cross-vendor derivation compatibility","blocks":"guarantee_prohibited"},
+    {"priority":"P3","topic":"Cross-region CEX death/incapacity legal process","blocks":"long_term_legal_research"}
+  ],
+  "recovery_completeness": {
+    "definition": "A through F must all be COMPLETE before TECHNICAL_CONTROL_PATH_COMPLETE",
+    "technical_control_path_complete_count": 0,
+    "cards": [
+      {"platform":"binance","discovery":"PARTIAL","access":"PARTIAL","authentication":"PARTIAL","recovery":"MISSING","operational_control":"MISSING","verified_transfer":"MISSING","official_evidence":"WEAK","third_party_control":"NO","final":"INCOMPLETE_UNCONFIRMED"},
+      {"platform":"okx","discovery":"PARTIAL","access":"PARTIAL","authentication":"COMPLETE","recovery":"COMPLETE","operational_control":"PARTIAL","verified_transfer":"MISSING","official_evidence":"STRONG_US","third_party_control":"NO","final":"HOLDER_RECOVERY_TRANSFER_INCOMPLETE"},
+      {"platform":"coinbase","discovery":"PARTIAL","access":"COMPLETE","authentication":"COMPLETE","recovery":"COMPLETE","operational_control":"PARTIAL","verified_transfer":"MISSING","official_evidence":"STRONG","third_party_control":"NO","final":"ACCOUNT_HOLDER_RECOVERY_COMPLETE"},
+      {"platform":"kraken","discovery":"PARTIAL","access":"PARTIAL","authentication":"PARTIAL","recovery":"MISSING","operational_control":"PARTIAL","verified_transfer":"MISSING","official_evidence":"MEDIUM","third_party_control":"NO","final":"INCOMPLETE_SUCCESSION_DOCUMENTED"},
+      {"platform":"bybit","discovery":"PARTIAL","access":"PARTIAL","authentication":"PARTIAL","recovery":"MISSING","operational_control":"PARTIAL","verified_transfer":"MISSING","official_evidence":"MEDIUM","third_party_control":"NO","final":"INCOMPLETE_UNCONFIRMED"},
+      {"platform":"bitget","discovery":"PARTIAL","access":"COMPLETE","authentication":"COMPLETE","recovery":"COMPLETE","operational_control":"COMPLETE","verified_transfer":"PARTIAL","official_evidence":"STRONG","third_party_control":"NO","final":"ACCOUNT_HOLDER_RECOVERY_COMPLETE"},
+      {"platform":"kucoin","discovery":"PARTIAL","access":"COMPLETE","authentication":"COMPLETE","recovery":"COMPLETE","operational_control":"COMPLETE","verified_transfer":"PARTIAL","official_evidence":"STRONG","third_party_control":"NO","final":"ACCOUNT_HOLDER_RECOVERY_COMPLETE"},
+      {"platform":"metamask","discovery":"COMPLETE","access":"COMPLETE","authentication":"COMPLETE","recovery":"COMPLETE","operational_control":"COMPLETE","verified_transfer":"PARTIAL","official_evidence":"STRONG","third_party_control":"CONDITIONAL","final":"COMPLETE_WITH_CONDITIONAL_MATERIALS"},
+      {"platform":"rabby","discovery":"PARTIAL","access":"MISSING","authentication":"MISSING","recovery":"MISSING","operational_control":"MISSING","verified_transfer":"MISSING","official_evidence":"WEAK","third_party_control":"CONDITIONAL","final":"UNCONFIRMED"},
+      {"platform":"trust-wallet","discovery":"PARTIAL","access":"PARTIAL","authentication":"PARTIAL","recovery":"PARTIAL","operational_control":"PARTIAL","verified_transfer":"MISSING","official_evidence":"WEAK","third_party_control":"CONDITIONAL","final":"PARTIALLY_RECOVERABLE_UNCONFIRMED"},
+      {"platform":"phantom","discovery":"COMPLETE","access":"COMPLETE","authentication":"COMPLETE","recovery":"COMPLETE","operational_control":"COMPLETE","verified_transfer":"PARTIAL","official_evidence":"STRONG","third_party_control":"CONDITIONAL","final":"COMPLETE_WITH_CONDITIONAL_MATERIALS"},
+      {"platform":"okx-wallet","discovery":"COMPLETE","access":"COMPLETE","authentication":"COMPLETE","recovery":"COMPLETE","operational_control":"COMPLETE","verified_transfer":"PARTIAL","official_evidence":"STRONG_US","third_party_control":"CONDITIONAL","final":"COMPLETE_WITH_CONDITIONAL_MATERIALS"},
+      {"platform":"ledger","discovery":"COMPLETE","access":"COMPLETE","authentication":"COMPLETE","recovery":"COMPLETE","operational_control":"COMPLETE","verified_transfer":"PARTIAL","official_evidence":"STRONG","third_party_control":"CONDITIONAL","final":"COMPLETE_WITH_CONDITIONAL_MATERIALS"},
+      {"platform":"trezor","discovery":"COMPLETE","access":"COMPLETE","authentication":"COMPLETE","recovery":"COMPLETE","operational_control":"COMPLETE","verified_transfer":"PARTIAL","official_evidence":"STRONG","third_party_control":"CONDITIONAL","final":"COMPLETE_WITH_CONDITIONAL_MATERIALS"},
+      {"platform":"onekey","discovery":"COMPLETE","access":"COMPLETE","authentication":"COMPLETE","recovery":"COMPLETE","operational_control":"COMPLETE","verified_transfer":"PARTIAL","official_evidence":"MEDIUM","third_party_control":"CONDITIONAL","final":"COMPLETE_WITH_CONDITIONAL_MATERIALS"},
+      {"platform":"keystone","discovery":"PARTIAL","access":"PARTIAL","authentication":"PARTIAL","recovery":"PARTIAL","operational_control":"PARTIAL","verified_transfer":"MISSING","official_evidence":"WEAK","third_party_control":"CONDITIONAL","final":"UNCONFIRMED"},
+      {"platform":"safepal","discovery":"COMPLETE","access":"COMPLETE","authentication":"COMPLETE","recovery":"COMPLETE","operational_control":"COMPLETE","verified_transfer":"PARTIAL","official_evidence":"MEDIUM","third_party_control":"CONDITIONAL","final":"COMPLETE_WITH_CONDITIONAL_MATERIALS"}
+    ]
+  },
+  "readiness": {
+    "knowledge_architecture":"PASS",
+    "source_governance":"PASS",
+    "atomic_model":"PASS",
+    "security":"PASS",
+    "recovery_map_refactor":"NOT_READY",
+    "ai_support_mvp":"NOT_READY",
+    "batch_2":"NOT_AUTHORIZED",
+    "primary_blocker":"No platform has an unconditional approved and rehearsed A-F verified-transfer path; Binance, Rabby, Trust Wallet and Keystone retain critical evidence gaps"
+  }
+}

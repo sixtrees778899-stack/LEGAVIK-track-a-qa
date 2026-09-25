@@ -1,0 +1,104 @@
+{
+  "passport_version": "1.1-audited",
+  "platform_id": "binance",
+  "status": "CANDIDATE_NOT_LAB_VERIFIED",
+  "sections": [
+    "prepared_materials",
+    "official_recovery_paths",
+    "account_holder_actions",
+    "owner_directed_transfer_route",
+    "third_party_restrictions",
+    "legal_or_official_escalation",
+    "untested_steps",
+    "recovery_status",
+    "last_verified_at",
+    "region_and_legal_entity",
+    "drill_evidence_hash"
+  ],
+  "fields": [
+    "masked_account_identifier",
+    "serving_entity_and_region",
+    "security_factor_inventory",
+    "recovery_path_refs",
+    "withdrawal_control_refs",
+    "owner_exit_route_refs",
+    "legal_escalation_refs",
+    "recovery_status",
+    "last_verified_at",
+    "drill_evidence_hash"
+  ],
+  "forbidden": [
+    "password",
+    "OTP",
+    "authenticator_seed",
+    "API_secret",
+    "full_identity_document",
+    "real_recovery_material"
+  ],
+  "claim_refs": [
+    "BINP-002",
+    "BINP-003",
+    "BINP-004",
+    "BINP-005",
+    "BINP-006",
+    "BINP-007",
+    "BINP-008",
+    "BINP-009",
+    "BINP-010",
+    "BINP-011",
+    "BINP-012",
+    "BINP-013",
+    "BINP-015",
+    "BINP-016",
+    "BINP-017",
+    "BINP-018",
+    "BINP-019",
+    "BINP-020",
+    "BINP-022",
+    "BINP-023",
+    "BINP-024",
+    "BINP-025",
+    "BINP-026",
+    "BINP-032",
+    "BINP-035",
+    "BINP-036",
+    "BINP-038",
+    "BINP-043",
+    "BINP-044",
+    "BINP-045",
+    "BINP-046",
+    "BINP-047",
+    "BINP-048",
+    "BINP-049",
+    "BINP-050"
+  ],
+  "governance_tags": {
+    "scope": {
+      "geography": "Other",
+      "legal_entity": "UNCONFIRMED_ENTITY",
+      "platform_variant": "Binance Global educational content",
+      "product_scope": "MIXED_SCOPES_USE_FIELD_TAGS",
+      "account_type": "Personal / Custodial",
+      "version_scope": "Field-level source versions"
+    },
+    "source": {
+      "primary": {
+        "source_type": "OFFICIAL",
+        "source_id": "MULTIPLE_APPROVED_CLAIMS",
+        "source_url": "N/A",
+        "source_title": "Binance audited claim set",
+        "source_section": "Field claim_refs",
+        "source_checked_at": "2026-08-02"
+      },
+      "auxiliary": []
+    },
+    "confidence": "MEDIUM",
+    "last_verified": {
+      "last_verified_at": "2026-08-02",
+      "verified_by": "Codex Research — independent evidence audit",
+      "verification_method": "OFFICIAL_RECHECK",
+      "review_due_at": "2026-11-02",
+      "stale_trigger": "Any required field Claim becomes stale"
+    }
+  }
+}

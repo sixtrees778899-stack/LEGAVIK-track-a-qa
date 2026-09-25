@@ -1,0 +1,105 @@
+[
+  {
+    "topic": "Login",
+    "status": "COVERED",
+    "claim_refs": [
+      "OKXP-001",
+      "OKXP-038"
+    ],
+    "notes": "Approved claims available"
+  },
+  {
+    "topic": "Password",
+    "status": "COVERED",
+    "claim_refs": [
+      "OKXP-002",
+      "OKXP-003",
+      "OKXP-004",
+      "OKXP-005"
+    ],
+    "notes": "Approved claims available"
+  },
+  {
+    "topic": "Email",
+    "status": "COVERED",
+    "claim_refs": [
+      "OKXP-006"
+    ],
+    "notes": "Approved claims available"
+  },
+  {
+    "topic": "Phone",
+    "status": "COVERED",
+    "claim_refs": [
+      "OKXP-007",
+      "OKXP-019",
+      "OKXP-020"
+    ],
+    "notes": "Approved claims available"
+  },
+  {
+    "topic": "Authenticator",
+    "status": "COVERED",
+    "claim_refs": [
+      "OKXP-008",
+      "OKXP-010",
+      "OKXP-011",
+      "OKXP-012",
+      "OKXP-013"
+    ],
+    "notes": "Approved claims available"
+  },
+  {
+    "topic": "Passkey",
+    "status": "COVERED",
+    "claim_refs": [
+      "OKXP-014",
+      "OKXP-015",
+      "OKXP-016",
+      "OKXP-017",
+      "OKXP-026",
+      "OKXP-036"
+    ],
+    "notes": "Approved claims available"
+  },
+  {
+    "topic": "Security Key",
+    "status": "NOT_PLATFORM_FEATURE_OR_EVIDENCE_GAP",
+    "claim_refs": [],
+    "notes": "No claim is inferred; see Open Questions and platform-specific feature scope."
+  },
+  {
+    "topic": "Anti-phishing Code",
+    "status": "NOT_PLATFORM_FEATURE_OR_EVIDENCE_GAP",
+    "claim_refs": [],
+    "notes": "No claim is inferred; see Open Questions and platform-specific feature scope."
+  },
+  {
+    "topic": "Device Management",
+    "status": "COVERED",
+    "claim_refs": [
+      "OKXP-016",
+      "OKXP-018",
+      "OKXP-034",
+      "OKXP-037"
+    ],
+    "notes": "Approved claims available"
+  },
+  {
+    "topic": "API Key",
+    "status": "COVERED",
+    "claim_refs": [
+      "OKXP-033"
+    ],
+    "notes": "Approved claims available"
+  },
+  {
+    "topic": "Address Book",
+    "status": "COVERED",
+    "claim_refs": [
+      "OKXP-031",
+      "OKXP-035"
+    ],
+    "notes": "Approved claims available"
+  }
+]

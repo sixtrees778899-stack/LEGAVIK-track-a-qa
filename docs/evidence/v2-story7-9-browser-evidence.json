@@ -1,0 +1,26 @@
+{
+  "entry": "http://127.0.0.1:8080/web/v2/index.html",
+  "revisions": [
+    "当前Draft revision 1 · 已保存在本次浏览器会话",
+    "当前Draft revision 3 · 已保存在本次浏览器会话"
+  ],
+  "pre_generation": {
+    "accounts": [
+      "OKX · 主账户",
+      "Binance · 澳洲账户"
+    ],
+    "attachments": [
+      "attachment-81e2d76d-ab3c-473b-9d41-da2be71d8853",
+      "attachment-6f237f27-d42a-43cd-a4fd-768607710d30"
+    ],
+    "summary": [
+      "我的恢复地图",
+      "1",
+      "2",
+      "2",
+      "8",
+      "2"
+    ]
+  },
+  "console": []
+}

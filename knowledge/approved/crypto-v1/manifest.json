@@ -1,0 +1,205 @@
+{
+  "domain": "crypto-v1",
+  "source_of_truth": true,
+  "phase_status": "PASS / CLOSED FOR V1 EXPANSION",
+  "articles": [
+    {
+      "article_id": "SKREK-CRYPTO-V1-001",
+      "title": "中心化交易所无法登录时，应先检查哪些恢复条件？",
+      "category": "中心化交易所恢复",
+      "status": "PUBLISHED",
+      "source_file": "01-cex-login-recovery-conditions.md",
+      "last_verified": "2026-08-20",
+      "approved_at": "2026-08-20",
+      "published": true,
+      "original_found_location": "/Users/hanhuitao/.codex/sessions/2026/08/20/rollout-2026-08-20T20-36-11-01a01ebe-204c-7013-91c4-c5ce7ae5dd43.jsonl:204"
+    },
+    {
+      "article_id": "SKREK-CRYPTO-V1-002",
+      "title": "交易所 2FA 丢失后的官方恢复准备清单",
+      "category": "中心化交易所恢复",
+      "status": "PUBLISHED",
+      "source_file": "02-cex-lost-2fa-preparation.md",
+      "last_verified": "2026-08-20",
+      "approved_at": "2026-08-20",
+      "published": true,
+      "original_found_location": "/Users/hanhuitao/.codex/sessions/2026/08/20/rollout-2026-08-20T20-36-11-01a01ebe-204c-7013-91c4-c5ce7ae5dd43.jsonl:204"
+    },
+    {
+      "article_id": "SKREK-CRYPTO-V1-003",
+      "title": "软件钱包所在手机丢失或 App 被删除后，应从哪里开始？",
+      "category": "软件钱包恢复",
+      "status": "PUBLISHED",
+      "source_file": "03-software-wallet-lost-phone-or-app.md",
+      "last_verified": "2026-08-20",
+      "approved_at": "2026-08-20",
+      "published": true,
+      "original_found_location": "/Users/hanhuitao/.codex/sessions/2026/08/20/rollout-2026-08-20T20-36-11-01a01ebe-204c-7013-91c4-c5ce7ae5dd43.jsonl:204"
+    },
+    {
+      "article_id": "SKREK-CRYPTO-V1-004",
+      "title": "交易所绑定 Email 或 手机号 不可用时，应如何准备？",
+      "category": "中心化交易所恢复",
+      "status": "PUBLISHED",
+      "source_file": "04-cex-email-or-phone-unavailable.md",
+      "last_verified": "2026-08-20",
+      "approved_at": "2026-08-20",
+      "published": true,
+      "original_found_location": "/Users/hanhuitao/.codex/sessions/2026/08/20/rollout-2026-08-20T20-36-11-01a01ebe-204c-7013-91c4-c5ce7ae5dd43.jsonl:250"
+    },
+    {
+      "article_id": "SKREK-CRYPTO-V1-005",
+      "title": "软件钱包恢复后看不到原地址或资产，应该检查什么？",
+      "category": "软件钱包恢复",
+      "status": "PUBLISHED",
+      "source_file": "05-software-wallet-missing-address-or-assets.md",
+      "last_verified": "2026-08-20",
+      "approved_at": "2026-08-20",
+      "published": true,
+      "original_found_location": "/Users/hanhuitao/.codex/sessions/2026/08/20/rollout-2026-08-20T20-36-11-01a01ebe-204c-7013-91c4-c5ce7ae5dd43.jsonl:250"
+    },
+    {
+      "article_id": "SKREK-CRYPTO-V1-006",
+      "title": "Imported Account 为什么可能不会随主钱包一起恢复？",
+      "category": "软件钱包恢复",
+      "status": "PUBLISHED",
+      "source_file": "06-imported-account-not-restored.md",
+      "last_verified": "2026-08-20",
+      "approved_at": "2026-08-20",
+      "published": true,
+      "original_found_location": "/Users/hanhuitao/.codex/sessions/2026/08/20/rollout-2026-08-20T20-36-11-01a01ebe-204c-7013-91c4-c5ce7ae5dd43.jsonl:250"
+    },
+    {
+      "article_id": "SKREK-CRYPTO-V1-007",
+      "title": "硬件钱包损坏或遗失后的安全恢复准备",
+      "category": "硬件钱包恢复",
+      "status": "PUBLISHED",
+      "source_file": "07-hardware-wallet-damaged-or-lost.md",
+      "last_verified": "2026-08-20",
+      "approved_at": "2026-08-20",
+      "published": true,
+      "original_found_location": "/Users/hanhuitao/.codex/sessions/2026/08/20/rollout-2026-08-20T20-36-11-01a01ebe-204c-7013-91c4-c5ce7ae5dd43.jsonl:285"
+    },
+    {
+      "article_id": "SKREK-CRYPTO-V1-008",
+      "title": "PIN、Recovery Phrase 与额外 Passphrase 有什么区别？",
+      "category": "硬件钱包恢复",
+      "status": "PUBLISHED",
+      "source_file": "08-pin-recovery-phrase-passphrase.md",
+      "last_verified": "2026-08-20",
+      "approved_at": "2026-08-20",
+      "published": true,
+      "original_found_location": "/Users/hanhuitao/.codex/sessions/2026/08/20/rollout-2026-08-20T20-36-11-01a01ebe-204c-7013-91c4-c5ce7ae5dd43.jsonl:285"
+    },
+    {
+      "article_id": "SKREK-CRYPTO-V1-009",
+      "title": "Crypto Recovery Materials：Recovery Map 应记录什么、不应记录什么？",
+      "category": "Crypto Recovery Materials",
+      "status": "PUBLISHED",
+      "source_file": "09-crypto-recovery-materials.md",
+      "last_verified": "2026-08-20",
+      "approved_at": "2026-08-20",
+      "published": true,
+      "original_found_location": "/Users/hanhuitao/.codex/sessions/2026/08/20/rollout-2026-08-20T20-36-11-01a01ebe-204c-7013-91c4-c5ce7ae5dd43.jsonl:285"
+    },
+    {
+      "article_id": "SKREK-CRYPTO-V1-010",
+      "title": "如何检查 Crypto 恢复体系中的单点故障？",
+      "category": "Crypto Recovery Materials",
+      "status": "PUBLISHED",
+      "source_file": "10-crypto-recovery-single-points-of-failure.md",
+      "last_verified": "2026-08-20",
+      "approved_at": "2026-08-20",
+      "published": true,
+      "original_found_location": "/Users/hanhuitao/.codex/sessions/2026/08/20/rollout-2026-08-20T20-36-11-01a01ebe-204c-7013-91c4-c5ce7ae5dd43.jsonl:285"
+    },
+    {
+      "article_id": "SKREK-CRYPTO-V1-011",
+      "title": "Crypto 账户 Email、手机号与 2FA 的恢复依赖",
+      "category": "Crypto 身份与认证恢复",
+      "status": "PUBLISHED",
+      "source_file": "11-crypto-identity-auth-dependencies.md",
+      "last_verified": "2026-08-20",
+      "approved_at": "2026-08-20",
+      "published": true,
+      "original_found_location": "/Users/hanhuitao/.codex/sessions/2026/08/20/rollout-2026-08-20T20-36-11-01a01ebe-204c-7013-91c4-c5ce7ae5dd43.jsonl:285"
+    },
+    {
+      "article_id": "SKREK-CRYPTO-V1-012",
+      "title": "硬件钱包恢复后看不到原有资产，应检查哪些信息？",
+      "category": "硬件钱包恢复",
+      "status": "PUBLISHED",
+      "source_file": "12-hardware-wallet-assets-not-visible.md",
+      "last_verified": "2026-08-21",
+      "approved_at": "2026-08-21",
+      "published": true,
+      "original_found_location": "/Users/hanhuitao/.codex/sessions/2026/08/20/rollout-2026-08-20T20-36-11-01a01ebe-204c-7013-91c4-c5ce7ae5dd43.jsonl:364"
+    },
+    {
+      "article_id": "SKREK-CRYPTO-V1-013",
+      "title": "Recovery Phrase 可用，但额外 Passphrase 遗失时意味着什么？",
+      "category": "硬件钱包恢复",
+      "status": "PUBLISHED",
+      "source_file": "13-lost-additional-passphrase.md",
+      "last_verified": "2026-08-21",
+      "approved_at": "2026-08-21",
+      "published": true,
+      "original_found_location": "/Users/hanhuitao/.codex/sessions/2026/08/20/rollout-2026-08-20T20-36-11-01a01ebe-204c-7013-91c4-c5ce7ae5dd43.jsonl:364"
+    },
+    {
+      "article_id": "SKREK-CRYPTO-V1-014",
+      "title": "交易所账户被冻结、受限或无法正常操作时，应准备哪些恢复与身份资料？",
+      "category": "中心化交易所恢复",
+      "status": "PUBLISHED",
+      "source_file": "14-cex-frozen-or-restricted-account.md",
+      "last_verified": "2026-08-21",
+      "approved_at": "2026-08-21",
+      "published": true,
+      "original_found_location": "/Users/hanhuitao/.codex/sessions/2026/08/20/rollout-2026-08-20T20-36-11-01a01ebe-204c-7013-91c4-c5ce7ae5dd43.jsonl:364"
+    },
+    {
+      "article_id": "SKREK-CRYPTO-V1-015",
+      "title": "钱包恢复后，如何重新确认 DeFi 资产、协议仓位与网络位置？",
+      "category": "DeFi 与链上资产恢复",
+      "status": "PUBLISHED",
+      "source_file": "15-defi-position-and-network-reconfirmation.md",
+      "last_verified": "2026-08-21",
+      "approved_at": "2026-08-21",
+      "published": true,
+      "original_found_location": "/Users/hanhuitao/.codex/sessions/2026/08/20/rollout-2026-08-20T20-36-11-01a01ebe-204c-7013-91c4-c5ce7ae5dd43.jsonl:364"
+    },
+    {
+      "article_id": "SKREK-CRYPTO-V1-016",
+      "title": "如何识别虚假的 Crypto 恢复服务、客服和“资产找回”骗局？",
+      "category": "Crypto 恢复安全与诈骗",
+      "status": "PUBLISHED",
+      "source_file": "16-fake-crypto-recovery-scams.md",
+      "last_verified": "2026-08-21",
+      "approved_at": "2026-08-21",
+      "published": true,
+      "original_found_location": "/Users/hanhuitao/.codex/sessions/2026/08/20/rollout-2026-08-20T20-36-11-01a01ebe-204c-7013-91c4-c5ce7ae5dd43.jsonl:364"
+    },
+    {
+      "article_id": "SKREK-CRYPTO-V1-017",
+      "title": "Seed Phrase、Private Key 或 Passphrase 疑似泄露后，应该先做什么？",
+      "category": "Crypto 恢复安全与诈骗",
+      "status": "PUBLISHED",
+      "source_file": "17-suspected-secret-exposure.md",
+      "last_verified": "2026-08-21",
+      "approved_at": "2026-08-21",
+      "published": true,
+      "original_found_location": "/Users/hanhuitao/.codex/sessions/2026/08/20/rollout-2026-08-20T20-36-11-01a01ebe-204c-7013-91c4-c5ce7ae5dd43.jsonl:434"
+    },
+    {
+      "article_id": "SKREK-CRYPTO-V1-018",
+      "title": "Multisig / Collaborative Wallet 恢复前，应检查哪些角色、阈值和配置资料？",
+      "category": "Multisig / Collaborative Wallet Recovery",
+      "status": "PUBLISHED",
+      "source_file": "18-multisig-recovery-readiness.md",
+      "last_verified": "2026-08-21",
+      "approved_at": "2026-08-21",
+      "published": true,
+      "original_found_location": "/Users/hanhuitao/.codex/sessions/2026/08/20/rollout-2026-08-20T20-36-11-01a01ebe-204c-7013-91c4-c5ce7ae5dd43.jsonl:434"
+    }
+  ]
+}

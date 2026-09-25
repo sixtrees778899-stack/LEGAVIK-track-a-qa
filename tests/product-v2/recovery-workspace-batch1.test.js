@@ -76,8 +76,7 @@ test('both recovery entrances converge on the single approved recovery implement
 test('creation completion keeps recovery materials and one primary recovery action without technical status or draft shortcut',async()=>{
   const completion=await readFile(new URL('web/v2/v2-app.js',root),'utf8');
   const renderDownloads=completion.slice(completion.indexOf('function renderDownloads()'),completion.indexOf('\n\nfunction back()'));
-  for(const label of ['Recovery Kit','Mainnet Recovery Evidence','完成前请确认','打开独立恢复'])assert.match(renderDownloads,new RegExp(label));
-  assert.doesNotMatch(renderDownloads,/Local Encrypted Backup|本地加密备份|\.cjasvault/);
+  for(const label of ['Recovery Kit','Mainnet Recovery Evidence','Local Encrypted Backup','完成前请确认','打开独立恢复'])assert.match(renderDownloads,new RegExp(label));
   assert.doesNotMatch(renderDownloads,/安全存储状态|TXID RETURN|FINAL VERIFY|timings_ms|创建新草稿并修改|id="new-version"/);
   assert.match(renderDownloads,/class="button" href="\$\{canonicalRecoveryUrl\('post-creation'\)\}"/);
 });

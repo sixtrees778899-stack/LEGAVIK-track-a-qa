@@ -52,21 +52,22 @@ test('Customer Center dashboard, map list and V1 history use one formal lifecycl
   assert.match(app,/formalMaps/);
   assert.match(app,/current_version/);
   assert.match(app,/versionHistory\(item\)/);
-  assert.match(app,/CURRENT RECOVERY MAP/);
-  assert.match(app,/RECENT ACTIVITY/);
-  assert.match(app,/recoveryMapPurchaseUrl=canonicalPricingUrl\(\)/);
+  assert.match(app,/最近的 Recovery Map/);
+  assert.match(app,/\$\{recentMaps\.length\?`<section class="recent-maps">/);
+  assert.doesNotMatch(app,/创建 Recovery Map 后，最近版本会显示在这里/);
+  assert.match(app,/recoveryMapCreateUrl=canonicalCreateUrl\(testRecoveryMap\?\{test:'1'\}:\{\}\)/);
   assert.doesNotMatch(app,/entry=guide#guide/);
   assert.match(app,/我的 Recovery Map/);
   assert.doesNotMatch(app,/is_latest\?'最新版本'/);
   assert.match(app,/最近更新时间/);
-  assert.match(app,/Current/);
-  assert.match(app,/Historical/);
+  assert.match(app,/Current Version/);
+  assert.match(app,/Previous Version/);
   assert.match(app,/创建\/发布时间/);
-  assert.match(app,/mayUpdateRecoveryVersion/);
-  assert.match(app,/data-map-card/);
-  assert.match(app,/VERSION HISTORY/);
-  assert.match(app,/进入我的恢复中心/);
-  assert.match(app,/历史版本不可更新/);
+  assert.match(app,/current\?`<a class="primary-link"[^`]+更新 Recovery Map/);
+  assert.match(app,/data-map-detail/);
+  assert.match(app,/查看版本信息<\/button>/);
+  assert.match(app,/恢复当前版本<\/a>/);
+  assert.doesNotMatch(app,/恢复当前版本<\/a><a class="primary-link"[^`]+更新 Recovery Map/);
 });
 
 test('create flow no longer syncs LOCAL_ENCRYPTED or TxID-only state',()=>{

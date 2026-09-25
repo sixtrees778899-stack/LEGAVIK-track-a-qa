@@ -1,0 +1,92 @@
+{
+  "schema_version": 1,
+  "verified_on": "2026-09-10",
+  "approved_product_baseline": "97a5b9bbf900c83c5003d852fddbc0d3538ef4b5",
+  "release": "legavik-plans-intro-linebreak-20260910-1",
+  "canonical_base": "https://sixtrees778899-stack.github.io/SKREK-auth-test/",
+  "hash_algorithm": "SHA-256",
+  "family_set_hash_definition": "SHA-256 of sorted lines: <member_sha256><two spaces><repository_path><newline>",
+  "bindings": {
+    "release_manifest": "governance/release-manifest.json",
+    "approved_baseline_index": "governance/APPROVED_BASELINES.md",
+    "compatibility_matrix": "governance/COMPATIBILITY_MATRIX.md",
+    "external_config_snapshot": "governance/external-config-snapshot.json"
+  },
+  "artifacts": [
+    {
+      "family": "current_customer_js_bundles",
+      "source_build_identity": [
+        "web/account/account-app.bundle.js",
+        "web/v2/v2-app.bundle.js",
+        "web/recover.bundle.js",
+        "web/v3-crypto/product-v1.bundle.js"
+      ],
+      "member_count": 4,
+      "built_set_sha256": "4e178172a6d540f164329ebbc2ac2ed8ff18e56696236eb6b85185e30e5187c8",
+      "deployed_set_sha256": "4e178172a6d540f164329ebbc2ac2ed8ff18e56696236eb6b85185e30e5187c8",
+      "downloaded_set_sha256": "4e178172a6d540f164329ebbc2ac2ed8ff18e56696236eb6b85185e30e5187c8",
+      "status": "BUILT_DEPLOYED_DOWNLOADED_MATCH"
+    },
+    {
+      "family": "approved_recovery_guide",
+      "source_build_identity": ["web/assets/LEGAVIK-Recovery-Guide-V1.pdf"],
+      "member_count": 1,
+      "built_sha256": "fe19ece2ef96da4093f7aa2c88bb54221b5ed459f31c8a78de8d734ff9b02722",
+      "deployed_sha256": "fe19ece2ef96da4093f7aa2c88bb54221b5ed459f31c8a78de8d734ff9b02722",
+      "downloaded_sha256": "fe19ece2ef96da4093f7aa2c88bb54221b5ed459f31c8a78de8d734ff9b02722",
+      "status": "BUILT_DEPLOYED_DOWNLOADED_MATCH"
+    },
+    {
+      "family": "handbook_docx",
+      "source_build_identity": "artifacts/handbook-v1/LEGAVIK_*.docx",
+      "member_count": 8,
+      "built_set_sha256": "59e42f16574aada95a5a8820d250c5b40808bb35f0233c5b8597abc40aa6ac8e",
+      "deployed_set_sha256": "59e42f16574aada95a5a8820d250c5b40808bb35f0233c5b8597abc40aa6ac8e",
+      "downloaded_set_sha256": "59e42f16574aada95a5a8820d250c5b40808bb35f0233c5b8597abc40aa6ac8e",
+      "status": "BUILT_DEPLOYED_DOWNLOADED_MATCH"
+    },
+    {
+      "family": "runtime_docx_templates",
+      "source_build_identity": "web/v2/assets/templates/LEGAVIK_*.docx",
+      "member_count": 15,
+      "built_set_sha256": "582a9883471d0eae2e5330fefcd79568304773d6a2b640a10ca8c6f0c2e35220",
+      "deployed_set_sha256": "582a9883471d0eae2e5330fefcd79568304773d6a2b640a10ca8c6f0c2e35220",
+      "downloaded_set_sha256": "582a9883471d0eae2e5330fefcd79568304773d6a2b640a10ca8c6f0c2e35220",
+      "status": "BUILT_DEPLOYED_DOWNLOADED_MATCH"
+    },
+    {
+      "family": "runtime_generated_docx_downloads",
+      "source_build_identity": "src/product-v2/dynamic-docx-templates.js",
+      "member_count": "PER_CUSTOMER_INSTANCE",
+      "built_sha256": "PER_INSTANCE",
+      "deployed_sha256": "NOT_APPLICABLE_DYNAMIC_CLIENT_GENERATION",
+      "downloaded_sha256": "NOT CAPTURED IN THIS GOVERNANCE PHASE",
+      "status": "GENERATOR_CONTRACT_PASS_51_TEST_RUN"
+    },
+    {
+      "family": "recovery_kit_evidence_archive_downloads",
+      "source_build_identity": "Runtime-generated Recovery Kit, Mainnet Recovery Evidence and encrypted Archive",
+      "member_count": "PER_RECOVERY_VERSION",
+      "built_sha256": "PER_INSTANCE_AND_EMBEDDED_IN_FORMAT_EVIDENCE",
+      "deployed_sha256": "NOT_APPLICABLE_CUSTOMER_GENERATED",
+      "downloaded_sha256": "HISTORICAL SAMPLES VERIFIED; CURRENT PHASE DID NOT GENERATE RECOVERY MATERIALS",
+      "status": "FORMAT_COMPATIBILITY_PASS_NO_NEW_MAINNET_OPERATION"
+    }
+  ],
+  "coverage": {
+    "concrete_static_assets_built": 28,
+    "concrete_static_assets_deployed": 28,
+    "concrete_static_assets_downloaded": 28,
+    "concrete_static_sha_mismatches": 0,
+    "dynamic_download_families_contract_verified": 4
+  },
+  "historical_not_verified": [
+    "pre-current JS bundle deployments",
+    "retired SKREK Recovery Guide deployment lineage",
+    "pre-LEGAVIK Handbook deployments",
+    "pre-LEGAVIK runtime DOCX deployments",
+    "historical customer-generated download samples not already covered by preserved evidence"
+  ],
+  "historical_not_verified_count": 5,
+  "credentials_recorded": false
+}

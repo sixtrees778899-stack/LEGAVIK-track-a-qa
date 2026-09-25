@@ -1,0 +1,109 @@
+{
+  "passport_version": "1.1-audited",
+  "platform_id": "okx",
+  "status": "CANDIDATE_NOT_LAB_VERIFIED",
+  "sections": [
+    "prepared_materials",
+    "official_recovery_paths",
+    "account_holder_actions",
+    "owner_directed_transfer_route",
+    "third_party_restrictions",
+    "legal_or_official_escalation",
+    "untested_steps",
+    "recovery_status",
+    "last_verified_at",
+    "region_and_legal_entity",
+    "drill_evidence_hash"
+  ],
+  "fields": [
+    "masked_account_identifier",
+    "serving_entity_and_region",
+    "security_factor_inventory",
+    "recovery_path_refs",
+    "withdrawal_control_refs",
+    "owner_exit_route_refs",
+    "legal_escalation_refs",
+    "recovery_status",
+    "last_verified_at",
+    "drill_evidence_hash"
+  ],
+  "forbidden": [
+    "password",
+    "OTP",
+    "authenticator_seed",
+    "API_secret",
+    "full_identity_document",
+    "real_recovery_material"
+  ],
+  "claim_refs": [
+    "OKXP-001",
+    "OKXP-002",
+    "OKXP-003",
+    "OKXP-004",
+    "OKXP-005",
+    "OKXP-006",
+    "OKXP-007",
+    "OKXP-008",
+    "OKXP-009",
+    "OKXP-010",
+    "OKXP-011",
+    "OKXP-012",
+    "OKXP-013",
+    "OKXP-014",
+    "OKXP-015",
+    "OKXP-016",
+    "OKXP-017",
+    "OKXP-018",
+    "OKXP-020",
+    "OKXP-021",
+    "OKXP-022",
+    "OKXP-023",
+    "OKXP-025",
+    "OKXP-026",
+    "OKXP-027",
+    "OKXP-028",
+    "OKXP-029",
+    "OKXP-030",
+    "OKXP-031",
+    "OKXP-032",
+    "OKXP-033",
+    "OKXP-034",
+    "OKXP-035",
+    "OKXP-036",
+    "OKXP-037",
+    "OKXP-038",
+    "OKXP-039",
+    "OKXP-044",
+    "OKXP-045",
+    "OKXP-049"
+  ],
+  "governance_tags": {
+    "scope": {
+      "geography": "United States",
+      "legal_entity": "UNCONFIRMED_ENTITY",
+      "platform_variant": "OKX US",
+      "product_scope": "MIXED_SCOPES_USE_FIELD_TAGS",
+      "account_type": "Personal / Custodial",
+      "version_scope": "Field-level source versions"
+    },
+    "source": {
+      "primary": {
+        "source_type": "OFFICIAL",
+        "source_id": "MULTIPLE_APPROVED_CLAIMS",
+        "source_url": "N/A",
+        "source_title": "OKX audited claim set",
+        "source_section": "Field claim_refs",
+        "source_checked_at": "2026-08-02"
+      },
+      "auxiliary": []
+    },
+    "confidence": "MEDIUM",
+    "last_verified": {
+      "last_verified_at": "2026-08-02",
+      "verified_by": "Codex Research — independent evidence audit",
+      "verification_method": "OFFICIAL_RECHECK",
+      "review_due_at": "2026-11-02",
+      "stale_trigger": "Any required field Claim becomes stale"
+    }
+  }
+}

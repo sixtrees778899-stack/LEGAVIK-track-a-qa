@@ -1,8 +1,7 @@
 {
   "tool_name": "LEGAVIK Independent Recovery Tool",
-  "tool_version": "1.1.0",
-  "build_identity": "legavik-independent-recovery-tool-v1-evidence-20260914-1",
-  "executable_sha256": "6eccecc5d3859f932dda85fb66436447f57fc6f1bb4eba7644ffc3640da98f8a",
+  "tool_version": "1.0.0",
+  "build_identity": "legavik-independent-recovery-tool-v1-20260912-1",
   "supported": {
     "recovery_kit_version": [
       1
@@ -30,7 +29,7 @@
   "customer_materials_embedded": false,
   "artifact": {
     "filename": "LEGAVIK-Independent-Recovery-Tool-V1.html",
-    "sha256": "16f02c111773b7d006ac4eba81b0183a4e6725515645aaa3836fc2c4a4b732c5",
+    "sha256": "8262106d2bc70a024b50229740fb5dc1fc6459b403e47e5d72244c5c9c7c1a06",
     "media_type": "text/html"
   }
 }

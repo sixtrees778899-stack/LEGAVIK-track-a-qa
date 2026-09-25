@@ -19,32 +19,33 @@ test('real email signup, six digit verification, password login, reset and logou
 });
 
 test('customer center exposes the seven approved sections and no mock orders',()=>{
-  for(const label of ['总览','我的 Recovery Map','恢复与凭证','恢复维护','我的方案与订单','帮助与客服','账户与安全'])assert.match(app,new RegExp(label));
+  for(const label of ['总览','我的 Recovery Map','恢复资料状态','年度检查','我的订单','客服中心','账户与安全'])assert.match(app,new RegExp(label));
   assert.match(app,/from\('orders'\)\.select/);
   assert.doesNotMatch(app,/mockOrder|MOCK_ORDER/);
 });
 
-test('dashboard stays focused on current map, review, plan and real recent activity',()=>{
-  for(const label of ['CURRENT RECOVERY MAP','RECOVERY REVIEW','CURRENT PLAN','最近活动','overview-sections','activity-list'])assert.match(app,new RegExp(label,'i'));
-  assert.match(app,/slice\(0,5\)/);
-  assert.match(app,/function recentActivities\(data\)/);
+test('dashboard stays focused on four statuses, one next action and up to three recent maps',()=>{
+  for(const label of ['Recovery Map 状态','当前服务计划','Recovery Readiness / 年度检查','最近活动','next-action-card','最近的 Recovery Map'])assert.match(app,new RegExp(label,'i'));
+  assert.match(app,/data\.maps\.slice\(0,3\)/);
+  assert.match(app,/function nextAction\(data\)/);
   assert.match(app,/data-section-link/);
-  assert.doesNotMatch(app.slice(app.indexOf("if(state.section==='overview')"),app.indexOf("if(state.section==='maps')")),/USD|AUD|免费更新|购买单次更新/);
   assert.doesNotMatch(app,/Seed Phrase|Private Key|sensitive attachment/i);
 });
 
-test('help and support uses the knowledge source and human support exits',()=>{
-  assert.match(app,/知识库是当前正式帮助内容来源/);
-  assert.match(app,/智能助手/);
-  assert.match(app,/转人工支持/);
-  assert.match(app,/浏览帮助内容/);
-  assert.match(app,/联系人工支持/);
+test('support center is a restrained placeholder with knowledge and human support exits',()=>{
+  assert.match(app,/AI 问答|智能问答/);
+  assert.match(app,/Knowledge Base 联动/);
+  assert.match(app,/转人工/);
+  assert.match(app,/多语言客服/);
+  assert.match(app,/浏览知识库/);
+  assert.match(app,/联系我们/);
 });
 
 test('dashboard bundle and responsive layout expose the approved desktop and mobile structure',()=>{
-  for(const token of ['overview-sections','status-summary','activity-list','support-placeholder'])assert.match(bundle,new RegExp(token));
-  assert.match(css,/\.overview-sections\{display:grid/);
-  assert.match(css,/@media\(max-width:760px\).*\.status-summary\{[^}]*flex-direction:column/s);
+  for(const token of ['dashboard-stats','next-action-card','recent-map-list','support-placeholder'])assert.match(bundle,new RegExp(token));
+  assert.match(css,/\.dashboard-stats\{grid-template-columns:repeat\(4,minmax\(0,1fr\)\)/);
+  assert.match(css,/@media\(max-width:760px\).*\.next-action-card\{[^}]*flex-direction:column/s);
+  assert.match(css,/@media\(max-width:430px\)\{\.dashboard-stats\{grid-template-columns:1fr\}/);
 });
 
 test('browser configuration contains only public placeholders and never a privileged key',()=>{
@@ -76,7 +77,7 @@ test('Customer Center shows only formal published lifecycle records and never pr
   assert.match(app,/from\('recovery_maps'\).*eq\('lifecycle_state','PUBLISHED'\).*eq\('status','PUBLISHED'\)/s);
   assert.match(app,/from\('recovery_map_versions'\)/);
   assert.match(app,/当前版本：/);
-  assert.match(app,/版本记录/);
+  assert.match(app,/查看版本记录/);
   assert.doesNotMatch(app,/regenerateEvidence|重新获取 Evidence|data-evidence/);
 });
 

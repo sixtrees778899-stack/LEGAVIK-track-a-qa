@@ -1,0 +1,103 @@
+[
+  {
+    "topic": "Login",
+    "status": "COVERED",
+    "claim_refs": [
+      "BINP-001",
+      "BINP-035"
+    ],
+    "notes": "Approved claims available"
+  },
+  {
+    "topic": "Password",
+    "status": "COVERED",
+    "claim_refs": [
+      "BINP-002",
+      "BINP-003"
+    ],
+    "notes": "Approved claims available"
+  },
+  {
+    "topic": "Email",
+    "status": "COVERED",
+    "claim_refs": [
+      "BINP-004",
+      "BINP-020"
+    ],
+    "notes": "Approved claims available"
+  },
+  {
+    "topic": "Phone",
+    "status": "COVERED",
+    "claim_refs": [
+      "BINP-005"
+    ],
+    "notes": "Approved claims available"
+  },
+  {
+    "topic": "Authenticator",
+    "status": "COVERED",
+    "claim_refs": [
+      "BINP-006"
+    ],
+    "notes": "Approved claims available"
+  },
+  {
+    "topic": "Passkey",
+    "status": "COVERED",
+    "claim_refs": [
+      "BINP-008"
+    ],
+    "notes": "Approved claims available"
+  },
+  {
+    "topic": "Security Key",
+    "status": "COVERED",
+    "claim_refs": [
+      "BINP-007"
+    ],
+    "notes": "Approved claims available"
+  },
+  {
+    "topic": "Anti-phishing Code",
+    "status": "COVERED",
+    "claim_refs": [
+      "BINP-010",
+      "BINP-011"
+    ],
+    "notes": "Approved claims available"
+  },
+  {
+    "topic": "Device Management",
+    "status": "COVERED",
+    "claim_refs": [
+      "BINP-012",
+      "BINP-013",
+      "BINP-047"
+    ],
+    "notes": "Approved claims available"
+  },
+  {
+    "topic": "API Key",
+    "status": "COVERED",
+    "claim_refs": [
+      "BINP-014",
+      "BINP-015",
+      "BINP-016",
+      "BINP-017",
+      "BINP-049"
+    ],
+    "notes": "Approved claims available"
+  },
+  {
+    "topic": "Address Book",
+    "status": "COVERED",
+    "claim_refs": [
+      "BINP-018",
+      "BINP-019",
+      "BINP-021",
+      "BINP-048"
+    ],
+    "notes": "Approved claims available"
+  }
+]

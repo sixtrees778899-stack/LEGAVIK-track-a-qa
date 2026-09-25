@@ -1,11 +1,9 @@
 import {test,expect} from '@playwright/test';
 import {mkdir} from 'node:fs/promises';
-import {CURRENT_TEST_RELEASE} from '../../src/ui/canonical-customer-links.js';
 
 const QA_BASE=process.env.CJAS_BROWSER_BASE??'';
-const HOME=`${QA_BASE}/web/v3-crypto/index.html?release=${CURRENT_TEST_RELEASE}`;
-const MAP=`${QA_BASE}/web/v2/index.html?release=${CURRENT_TEST_RELEASE}`;
-const CREATE=`${QA_BASE}/web/v2/index.html?test_recovery_map=1&release=${CURRENT_TEST_RELEASE}`;
+const HOME=`${QA_BASE}/web/v3-crypto/index.html?release=product-integration-v1`;
+const MAP=`${QA_BASE}/web/v2/index.html?release=product-integration-v1`;
 const SHOTS='docs/evidence/skrek-product-v1';
 const errors=new WeakMap();
 
@@ -36,15 +34,16 @@ test('Recovery Map guide — all six puzzle details open and return without rout
 test('Recovery Map guide — 1440 1280 and 390 responsive baseline',async({page})=>{
   for(const [width,height,label] of [[1440,1000,'1440'],[1280,900,'1280'],[390,844,'390']]){await page.setViewportSize({width,height});await page.goto(`${MAP}&entry=guide`);await expect(page.locator('[data-guide-module]')).toHaveCount(6);expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);await page.screenshot({path:`${SHOTS}/recovery-map-guide-${label}.png`,fullPage:true});await page.locator('[data-guide-module="locations"]').click();await expect(page.locator('[data-module-detail="locations"]')).toBeVisible();expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);await page.screenshot({path:`${SHOTS}/recovery-map-detail-locations-${label}.png`,fullPage:true});}
 });
-test.afterEach(async({page})=>{const record=errors.get(page),ready=await page.locator('#app').getAttribute('data-runtime-state').catch(()=>null),transientConfig=/\/config\/(?:recovery-map\/v2|security|attachments)\//,intentionalNavigationAsset=/\/web\/assets\/legavik-brand-master-v1\.png cancelled$/,knownWebkitStyleWarning="Refused to apply a stylesheet because its hash, its nonce, or 'unsafe-inline' does not appear in the style-src directive of the Content Security Policy.",unresolved=record.requests.filter(item=>!(ready==='READY'&&((transientConfig.test(item)&&item.endsWith(' cancelled'))||intentionalNavigationAsset.test(item)))),consoleErrors=record.console.filter(item=>!(ready==='READY'&&item===knownWebkitStyleWarning));expect(consoleErrors).toEqual([]);expect(record.page).toEqual([]);expect(unresolved).toEqual([]);});
+test.afterEach(async({page})=>{const record=errors.get(page);expect(record.console).toEqual([]);expect(record.page).toEqual([]);expect(record.requests).toEqual([]);});
 
-async function openAccounts(page){await page.goto(CREATE);await expect(page.locator('h1')).toHaveText('资产与账户');await expect(page.locator('#app')).toHaveAttribute('data-runtime-state','READY');}
+async function openAccounts(page){await page.goto(MAP);const guideStart=page.locator('#guide-start');if(await guideStart.count()===1)await guideStart.click();else{await page.locator('#next-task').click();await expect(page.locator('h1')).toContainText('开始前');await page.locator('#intro-start').click();}await expect(page.locator('h1')).toHaveText('资产与账户');}
 async function choose(page,category,label){await page.locator(`[data-catalog-category="${category}"]`).click();await page.getByRole('button',{name:new RegExp(label)}).click();}
-async function addApprovedAssets(page){
+async function addFourAssets(page){
   await choose(page,'CEX','Binance');
   await choose(page,'HOT_WALLET','MetaMask');
   await choose(page,'HARDWARE_WALLET','Ledger');
-  await expect(page.locator('.selected-accounts fieldset')).toHaveCount(3);
+  await page.locator('[data-catalog-category="CUSTOM"]').click();await page.locator('#show-custom').click();await page.locator('#custom-catalog-name').fill('家庭冷存储方案');await page.locator('#add-custom-catalog').click();
+  await expect(page.locator('.selected-accounts fieldset')).toHaveCount(4);
   const binance=page.locator('.selected-accounts fieldset').filter({hasText:'Binance'});await binance.locator('[data-key="region"]').selectOption('Australia');await binance.locator('[data-key="account_type"]').selectOption('Personal');
 }
 async function completeFourAssetFlow(page){
@@ -57,39 +56,6 @@ async function completeFourAssetFlow(page){
   await page.locator('#module-continue').click();await expect(page.locator('h1')).toHaveText('协助人');await page.locator('#decision').selectOption('NOT_NEEDED');await page.locator('#module-continue').click();
   await expect(page.locator('h1')).toHaveText('给未来恢复人的嘱托');await page.locator('#personal-message').fill('如遇身份或权限冲突，请停止操作并联系官方支持。');await page.locator('#module-continue').click();await expect(page.locator('h1')).toHaveText('检查与完善');
 }
-
-test('P0 creation runtime stability — READY survives the startup deadline across all six modules and attachments',async({page})=>{
-  test.setTimeout(90_000);
-  await page.goto(CREATE);
-  await expect(page.locator('h1')).toHaveText('资产与账户');
-  await expect(page.locator('#app')).toHaveAttribute('data-runtime-state','READY');
-  for(let second=0;second<31;second++){
-    await page.waitForTimeout(1_000);
-    await expect(page.locator('#app')).toHaveAttribute('data-runtime-state','READY');
-  }
-  const modules=['accounts','conditions','locations','instructions','assistants','message'];
-  for(const module of modules){
-    await page.locator(`[data-flow="${module}"]`).click();
-    await expect(page.getByText('页面加载未完成')).toHaveCount(0);
-    await expect(page.locator('#app')).toHaveAttribute('data-runtime-state','READY');
-    await page.keyboard.press('Tab');
-    await page.locator('h1').click({position:{x:4,y:4}});
-  }
-  await page.locator('[data-flow="accounts"]').click();
-  await choose(page,'CEX','Binance');
-  const account=page.locator('.selected-accounts fieldset').filter({hasText:'Binance'});
-  await account.locator('[data-key="region"]').selectOption('Australia');
-  await account.locator('[data-key="account_type"]').selectOption('Personal');
-  await page.locator('[data-flow="conditions"]').click();
-  await page.locator('#module-attachments').click();
-  await page.locator('#new-file-account').selectOption('module-summary');
-  await page.locator('#file-upload').setInputFiles({name:'runtime-stability.txt',mimeType:'text/plain',buffer:Buffer.from('Non-secret runtime stability evidence.')});
-  await page.locator('#upload').click();
-  await expect(page.locator('[data-attachment-card]')).toHaveCount(1);
-  await page.locator('#module-continue').click();
-  await expect(page.getByText('页面加载未完成')).toHaveCount(0);
-  await expect(page.locator('#app')).toHaveAttribute('data-runtime-state','READY');
-});
 
 test('Journey 1 — SKREK product entry restores Frozen V2 six-module flow',async({page})=>{
   await page.goto(HOME);await page.locator('.hero [data-recovery-map]').click();await expect(page).toHaveURL(/\/web\/v2\/index\.html/);
@@ -134,10 +100,10 @@ test('Journey 2 — aggregated selector multi-select custom persistence and no s
   await page.screenshot({path:`${SHOTS}/aggregated-asset-selector.png`,fullPage:true});
 });
 
-test('Journey 3 — approved asset types persist through modules 1–6 Review and Report',async({page})=>{
-  await openAccounts(page);await addApprovedAssets(page);await completeFourAssetFlow(page);await expect(page.locator('main')).toContainText('没有阻断问题');
-  await page.locator('#to-report').click();await expect(page.locator('h1')).toHaveText('恢复地图信息预览');for(const name of ['Binance','MetaMask','Ledger'])await expect(page.locator('main')).toContainText(name);
-  await page.locator('[data-flow="accounts"]').click();await expect(page.locator('.selected-accounts fieldset')).toHaveCount(3);
+test('Journey 3 — four asset types persist through modules 1–6 Review and Report',async({page})=>{
+  await openAccounts(page);await addFourAssets(page);await completeFourAssetFlow(page);await expect(page.locator('main')).toContainText('没有阻断问题');
+  await page.locator('#to-report').click();await expect(page.locator('h1')).toContainText('预览恢复说明');for(const name of ['Binance','MetaMask','Ledger','家庭冷存储方案'])await expect(page.locator('main')).toContainText(name);
+  await page.locator('[data-flow="accounts"]').click();await expect(page.locator('.selected-accounts fieldset')).toHaveCount(4);await expect(page.locator('main')).toContainText('家庭冷存储方案');
   await page.screenshot({path:`${SHOTS}/six-module-report-persistence.png`,fullPage:true});
 });
 
@@ -229,8 +195,8 @@ test('Release Gate — full home-to-Version journey, readiness and Preview round
   await page.goto(HOME);await page.screenshot({path:`${SHOTS}/01-homepage.png`,fullPage:true});await page.locator('.hero [data-recovery-map]').click();await page.screenshot({path:`${SHOTS}/02-recovery-map.png`,fullPage:true});await page.locator('#next-task').click();await page.locator('#intro-start').click();await choose(page,'CEX','Binance');await page.screenshot({path:`${SHOTS}/03-module-1-selected.png`,fullPage:true});const account=page.locator('.selected-accounts fieldset').filter({hasText:'Binance'});await account.locator('[data-key="region"]').selectOption('Australia');await account.locator('[data-key="account_type"]').selectOption('Personal');await page.locator('#module-continue').click();await page.locator('[data-condition-account][value="email"]').check();await page.screenshot({path:`${SHOTS}/04-module-2.png`,fullPage:true});await page.locator('#module-continue').click();await page.locator('[data-summary-text]').fill('纸质资料柜内的账户索引，不含任何密码。');await page.screenshot({path:`${SHOTS}/05-module-3.png`,fullPage:true});await page.locator('#module-continue').click();await page.locator('[data-key="instruction_text"]').fill('进入官方恢复入口，核对身份后按官方流程处理。');await page.screenshot({path:`${SHOTS}/06-module-4.png`,fullPage:true});await page.locator('#module-continue').click();await page.locator('#decision').selectOption('NOT_NEEDED');await page.screenshot({path:`${SHOTS}/07-module-5.png`,fullPage:true});await page.locator('#module-continue').click();await page.locator('#personal-message').fill('发生身份冲突时停止并联系官方。');await page.screenshot({path:`${SHOTS}/08-module-6.png`,fullPage:true});await page.locator('#module-previous').click();await expect(page.locator('#decision')).toHaveValue('NOT_NEEDED');await page.locator('#module-continue').click();await expect(page.locator('#personal-message')).toHaveValue('发生身份冲突时停止并联系官方。');await page.locator('#module-continue').click();await expect(page.locator('main')).toContainText('没有阻断问题');await page.screenshot({path:`${SHOTS}/09-review.png`,fullPage:true});await page.locator('#to-report').click();await expect(page.locator('.readiness-summary strong')).toHaveText('100%');await expect(page.locator('main')).toContainText('纸质资料柜内的账户索引');await page.screenshot({path:`${SHOTS}/10-preview.png`,fullPage:true});await page.locator('#report-review').click();await page.locator('[data-flow="message"]').click();await page.locator('#personal-message').fill('更新后的嘱托：遇到异常立即停止。');await page.screenshot({path:`${SHOTS}/11-back-to-edit.png`,fullPage:true});await page.locator('#module-continue').click();await page.locator('#to-report').click();await expect(page.locator('main')).toContainText('更新后的嘱托');await page.locator('#password').click();await page.locator('#payment-continue').click();await page.locator('#password-value').fill('Release-Gate-River-27!');await page.locator('#password-confirm').fill('Release-Gate-River-27!');await page.locator('#ack').check();await page.screenshot({path:`${SHOTS}/12-create-process.png`,fullPage:true});await page.locator('#generate').click();await expect(page.locator('h1')).toContainText('已创建');await page.screenshot({path:`${SHOTS}/13-create-success.png`,fullPage:true});
 });
 
-test('Release Gate — attachment add select replace download and delete follow the approved customer flow',async({page})=>{
-  await openAccounts(page);await choose(page,'CEX','Binance');const account=page.locator('.selected-accounts fieldset').filter({hasText:'Binance'});await account.locator('[data-key="region"]').selectOption('Australia');await account.locator('[data-key="account_type"]').selectOption('Personal');await page.locator('#module-continue').click();await page.locator('[data-condition-account]').first().check();await page.locator('#module-attachments').click();const drawer=page.locator('main[data-view="attachments"]');await drawer.locator('#new-file-account').selectOption('module-summary');await drawer.locator('.upload-policy summary').click();await expect(drawer.locator('.upload-policy')).toContainText('禁止上传');await drawer.locator('#file-upload').setInputFiles({name:'gate-note.txt',mimeType:'text/plain',buffer:Buffer.from('Release gate attachment without secrets.')});await drawer.locator('#upload').click();await expect(drawer.locator('[data-attachment-card]')).toContainText('gate-note.txt');const download=page.waitForEvent('download');await drawer.locator('[data-view-file]').click();await download;await drawer.locator('[data-replace-file]').setInputFiles({name:'gate-note-replaced.txt',mimeType:'text/plain',buffer:Buffer.from('Replacement without secrets.')});await expect(drawer.locator('[data-attachment-card]')).toContainText('gate-note-replaced.txt');await drawer.locator('[data-delete-file]').click();await expect(drawer.locator('[data-attachment-card]')).toHaveCount(0);
+test('Release Gate — attachment add capacity delete and over-limit fail closed',async({page})=>{
+  await openAccounts(page);await choose(page,'CEX','Binance');const account=page.locator('.selected-accounts fieldset').filter({hasText:'Binance'});await account.locator('[data-key="region"]').selectOption('Australia');await account.locator('[data-key="account_type"]').selectOption('Personal');await page.locator('#module-continue').click();await page.locator('[data-condition-account]').first().check();await page.locator('#module-attachments').click();const drawer=page.locator('main[data-view="attachments"]');await drawer.locator('.upload-policy summary').click();await expect(drawer.locator('.upload-policy')).toContainText('禁止上传');await drawer.locator('#file-upload').setInputFiles({name:'gate-note.txt',mimeType:'text/plain',buffer:Buffer.from('Release gate attachment without secrets.')});await drawer.locator('#upload').click();await expect(drawer.locator('[data-attachment-card]')).toContainText('gate-note.txt');const download=page.waitForEvent('download');await drawer.locator('[data-view-file]').click();await download;await drawer.locator('[data-replace-file]').setInputFiles({name:'gate-note-replaced.txt',mimeType:'text/plain',buffer:Buffer.from('Replacement without secrets.')});await expect(drawer.locator('[data-attachment-card]')).toContainText('gate-note-replaced.txt');await drawer.locator('[data-delete-file]').click();await expect(drawer.locator('[data-attachment-card]')).toHaveCount(0);await drawer.locator('#file-upload').setInputFiles({name:'too-large.txt',mimeType:'text/plain',buffer:Buffer.alloc(10*1024*1024+1,65)});await drawer.locator('#upload').click();await expect(drawer.locator('#message')).toContainText('单个附件不得超过 10 MiB');await expect(drawer.locator('[data-attachment-card]')).toHaveCount(0);
 });
 
 test('Release Gate — summary, itemized and module controls retain one Draft',async({page})=>{

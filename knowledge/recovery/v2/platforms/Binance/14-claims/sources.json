@@ -1,0 +1,236 @@
+[
+  {
+    "source_id": "BINP-S01",
+    "title": "Secure Your Binance Account in 7 Simple Steps",
+    "url": "https://academy.binance.com/en/articles/secure-your-binance-account-in-7-simple-steps",
+    "section": "Account security; password; 2FA; devices; address management",
+    "version": "Academy article updated 2026-06-26",
+    "checked_at": "2026-08-02",
+    "review_due_at": "2026-11-02",
+    "official": true,
+    "governance_tags": {
+      "scope": {
+        "geography": "Other",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "Binance Global educational content",
+        "product_scope": "Retail / Spot educational scope",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Academy article; serving-entity applicability unconfirmed"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "BINP-S01",
+          "source_url": "https://academy.binance.com/en/articles/secure-your-binance-account-in-7-simple-steps",
+          "source_title": "Secure Your Binance Account in 7 Simple Steps",
+          "source_section": "Account security; password; 2FA; devices; address management",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "source_id": "BINP-S02",
+    "title": "5 Ways to Improve Your Binance Account Security",
+    "url": "https://academy.binance.com/en/articles/5-ways-to-improve-your-binance-account-security",
+    "section": "API controls; anti-phishing; 2FA; withdrawal whitelist",
+    "version": "Academy article updated 2026-04-23",
+    "checked_at": "2026-08-02",
+    "review_due_at": "2026-11-02",
+    "official": true,
+    "governance_tags": {
+      "scope": {
+        "geography": "Other",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "Binance Global educational content",
+        "product_scope": "Retail / Spot educational scope",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Academy article; serving-entity applicability unconfirmed"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "BINP-S02",
+          "source_url": "https://academy.binance.com/en/articles/5-ways-to-improve-your-binance-account-security",
+          "source_title": "5 Ways to Improve Your Binance Account Security",
+          "source_section": "API controls; anti-phishing; 2FA; withdrawal whitelist",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "source_id": "BINP-S03",
+    "title": "What Is Two-Factor Authentication (2FA)?",
+    "url": "https://academy.binance.com/en/articles/what-is-two-factor-authentication-2fa",
+    "section": "2FA types; passkeys; backup-code principle",
+    "version": "Academy article updated 2026-06-25",
+    "checked_at": "2026-08-02",
+    "review_due_at": "2026-11-02",
+    "official": true,
+    "governance_tags": {
+      "scope": {
+        "geography": "Other",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "Binance Global educational content",
+        "product_scope": "Retail / Spot educational scope",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Academy article; serving-entity applicability unconfirmed"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "BINP-S03",
+          "source_url": "https://academy.binance.com/en/articles/what-is-two-factor-authentication-2fa",
+          "source_title": "What Is Two-Factor Authentication (2FA)?",
+          "source_section": "2FA types; passkeys; backup-code principle",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "source_id": "BINP-S04",
+    "title": "What Is the Satoshi Test and How Does It Help With the Travel Rule?",
+    "url": "https://academy.binance.com/en/articles/what-is-the-satoshi-test-and-how-does-it-help-with-the-travel-rule",
+    "section": "Satoshi Test; verified address; Address Management",
+    "version": "Academy article updated 2026-06-29",
+    "checked_at": "2026-08-02",
+    "review_due_at": "2026-11-02",
+    "official": true,
+    "governance_tags": {
+      "scope": {
+        "geography": "Other",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "Binance Global educational content",
+        "product_scope": "Retail / Spot educational scope",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Academy article; serving-entity applicability unconfirmed"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "BINP-S04",
+          "source_url": "https://academy.binance.com/en/articles/what-is-the-satoshi-test-and-how-does-it-help-with-the-travel-rule",
+          "source_title": "What Is the Satoshi Test and How Does It Help With the Travel Rule?",
+          "source_section": "Satoshi Test; verified address; Address Management",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "source_id": "BINP-S05",
+    "title": "Pass On Your Crypto",
+    "url": "https://academy.binance.com/en/articles/how-to-safely-pass-on-your-crypto-when-you-die",
+    "section": "Planning principles; no platform-specific legal entitlement",
+    "version": "Academy educational guidance; region/legal scope unconfirmed",
+    "checked_at": "2026-08-02",
+    "review_due_at": "2026-11-02",
+    "official": true,
+    "governance_tags": {
+      "scope": {
+        "geography": "Other",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "Binance Global educational content",
+        "product_scope": "Retail / Spot educational scope",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Academy article; serving-entity applicability unconfirmed"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "BINP-S05",
+          "source_url": "https://academy.binance.com/en/articles/how-to-safely-pass-on-your-crypto-when-you-die",
+          "source_title": "Pass On Your Crypto",
+          "source_section": "Planning principles; no platform-specific legal entitlement",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "source_id": "BINP-S06",
+    "title": "Binance beginner guide",
+    "url": "https://academy.binance.com/en/articles/binance-beginner-s-guide",
+    "section": "Account access; KYC; password; 2FA; passkey; anti-phishing",
+    "version": "Academy article updated 2026-04-22",
+    "checked_at": "2026-08-02",
+    "review_due_at": "2026-11-02",
+    "official": true,
+    "governance_tags": {
+      "scope": {
+        "geography": "Other",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "Binance Global educational content",
+        "product_scope": "Retail / Spot educational scope",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Academy article; serving-entity applicability unconfirmed"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "BINP-S06",
+          "source_url": "https://academy.binance.com/en/articles/binance-beginner-s-guide",
+          "source_title": "Binance beginner guide",
+          "source_section": "Account access; KYC; password; 2FA; passkey; anti-phishing",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  }
+]

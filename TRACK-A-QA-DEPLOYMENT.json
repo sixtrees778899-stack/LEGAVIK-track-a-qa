@@ -1,12 +1,14 @@
 {
   "environment": "TRACK_A_MAIN_PRODUCT_QA",
-  "upstream_candidate_commit": "e933a835d505fa780d1b0d3fdbb5486be81bce7c",
-  "deployment_identity": "legavik-mainline-normal-flow-candidate-20260925-1",
+  "upstream_candidate_commit": "2a1f2f4a0a6cc6718be19c1d56a1273279911b60",
+  "source_commit": "00db285778ba1fdee19bcbb7fada43ffc64dadb9",
+  "historical_baseline": "a58ea66c12bb8ac577d5d98a39cc8c63de422fb8",
+  "deployment_identity": "legavik-mainline-stable-entitlement-20260925-1",
   "repository": "sixtrees778899-stack/LEGAVIK-track-a-qa",
   "branch": "main",
   "pages_base": "/LEGAVIK-track-a-qa",
   "track_b_repository": "sixtrees778899-stack/SKREK-auth-test",
   "track_b_branch": "main",
   "track_b_modified": false,
-  "routing_only_adaptation": true
+  "minimal_entitlement_compatibility": true
 }

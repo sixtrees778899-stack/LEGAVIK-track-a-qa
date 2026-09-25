@@ -1,0 +1,96 @@
+[
+  {
+    "topic": "Login",
+    "status": "COVERED",
+    "claim_refs": [
+      "CBP-028"
+    ],
+    "notes": "Approved claims available"
+  },
+  {
+    "topic": "Password",
+    "status": "COVERED",
+    "claim_refs": [
+      "CBP-002",
+      "CBP-003",
+      "CBP-004",
+      "CBP-021",
+      "CBP-034"
+    ],
+    "notes": "Approved claims available"
+  },
+  {
+    "topic": "Email",
+    "status": "COVERED",
+    "claim_refs": [
+      "CBP-001",
+      "CBP-033"
+    ],
+    "notes": "Approved claims available"
+  },
+  {
+    "topic": "Phone",
+    "status": "COVERED",
+    "claim_refs": [
+      "CBP-014",
+      "CBP-018"
+    ],
+    "notes": "Approved claims available"
+  },
+  {
+    "topic": "Authenticator",
+    "status": "COVERED",
+    "claim_refs": [
+      "CBP-017"
+    ],
+    "notes": "Approved claims available"
+  },
+  {
+    "topic": "Passkey",
+    "status": "COVERED",
+    "claim_refs": [
+      "CBP-009",
+      "CBP-010"
+    ],
+    "notes": "Approved claims available"
+  },
+  {
+    "topic": "Security Key",
+    "status": "COVERED",
+    "claim_refs": [
+      "CBP-007",
+      "CBP-016"
+    ],
+    "notes": "Approved claims available"
+  },
+  {
+    "topic": "Anti-phishing Code",
+    "status": "NOT_PLATFORM_FEATURE_OR_EVIDENCE_GAP",
+    "claim_refs": [],
+    "notes": "No claim is inferred; see Open Questions and platform-specific feature scope."
+  },
+  {
+    "topic": "Device Management",
+    "status": "COVERED",
+    "claim_refs": [
+      "CBP-013",
+      "CBP-030",
+      "CBP-031"
+    ],
+    "notes": "Approved claims available"
+  },
+  {
+    "topic": "API Key",
+    "status": "NOT_PLATFORM_FEATURE_OR_EVIDENCE_GAP",
+    "claim_refs": [],
+    "notes": "No claim is inferred; see Open Questions and platform-specific feature scope."
+  },
+  {
+    "topic": "Address Book",
+    "status": "COVERED",
+    "claim_refs": [
+      "CBP-032"
+    ],
+    "notes": "Approved claims available"
+  }
+]

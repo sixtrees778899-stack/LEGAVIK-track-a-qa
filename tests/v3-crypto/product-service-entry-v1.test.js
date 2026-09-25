@@ -10,12 +10,13 @@ test('Pricing FAQ exposes only the two approved low-frequency service entries',(
   assert.doesNotMatch(pricing,/Buy Add-on|Upgrade Package|Add-ons Store|其他产品与服务/);
 });
 
-test('approved Customer Center reads formal plan/order state without fabricating service entitlements',()=>{
-  for(const token of ['CURRENT PLAN / SERVICE ENTITLEMENT','方案能力来自当前正式服务记录，不由 Recovery Map 版本推断。','ORDER HISTORY','暂无付款订单记录'])assert.ok(center.includes(token),token);
-  assert.doesNotMatch(center,/free_updates_remaining|included_updates_remaining|service\.remaining/);
+test('Customer Center prioritizes included update rights and branches upgrades by current plan',()=>{
+  for(const token of ['本年度剩余免费更新：','开始更新','购买单次更新','升级至标准版','咨询 / 升级传承定制版','管理定制服务','联系私人客户支持','free_updates_remaining','included_updates_remaining'])assert.ok(center.includes(token),token);
+  assert.match(center,/service\.remaining>0[\s\S]*开始更新[\s\S]*购买单次更新/);
+  assert.match(center,/service\.plan==='Essential'[\s\S]*service\.plan==='Standard'[\s\S]*service\.plan==='Legacy \/ Private'/);
 });
 
 test('service placeholders preserve payment, lifecycle and Update boundaries',()=>{
-  for(const token of ['当前不会创建订单、不会标记付款成功，也不会进入付费创建流程','recoveryMapPurchaseUrl','updateRecoveryMapUrl(item)'])assert.ok(center.includes(token),token);
+  for(const token of ['USD 199 / 次 · AUD 280 / 次','USD 599 · AUD 840','当前不会创建订单、收费或发放权益','updateRecoveryMapUrl(service.latest)'])assert.ok(center.includes(token),token);
   assert.doesNotMatch(center,/insert\([^)]*orders|PAYMENT_SUCCESS|grantEntitlement|stripe/i);
 });

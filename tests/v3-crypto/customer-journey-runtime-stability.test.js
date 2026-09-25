@@ -11,11 +11,10 @@ const nav=read('src/account/account-nav-bridge.js');
 const metadata=read('src/account/recovery-metadata-client.js');
 
 test('all unpurchased Recovery Map starts hand off to the single canonical Pricing page',()=>{
-  assert.equal(canonicalPricingUrl(),`https://sixtrees778899-stack.github.io/SKREK-auth-test/web/v3-crypto/index.html?release=${CURRENT_TEST_RELEASE}#pricing`);
+  assert.equal(canonicalPricingUrl(),`https://sixtrees778899-stack.github.io/LEGAVIK-track-a-qa/web/v3-crypto/index.html?release=${CURRENT_TEST_RELEASE}#pricing`);
   assert.match(map,/guide-start-top[\s\S]*location\.assign\(canonicalPricingUrl\(\)\)/);
   assert.match(map,/purchaseState\.purchaseCompleted\?navTo\(id\):location\.assign\(canonicalPricingUrl\(\)\)/);
-  assert.match(account,/recoveryMapPurchaseUrl=canonicalPricingUrl\(\)/);
-  assert.match(account,/href="\$\{recoveryMapPurchaseUrl\}">返回产品与服务<\/a>/);
+  assert.match(account,/href:eligible\?recoveryMapCreateUrl:recoveryMapPurchaseUrl,label:eligible\?'开始建立':'选择服务方案'/);
   assert.doesNotMatch(account,/pricing-products-v2/);
 });
 

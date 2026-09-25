@@ -8,16 +8,16 @@ const accountCss=read('web/account/account.css');
 const update=read('web/v2/v2-app.js');
 const updateCss=read('web/v2/product-integration.css');
 
-test('A2 approved Customer Center baseline opens the authoritative current map and preserves version history',()=>{
-  assert.match(account,/data-map-card="\$\{esc\(item\.id\)\}"/);
-  assert.match(account,/href="\$\{esc\(recoveryCenterUrl\(item\)\)\}">进入我的恢复中心/);
-  assert.match(account,/\$\{versionHistory\(item\)\}/);
-  assert.match(account,/历史版本不可更新/);
+test('A2 recent Recovery Map entries open their exact lifecycle detail',()=>{
+  assert.match(account,/data-map-detail="\$\{esc\(item\.id\)\}" role="link" tabindex="0"/);
+  assert.match(account,/state\.section='maps';await renderCenter\(\)/);
+  assert.match(account,/CSS\.escape\(entry\.dataset\.mapDetail\)/);
+  assert.match(account,/event\.key==='Enter'\|\|event\.key===' '/);
 });
 
-test('A3 approved current-version actions share one aligned action group and exact copy',()=>{
+test('A3 current-version actions share one aligned action group and exact copy',()=>{
   assert.match(account,/class="map-card-actions"/);
-  assert.match(account,/class="primary-link"[^>]+>进入我的恢复中心<\/a><a class="secondary-link"[^>]+>更新 Recovery Map<\/a>/);
+  assert.match(account,/查看版本信息<\/button><a class="secondary-link"[^>]+>恢复当前版本<\/a>/);
   assert.match(accountCss,/\.map-card-actions\{display:flex;align-items:stretch/);
   assert.match(accountCss,/min-height:44px;min-width:164px/);
 });

@@ -21,6 +21,7 @@ const routeStates=[
 function customerText(source){
   return source
     .replaceAll('/SKREK-auth-test/','')
+    .replaceAll('/LEGAVIK-track-a-qa/','')
     .replaceAll('SKREK_PUBLIC_CONFIG','')
     .replaceAll('SKREK_PRODUCT_KNOWLEDGE','')
     .replaceAll('SKREK_APPROVED_KNOWLEDGE','')
@@ -28,7 +29,6 @@ function customerText(source){
     .replaceAll('__CJAS_V4_MODULE3_DIAGNOSTICS__','')
     .replaceAll('__CJAS_V2_DIAGNOSTICS__','')
     .replaceAll('__CJAS_MODULE_EXPORT_PREPARATION__','')
-    .replaceAll('CJAS-VAULT-ARCHIVE-V1','')
     .replace(/LEGAVIK_Module[^'"`]+/g,'')
     .replace(/LEGAVIK-Recovery-Guide-V1\.pdf/g,'')
     .replace(/"id":\s*"SKREK-[^"]+"/g,'')

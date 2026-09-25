@@ -1,0 +1,111 @@
+{
+  "passport_version": "1.1-audited",
+  "platform_id": "coinbase",
+  "status": "CANDIDATE_NOT_LAB_VERIFIED",
+  "sections": [
+    "prepared_materials",
+    "official_recovery_paths",
+    "account_holder_actions",
+    "owner_directed_transfer_route",
+    "third_party_restrictions",
+    "legal_or_official_escalation",
+    "untested_steps",
+    "recovery_status",
+    "last_verified_at",
+    "region_and_legal_entity",
+    "drill_evidence_hash"
+  ],
+  "fields": [
+    "masked_account_identifier",
+    "serving_entity_and_region",
+    "security_factor_inventory",
+    "recovery_path_refs",
+    "withdrawal_control_refs",
+    "owner_exit_route_refs",
+    "legal_escalation_refs",
+    "recovery_status",
+    "last_verified_at",
+    "drill_evidence_hash"
+  ],
+  "forbidden": [
+    "password",
+    "OTP",
+    "authenticator_seed",
+    "API_secret",
+    "full_identity_document",
+    "real_recovery_material"
+  ],
+  "claim_refs": [
+    "CBP-002",
+    "CBP-003",
+    "CBP-005",
+    "CBP-006",
+    "CBP-007",
+    "CBP-008",
+    "CBP-009",
+    "CBP-010",
+    "CBP-011",
+    "CBP-012",
+    "CBP-013",
+    "CBP-015",
+    "CBP-016",
+    "CBP-017",
+    "CBP-018",
+    "CBP-019",
+    "CBP-020",
+    "CBP-021",
+    "CBP-022",
+    "CBP-024",
+    "CBP-025",
+    "CBP-026",
+    "CBP-027",
+    "CBP-028",
+    "CBP-029",
+    "CBP-030",
+    "CBP-031",
+    "CBP-032",
+    "CBP-033",
+    "CBP-034",
+    "CBP-035",
+    "CBP-036",
+    "CBP-037",
+    "CBP-038",
+    "CBP-039",
+    "CBP-040",
+    "CBP-041",
+    "CBP-044",
+    "CBP-045",
+    "CBP-046",
+    "CBP-047",
+    "CBP-049"
+  ],
+  "governance_tags": {
+    "scope": {
+      "geography": "Other",
+      "legal_entity": "UNCONFIRMED_ENTITY",
+      "platform_variant": "Coinbase Retail",
+      "product_scope": "MIXED_SCOPES_USE_FIELD_TAGS",
+      "account_type": "Personal / Custodial",
+      "version_scope": "Field-level source versions"
+    },
+    "source": {
+      "primary": {
+        "source_type": "OFFICIAL",
+        "source_id": "MULTIPLE_APPROVED_CLAIMS",
+        "source_url": "N/A",
+        "source_title": "Coinbase audited claim set",
+        "source_section": "Field claim_refs",
+        "source_checked_at": "2026-08-02"
+      },
+      "auxiliary": []
+    },
+    "confidence": "MEDIUM",
+    "last_verified": {
+      "last_verified_at": "2026-08-02",
+      "verified_by": "Codex Research — independent evidence audit",
+      "verification_method": "OFFICIAL_RECHECK",
+      "review_due_at": "2026-11-02",
+      "stale_trigger": "Any required field Claim becomes stale"
+    }
+  }
+}

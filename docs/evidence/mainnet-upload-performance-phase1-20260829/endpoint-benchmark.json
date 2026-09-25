@@ -1,0 +1,14 @@
+{
+  "mode": "READ_ONLY_NO_TRANSACTION",
+  "archive_bytes_reference": 82776339,
+  "rounds": 5,
+  "tested_at": "2026-08-29",
+  "results": [
+    {"endpoint":"https://arweave.net","compatible":true,"average_ms":362.4,"p50_ms":235.5,"p95_ms":875.2,"samples_ms":[875.2,234.3,224.9,235.5,242.1]},
+    {"endpoint":"https://ardrive.net","compatible":true,"average_ms":1224.9,"p50_ms":818.4,"p95_ms":2723.3,"samples_ms":[2723.3,1023.1,818.4,818.1,741.5]},
+    {"endpoint":"https://ar-io.net","compatible":false,"error":"fetch failed"},
+    {"endpoint":"https://g8way.io","compatible":false,"error":"fetch failed"}
+  ],
+  "decision": "KEEP_ARWEAVE_NET",
+  "limitations": "This benchmark uses read-only /info and /price requests. It performs no wallet connection, signature, payment, transaction creation, chunk upload, or broadcast. It must not be represented as a paid 82.8 MB upload benchmark."
+}

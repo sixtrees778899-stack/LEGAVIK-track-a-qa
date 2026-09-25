@@ -1,6 +1,6 @@
 {
-  "deployment_identity": "legavik-mainline-normal-flow-candidate-20260925-1",
+  "deployment_identity": "legavik-mainline-stable-entitlement-20260925-1",
   "canonical_origin": "https://sixtrees778899-stack.github.io",
   "canonical_base": "/LEGAVIK-track-a-qa",
-  "release_timestamp": "2026-09-25T04:30:00Z"
+  "release_timestamp": "2026-09-25T00:00:00Z"
 }

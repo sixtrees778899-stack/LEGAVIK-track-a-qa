@@ -31,7 +31,6 @@ const copies=[
   ['web/account/account-app.bundle.js',`web/account/account-app${suffix}.bundle.js`],
   ['web/account/account.css',`web/account/account${suffix}.css`],
   ['web/account/auth-ux.css',`web/account/auth-ux${suffix}.css`],
-  ['artifacts/independent-recovery-tool-v1/LEGAVIK-Independent-Recovery-Tool-V1.html','web/account/LEGAVIK-Independent-Recovery-Tool-V1.html'],
   ['web/v2/canonical-entry.js',`web/v2/canonical-entry${suffix}.js`],
   ['web/v2/v2-app.bundle.js',`web/v2/v2-app${suffix}.bundle.js`],
   ['web/v2/v2.css',`web/v2/v2${suffix}.css`],

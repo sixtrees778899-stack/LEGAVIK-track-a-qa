@@ -1,0 +1,264 @@
+{
+  "catalog_version": "2.1-independent-audit",
+  "generated_at": "2026-08-02",
+  "standard": "PLATINUM_STANDARD.md",
+  "audit_report": "INDEPENDENT_EVIDENCE_SCOPE_AUDIT_REPORT.md",
+  "platforms": [
+    {
+      "platform_id": "binance",
+      "platform_name": "Binance",
+      "claim_counts": {
+        "total": 50,
+        "approved": 35,
+        "reviewed": 10,
+        "draft": 4,
+        "rejected": 1,
+        "stale": 0
+      },
+      "official_sources": 6,
+      "ai_faq_cases": 100,
+      "rules": 50,
+      "guidance": 50,
+      "template": true,
+      "drill": {
+        "exists": true,
+        "status": "OFFICIAL_ONLY",
+        "lab_verified": false
+      },
+      "passport": {
+        "exists": true,
+        "status": "CANDIDATE_NOT_LAB_VERIFIED"
+      },
+      "open_questions": 4,
+      "maturity": "PLATINUM_CANDIDATE",
+      "governance_summary": {
+        "global_claims": 0,
+        "region_specific_claims": 50,
+        "official_only_claims": 50,
+        "cjas_lab_verified": 0,
+        "verified_tester": 0,
+        "confidence": {
+          "high": 0,
+          "medium": 35,
+          "low": 15
+        },
+        "earliest_review_due_at": "2026-11-02",
+        "missing_regions": [
+          "Binance.US",
+          "Australia",
+          "EEA",
+          "United Kingdom",
+          "other serving entities"
+        ]
+      },
+      "filter_dimensions": {
+        "platform": "binance",
+        "region": "Other",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "product_scope": "Retail / Spot educational scope",
+        "source_type": [
+          "OFFICIAL",
+          "CJAS_GUIDANCE"
+        ],
+        "confidence": [
+          "MEDIUM",
+          "LOW"
+        ],
+        "last_verified_at": "2026-08-02",
+        "lifecycle_status": [
+          "REVIEWED",
+          "APPROVED",
+          "REJECTED",
+          "DRAFT"
+        ],
+        "product_eligibility": [
+          "SCOPED_ELIGIBLE",
+          "INELIGIBLE_PENDING_AUDIT"
+        ]
+      }
+    },
+    {
+      "platform_id": "okx",
+      "platform_name": "OKX",
+      "claim_counts": {
+        "total": 50,
+        "approved": 40,
+        "reviewed": 4,
+        "draft": 5,
+        "rejected": 1,
+        "stale": 0
+      },
+      "official_sources": 9,
+      "ai_faq_cases": 100,
+      "rules": 50,
+      "guidance": 50,
+      "template": true,
+      "drill": {
+        "exists": true,
+        "status": "OFFICIAL_ONLY",
+        "lab_verified": false
+      },
+      "passport": {
+        "exists": true,
+        "status": "CANDIDATE_NOT_LAB_VERIFIED"
+      },
+      "open_questions": 4,
+      "maturity": "PLATINUM_CANDIDATE",
+      "governance_summary": {
+        "global_claims": 0,
+        "region_specific_claims": 50,
+        "official_only_claims": 50,
+        "cjas_lab_verified": 0,
+        "verified_tester": 0,
+        "confidence": {
+          "high": 0,
+          "medium": 40,
+          "low": 10
+        },
+        "earliest_review_due_at": "2026-11-02",
+        "missing_regions": [
+          "Australia",
+          "EEA",
+          "United Kingdom",
+          "Global/other entities"
+        ]
+      },
+      "filter_dimensions": {
+        "platform": "okx",
+        "region": "United States",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "product_scope": "Retail / Spot",
+        "source_type": [
+          "OFFICIAL",
+          "CJAS_GUIDANCE"
+        ],
+        "confidence": [
+          "MEDIUM",
+          "LOW"
+        ],
+        "last_verified_at": "2026-08-02",
+        "lifecycle_status": [
+          "APPROVED",
+          "REVIEWED",
+          "REJECTED",
+          "DRAFT"
+        ],
+        "product_eligibility": [
+          "SCOPED_ELIGIBLE",
+          "INELIGIBLE_PENDING_AUDIT"
+        ]
+      }
+    },
+    {
+      "platform_id": "coinbase",
+      "platform_name": "Coinbase",
+      "claim_counts": {
+        "total": 50,
+        "approved": 42,
+        "reviewed": 5,
+        "draft": 2,
+        "rejected": 1,
+        "stale": 0
+      },
+      "official_sources": 9,
+      "ai_faq_cases": 100,
+      "rules": 50,
+      "guidance": 50,
+      "template": true,
+      "drill": {
+        "exists": true,
+        "status": "OFFICIAL_ONLY",
+        "lab_verified": false
+      },
+      "passport": {
+        "exists": true,
+        "status": "CANDIDATE_NOT_LAB_VERIFIED"
+      },
+      "open_questions": 4,
+      "maturity": "PLATINUM_CANDIDATE",
+      "governance_summary": {
+        "global_claims": 0,
+        "region_specific_claims": 50,
+        "official_only_claims": 50,
+        "cjas_lab_verified": 0,
+        "verified_tester": 0,
+        "confidence": {
+          "high": 0,
+          "medium": 42,
+          "low": 8
+        },
+        "earliest_review_due_at": "2026-11-02",
+        "missing_regions": [
+          "Australia",
+          "New Zealand",
+          "United Kingdom",
+          "Asia-Pacific entity mapping",
+          "Prime/Vault product scopes"
+        ]
+      },
+      "filter_dimensions": {
+        "platform": "coinbase",
+        "region": "Other",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "product_scope": "Retail / Executor Process",
+        "source_type": [
+          "OFFICIAL",
+          "CJAS_GUIDANCE"
+        ],
+        "confidence": [
+          "MEDIUM",
+          "LOW"
+        ],
+        "last_verified_at": "2026-08-02",
+        "lifecycle_status": [
+          "REVIEWED",
+          "APPROVED",
+          "REJECTED",
+          "DRAFT"
+        ],
+        "product_eligibility": [
+          "SCOPED_ELIGIBLE",
+          "INELIGIBLE_PENDING_AUDIT"
+        ]
+      }
+    }
+  ],
+  "totals": {
+    "platforms": 3,
+    "claims": 150,
+    "approved": 117,
+    "reviewed": 19,
+    "draft": 11,
+    "rejected": 3,
+    "stale": 0,
+    "official_sources": 24,
+    "ai_faq_cases": 300,
+    "cjas_lab_verified": 0,
+    "verified_tester": 0,
+    "confidence": {
+      "high": 0,
+      "medium": 117,
+      "low": 33
+    }
+  },
+  "filterable_fields": [
+    "platform_id",
+    "governance_tags.scope.geography",
+    "governance_tags.scope.legal_entity",
+    "governance_tags.scope.product_scope",
+    "governance_tags.source.primary.source_type",
+    "governance_tags.confidence",
+    "governance_tags.last_verified.last_verified_at",
+    "lifecycle_status",
+    "product_eligibility"
+  ],
+  "product_integration": {
+    "ui": false,
+    "recovery_map": false,
+    "schema": false,
+    "crypto": false,
+    "snapshot": false,
+    "recovery_kit": false,
+    "ai_service": false
+  }
+}

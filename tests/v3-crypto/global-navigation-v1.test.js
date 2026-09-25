@@ -42,7 +42,7 @@ test('account and Recovery Map shells retain account state and independent Recov
   assert.match(accountBridge,/split\('@'\)\[0\]/);
   assert.match(map,/skrekGlobalHeader\(\{mode:'map'/);
   const html=skrekGlobalHeader({mode:'map'});
-  assert.match(html,new RegExp(`href="https://sixtrees778899-stack\\.github\\.io/SKREK-auth-test/web/account/index\\.html\\?release=${CURRENT_TEST_RELEASE}#login"`));
-  assert.match(html,new RegExp(`href="https://sixtrees778899-stack\\.github\\.io/SKREK-auth-test/web/recover\\.html\\?source=recovery-center&release=${CURRENT_TEST_RELEASE}"`));
+  assert.match(html,new RegExp(`href="https://sixtrees778899-stack\\.github\\.io/LEGAVIK-track-a-qa/web/account/index\\.html\\?release=${CURRENT_TEST_RELEASE}#login"`));
+  assert.match(html,new RegExp(`href="https://sixtrees778899-stack\\.github\\.io/LEGAVIK-track-a-qa/web/recover\\.html\\?source=recovery-center&release=${CURRENT_TEST_RELEASE}"`));
   assert.doesNotMatch(html,/v3-crypto\/recover\.html/);
 });

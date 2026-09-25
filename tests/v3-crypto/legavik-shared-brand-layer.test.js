@@ -15,7 +15,7 @@ test('shared header uses the approved LEGAVIK master and alt text with canonical
   assert.match(html,/legavik-brand-master-v1\.png/);
   assert.match(html,/alt="LEGAVIK — Digital Asset Recovery &amp; Legacy"/);
   assert.match(html,/aria-label="LEGAVIK首页"/);
-  assert.match(html,/https:\/\/sixtrees778899-stack\.github\.io\/SKREK-auth-test\/web\/account\/index\.html/);
+  assert.match(html,/https:\/\/sixtrees778899-stack\.github\.io\/LEGAVIK-track-a-qa\/web\/account\/index\.html/);
 });
 
 test('canonical shared surfaces expose LEGAVIK titles, SEO, logo and official tagline',()=>{

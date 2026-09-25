@@ -1,0 +1,9 @@
+node_modules/
+playwright-report/
+test-results/
+tmp/
+web/account/public-config.local.js
+.env
+.env.local
+supabase/.temp/
+.DS_Store

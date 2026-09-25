@@ -24,7 +24,7 @@ test('all customer entries and manifest use one deployment identity',()=>{
 test('manifest proves every immutable asset identity',()=>{
   assert.ok(manifest.assets.length>=20);
   for(const asset of manifest.assets){
-    if(asset.path!=='web/account/LEGAVIK-Independent-Recovery-Tool-V1.html')assert.match(asset.path,new RegExp(`\\.${CURRENT_TEST_RELEASE}\\.`));
+    assert.match(asset.path,new RegExp(`\\.${CURRENT_TEST_RELEASE}\\.`));
     assert.equal(createHash('sha256').update(readFileSync(new URL(`../../${asset.path}`,import.meta.url))).digest('hex'),asset.sha256);
   }
 });

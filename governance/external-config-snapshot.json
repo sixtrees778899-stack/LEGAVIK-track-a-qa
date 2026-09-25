@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "recorded_on": "2026-09-10",
+  "approved_product_baseline": "97a5b9bbf900c83c5003d852fddbc0d3538ef4b5",
+  "release": "legavik-plans-intro-linebreak-20260910-1",
+  "bindings": {
+    "release_manifest": "governance/release-manifest.json",
+    "approved_baseline_index": "governance/APPROVED_BASELINES.md",
+    "compatibility_matrix": "governance/COMPATIBILITY_MATRIX.md",
+    "artifact_provenance": "governance/artifact-provenance.json"
+  },
+  "supabase": {
+    "project_ref": "kkpipnlvercivdykflet",
+    "migration_head": "20260903120000",
+    "migration_match": "LOCAL_REMOTE_MATCHED",
+    "migration_count_local": 6,
+    "migration_count_remote": 6,
+    "migration_verified_on": "2026-09-06",
+    "auth_email_brand": "LEGAVIK",
+    "from_name": "LEGAVIK",
+    "signup_email_status": "CEO_ACCEPTED_AND_FROZEN",
+    "reset_email_status": "CEO_ACCEPTED_END_TO_END_AND_FROZEN",
+    "redirect_config_status": "APPROVED AUTH RESET BASELINE; CURRENT MANAGEMENT API READ RETURNED HTTP 403",
+    "management_api_current_read": "BLOCKED_HTTP_403",
+    "sms_status": "NOT IN ACTIVE PRODUCT"
+  },
+  "delivery": {
+    "canonical_origin": "https://sixtrees778899-stack.github.io",
+    "canonical_application_base": "https://sixtrees778899-stack.github.io/SKREK-auth-test/",
+    "github_pages_release_identity": "legavik-plans-intro-linebreak-20260910-1",
+    "github_pages_release_identity_status": "LIVE_VERIFIED",
+    "canonical_homepage_http_status": 200
+  },
+  "other_external_systems": {
+    "stripe": "NOT IN ACTIVE PRODUCT",
+    "ai_customer_service_chat": "NOT IN ACTIVE PRODUCT"
+  },
+  "evidence_boundary": "Configuration values are non-sensitive status records. No credentials or customer data are included.",
+  "credentials_recorded": false
+}

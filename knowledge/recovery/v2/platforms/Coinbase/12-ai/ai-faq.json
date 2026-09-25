@@ -1,0 +1,4602 @@
+[
+  {
+    "faq_id": "CBP-FAQ-001",
+    "platform_id": "coinbase",
+    "question": "What must I know about password reset out on Coinbase?",
+    "answer": "A signed-out user can initiate password reset from the official reset page.",
+    "answer_type": "OFFICIAL_FACT_SUMMARY",
+    "claim_refs": [
+      "CBP-002"
+    ],
+    "source_ids": [
+      "CBP-S05"
+    ],
+    "last_checked": "2026-08-02",
+    "review_due_at": "2026-11-02",
+    "escalation": "NONE_UNLESS_SCOPE_DIFFERS",
+    "status": "AUDITED_OFFLINE_CASE",
+    "governance_tags": {
+      "scope": {
+        "geography": "Other",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "Coinbase Retail",
+        "product_scope": "Retail",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Web help article; product-specific variants excluded"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "CBP-S05",
+          "source_url": "https://help.coinbase.com/en/coinbase/managing-my-account/get-back-into-my-account/reset-my-password",
+          "source_title": "Reset your password",
+          "source_section": "Signed-in/signed-out password reset",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "faq_id": "CBP-FAQ-002",
+    "platform_id": "coinbase",
+    "question": "What must I know about password reset in on Coinbase?",
+    "answer": "A signed-in password change requires account access and 2-step verification.",
+    "answer_type": "OFFICIAL_FACT_SUMMARY",
+    "claim_refs": [
+      "CBP-003"
+    ],
+    "source_ids": [
+      "CBP-S05"
+    ],
+    "last_checked": "2026-08-02",
+    "review_due_at": "2026-11-02",
+    "escalation": "NONE_UNLESS_SCOPE_DIFFERS",
+    "status": "AUDITED_OFFLINE_CASE",
+    "governance_tags": {
+      "scope": {
+        "geography": "Other",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "Coinbase Retail",
+        "product_scope": "Retail",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Web help article; product-specific variants excluded"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "CBP-S05",
+          "source_url": "https://help.coinbase.com/en/coinbase/managing-my-account/get-back-into-my-account/reset-my-password",
+          "source_title": "Reset your password",
+          "source_section": "Signed-in/signed-out password reset",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "faq_id": "CBP-FAQ-003",
+    "platform_id": "coinbase",
+    "question": "What must I know about two step required on Coinbase?",
+    "answer": "Coinbase states 2-step verification is required to access the account.",
+    "answer_type": "OFFICIAL_FACT_SUMMARY",
+    "claim_refs": [
+      "CBP-005"
+    ],
+    "source_ids": [
+      "CBP-S02"
+    ],
+    "last_checked": "2026-08-02",
+    "review_due_at": "2026-11-02",
+    "escalation": "NONE_UNLESS_SCOPE_DIFFERS",
+    "status": "AUDITED_OFFLINE_CASE",
+    "governance_tags": {
+      "scope": {
+        "geography": "Other",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "Coinbase Retail",
+        "product_scope": "Retail",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Web help article; product-specific variants excluded"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "CBP-S02",
+          "source_url": "https://help.coinbase.com/en/coinbase/getting-started/getting-started-with-coinbase/2-step-verification",
+          "source_title": "Set up 2-step verification",
+          "source_section": "Passkey, security key, TOTP, push, SMS, trusted contacts",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "faq_id": "CBP-FAQ-004",
+    "platform_id": "coinbase",
+    "question": "What must I know about multiple methods on Coinbase?",
+    "answer": "Coinbase recommends multiple 2-step methods to provide a backup path.",
+    "answer_type": "OFFICIAL_FACT_SUMMARY",
+    "claim_refs": [
+      "CBP-006"
+    ],
+    "source_ids": [
+      "CBP-S02"
+    ],
+    "last_checked": "2026-08-02",
+    "review_due_at": "2026-11-02",
+    "escalation": "NONE_UNLESS_SCOPE_DIFFERS",
+    "status": "AUDITED_OFFLINE_CASE",
+    "governance_tags": {
+      "scope": {
+        "geography": "Other",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "Coinbase Retail",
+        "product_scope": "Retail",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Web help article; product-specific variants excluded"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "CBP-S02",
+          "source_url": "https://help.coinbase.com/en/coinbase/getting-started/getting-started-with-coinbase/2-step-verification",
+          "source_title": "Set up 2-step verification",
+          "source_section": "Passkey, security key, TOTP, push, SMS, trusted contacts",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "faq_id": "CBP-FAQ-005",
+    "platform_id": "coinbase",
+    "question": "What must I know about security keys on Coinbase?",
+    "answer": "Coinbase supports compatible security keys as a 2-step method.",
+    "answer_type": "OFFICIAL_FACT_SUMMARY",
+    "claim_refs": [
+      "CBP-007"
+    ],
+    "source_ids": [
+      "CBP-S02"
+    ],
+    "last_checked": "2026-08-02",
+    "review_due_at": "2026-11-02",
+    "escalation": "NONE_UNLESS_SCOPE_DIFFERS",
+    "status": "AUDITED_OFFLINE_CASE",
+    "governance_tags": {
+      "scope": {
+        "geography": "Other",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "Coinbase Retail",
+        "product_scope": "Retail",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Web help article; product-specific variants excluded"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "CBP-S02",
+          "source_url": "https://help.coinbase.com/en/coinbase/getting-started/getting-started-with-coinbase/2-step-verification",
+          "source_title": "Set up 2-step verification",
+          "source_section": "Passkey, security key, TOTP, push, SMS, trusted contacts",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "faq_id": "CBP-FAQ-006",
+    "platform_id": "coinbase",
+    "question": "What must I know about two keys on Coinbase?",
+    "answer": "The official page recommends two security keys as primary and backup.",
+    "answer_type": "OFFICIAL_FACT_SUMMARY",
+    "claim_refs": [
+      "CBP-008"
+    ],
+    "source_ids": [
+      "CBP-S02"
+    ],
+    "last_checked": "2026-08-02",
+    "review_due_at": "2026-11-02",
+    "escalation": "NONE_UNLESS_SCOPE_DIFFERS",
+    "status": "AUDITED_OFFLINE_CASE",
+    "governance_tags": {
+      "scope": {
+        "geography": "Other",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "Coinbase Retail",
+        "product_scope": "Retail",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Web help article; product-specific variants excluded"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "CBP-S02",
+          "source_url": "https://help.coinbase.com/en/coinbase/getting-started/getting-started-with-coinbase/2-step-verification",
+          "source_title": "Set up 2-step verification",
+          "source_section": "Passkey, security key, TOTP, push, SMS, trusted contacts",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "faq_id": "CBP-FAQ-007",
+    "platform_id": "coinbase",
+    "question": "What must I know about passkey on Coinbase?",
+    "answer": "Coinbase supports device-generated passkeys.",
+    "answer_type": "OFFICIAL_FACT_SUMMARY",
+    "claim_refs": [
+      "CBP-009"
+    ],
+    "source_ids": [
+      "CBP-S02"
+    ],
+    "last_checked": "2026-08-02",
+    "review_due_at": "2026-11-02",
+    "escalation": "NONE_UNLESS_SCOPE_DIFFERS",
+    "status": "AUDITED_OFFLINE_CASE",
+    "governance_tags": {
+      "scope": {
+        "geography": "Other",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "Coinbase Retail",
+        "product_scope": "Retail",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Web help article; product-specific variants excluded"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "CBP-S02",
+          "source_url": "https://help.coinbase.com/en/coinbase/getting-started/getting-started-with-coinbase/2-step-verification",
+          "source_title": "Set up 2-step verification",
+          "source_section": "Passkey, security key, TOTP, push, SMS, trusted contacts",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "faq_id": "CBP-FAQ-008",
+    "platform_id": "coinbase",
+    "question": "What must I know about passkey storage on Coinbase?",
+    "answer": "A passkey may depend on the device, cloud account or password manager in which it is stored.",
+    "answer_type": "OFFICIAL_FACT_SUMMARY",
+    "claim_refs": [
+      "CBP-010"
+    ],
+    "source_ids": [
+      "CBP-S03"
+    ],
+    "last_checked": "2026-08-02",
+    "review_due_at": "2026-11-02",
+    "escalation": "NONE_UNLESS_SCOPE_DIFFERS",
+    "status": "AUDITED_OFFLINE_CASE",
+    "governance_tags": {
+      "scope": {
+        "geography": "Other",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "Coinbase Retail",
+        "product_scope": "Retail",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Web help article; product-specific variants excluded"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "CBP-S03",
+          "source_url": "https://help.coinbase.com/en/coinbase/managing-my-account/get-back-into-my-account/2-step-verification-troubleshooting",
+          "source_title": "Troubleshoot 2-step verification",
+          "source_section": "Lost factors and backup methods",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "faq_id": "CBP-FAQ-009",
+    "platform_id": "coinbase",
+    "question": "What must I know about totp on Coinbase?",
+    "answer": "Coinbase supports time-based one-time-password authenticator apps.",
+    "answer_type": "OFFICIAL_FACT_SUMMARY",
+    "claim_refs": [
+      "CBP-011"
+    ],
+    "source_ids": [
+      "CBP-S02"
+    ],
+    "last_checked": "2026-08-02",
+    "review_due_at": "2026-11-02",
+    "escalation": "NONE_UNLESS_SCOPE_DIFFERS",
+    "status": "AUDITED_OFFLINE_CASE",
+    "governance_tags": {
+      "scope": {
+        "geography": "Other",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "Coinbase Retail",
+        "product_scope": "Retail",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Web help article; product-specific variants excluded"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "CBP-S02",
+          "source_url": "https://help.coinbase.com/en/coinbase/getting-started/getting-started-with-coinbase/2-step-verification",
+          "source_title": "Set up 2-step verification",
+          "source_section": "Passkey, security key, TOTP, push, SMS, trusted contacts",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "faq_id": "CBP-FAQ-010",
+    "platform_id": "coinbase",
+    "question": "What must I know about push on Coinbase?",
+    "answer": "Coinbase supports app push notifications as a verification method.",
+    "answer_type": "OFFICIAL_FACT_SUMMARY",
+    "claim_refs": [
+      "CBP-012"
+    ],
+    "source_ids": [
+      "CBP-S02"
+    ],
+    "last_checked": "2026-08-02",
+    "review_due_at": "2026-11-02",
+    "escalation": "NONE_UNLESS_SCOPE_DIFFERS",
+    "status": "AUDITED_OFFLINE_CASE",
+    "governance_tags": {
+      "scope": {
+        "geography": "Other",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "Coinbase Retail",
+        "product_scope": "Retail",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Web help article; product-specific variants excluded"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "CBP-S02",
+          "source_url": "https://help.coinbase.com/en/coinbase/getting-started/getting-started-with-coinbase/2-step-verification",
+          "source_title": "Set up 2-step verification",
+          "source_section": "Passkey, security key, TOTP, push, SMS, trusted contacts",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "faq_id": "CBP-FAQ-011",
+    "platform_id": "coinbase",
+    "question": "What must I know about push devices on Coinbase?",
+    "answer": "Push requests can be sent to devices with an active mobile-app session.",
+    "answer_type": "OFFICIAL_FACT_SUMMARY",
+    "claim_refs": [
+      "CBP-013"
+    ],
+    "source_ids": [
+      "CBP-S02"
+    ],
+    "last_checked": "2026-08-02",
+    "review_due_at": "2026-11-02",
+    "escalation": "NONE_UNLESS_SCOPE_DIFFERS",
+    "status": "AUDITED_OFFLINE_CASE",
+    "governance_tags": {
+      "scope": {
+        "geography": "Other",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "Coinbase Retail",
+        "product_scope": "Retail",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Web help article; product-specific variants excluded"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "CBP-S02",
+          "source_url": "https://help.coinbase.com/en/coinbase/getting-started/getting-started-with-coinbase/2-step-verification",
+          "source_title": "Set up 2-step verification",
+          "source_section": "Passkey, security key, TOTP, push, SMS, trusted contacts",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "faq_id": "CBP-FAQ-012",
+    "platform_id": "coinbase",
+    "question": "What must I know about alternate factor on Coinbase?",
+    "answer": "If one configured method fails, the user may choose another available method.",
+    "answer_type": "OFFICIAL_FACT_SUMMARY",
+    "claim_refs": [
+      "CBP-015"
+    ],
+    "source_ids": [
+      "CBP-S02"
+    ],
+    "last_checked": "2026-08-02",
+    "review_due_at": "2026-11-02",
+    "escalation": "NONE_UNLESS_SCOPE_DIFFERS",
+    "status": "AUDITED_OFFLINE_CASE",
+    "governance_tags": {
+      "scope": {
+        "geography": "Other",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "Coinbase Retail",
+        "product_scope": "Retail",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Web help article; product-specific variants excluded"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "CBP-S02",
+          "source_url": "https://help.coinbase.com/en/coinbase/getting-started/getting-started-with-coinbase/2-step-verification",
+          "source_title": "Set up 2-step verification",
+          "source_section": "Passkey, security key, TOTP, push, SMS, trusted contacts",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "faq_id": "CBP-FAQ-013",
+    "platform_id": "coinbase",
+    "question": "What must I know about lost key on Coinbase?",
+    "answer": "Coinbase cannot recover or replace a lost physical security key.",
+    "answer_type": "OFFICIAL_FACT_SUMMARY",
+    "claim_refs": [
+      "CBP-016"
+    ],
+    "source_ids": [
+      "CBP-S03"
+    ],
+    "last_checked": "2026-08-02",
+    "review_due_at": "2026-11-02",
+    "escalation": "NONE_UNLESS_SCOPE_DIFFERS",
+    "status": "AUDITED_OFFLINE_CASE",
+    "governance_tags": {
+      "scope": {
+        "geography": "Other",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "Coinbase Retail",
+        "product_scope": "Retail",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Web help article; product-specific variants excluded"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "CBP-S03",
+          "source_url": "https://help.coinbase.com/en/coinbase/managing-my-account/get-back-into-my-account/2-step-verification-troubleshooting",
+          "source_title": "Troubleshoot 2-step verification",
+          "source_section": "Lost factors and backup methods",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "faq_id": "CBP-FAQ-014",
+    "platform_id": "coinbase",
+    "question": "What must I know about lost auth on Coinbase?",
+    "answer": "If the authenticator is the only method and is lost, the official recovery process is required.",
+    "answer_type": "OFFICIAL_FACT_SUMMARY",
+    "claim_refs": [
+      "CBP-017"
+    ],
+    "source_ids": [
+      "CBP-S03"
+    ],
+    "last_checked": "2026-08-02",
+    "review_due_at": "2026-11-02",
+    "escalation": "NONE_UNLESS_SCOPE_DIFFERS",
+    "status": "AUDITED_OFFLINE_CASE",
+    "governance_tags": {
+      "scope": {
+        "geography": "Other",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "Coinbase Retail",
+        "product_scope": "Retail",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Web help article; product-specific variants excluded"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "CBP-S03",
+          "source_url": "https://help.coinbase.com/en/coinbase/managing-my-account/get-back-into-my-account/2-step-verification-troubleshooting",
+          "source_title": "Troubleshoot 2-step verification",
+          "source_section": "Lost factors and backup methods",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "faq_id": "CBP-FAQ-015",
+    "platform_id": "coinbase",
+    "question": "What must I know about lost phone on Coinbase?",
+    "answer": "If SMS is the only method and the phone is lost, the official recovery process is required.",
+    "answer_type": "OFFICIAL_FACT_SUMMARY",
+    "claim_refs": [
+      "CBP-018"
+    ],
+    "source_ids": [
+      "CBP-S03"
+    ],
+    "last_checked": "2026-08-02",
+    "review_due_at": "2026-11-02",
+    "escalation": "NONE_UNLESS_SCOPE_DIFFERS",
+    "status": "AUDITED_OFFLINE_CASE",
+    "governance_tags": {
+      "scope": {
+        "geography": "Other",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "Coinbase Retail",
+        "product_scope": "Retail",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Web help article; product-specific variants excluded"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "CBP-S03",
+          "source_url": "https://help.coinbase.com/en/coinbase/managing-my-account/get-back-into-my-account/2-step-verification-troubleshooting",
+          "source_title": "Troubleshoot 2-step verification",
+          "source_section": "Lost factors and backup methods",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "faq_id": "CBP-FAQ-016",
+    "platform_id": "coinbase",
+    "question": "What must I know about unrecognized push on Coinbase?",
+    "answer": "An unrecognized push request should be denied and the account reviewed or locked.",
+    "answer_type": "OFFICIAL_FACT_SUMMARY",
+    "claim_refs": [
+      "CBP-019"
+    ],
+    "source_ids": [
+      "CBP-S03"
+    ],
+    "last_checked": "2026-08-02",
+    "review_due_at": "2026-11-02",
+    "escalation": "STOP_AND_USE_OFFICIAL_SUPPORT",
+    "status": "AUDITED_OFFLINE_CASE",
+    "governance_tags": {
+      "scope": {
+        "geography": "Other",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "Coinbase Retail",
+        "product_scope": "Retail",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Web help article; product-specific variants excluded"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "CBP-S03",
+          "source_url": "https://help.coinbase.com/en/coinbase/managing-my-account/get-back-into-my-account/2-step-verification-troubleshooting",
+          "source_title": "Troubleshoot 2-step verification",
+          "source_section": "Lost factors and backup methods",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "faq_id": "CBP-FAQ-017",
+    "platform_id": "coinbase",
+    "question": "What must I know about recovery entry on Coinbase?",
+    "answer": "Lost email or 2-step access uses the official account-recovery page.",
+    "answer_type": "OFFICIAL_FACT_SUMMARY",
+    "claim_refs": [
+      "CBP-020"
+    ],
+    "source_ids": [
+      "CBP-S01"
+    ],
+    "last_checked": "2026-08-02",
+    "review_due_at": "2026-11-02",
+    "escalation": "NONE_UNLESS_SCOPE_DIFFERS",
+    "status": "AUDITED_OFFLINE_CASE",
+    "governance_tags": {
+      "scope": {
+        "geography": "Other",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "Coinbase Retail",
+        "product_scope": "Retail",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Web help article; product-specific variants excluded"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "CBP-S01",
+          "source_url": "https://help.coinbase.com/en/coinbase/managing-my-account/get-back-into-my-account/account-recovery-lost-email-2step-verification",
+          "source_title": "Account recovery for lost email or 2-step access",
+          "source_section": "Recovery options; ID; trusted contacts; sends restriction",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "faq_id": "CBP-FAQ-018",
+    "platform_id": "coinbase",
+    "question": "What must I know about recovery password on Coinbase?",
+    "answer": "A user who has also lost the password must reset it before starting the cited recovery flow.",
+    "answer_type": "OFFICIAL_FACT_SUMMARY",
+    "claim_refs": [
+      "CBP-021"
+    ],
+    "source_ids": [
+      "CBP-S01"
+    ],
+    "last_checked": "2026-08-02",
+    "review_due_at": "2026-11-02",
+    "escalation": "NONE_UNLESS_SCOPE_DIFFERS",
+    "status": "AUDITED_OFFLINE_CASE",
+    "governance_tags": {
+      "scope": {
+        "geography": "Other",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "Coinbase Retail",
+        "product_scope": "Retail",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Web help article; product-specific variants excluded"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "CBP-S01",
+          "source_url": "https://help.coinbase.com/en/coinbase/managing-my-account/get-back-into-my-account/account-recovery-lost-email-2step-verification",
+          "source_title": "Account recovery for lost email or 2-step access",
+          "source_section": "Recovery options; ID; trusted contacts; sends restriction",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "faq_id": "CBP-FAQ-019",
+    "platform_id": "coinbase",
+    "question": "What must I know about recovery id on Coinbase?",
+    "answer": "One recovery option uses government ID and may require a selfie.",
+    "answer_type": "OFFICIAL_FACT_SUMMARY",
+    "claim_refs": [
+      "CBP-022"
+    ],
+    "source_ids": [
+      "CBP-S01"
+    ],
+    "last_checked": "2026-08-02",
+    "review_due_at": "2026-11-02",
+    "escalation": "NONE_UNLESS_SCOPE_DIFFERS",
+    "status": "AUDITED_OFFLINE_CASE",
+    "governance_tags": {
+      "scope": {
+        "geography": "Other",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "Coinbase Retail",
+        "product_scope": "Retail",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Web help article; product-specific variants excluded"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "CBP-S01",
+          "source_url": "https://help.coinbase.com/en/coinbase/managing-my-account/get-back-into-my-account/account-recovery-lost-email-2step-verification",
+          "source_title": "Account recovery for lost email or 2-step access",
+          "source_section": "Recovery options; ID; trusted contacts; sends restriction",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "faq_id": "CBP-FAQ-020",
+    "platform_id": "coinbase",
+    "question": "What must I know about trusted limit on Coinbase?",
+    "answer": "Trusted-contact recovery does not allow email or 2-step update in the cited option.",
+    "answer_type": "OFFICIAL_FACT_SUMMARY",
+    "claim_refs": [
+      "CBP-024"
+    ],
+    "source_ids": [
+      "CBP-S01"
+    ],
+    "last_checked": "2026-08-02",
+    "review_due_at": "2026-11-02",
+    "escalation": "NONE_UNLESS_SCOPE_DIFFERS",
+    "status": "AUDITED_OFFLINE_CASE",
+    "governance_tags": {
+      "scope": {
+        "geography": "Other",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "Coinbase Retail",
+        "product_scope": "Retail",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Web help article; product-specific variants excluded"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "CBP-S01",
+          "source_url": "https://help.coinbase.com/en/coinbase/managing-my-account/get-back-into-my-account/account-recovery-lost-email-2step-verification",
+          "source_title": "Account recovery for lost email or 2-step access",
+          "source_section": "Recovery options; ID; trusted contacts; sends restriction",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "faq_id": "CBP-FAQ-021",
+    "platform_id": "coinbase",
+    "question": "What must I know about trusted payment on Coinbase?",
+    "answer": "The cited trusted-contact recovery option removes previously added payment methods.",
+    "answer_type": "OFFICIAL_FACT_SUMMARY",
+    "claim_refs": [
+      "CBP-025"
+    ],
+    "source_ids": [
+      "CBP-S01"
+    ],
+    "last_checked": "2026-08-02",
+    "review_due_at": "2026-11-02",
+    "escalation": "NONE_UNLESS_SCOPE_DIFFERS",
+    "status": "AUDITED_OFFLINE_CASE",
+    "governance_tags": {
+      "scope": {
+        "geography": "Other",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "Coinbase Retail",
+        "product_scope": "Retail",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Web help article; product-specific variants excluded"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "CBP-S01",
+          "source_url": "https://help.coinbase.com/en/coinbase/managing-my-account/get-back-into-my-account/account-recovery-lost-email-2step-verification",
+          "source_title": "Account recovery for lost email or 2-step access",
+          "source_section": "Recovery options; ID; trusted contacts; sends restriction",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "faq_id": "CBP-FAQ-022",
+    "platform_id": "coinbase",
+    "question": "What must I know about recovery update on Coinbase?",
+    "answer": "After recovery, the cited flow requires updating the 2-step method within 24 hours to maintain access.",
+    "answer_type": "OFFICIAL_FACT_SUMMARY",
+    "claim_refs": [
+      "CBP-026"
+    ],
+    "source_ids": [
+      "CBP-S01"
+    ],
+    "last_checked": "2026-08-02",
+    "review_due_at": "2026-11-02",
+    "escalation": "NONE_UNLESS_SCOPE_DIFFERS",
+    "status": "AUDITED_OFFLINE_CASE",
+    "governance_tags": {
+      "scope": {
+        "geography": "Other",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "Coinbase Retail",
+        "product_scope": "Retail",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Web help article; product-specific variants excluded"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "CBP-S01",
+          "source_url": "https://help.coinbase.com/en/coinbase/managing-my-account/get-back-into-my-account/account-recovery-lost-email-2step-verification",
+          "source_title": "Account recovery for lost email or 2-step access",
+          "source_section": "Recovery options; ID; trusted contacts; sends restriction",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "faq_id": "CBP-FAQ-023",
+    "platform_id": "coinbase",
+    "question": "What must I know about recovery send lock on Coinbase?",
+    "answer": "The cited ID recovery may leave sends disabled for 24 hours after completion.",
+    "answer_type": "OFFICIAL_FACT_SUMMARY",
+    "claim_refs": [
+      "CBP-027"
+    ],
+    "source_ids": [
+      "CBP-S01"
+    ],
+    "last_checked": "2026-08-02",
+    "review_due_at": "2026-11-02",
+    "escalation": "NONE_UNLESS_SCOPE_DIFFERS",
+    "status": "AUDITED_OFFLINE_CASE",
+    "governance_tags": {
+      "scope": {
+        "geography": "Other",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "Coinbase Retail",
+        "product_scope": "Retail",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Web help article; product-specific variants excluded"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "CBP-S01",
+          "source_url": "https://help.coinbase.com/en/coinbase/managing-my-account/get-back-into-my-account/account-recovery-lost-email-2step-verification",
+          "source_title": "Account recovery for lost email or 2-step access",
+          "source_section": "Recovery options; ID; trusted contacts; sends restriction",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "faq_id": "CBP-FAQ-024",
+    "platform_id": "coinbase",
+    "question": "What must I know about login not send on Coinbase?",
+    "answer": "Successful sign-in after recovery does not prove that sends are enabled.",
+    "answer_type": "CJAS_GUIDANCE",
+    "claim_refs": [
+      "CBP-028"
+    ],
+    "source_ids": [
+      "CBP-S01"
+    ],
+    "last_checked": "2026-08-02",
+    "review_due_at": "2026-11-02",
+    "escalation": "NONE_UNLESS_SCOPE_DIFFERS",
+    "status": "AUDITED_OFFLINE_CASE",
+    "governance_tags": {
+      "scope": {
+        "geography": "Other",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "Coinbase Retail",
+        "product_scope": "Retail",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Web help article; product-specific variants excluded"
+      },
+      "source": {
+        "primary": {
+          "source_type": "CJAS_GUIDANCE",
+          "source_id": "CBP-S01",
+          "source_url": "https://help.coinbase.com/en/coinbase/managing-my-account/get-back-into-my-account/account-recovery-lost-email-2step-verification",
+          "source_title": "Account recovery for lost email or 2-step access",
+          "source_section": "Recovery options; ID; trusted contacts; sends restriction",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "faq_id": "CBP-FAQ-025",
+    "platform_id": "coinbase",
+    "question": "What must I know about control definition on Coinbase?",
+    "answer": "Operational control requires account access, current factors, unrestricted sends and an accepted destination.",
+    "answer_type": "CJAS_GUIDANCE",
+    "claim_refs": [
+      "CBP-029"
+    ],
+    "source_ids": [
+      "CBP-S01"
+    ],
+    "last_checked": "2026-08-02",
+    "review_due_at": "2026-11-02",
+    "escalation": "NONE_UNLESS_SCOPE_DIFFERS",
+    "status": "AUDITED_OFFLINE_CASE",
+    "governance_tags": {
+      "scope": {
+        "geography": "Other",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "Coinbase Retail",
+        "product_scope": "Retail",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Web help article; product-specific variants excluded"
+      },
+      "source": {
+        "primary": {
+          "source_type": "CJAS_GUIDANCE",
+          "source_id": "CBP-S01",
+          "source_url": "https://help.coinbase.com/en/coinbase/managing-my-account/get-back-into-my-account/account-recovery-lost-email-2step-verification",
+          "source_title": "Account recovery for lost email or 2-step access",
+          "source_section": "Recovery options; ID; trusted contacts; sends restriction",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "faq_id": "CBP-FAQ-026",
+    "platform_id": "coinbase",
+    "question": "What must I know about active sessions on Coinbase?",
+    "answer": "Coinbase exposes active sessions and confirmed devices for review.",
+    "answer_type": "OFFICIAL_FACT_SUMMARY",
+    "claim_refs": [
+      "CBP-030"
+    ],
+    "source_ids": [
+      "CBP-S04"
+    ],
+    "last_checked": "2026-08-02",
+    "review_due_at": "2026-11-02",
+    "escalation": "NONE_UNLESS_SCOPE_DIFFERS",
+    "status": "AUDITED_OFFLINE_CASE",
+    "governance_tags": {
+      "scope": {
+        "geography": "Other",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "Coinbase Retail",
+        "product_scope": "Retail",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Web help article; product-specific variants excluded"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "CBP-S04",
+          "source_url": "https://help.coinbase.com/en/coinbase/privacy-and-security/data-privacy/how-can-i-make-my-account-more-secure",
+          "source_title": "Make your account more secure",
+          "source_section": "Password, email, devices, allowlist, support boundaries",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "faq_id": "CBP-FAQ-027",
+    "platform_id": "coinbase",
+    "question": "What must I know about remove session on Coinbase?",
+    "answer": "An unauthorized application, session or device can be removed from the account.",
+    "answer_type": "OFFICIAL_FACT_SUMMARY",
+    "claim_refs": [
+      "CBP-031"
+    ],
+    "source_ids": [
+      "CBP-S04"
+    ],
+    "last_checked": "2026-08-02",
+    "review_due_at": "2026-11-02",
+    "escalation": "NONE_UNLESS_SCOPE_DIFFERS",
+    "status": "AUDITED_OFFLINE_CASE",
+    "governance_tags": {
+      "scope": {
+        "geography": "Other",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "Coinbase Retail",
+        "product_scope": "Retail",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Web help article; product-specific variants excluded"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "CBP-S04",
+          "source_url": "https://help.coinbase.com/en/coinbase/privacy-and-security/data-privacy/how-can-i-make-my-account-more-secure",
+          "source_title": "Make your account more secure",
+          "source_section": "Password, email, devices, allowlist, support boundaries",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "faq_id": "CBP-FAQ-028",
+    "platform_id": "coinbase",
+    "question": "What must I know about allowlist on Coinbase?",
+    "answer": "Coinbase provides an address-book allowlist for known crypto addresses.",
+    "answer_type": "OFFICIAL_FACT_SUMMARY",
+    "claim_refs": [
+      "CBP-032"
+    ],
+    "source_ids": [
+      "CBP-S04"
+    ],
+    "last_checked": "2026-08-02",
+    "review_due_at": "2026-11-02",
+    "escalation": "NONE_UNLESS_SCOPE_DIFFERS",
+    "status": "AUDITED_OFFLINE_CASE",
+    "governance_tags": {
+      "scope": {
+        "geography": "Other",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "Coinbase Retail",
+        "product_scope": "Retail",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Web help article; product-specific variants excluded"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "CBP-S04",
+          "source_url": "https://help.coinbase.com/en/coinbase/privacy-and-security/data-privacy/how-can-i-make-my-account-more-secure",
+          "source_title": "Make your account more secure",
+          "source_section": "Password, email, devices, allowlist, support boundaries",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "faq_id": "CBP-FAQ-029",
+    "platform_id": "coinbase",
+    "question": "What must I know about email security on Coinbase?",
+    "answer": "Compromise of the linked email can compromise device confirmation and support communication.",
+    "answer_type": "OFFICIAL_FACT_SUMMARY",
+    "claim_refs": [
+      "CBP-033"
+    ],
+    "source_ids": [
+      "CBP-S04"
+    ],
+    "last_checked": "2026-08-02",
+    "review_due_at": "2026-11-02",
+    "escalation": "NONE_UNLESS_SCOPE_DIFFERS",
+    "status": "AUDITED_OFFLINE_CASE",
+    "governance_tags": {
+      "scope": {
+        "geography": "Other",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "Coinbase Retail",
+        "product_scope": "Retail",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Web help article; product-specific variants excluded"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "CBP-S04",
+          "source_url": "https://help.coinbase.com/en/coinbase/privacy-and-security/data-privacy/how-can-i-make-my-account-more-secure",
+          "source_title": "Make your account more secure",
+          "source_section": "Password, email, devices, allowlist, support boundaries",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "faq_id": "CBP-FAQ-030",
+    "platform_id": "coinbase",
+    "question": "What must I know about support password on Coinbase?",
+    "answer": "Coinbase support will not ask for passwords, 2-step codes or email access.",
+    "answer_type": "OFFICIAL_FACT_SUMMARY",
+    "claim_refs": [
+      "CBP-034"
+    ],
+    "source_ids": [
+      "CBP-S04"
+    ],
+    "last_checked": "2026-08-02",
+    "review_due_at": "2026-11-02",
+    "escalation": "STOP_AND_USE_OFFICIAL_SUPPORT",
+    "status": "AUDITED_OFFLINE_CASE",
+    "governance_tags": {
+      "scope": {
+        "geography": "Other",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "Coinbase Retail",
+        "product_scope": "Retail",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Web help article; product-specific variants excluded"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "CBP-S04",
+          "source_url": "https://help.coinbase.com/en/coinbase/privacy-and-security/data-privacy/how-can-i-make-my-account-more-secure",
+          "source_title": "Make your account more secure",
+          "source_section": "Password, email, devices, allowlist, support boundaries",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "faq_id": "CBP-FAQ-031",
+    "platform_id": "coinbase",
+    "question": "What must I know about support remote on Coinbase?",
+    "answer": "Coinbase support will not ask the user to install remote-support software.",
+    "answer_type": "OFFICIAL_FACT_SUMMARY",
+    "claim_refs": [
+      "CBP-035"
+    ],
+    "source_ids": [
+      "CBP-S04"
+    ],
+    "last_checked": "2026-08-02",
+    "review_due_at": "2026-11-02",
+    "escalation": "STOP_AND_USE_OFFICIAL_SUPPORT",
+    "status": "AUDITED_OFFLINE_CASE",
+    "governance_tags": {
+      "scope": {
+        "geography": "Other",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "Coinbase Retail",
+        "product_scope": "Retail",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Web help article; product-specific variants excluded"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "CBP-S04",
+          "source_url": "https://help.coinbase.com/en/coinbase/privacy-and-security/data-privacy/how-can-i-make-my-account-more-secure",
+          "source_title": "Make your account more secure",
+          "source_section": "Password, email, devices, allowlist, support boundaries",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "faq_id": "CBP-FAQ-032",
+    "platform_id": "coinbase",
+    "question": "What must I know about support transfer on Coinbase?",
+    "answer": "Coinbase support will not ask a user to send funds to resolve an issue.",
+    "answer_type": "OFFICIAL_FACT_SUMMARY",
+    "claim_refs": [
+      "CBP-036"
+    ],
+    "source_ids": [
+      "CBP-S08"
+    ],
+    "last_checked": "2026-08-02",
+    "review_due_at": "2026-11-02",
+    "escalation": "STOP_AND_USE_OFFICIAL_SUPPORT",
+    "status": "AUDITED_OFFLINE_CASE",
+    "governance_tags": {
+      "scope": {
+        "geography": "Other",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "Coinbase Retail",
+        "product_scope": "Retail",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Web help article; product-specific variants excluded"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "CBP-S08",
+          "source_url": "https://help.coinbase.com/en/coinbase/privacy-and-security/avoid-scams/tech-support-scams",
+          "source_title": "Technical support and impersonation scams",
+          "source_section": "Support stop conditions",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "faq_id": "CBP-FAQ-033",
+    "platform_id": "coinbase",
+    "question": "What must I know about destination stop on Coinbase?",
+    "answer": "A support-supplied new wallet address is a stop condition.",
+    "answer_type": "OFFICIAL_FACT_SUMMARY",
+    "claim_refs": [
+      "CBP-037"
+    ],
+    "source_ids": [
+      "CBP-S08"
+    ],
+    "last_checked": "2026-08-02",
+    "review_due_at": "2026-11-02",
+    "escalation": "STOP_AND_USE_OFFICIAL_SUPPORT",
+    "status": "AUDITED_OFFLINE_CASE",
+    "governance_tags": {
+      "scope": {
+        "geography": "Other",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "Coinbase Retail",
+        "product_scope": "Retail",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Web help article; product-specific variants excluded"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "CBP-S08",
+          "source_url": "https://help.coinbase.com/en/coinbase/privacy-and-security/avoid-scams/tech-support-scams",
+          "source_title": "Technical support and impersonation scams",
+          "source_section": "Support stop conditions",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "faq_id": "CBP-FAQ-034",
+    "platform_id": "coinbase",
+    "question": "What must I know about eu recipient on Coinbase?",
+    "answer": "EU crypto sends may require recipient and destination-provider information.",
+    "answer_type": "OFFICIAL_FACT_SUMMARY",
+    "claim_refs": [
+      "CBP-038"
+    ],
+    "source_ids": [
+      "CBP-S09"
+    ],
+    "last_checked": "2026-08-02",
+    "review_due_at": "2026-11-02",
+    "escalation": "NONE_UNLESS_SCOPE_DIFFERS",
+    "status": "AUDITED_OFFLINE_CASE",
+    "governance_tags": {
+      "scope": {
+        "geography": "EEA",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "Coinbase Retail",
+        "product_scope": "Retail",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Web help article; product-specific variants excluded"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "CBP-S09",
+          "source_url": "https://help.coinbase.com/en/coinbase/trading-and-funding/sending-or-receiving-cryptocurrency/send-receive-crypto-eu",
+          "source_title": "Send and receive crypto for EU customers",
+          "source_section": "EU recipient information and small ownership test",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "faq_id": "CBP-FAQ-035",
+    "platform_id": "coinbase",
+    "question": "What must I know about eu self hosted on Coinbase?",
+    "answer": "EU self-hosted-wallet sends may require an address-control test.",
+    "answer_type": "OFFICIAL_FACT_SUMMARY",
+    "claim_refs": [
+      "CBP-039"
+    ],
+    "source_ids": [
+      "CBP-S09"
+    ],
+    "last_checked": "2026-08-02",
+    "review_due_at": "2026-11-02",
+    "escalation": "NONE_UNLESS_SCOPE_DIFFERS",
+    "status": "AUDITED_OFFLINE_CASE",
+    "governance_tags": {
+      "scope": {
+        "geography": "EEA",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "Coinbase Retail",
+        "product_scope": "Retail",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Web help article; product-specific variants excluded"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "CBP-S09",
+          "source_url": "https://help.coinbase.com/en/coinbase/trading-and-funding/sending-or-receiving-cryptocurrency/send-receive-crypto-eu",
+          "source_title": "Send and receive crypto for EU customers",
+          "source_section": "EU recipient information and small ownership test",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "faq_id": "CBP-FAQ-036",
+    "platform_id": "coinbase",
+    "question": "What must I know about eu test on Coinbase?",
+    "answer": "The cited EU flow uses a small randomly generated amount to verify wallet control.",
+    "answer_type": "OFFICIAL_FACT_SUMMARY",
+    "claim_refs": [
+      "CBP-040"
+    ],
+    "source_ids": [
+      "CBP-S09"
+    ],
+    "last_checked": "2026-08-02",
+    "review_due_at": "2026-11-02",
+    "escalation": "NONE_UNLESS_SCOPE_DIFFERS",
+    "status": "AUDITED_OFFLINE_CASE",
+    "governance_tags": {
+      "scope": {
+        "geography": "EEA",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "Coinbase Retail",
+        "product_scope": "Retail",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Web help article; product-specific variants excluded"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "CBP-S09",
+          "source_url": "https://help.coinbase.com/en/coinbase/trading-and-funding/sending-or-receiving-cryptocurrency/send-receive-crypto-eu",
+          "source_title": "Send and receive crypto for EU customers",
+          "source_section": "EU recipient information and small ownership test",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "faq_id": "CBP-FAQ-037",
+    "platform_id": "coinbase",
+    "question": "What must I know about small test on Coinbase?",
+    "answer": "CJAS requires a small test before a material owner-verified exit.",
+    "answer_type": "CJAS_GUIDANCE",
+    "claim_refs": [
+      "CBP-041"
+    ],
+    "source_ids": [
+      "CBP-S09"
+    ],
+    "last_checked": "2026-08-02",
+    "review_due_at": "2026-11-02",
+    "escalation": "NONE_UNLESS_SCOPE_DIFFERS",
+    "status": "AUDITED_OFFLINE_CASE",
+    "governance_tags": {
+      "scope": {
+        "geography": "EEA",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "Coinbase Retail",
+        "product_scope": "Retail",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Web help article; product-specific variants excluded"
+      },
+      "source": {
+        "primary": {
+          "source_type": "CJAS_GUIDANCE",
+          "source_id": "CBP-S09",
+          "source_url": "https://help.coinbase.com/en/coinbase/trading-and-funding/sending-or-receiving-cryptocurrency/send-receive-crypto-eu",
+          "source_title": "Send and receive crypto for EU customers",
+          "source_section": "EU recipient information and small ownership test",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "faq_id": "CBP-FAQ-038",
+    "platform_id": "coinbase",
+    "question": "During recovery, how should I handle password reset out?",
+    "answer": "A signed-out user can initiate password reset from the official reset page.",
+    "answer_type": "OFFICIAL_FACT_SUMMARY",
+    "claim_refs": [
+      "CBP-002"
+    ],
+    "source_ids": [
+      "CBP-S05"
+    ],
+    "last_checked": "2026-08-02",
+    "review_due_at": "2026-11-02",
+    "escalation": "NONE_UNLESS_SCOPE_DIFFERS",
+    "status": "AUDITED_OFFLINE_CASE",
+    "governance_tags": {
+      "scope": {
+        "geography": "Other",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "Coinbase Retail",
+        "product_scope": "Retail",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Web help article; product-specific variants excluded"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "CBP-S05",
+          "source_url": "https://help.coinbase.com/en/coinbase/managing-my-account/get-back-into-my-account/reset-my-password",
+          "source_title": "Reset your password",
+          "source_section": "Signed-in/signed-out password reset",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "faq_id": "CBP-FAQ-039",
+    "platform_id": "coinbase",
+    "question": "During recovery, how should I handle password reset in?",
+    "answer": "A signed-in password change requires account access and 2-step verification.",
+    "answer_type": "OFFICIAL_FACT_SUMMARY",
+    "claim_refs": [
+      "CBP-003"
+    ],
+    "source_ids": [
+      "CBP-S05"
+    ],
+    "last_checked": "2026-08-02",
+    "review_due_at": "2026-11-02",
+    "escalation": "NONE_UNLESS_SCOPE_DIFFERS",
+    "status": "AUDITED_OFFLINE_CASE",
+    "governance_tags": {
+      "scope": {
+        "geography": "Other",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "Coinbase Retail",
+        "product_scope": "Retail",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Web help article; product-specific variants excluded"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "CBP-S05",
+          "source_url": "https://help.coinbase.com/en/coinbase/managing-my-account/get-back-into-my-account/reset-my-password",
+          "source_title": "Reset your password",
+          "source_section": "Signed-in/signed-out password reset",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "faq_id": "CBP-FAQ-040",
+    "platform_id": "coinbase",
+    "question": "During recovery, how should I handle two step required?",
+    "answer": "Coinbase states 2-step verification is required to access the account.",
+    "answer_type": "OFFICIAL_FACT_SUMMARY",
+    "claim_refs": [
+      "CBP-005"
+    ],
+    "source_ids": [
+      "CBP-S02"
+    ],
+    "last_checked": "2026-08-02",
+    "review_due_at": "2026-11-02",
+    "escalation": "NONE_UNLESS_SCOPE_DIFFERS",
+    "status": "AUDITED_OFFLINE_CASE",
+    "governance_tags": {
+      "scope": {
+        "geography": "Other",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "Coinbase Retail",
+        "product_scope": "Retail",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Web help article; product-specific variants excluded"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "CBP-S02",
+          "source_url": "https://help.coinbase.com/en/coinbase/getting-started/getting-started-with-coinbase/2-step-verification",
+          "source_title": "Set up 2-step verification",
+          "source_section": "Passkey, security key, TOTP, push, SMS, trusted contacts",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "faq_id": "CBP-FAQ-041",
+    "platform_id": "coinbase",
+    "question": "During recovery, how should I handle multiple methods?",
+    "answer": "Coinbase recommends multiple 2-step methods to provide a backup path.",
+    "answer_type": "OFFICIAL_FACT_SUMMARY",
+    "claim_refs": [
+      "CBP-006"
+    ],
+    "source_ids": [
+      "CBP-S02"
+    ],
+    "last_checked": "2026-08-02",
+    "review_due_at": "2026-11-02",
+    "escalation": "NONE_UNLESS_SCOPE_DIFFERS",
+    "status": "AUDITED_OFFLINE_CASE",
+    "governance_tags": {
+      "scope": {
+        "geography": "Other",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "Coinbase Retail",
+        "product_scope": "Retail",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Web help article; product-specific variants excluded"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "CBP-S02",
+          "source_url": "https://help.coinbase.com/en/coinbase/getting-started/getting-started-with-coinbase/2-step-verification",
+          "source_title": "Set up 2-step verification",
+          "source_section": "Passkey, security key, TOTP, push, SMS, trusted contacts",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "faq_id": "CBP-FAQ-042",
+    "platform_id": "coinbase",
+    "question": "During recovery, how should I handle security keys?",
+    "answer": "Coinbase supports compatible security keys as a 2-step method.",
+    "answer_type": "OFFICIAL_FACT_SUMMARY",
+    "claim_refs": [
+      "CBP-007"
+    ],
+    "source_ids": [
+      "CBP-S02"
+    ],
+    "last_checked": "2026-08-02",
+    "review_due_at": "2026-11-02",
+    "escalation": "NONE_UNLESS_SCOPE_DIFFERS",
+    "status": "AUDITED_OFFLINE_CASE",
+    "governance_tags": {
+      "scope": {
+        "geography": "Other",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "Coinbase Retail",
+        "product_scope": "Retail",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Web help article; product-specific variants excluded"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "CBP-S02",
+          "source_url": "https://help.coinbase.com/en/coinbase/getting-started/getting-started-with-coinbase/2-step-verification",
+          "source_title": "Set up 2-step verification",
+          "source_section": "Passkey, security key, TOTP, push, SMS, trusted contacts",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "faq_id": "CBP-FAQ-043",
+    "platform_id": "coinbase",
+    "question": "During recovery, how should I handle two keys?",
+    "answer": "The official page recommends two security keys as primary and backup.",
+    "answer_type": "OFFICIAL_FACT_SUMMARY",
+    "claim_refs": [
+      "CBP-008"
+    ],
+    "source_ids": [
+      "CBP-S02"
+    ],
+    "last_checked": "2026-08-02",
+    "review_due_at": "2026-11-02",
+    "escalation": "NONE_UNLESS_SCOPE_DIFFERS",
+    "status": "AUDITED_OFFLINE_CASE",
+    "governance_tags": {
+      "scope": {
+        "geography": "Other",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "Coinbase Retail",
+        "product_scope": "Retail",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Web help article; product-specific variants excluded"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "CBP-S02",
+          "source_url": "https://help.coinbase.com/en/coinbase/getting-started/getting-started-with-coinbase/2-step-verification",
+          "source_title": "Set up 2-step verification",
+          "source_section": "Passkey, security key, TOTP, push, SMS, trusted contacts",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "faq_id": "CBP-FAQ-044",
+    "platform_id": "coinbase",
+    "question": "During recovery, how should I handle passkey?",
+    "answer": "Coinbase supports device-generated passkeys.",
+    "answer_type": "OFFICIAL_FACT_SUMMARY",
+    "claim_refs": [
+      "CBP-009"
+    ],
+    "source_ids": [
+      "CBP-S02"
+    ],
+    "last_checked": "2026-08-02",
+    "review_due_at": "2026-11-02",
+    "escalation": "NONE_UNLESS_SCOPE_DIFFERS",
+    "status": "AUDITED_OFFLINE_CASE",
+    "governance_tags": {
+      "scope": {
+        "geography": "Other",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "Coinbase Retail",
+        "product_scope": "Retail",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Web help article; product-specific variants excluded"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "CBP-S02",
+          "source_url": "https://help.coinbase.com/en/coinbase/getting-started/getting-started-with-coinbase/2-step-verification",
+          "source_title": "Set up 2-step verification",
+          "source_section": "Passkey, security key, TOTP, push, SMS, trusted contacts",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "faq_id": "CBP-FAQ-045",
+    "platform_id": "coinbase",
+    "question": "During recovery, how should I handle passkey storage?",
+    "answer": "A passkey may depend on the device, cloud account or password manager in which it is stored.",
+    "answer_type": "OFFICIAL_FACT_SUMMARY",
+    "claim_refs": [
+      "CBP-010"
+    ],
+    "source_ids": [
+      "CBP-S03"
+    ],
+    "last_checked": "2026-08-02",
+    "review_due_at": "2026-11-02",
+    "escalation": "NONE_UNLESS_SCOPE_DIFFERS",
+    "status": "AUDITED_OFFLINE_CASE",
+    "governance_tags": {
+      "scope": {
+        "geography": "Other",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "Coinbase Retail",
+        "product_scope": "Retail",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Web help article; product-specific variants excluded"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "CBP-S03",
+          "source_url": "https://help.coinbase.com/en/coinbase/managing-my-account/get-back-into-my-account/2-step-verification-troubleshooting",
+          "source_title": "Troubleshoot 2-step verification",
+          "source_section": "Lost factors and backup methods",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "faq_id": "CBP-FAQ-046",
+    "platform_id": "coinbase",
+    "question": "During recovery, how should I handle totp?",
+    "answer": "Coinbase supports time-based one-time-password authenticator apps.",
+    "answer_type": "OFFICIAL_FACT_SUMMARY",
+    "claim_refs": [
+      "CBP-011"
+    ],
+    "source_ids": [
+      "CBP-S02"
+    ],
+    "last_checked": "2026-08-02",
+    "review_due_at": "2026-11-02",
+    "escalation": "NONE_UNLESS_SCOPE_DIFFERS",
+    "status": "AUDITED_OFFLINE_CASE",
+    "governance_tags": {
+      "scope": {
+        "geography": "Other",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "Coinbase Retail",
+        "product_scope": "Retail",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Web help article; product-specific variants excluded"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "CBP-S02",
+          "source_url": "https://help.coinbase.com/en/coinbase/getting-started/getting-started-with-coinbase/2-step-verification",
+          "source_title": "Set up 2-step verification",
+          "source_section": "Passkey, security key, TOTP, push, SMS, trusted contacts",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "faq_id": "CBP-FAQ-047",
+    "platform_id": "coinbase",
+    "question": "During recovery, how should I handle push?",
+    "answer": "Coinbase supports app push notifications as a verification method.",
+    "answer_type": "OFFICIAL_FACT_SUMMARY",
+    "claim_refs": [
+      "CBP-012"
+    ],
+    "source_ids": [
+      "CBP-S02"
+    ],
+    "last_checked": "2026-08-02",
+    "review_due_at": "2026-11-02",
+    "escalation": "NONE_UNLESS_SCOPE_DIFFERS",
+    "status": "AUDITED_OFFLINE_CASE",
+    "governance_tags": {
+      "scope": {
+        "geography": "Other",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "Coinbase Retail",
+        "product_scope": "Retail",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Web help article; product-specific variants excluded"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "CBP-S02",
+          "source_url": "https://help.coinbase.com/en/coinbase/getting-started/getting-started-with-coinbase/2-step-verification",
+          "source_title": "Set up 2-step verification",
+          "source_section": "Passkey, security key, TOTP, push, SMS, trusted contacts",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "faq_id": "CBP-FAQ-048",
+    "platform_id": "coinbase",
+    "question": "During recovery, how should I handle push devices?",
+    "answer": "Push requests can be sent to devices with an active mobile-app session.",
+    "answer_type": "OFFICIAL_FACT_SUMMARY",
+    "claim_refs": [
+      "CBP-013"
+    ],
+    "source_ids": [
+      "CBP-S02"
+    ],
+    "last_checked": "2026-08-02",
+    "review_due_at": "2026-11-02",
+    "escalation": "NONE_UNLESS_SCOPE_DIFFERS",
+    "status": "AUDITED_OFFLINE_CASE",
+    "governance_tags": {
+      "scope": {
+        "geography": "Other",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "Coinbase Retail",
+        "product_scope": "Retail",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Web help article; product-specific variants excluded"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "CBP-S02",
+          "source_url": "https://help.coinbase.com/en/coinbase/getting-started/getting-started-with-coinbase/2-step-verification",
+          "source_title": "Set up 2-step verification",
+          "source_section": "Passkey, security key, TOTP, push, SMS, trusted contacts",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "faq_id": "CBP-FAQ-049",
+    "platform_id": "coinbase",
+    "question": "During recovery, how should I handle alternate factor?",
+    "answer": "If one configured method fails, the user may choose another available method.",
+    "answer_type": "OFFICIAL_FACT_SUMMARY",
+    "claim_refs": [
+      "CBP-015"
+    ],
+    "source_ids": [
+      "CBP-S02"
+    ],
+    "last_checked": "2026-08-02",
+    "review_due_at": "2026-11-02",
+    "escalation": "NONE_UNLESS_SCOPE_DIFFERS",
+    "status": "AUDITED_OFFLINE_CASE",
+    "governance_tags": {
+      "scope": {
+        "geography": "Other",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "Coinbase Retail",
+        "product_scope": "Retail",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Web help article; product-specific variants excluded"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "CBP-S02",
+          "source_url": "https://help.coinbase.com/en/coinbase/getting-started/getting-started-with-coinbase/2-step-verification",
+          "source_title": "Set up 2-step verification",
+          "source_section": "Passkey, security key, TOTP, push, SMS, trusted contacts",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "faq_id": "CBP-FAQ-050",
+    "platform_id": "coinbase",
+    "question": "During recovery, how should I handle lost key?",
+    "answer": "Coinbase cannot recover or replace a lost physical security key.",
+    "answer_type": "OFFICIAL_FACT_SUMMARY",
+    "claim_refs": [
+      "CBP-016"
+    ],
+    "source_ids": [
+      "CBP-S03"
+    ],
+    "last_checked": "2026-08-02",
+    "review_due_at": "2026-11-02",
+    "escalation": "NONE_UNLESS_SCOPE_DIFFERS",
+    "status": "AUDITED_OFFLINE_CASE",
+    "governance_tags": {
+      "scope": {
+        "geography": "Other",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "Coinbase Retail",
+        "product_scope": "Retail",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Web help article; product-specific variants excluded"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "CBP-S03",
+          "source_url": "https://help.coinbase.com/en/coinbase/managing-my-account/get-back-into-my-account/2-step-verification-troubleshooting",
+          "source_title": "Troubleshoot 2-step verification",
+          "source_section": "Lost factors and backup methods",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "faq_id": "CBP-FAQ-051",
+    "platform_id": "coinbase",
+    "question": "During recovery, how should I handle lost auth?",
+    "answer": "If the authenticator is the only method and is lost, the official recovery process is required.",
+    "answer_type": "OFFICIAL_FACT_SUMMARY",
+    "claim_refs": [
+      "CBP-017"
+    ],
+    "source_ids": [
+      "CBP-S03"
+    ],
+    "last_checked": "2026-08-02",
+    "review_due_at": "2026-11-02",
+    "escalation": "NONE_UNLESS_SCOPE_DIFFERS",
+    "status": "AUDITED_OFFLINE_CASE",
+    "governance_tags": {
+      "scope": {
+        "geography": "Other",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "Coinbase Retail",
+        "product_scope": "Retail",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Web help article; product-specific variants excluded"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "CBP-S03",
+          "source_url": "https://help.coinbase.com/en/coinbase/managing-my-account/get-back-into-my-account/2-step-verification-troubleshooting",
+          "source_title": "Troubleshoot 2-step verification",
+          "source_section": "Lost factors and backup methods",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "faq_id": "CBP-FAQ-052",
+    "platform_id": "coinbase",
+    "question": "During recovery, how should I handle lost phone?",
+    "answer": "If SMS is the only method and the phone is lost, the official recovery process is required.",
+    "answer_type": "OFFICIAL_FACT_SUMMARY",
+    "claim_refs": [
+      "CBP-018"
+    ],
+    "source_ids": [
+      "CBP-S03"
+    ],
+    "last_checked": "2026-08-02",
+    "review_due_at": "2026-11-02",
+    "escalation": "NONE_UNLESS_SCOPE_DIFFERS",
+    "status": "AUDITED_OFFLINE_CASE",
+    "governance_tags": {
+      "scope": {
+        "geography": "Other",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "Coinbase Retail",
+        "product_scope": "Retail",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Web help article; product-specific variants excluded"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "CBP-S03",
+          "source_url": "https://help.coinbase.com/en/coinbase/managing-my-account/get-back-into-my-account/2-step-verification-troubleshooting",
+          "source_title": "Troubleshoot 2-step verification",
+          "source_section": "Lost factors and backup methods",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "faq_id": "CBP-FAQ-053",
+    "platform_id": "coinbase",
+    "question": "During recovery, how should I handle unrecognized push?",
+    "answer": "An unrecognized push request should be denied and the account reviewed or locked.",
+    "answer_type": "OFFICIAL_FACT_SUMMARY",
+    "claim_refs": [
+      "CBP-019"
+    ],
+    "source_ids": [
+      "CBP-S03"
+    ],
+    "last_checked": "2026-08-02",
+    "review_due_at": "2026-11-02",
+    "escalation": "STOP_AND_USE_OFFICIAL_SUPPORT",
+    "status": "AUDITED_OFFLINE_CASE",
+    "governance_tags": {
+      "scope": {
+        "geography": "Other",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "Coinbase Retail",
+        "product_scope": "Retail",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Web help article; product-specific variants excluded"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "CBP-S03",
+          "source_url": "https://help.coinbase.com/en/coinbase/managing-my-account/get-back-into-my-account/2-step-verification-troubleshooting",
+          "source_title": "Troubleshoot 2-step verification",
+          "source_section": "Lost factors and backup methods",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "faq_id": "CBP-FAQ-054",
+    "platform_id": "coinbase",
+    "question": "During recovery, how should I handle recovery entry?",
+    "answer": "Lost email or 2-step access uses the official account-recovery page.",
+    "answer_type": "OFFICIAL_FACT_SUMMARY",
+    "claim_refs": [
+      "CBP-020"
+    ],
+    "source_ids": [
+      "CBP-S01"
+    ],
+    "last_checked": "2026-08-02",
+    "review_due_at": "2026-11-02",
+    "escalation": "NONE_UNLESS_SCOPE_DIFFERS",
+    "status": "AUDITED_OFFLINE_CASE",
+    "governance_tags": {
+      "scope": {
+        "geography": "Other",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "Coinbase Retail",
+        "product_scope": "Retail",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Web help article; product-specific variants excluded"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "CBP-S01",
+          "source_url": "https://help.coinbase.com/en/coinbase/managing-my-account/get-back-into-my-account/account-recovery-lost-email-2step-verification",
+          "source_title": "Account recovery for lost email or 2-step access",
+          "source_section": "Recovery options; ID; trusted contacts; sends restriction",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "faq_id": "CBP-FAQ-055",
+    "platform_id": "coinbase",
+    "question": "During recovery, how should I handle recovery password?",
+    "answer": "A user who has also lost the password must reset it before starting the cited recovery flow.",
+    "answer_type": "OFFICIAL_FACT_SUMMARY",
+    "claim_refs": [
+      "CBP-021"
+    ],
+    "source_ids": [
+      "CBP-S01"
+    ],
+    "last_checked": "2026-08-02",
+    "review_due_at": "2026-11-02",
+    "escalation": "NONE_UNLESS_SCOPE_DIFFERS",
+    "status": "AUDITED_OFFLINE_CASE",
+    "governance_tags": {
+      "scope": {
+        "geography": "Other",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "Coinbase Retail",
+        "product_scope": "Retail",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Web help article; product-specific variants excluded"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "CBP-S01",
+          "source_url": "https://help.coinbase.com/en/coinbase/managing-my-account/get-back-into-my-account/account-recovery-lost-email-2step-verification",
+          "source_title": "Account recovery for lost email or 2-step access",
+          "source_section": "Recovery options; ID; trusted contacts; sends restriction",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "faq_id": "CBP-FAQ-056",
+    "platform_id": "coinbase",
+    "question": "During recovery, how should I handle recovery id?",
+    "answer": "One recovery option uses government ID and may require a selfie.",
+    "answer_type": "OFFICIAL_FACT_SUMMARY",
+    "claim_refs": [
+      "CBP-022"
+    ],
+    "source_ids": [
+      "CBP-S01"
+    ],
+    "last_checked": "2026-08-02",
+    "review_due_at": "2026-11-02",
+    "escalation": "NONE_UNLESS_SCOPE_DIFFERS",
+    "status": "AUDITED_OFFLINE_CASE",
+    "governance_tags": {
+      "scope": {
+        "geography": "Other",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "Coinbase Retail",
+        "product_scope": "Retail",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Web help article; product-specific variants excluded"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "CBP-S01",
+          "source_url": "https://help.coinbase.com/en/coinbase/managing-my-account/get-back-into-my-account/account-recovery-lost-email-2step-verification",
+          "source_title": "Account recovery for lost email or 2-step access",
+          "source_section": "Recovery options; ID; trusted contacts; sends restriction",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "faq_id": "CBP-FAQ-057",
+    "platform_id": "coinbase",
+    "question": "During recovery, how should I handle trusted limit?",
+    "answer": "Trusted-contact recovery does not allow email or 2-step update in the cited option.",
+    "answer_type": "OFFICIAL_FACT_SUMMARY",
+    "claim_refs": [
+      "CBP-024"
+    ],
+    "source_ids": [
+      "CBP-S01"
+    ],
+    "last_checked": "2026-08-02",
+    "review_due_at": "2026-11-02",
+    "escalation": "NONE_UNLESS_SCOPE_DIFFERS",
+    "status": "AUDITED_OFFLINE_CASE",
+    "governance_tags": {
+      "scope": {
+        "geography": "Other",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "Coinbase Retail",
+        "product_scope": "Retail",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Web help article; product-specific variants excluded"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "CBP-S01",
+          "source_url": "https://help.coinbase.com/en/coinbase/managing-my-account/get-back-into-my-account/account-recovery-lost-email-2step-verification",
+          "source_title": "Account recovery for lost email or 2-step access",
+          "source_section": "Recovery options; ID; trusted contacts; sends restriction",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "faq_id": "CBP-FAQ-058",
+    "platform_id": "coinbase",
+    "question": "During recovery, how should I handle trusted payment?",
+    "answer": "The cited trusted-contact recovery option removes previously added payment methods.",
+    "answer_type": "OFFICIAL_FACT_SUMMARY",
+    "claim_refs": [
+      "CBP-025"
+    ],
+    "source_ids": [
+      "CBP-S01"
+    ],
+    "last_checked": "2026-08-02",
+    "review_due_at": "2026-11-02",
+    "escalation": "NONE_UNLESS_SCOPE_DIFFERS",
+    "status": "AUDITED_OFFLINE_CASE",
+    "governance_tags": {
+      "scope": {
+        "geography": "Other",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "Coinbase Retail",
+        "product_scope": "Retail",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Web help article; product-specific variants excluded"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "CBP-S01",
+          "source_url": "https://help.coinbase.com/en/coinbase/managing-my-account/get-back-into-my-account/account-recovery-lost-email-2step-verification",
+          "source_title": "Account recovery for lost email or 2-step access",
+          "source_section": "Recovery options; ID; trusted contacts; sends restriction",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "faq_id": "CBP-FAQ-059",
+    "platform_id": "coinbase",
+    "question": "During recovery, how should I handle recovery update?",
+    "answer": "After recovery, the cited flow requires updating the 2-step method within 24 hours to maintain access.",
+    "answer_type": "OFFICIAL_FACT_SUMMARY",
+    "claim_refs": [
+      "CBP-026"
+    ],
+    "source_ids": [
+      "CBP-S01"
+    ],
+    "last_checked": "2026-08-02",
+    "review_due_at": "2026-11-02",
+    "escalation": "NONE_UNLESS_SCOPE_DIFFERS",
+    "status": "AUDITED_OFFLINE_CASE",
+    "governance_tags": {
+      "scope": {
+        "geography": "Other",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "Coinbase Retail",
+        "product_scope": "Retail",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Web help article; product-specific variants excluded"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "CBP-S01",
+          "source_url": "https://help.coinbase.com/en/coinbase/managing-my-account/get-back-into-my-account/account-recovery-lost-email-2step-verification",
+          "source_title": "Account recovery for lost email or 2-step access",
+          "source_section": "Recovery options; ID; trusted contacts; sends restriction",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "faq_id": "CBP-FAQ-060",
+    "platform_id": "coinbase",
+    "question": "During recovery, how should I handle recovery send lock?",
+    "answer": "The cited ID recovery may leave sends disabled for 24 hours after completion.",
+    "answer_type": "OFFICIAL_FACT_SUMMARY",
+    "claim_refs": [
+      "CBP-027"
+    ],
+    "source_ids": [
+      "CBP-S01"
+    ],
+    "last_checked": "2026-08-02",
+    "review_due_at": "2026-11-02",
+    "escalation": "NONE_UNLESS_SCOPE_DIFFERS",
+    "status": "AUDITED_OFFLINE_CASE",
+    "governance_tags": {
+      "scope": {
+        "geography": "Other",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "Coinbase Retail",
+        "product_scope": "Retail",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Web help article; product-specific variants excluded"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "CBP-S01",
+          "source_url": "https://help.coinbase.com/en/coinbase/managing-my-account/get-back-into-my-account/account-recovery-lost-email-2step-verification",
+          "source_title": "Account recovery for lost email or 2-step access",
+          "source_section": "Recovery options; ID; trusted contacts; sends restriction",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "faq_id": "CBP-FAQ-061",
+    "platform_id": "coinbase",
+    "question": "During recovery, how should I handle login not send?",
+    "answer": "Successful sign-in after recovery does not prove that sends are enabled.",
+    "answer_type": "CJAS_GUIDANCE",
+    "claim_refs": [
+      "CBP-028"
+    ],
+    "source_ids": [
+      "CBP-S01"
+    ],
+    "last_checked": "2026-08-02",
+    "review_due_at": "2026-11-02",
+    "escalation": "NONE_UNLESS_SCOPE_DIFFERS",
+    "status": "AUDITED_OFFLINE_CASE",
+    "governance_tags": {
+      "scope": {
+        "geography": "Other",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "Coinbase Retail",
+        "product_scope": "Retail",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Web help article; product-specific variants excluded"
+      },
+      "source": {
+        "primary": {
+          "source_type": "CJAS_GUIDANCE",
+          "source_id": "CBP-S01",
+          "source_url": "https://help.coinbase.com/en/coinbase/managing-my-account/get-back-into-my-account/account-recovery-lost-email-2step-verification",
+          "source_title": "Account recovery for lost email or 2-step access",
+          "source_section": "Recovery options; ID; trusted contacts; sends restriction",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "faq_id": "CBP-FAQ-062",
+    "platform_id": "coinbase",
+    "question": "During recovery, how should I handle control definition?",
+    "answer": "Operational control requires account access, current factors, unrestricted sends and an accepted destination.",
+    "answer_type": "CJAS_GUIDANCE",
+    "claim_refs": [
+      "CBP-029"
+    ],
+    "source_ids": [
+      "CBP-S01"
+    ],
+    "last_checked": "2026-08-02",
+    "review_due_at": "2026-11-02",
+    "escalation": "NONE_UNLESS_SCOPE_DIFFERS",
+    "status": "AUDITED_OFFLINE_CASE",
+    "governance_tags": {
+      "scope": {
+        "geography": "Other",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "Coinbase Retail",
+        "product_scope": "Retail",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Web help article; product-specific variants excluded"
+      },
+      "source": {
+        "primary": {
+          "source_type": "CJAS_GUIDANCE",
+          "source_id": "CBP-S01",
+          "source_url": "https://help.coinbase.com/en/coinbase/managing-my-account/get-back-into-my-account/account-recovery-lost-email-2step-verification",
+          "source_title": "Account recovery for lost email or 2-step access",
+          "source_section": "Recovery options; ID; trusted contacts; sends restriction",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "faq_id": "CBP-FAQ-063",
+    "platform_id": "coinbase",
+    "question": "During recovery, how should I handle active sessions?",
+    "answer": "Coinbase exposes active sessions and confirmed devices for review.",
+    "answer_type": "OFFICIAL_FACT_SUMMARY",
+    "claim_refs": [
+      "CBP-030"
+    ],
+    "source_ids": [
+      "CBP-S04"
+    ],
+    "last_checked": "2026-08-02",
+    "review_due_at": "2026-11-02",
+    "escalation": "NONE_UNLESS_SCOPE_DIFFERS",
+    "status": "AUDITED_OFFLINE_CASE",
+    "governance_tags": {
+      "scope": {
+        "geography": "Other",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "Coinbase Retail",
+        "product_scope": "Retail",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Web help article; product-specific variants excluded"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "CBP-S04",
+          "source_url": "https://help.coinbase.com/en/coinbase/privacy-and-security/data-privacy/how-can-i-make-my-account-more-secure",
+          "source_title": "Make your account more secure",
+          "source_section": "Password, email, devices, allowlist, support boundaries",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "faq_id": "CBP-FAQ-064",
+    "platform_id": "coinbase",
+    "question": "During recovery, how should I handle remove session?",
+    "answer": "An unauthorized application, session or device can be removed from the account.",
+    "answer_type": "OFFICIAL_FACT_SUMMARY",
+    "claim_refs": [
+      "CBP-031"
+    ],
+    "source_ids": [
+      "CBP-S04"
+    ],
+    "last_checked": "2026-08-02",
+    "review_due_at": "2026-11-02",
+    "escalation": "NONE_UNLESS_SCOPE_DIFFERS",
+    "status": "AUDITED_OFFLINE_CASE",
+    "governance_tags": {
+      "scope": {
+        "geography": "Other",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "Coinbase Retail",
+        "product_scope": "Retail",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Web help article; product-specific variants excluded"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "CBP-S04",
+          "source_url": "https://help.coinbase.com/en/coinbase/privacy-and-security/data-privacy/how-can-i-make-my-account-more-secure",
+          "source_title": "Make your account more secure",
+          "source_section": "Password, email, devices, allowlist, support boundaries",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "faq_id": "CBP-FAQ-065",
+    "platform_id": "coinbase",
+    "question": "During recovery, how should I handle allowlist?",
+    "answer": "Coinbase provides an address-book allowlist for known crypto addresses.",
+    "answer_type": "OFFICIAL_FACT_SUMMARY",
+    "claim_refs": [
+      "CBP-032"
+    ],
+    "source_ids": [
+      "CBP-S04"
+    ],
+    "last_checked": "2026-08-02",
+    "review_due_at": "2026-11-02",
+    "escalation": "NONE_UNLESS_SCOPE_DIFFERS",
+    "status": "AUDITED_OFFLINE_CASE",
+    "governance_tags": {
+      "scope": {
+        "geography": "Other",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "Coinbase Retail",
+        "product_scope": "Retail",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Web help article; product-specific variants excluded"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "CBP-S04",
+          "source_url": "https://help.coinbase.com/en/coinbase/privacy-and-security/data-privacy/how-can-i-make-my-account-more-secure",
+          "source_title": "Make your account more secure",
+          "source_section": "Password, email, devices, allowlist, support boundaries",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "faq_id": "CBP-FAQ-066",
+    "platform_id": "coinbase",
+    "question": "During recovery, how should I handle email security?",
+    "answer": "Compromise of the linked email can compromise device confirmation and support communication.",
+    "answer_type": "OFFICIAL_FACT_SUMMARY",
+    "claim_refs": [
+      "CBP-033"
+    ],
+    "source_ids": [
+      "CBP-S04"
+    ],
+    "last_checked": "2026-08-02",
+    "review_due_at": "2026-11-02",
+    "escalation": "NONE_UNLESS_SCOPE_DIFFERS",
+    "status": "AUDITED_OFFLINE_CASE",
+    "governance_tags": {
+      "scope": {
+        "geography": "Other",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "Coinbase Retail",
+        "product_scope": "Retail",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Web help article; product-specific variants excluded"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "CBP-S04",
+          "source_url": "https://help.coinbase.com/en/coinbase/privacy-and-security/data-privacy/how-can-i-make-my-account-more-secure",
+          "source_title": "Make your account more secure",
+          "source_section": "Password, email, devices, allowlist, support boundaries",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "faq_id": "CBP-FAQ-067",
+    "platform_id": "coinbase",
+    "question": "During recovery, how should I handle support password?",
+    "answer": "Coinbase support will not ask for passwords, 2-step codes or email access.",
+    "answer_type": "OFFICIAL_FACT_SUMMARY",
+    "claim_refs": [
+      "CBP-034"
+    ],
+    "source_ids": [
+      "CBP-S04"
+    ],
+    "last_checked": "2026-08-02",
+    "review_due_at": "2026-11-02",
+    "escalation": "STOP_AND_USE_OFFICIAL_SUPPORT",
+    "status": "AUDITED_OFFLINE_CASE",
+    "governance_tags": {
+      "scope": {
+        "geography": "Other",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "Coinbase Retail",
+        "product_scope": "Retail",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Web help article; product-specific variants excluded"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "CBP-S04",
+          "source_url": "https://help.coinbase.com/en/coinbase/privacy-and-security/data-privacy/how-can-i-make-my-account-more-secure",
+          "source_title": "Make your account more secure",
+          "source_section": "Password, email, devices, allowlist, support boundaries",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "faq_id": "CBP-FAQ-068",
+    "platform_id": "coinbase",
+    "question": "During recovery, how should I handle support remote?",
+    "answer": "Coinbase support will not ask the user to install remote-support software.",
+    "answer_type": "OFFICIAL_FACT_SUMMARY",
+    "claim_refs": [
+      "CBP-035"
+    ],
+    "source_ids": [
+      "CBP-S04"
+    ],
+    "last_checked": "2026-08-02",
+    "review_due_at": "2026-11-02",
+    "escalation": "STOP_AND_USE_OFFICIAL_SUPPORT",
+    "status": "AUDITED_OFFLINE_CASE",
+    "governance_tags": {
+      "scope": {
+        "geography": "Other",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "Coinbase Retail",
+        "product_scope": "Retail",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Web help article; product-specific variants excluded"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "CBP-S04",
+          "source_url": "https://help.coinbase.com/en/coinbase/privacy-and-security/data-privacy/how-can-i-make-my-account-more-secure",
+          "source_title": "Make your account more secure",
+          "source_section": "Password, email, devices, allowlist, support boundaries",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "faq_id": "CBP-FAQ-069",
+    "platform_id": "coinbase",
+    "question": "During recovery, how should I handle support transfer?",
+    "answer": "Coinbase support will not ask a user to send funds to resolve an issue.",
+    "answer_type": "OFFICIAL_FACT_SUMMARY",
+    "claim_refs": [
+      "CBP-036"
+    ],
+    "source_ids": [
+      "CBP-S08"
+    ],
+    "last_checked": "2026-08-02",
+    "review_due_at": "2026-11-02",
+    "escalation": "STOP_AND_USE_OFFICIAL_SUPPORT",
+    "status": "AUDITED_OFFLINE_CASE",
+    "governance_tags": {
+      "scope": {
+        "geography": "Other",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "Coinbase Retail",
+        "product_scope": "Retail",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Web help article; product-specific variants excluded"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "CBP-S08",
+          "source_url": "https://help.coinbase.com/en/coinbase/privacy-and-security/avoid-scams/tech-support-scams",
+          "source_title": "Technical support and impersonation scams",
+          "source_section": "Support stop conditions",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "faq_id": "CBP-FAQ-070",
+    "platform_id": "coinbase",
+    "question": "During recovery, how should I handle destination stop?",
+    "answer": "A support-supplied new wallet address is a stop condition.",
+    "answer_type": "OFFICIAL_FACT_SUMMARY",
+    "claim_refs": [
+      "CBP-037"
+    ],
+    "source_ids": [
+      "CBP-S08"
+    ],
+    "last_checked": "2026-08-02",
+    "review_due_at": "2026-11-02",
+    "escalation": "STOP_AND_USE_OFFICIAL_SUPPORT",
+    "status": "AUDITED_OFFLINE_CASE",
+    "governance_tags": {
+      "scope": {
+        "geography": "Other",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "Coinbase Retail",
+        "product_scope": "Retail",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Web help article; product-specific variants excluded"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "CBP-S08",
+          "source_url": "https://help.coinbase.com/en/coinbase/privacy-and-security/avoid-scams/tech-support-scams",
+          "source_title": "Technical support and impersonation scams",
+          "source_section": "Support stop conditions",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "faq_id": "CBP-FAQ-071",
+    "platform_id": "coinbase",
+    "question": "During recovery, how should I handle eu recipient?",
+    "answer": "EU crypto sends may require recipient and destination-provider information.",
+    "answer_type": "OFFICIAL_FACT_SUMMARY",
+    "claim_refs": [
+      "CBP-038"
+    ],
+    "source_ids": [
+      "CBP-S09"
+    ],
+    "last_checked": "2026-08-02",
+    "review_due_at": "2026-11-02",
+    "escalation": "NONE_UNLESS_SCOPE_DIFFERS",
+    "status": "AUDITED_OFFLINE_CASE",
+    "governance_tags": {
+      "scope": {
+        "geography": "EEA",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "Coinbase Retail",
+        "product_scope": "Retail",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Web help article; product-specific variants excluded"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "CBP-S09",
+          "source_url": "https://help.coinbase.com/en/coinbase/trading-and-funding/sending-or-receiving-cryptocurrency/send-receive-crypto-eu",
+          "source_title": "Send and receive crypto for EU customers",
+          "source_section": "EU recipient information and small ownership test",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "faq_id": "CBP-FAQ-072",
+    "platform_id": "coinbase",
+    "question": "During recovery, how should I handle eu self hosted?",
+    "answer": "EU self-hosted-wallet sends may require an address-control test.",
+    "answer_type": "OFFICIAL_FACT_SUMMARY",
+    "claim_refs": [
+      "CBP-039"
+    ],
+    "source_ids": [
+      "CBP-S09"
+    ],
+    "last_checked": "2026-08-02",
+    "review_due_at": "2026-11-02",
+    "escalation": "NONE_UNLESS_SCOPE_DIFFERS",
+    "status": "AUDITED_OFFLINE_CASE",
+    "governance_tags": {
+      "scope": {
+        "geography": "EEA",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "Coinbase Retail",
+        "product_scope": "Retail",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Web help article; product-specific variants excluded"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "CBP-S09",
+          "source_url": "https://help.coinbase.com/en/coinbase/trading-and-funding/sending-or-receiving-cryptocurrency/send-receive-crypto-eu",
+          "source_title": "Send and receive crypto for EU customers",
+          "source_section": "EU recipient information and small ownership test",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "faq_id": "CBP-FAQ-073",
+    "platform_id": "coinbase",
+    "question": "During recovery, how should I handle eu test?",
+    "answer": "The cited EU flow uses a small randomly generated amount to verify wallet control.",
+    "answer_type": "OFFICIAL_FACT_SUMMARY",
+    "claim_refs": [
+      "CBP-040"
+    ],
+    "source_ids": [
+      "CBP-S09"
+    ],
+    "last_checked": "2026-08-02",
+    "review_due_at": "2026-11-02",
+    "escalation": "NONE_UNLESS_SCOPE_DIFFERS",
+    "status": "AUDITED_OFFLINE_CASE",
+    "governance_tags": {
+      "scope": {
+        "geography": "EEA",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "Coinbase Retail",
+        "product_scope": "Retail",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Web help article; product-specific variants excluded"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "CBP-S09",
+          "source_url": "https://help.coinbase.com/en/coinbase/trading-and-funding/sending-or-receiving-cryptocurrency/send-receive-crypto-eu",
+          "source_title": "Send and receive crypto for EU customers",
+          "source_section": "EU recipient information and small ownership test",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "faq_id": "CBP-FAQ-074",
+    "platform_id": "coinbase",
+    "question": "During recovery, how should I handle small test?",
+    "answer": "CJAS requires a small test before a material owner-verified exit.",
+    "answer_type": "CJAS_GUIDANCE",
+    "claim_refs": [
+      "CBP-041"
+    ],
+    "source_ids": [
+      "CBP-S09"
+    ],
+    "last_checked": "2026-08-02",
+    "review_due_at": "2026-11-02",
+    "escalation": "NONE_UNLESS_SCOPE_DIFFERS",
+    "status": "AUDITED_OFFLINE_CASE",
+    "governance_tags": {
+      "scope": {
+        "geography": "EEA",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "Coinbase Retail",
+        "product_scope": "Retail",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Web help article; product-specific variants excluded"
+      },
+      "source": {
+        "primary": {
+          "source_type": "CJAS_GUIDANCE",
+          "source_id": "CBP-S09",
+          "source_url": "https://help.coinbase.com/en/coinbase/trading-and-funding/sending-or-receiving-cryptocurrency/send-receive-crypto-eu",
+          "source_title": "Send and receive crypto for EU customers",
+          "source_section": "EU recipient information and small ownership test",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "faq_id": "CBP-FAQ-075",
+    "platform_id": "coinbase",
+    "question": "During recovery, how should I handle password reset out?",
+    "answer": "A signed-out user can initiate password reset from the official reset page.",
+    "answer_type": "OFFICIAL_FACT_SUMMARY",
+    "claim_refs": [
+      "CBP-002"
+    ],
+    "source_ids": [
+      "CBP-S05"
+    ],
+    "last_checked": "2026-08-02",
+    "review_due_at": "2026-11-02",
+    "escalation": "NONE_UNLESS_SCOPE_DIFFERS",
+    "status": "AUDITED_OFFLINE_CASE",
+    "governance_tags": {
+      "scope": {
+        "geography": "Other",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "Coinbase Retail",
+        "product_scope": "Retail",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Web help article; product-specific variants excluded"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "CBP-S05",
+          "source_url": "https://help.coinbase.com/en/coinbase/managing-my-account/get-back-into-my-account/reset-my-password",
+          "source_title": "Reset your password",
+          "source_section": "Signed-in/signed-out password reset",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "faq_id": "CBP-FAQ-076",
+    "platform_id": "coinbase",
+    "question": "During recovery, how should I handle password reset in?",
+    "answer": "A signed-in password change requires account access and 2-step verification.",
+    "answer_type": "OFFICIAL_FACT_SUMMARY",
+    "claim_refs": [
+      "CBP-003"
+    ],
+    "source_ids": [
+      "CBP-S05"
+    ],
+    "last_checked": "2026-08-02",
+    "review_due_at": "2026-11-02",
+    "escalation": "NONE_UNLESS_SCOPE_DIFFERS",
+    "status": "AUDITED_OFFLINE_CASE",
+    "governance_tags": {
+      "scope": {
+        "geography": "Other",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "Coinbase Retail",
+        "product_scope": "Retail",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Web help article; product-specific variants excluded"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "CBP-S05",
+          "source_url": "https://help.coinbase.com/en/coinbase/managing-my-account/get-back-into-my-account/reset-my-password",
+          "source_title": "Reset your password",
+          "source_section": "Signed-in/signed-out password reset",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "faq_id": "CBP-FAQ-077",
+    "platform_id": "coinbase",
+    "question": "During recovery, how should I handle two step required?",
+    "answer": "Coinbase states 2-step verification is required to access the account.",
+    "answer_type": "OFFICIAL_FACT_SUMMARY",
+    "claim_refs": [
+      "CBP-005"
+    ],
+    "source_ids": [
+      "CBP-S02"
+    ],
+    "last_checked": "2026-08-02",
+    "review_due_at": "2026-11-02",
+    "escalation": "NONE_UNLESS_SCOPE_DIFFERS",
+    "status": "AUDITED_OFFLINE_CASE",
+    "governance_tags": {
+      "scope": {
+        "geography": "Other",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "Coinbase Retail",
+        "product_scope": "Retail",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Web help article; product-specific variants excluded"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "CBP-S02",
+          "source_url": "https://help.coinbase.com/en/coinbase/getting-started/getting-started-with-coinbase/2-step-verification",
+          "source_title": "Set up 2-step verification",
+          "source_section": "Passkey, security key, TOTP, push, SMS, trusted contacts",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "faq_id": "CBP-FAQ-078",
+    "platform_id": "coinbase",
+    "question": "During recovery, how should I handle multiple methods?",
+    "answer": "Coinbase recommends multiple 2-step methods to provide a backup path.",
+    "answer_type": "OFFICIAL_FACT_SUMMARY",
+    "claim_refs": [
+      "CBP-006"
+    ],
+    "source_ids": [
+      "CBP-S02"
+    ],
+    "last_checked": "2026-08-02",
+    "review_due_at": "2026-11-02",
+    "escalation": "NONE_UNLESS_SCOPE_DIFFERS",
+    "status": "AUDITED_OFFLINE_CASE",
+    "governance_tags": {
+      "scope": {
+        "geography": "Other",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "Coinbase Retail",
+        "product_scope": "Retail",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Web help article; product-specific variants excluded"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "CBP-S02",
+          "source_url": "https://help.coinbase.com/en/coinbase/getting-started/getting-started-with-coinbase/2-step-verification",
+          "source_title": "Set up 2-step verification",
+          "source_section": "Passkey, security key, TOTP, push, SMS, trusted contacts",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "faq_id": "CBP-FAQ-079",
+    "platform_id": "coinbase",
+    "question": "During recovery, how should I handle security keys?",
+    "answer": "Coinbase supports compatible security keys as a 2-step method.",
+    "answer_type": "OFFICIAL_FACT_SUMMARY",
+    "claim_refs": [
+      "CBP-007"
+    ],
+    "source_ids": [
+      "CBP-S02"
+    ],
+    "last_checked": "2026-08-02",
+    "review_due_at": "2026-11-02",
+    "escalation": "NONE_UNLESS_SCOPE_DIFFERS",
+    "status": "AUDITED_OFFLINE_CASE",
+    "governance_tags": {
+      "scope": {
+        "geography": "Other",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "Coinbase Retail",
+        "product_scope": "Retail",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Web help article; product-specific variants excluded"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "CBP-S02",
+          "source_url": "https://help.coinbase.com/en/coinbase/getting-started/getting-started-with-coinbase/2-step-verification",
+          "source_title": "Set up 2-step verification",
+          "source_section": "Passkey, security key, TOTP, push, SMS, trusted contacts",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "faq_id": "CBP-FAQ-080",
+    "platform_id": "coinbase",
+    "question": "During recovery, how should I handle two keys?",
+    "answer": "The official page recommends two security keys as primary and backup.",
+    "answer_type": "OFFICIAL_FACT_SUMMARY",
+    "claim_refs": [
+      "CBP-008"
+    ],
+    "source_ids": [
+      "CBP-S02"
+    ],
+    "last_checked": "2026-08-02",
+    "review_due_at": "2026-11-02",
+    "escalation": "NONE_UNLESS_SCOPE_DIFFERS",
+    "status": "AUDITED_OFFLINE_CASE",
+    "governance_tags": {
+      "scope": {
+        "geography": "Other",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "Coinbase Retail",
+        "product_scope": "Retail",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Web help article; product-specific variants excluded"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "CBP-S02",
+          "source_url": "https://help.coinbase.com/en/coinbase/getting-started/getting-started-with-coinbase/2-step-verification",
+          "source_title": "Set up 2-step verification",
+          "source_section": "Passkey, security key, TOTP, push, SMS, trusted contacts",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "faq_id": "CBP-FAQ-081",
+    "platform_id": "coinbase",
+    "question": "During recovery, how should I handle passkey?",
+    "answer": "Coinbase supports device-generated passkeys.",
+    "answer_type": "OFFICIAL_FACT_SUMMARY",
+    "claim_refs": [
+      "CBP-009"
+    ],
+    "source_ids": [
+      "CBP-S02"
+    ],
+    "last_checked": "2026-08-02",
+    "review_due_at": "2026-11-02",
+    "escalation": "NONE_UNLESS_SCOPE_DIFFERS",
+    "status": "AUDITED_OFFLINE_CASE",
+    "governance_tags": {
+      "scope": {
+        "geography": "Other",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "Coinbase Retail",
+        "product_scope": "Retail",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Web help article; product-specific variants excluded"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "CBP-S02",
+          "source_url": "https://help.coinbase.com/en/coinbase/getting-started/getting-started-with-coinbase/2-step-verification",
+          "source_title": "Set up 2-step verification",
+          "source_section": "Passkey, security key, TOTP, push, SMS, trusted contacts",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "faq_id": "CBP-FAQ-082",
+    "platform_id": "coinbase",
+    "question": "During recovery, how should I handle passkey storage?",
+    "answer": "A passkey may depend on the device, cloud account or password manager in which it is stored.",
+    "answer_type": "OFFICIAL_FACT_SUMMARY",
+    "claim_refs": [
+      "CBP-010"
+    ],
+    "source_ids": [
+      "CBP-S03"
+    ],
+    "last_checked": "2026-08-02",
+    "review_due_at": "2026-11-02",
+    "escalation": "NONE_UNLESS_SCOPE_DIFFERS",
+    "status": "AUDITED_OFFLINE_CASE",
+    "governance_tags": {
+      "scope": {
+        "geography": "Other",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "Coinbase Retail",
+        "product_scope": "Retail",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Web help article; product-specific variants excluded"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "CBP-S03",
+          "source_url": "https://help.coinbase.com/en/coinbase/managing-my-account/get-back-into-my-account/2-step-verification-troubleshooting",
+          "source_title": "Troubleshoot 2-step verification",
+          "source_section": "Lost factors and backup methods",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "faq_id": "CBP-FAQ-083",
+    "platform_id": "coinbase",
+    "question": "During recovery, how should I handle totp?",
+    "answer": "Coinbase supports time-based one-time-password authenticator apps.",
+    "answer_type": "OFFICIAL_FACT_SUMMARY",
+    "claim_refs": [
+      "CBP-011"
+    ],
+    "source_ids": [
+      "CBP-S02"
+    ],
+    "last_checked": "2026-08-02",
+    "review_due_at": "2026-11-02",
+    "escalation": "NONE_UNLESS_SCOPE_DIFFERS",
+    "status": "AUDITED_OFFLINE_CASE",
+    "governance_tags": {
+      "scope": {
+        "geography": "Other",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "Coinbase Retail",
+        "product_scope": "Retail",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Web help article; product-specific variants excluded"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "CBP-S02",
+          "source_url": "https://help.coinbase.com/en/coinbase/getting-started/getting-started-with-coinbase/2-step-verification",
+          "source_title": "Set up 2-step verification",
+          "source_section": "Passkey, security key, TOTP, push, SMS, trusted contacts",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "faq_id": "CBP-FAQ-084",
+    "platform_id": "coinbase",
+    "question": "During recovery, how should I handle push?",
+    "answer": "Coinbase supports app push notifications as a verification method.",
+    "answer_type": "OFFICIAL_FACT_SUMMARY",
+    "claim_refs": [
+      "CBP-012"
+    ],
+    "source_ids": [
+      "CBP-S02"
+    ],
+    "last_checked": "2026-08-02",
+    "review_due_at": "2026-11-02",
+    "escalation": "NONE_UNLESS_SCOPE_DIFFERS",
+    "status": "AUDITED_OFFLINE_CASE",
+    "governance_tags": {
+      "scope": {
+        "geography": "Other",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "Coinbase Retail",
+        "product_scope": "Retail",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Web help article; product-specific variants excluded"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "CBP-S02",
+          "source_url": "https://help.coinbase.com/en/coinbase/getting-started/getting-started-with-coinbase/2-step-verification",
+          "source_title": "Set up 2-step verification",
+          "source_section": "Passkey, security key, TOTP, push, SMS, trusted contacts",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "faq_id": "CBP-FAQ-085",
+    "platform_id": "coinbase",
+    "question": "During recovery, how should I handle push devices?",
+    "answer": "Push requests can be sent to devices with an active mobile-app session.",
+    "answer_type": "OFFICIAL_FACT_SUMMARY",
+    "claim_refs": [
+      "CBP-013"
+    ],
+    "source_ids": [
+      "CBP-S02"
+    ],
+    "last_checked": "2026-08-02",
+    "review_due_at": "2026-11-02",
+    "escalation": "NONE_UNLESS_SCOPE_DIFFERS",
+    "status": "AUDITED_OFFLINE_CASE",
+    "governance_tags": {
+      "scope": {
+        "geography": "Other",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "Coinbase Retail",
+        "product_scope": "Retail",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Web help article; product-specific variants excluded"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "CBP-S02",
+          "source_url": "https://help.coinbase.com/en/coinbase/getting-started/getting-started-with-coinbase/2-step-verification",
+          "source_title": "Set up 2-step verification",
+          "source_section": "Passkey, security key, TOTP, push, SMS, trusted contacts",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "faq_id": "CBP-FAQ-086",
+    "platform_id": "coinbase",
+    "question": "During recovery, how should I handle alternate factor?",
+    "answer": "If one configured method fails, the user may choose another available method.",
+    "answer_type": "OFFICIAL_FACT_SUMMARY",
+    "claim_refs": [
+      "CBP-015"
+    ],
+    "source_ids": [
+      "CBP-S02"
+    ],
+    "last_checked": "2026-08-02",
+    "review_due_at": "2026-11-02",
+    "escalation": "NONE_UNLESS_SCOPE_DIFFERS",
+    "status": "AUDITED_OFFLINE_CASE",
+    "governance_tags": {
+      "scope": {
+        "geography": "Other",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "Coinbase Retail",
+        "product_scope": "Retail",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Web help article; product-specific variants excluded"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "CBP-S02",
+          "source_url": "https://help.coinbase.com/en/coinbase/getting-started/getting-started-with-coinbase/2-step-verification",
+          "source_title": "Set up 2-step verification",
+          "source_section": "Passkey, security key, TOTP, push, SMS, trusted contacts",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "faq_id": "CBP-FAQ-087",
+    "platform_id": "coinbase",
+    "question": "During recovery, how should I handle lost key?",
+    "answer": "Coinbase cannot recover or replace a lost physical security key.",
+    "answer_type": "OFFICIAL_FACT_SUMMARY",
+    "claim_refs": [
+      "CBP-016"
+    ],
+    "source_ids": [
+      "CBP-S03"
+    ],
+    "last_checked": "2026-08-02",
+    "review_due_at": "2026-11-02",
+    "escalation": "NONE_UNLESS_SCOPE_DIFFERS",
+    "status": "AUDITED_OFFLINE_CASE",
+    "governance_tags": {
+      "scope": {
+        "geography": "Other",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "Coinbase Retail",
+        "product_scope": "Retail",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Web help article; product-specific variants excluded"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "CBP-S03",
+          "source_url": "https://help.coinbase.com/en/coinbase/managing-my-account/get-back-into-my-account/2-step-verification-troubleshooting",
+          "source_title": "Troubleshoot 2-step verification",
+          "source_section": "Lost factors and backup methods",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "faq_id": "CBP-FAQ-088",
+    "platform_id": "coinbase",
+    "question": "During recovery, how should I handle lost auth?",
+    "answer": "If the authenticator is the only method and is lost, the official recovery process is required.",
+    "answer_type": "OFFICIAL_FACT_SUMMARY",
+    "claim_refs": [
+      "CBP-017"
+    ],
+    "source_ids": [
+      "CBP-S03"
+    ],
+    "last_checked": "2026-08-02",
+    "review_due_at": "2026-11-02",
+    "escalation": "NONE_UNLESS_SCOPE_DIFFERS",
+    "status": "AUDITED_OFFLINE_CASE",
+    "governance_tags": {
+      "scope": {
+        "geography": "Other",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "Coinbase Retail",
+        "product_scope": "Retail",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Web help article; product-specific variants excluded"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "CBP-S03",
+          "source_url": "https://help.coinbase.com/en/coinbase/managing-my-account/get-back-into-my-account/2-step-verification-troubleshooting",
+          "source_title": "Troubleshoot 2-step verification",
+          "source_section": "Lost factors and backup methods",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "faq_id": "CBP-FAQ-089",
+    "platform_id": "coinbase",
+    "question": "During recovery, how should I handle lost phone?",
+    "answer": "If SMS is the only method and the phone is lost, the official recovery process is required.",
+    "answer_type": "OFFICIAL_FACT_SUMMARY",
+    "claim_refs": [
+      "CBP-018"
+    ],
+    "source_ids": [
+      "CBP-S03"
+    ],
+    "last_checked": "2026-08-02",
+    "review_due_at": "2026-11-02",
+    "escalation": "NONE_UNLESS_SCOPE_DIFFERS",
+    "status": "AUDITED_OFFLINE_CASE",
+    "governance_tags": {
+      "scope": {
+        "geography": "Other",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "Coinbase Retail",
+        "product_scope": "Retail",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Web help article; product-specific variants excluded"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "CBP-S03",
+          "source_url": "https://help.coinbase.com/en/coinbase/managing-my-account/get-back-into-my-account/2-step-verification-troubleshooting",
+          "source_title": "Troubleshoot 2-step verification",
+          "source_section": "Lost factors and backup methods",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "faq_id": "CBP-FAQ-090",
+    "platform_id": "coinbase",
+    "question": "During recovery, how should I handle unrecognized push?",
+    "answer": "An unrecognized push request should be denied and the account reviewed or locked.",
+    "answer_type": "OFFICIAL_FACT_SUMMARY",
+    "claim_refs": [
+      "CBP-019"
+    ],
+    "source_ids": [
+      "CBP-S03"
+    ],
+    "last_checked": "2026-08-02",
+    "review_due_at": "2026-11-02",
+    "escalation": "STOP_AND_USE_OFFICIAL_SUPPORT",
+    "status": "AUDITED_OFFLINE_CASE",
+    "governance_tags": {
+      "scope": {
+        "geography": "Other",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "Coinbase Retail",
+        "product_scope": "Retail",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Web help article; product-specific variants excluded"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "CBP-S03",
+          "source_url": "https://help.coinbase.com/en/coinbase/managing-my-account/get-back-into-my-account/2-step-verification-troubleshooting",
+          "source_title": "Troubleshoot 2-step verification",
+          "source_section": "Lost factors and backup methods",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "faq_id": "CBP-FAQ-091",
+    "platform_id": "coinbase",
+    "question": "During recovery, how should I handle recovery entry?",
+    "answer": "Lost email or 2-step access uses the official account-recovery page.",
+    "answer_type": "OFFICIAL_FACT_SUMMARY",
+    "claim_refs": [
+      "CBP-020"
+    ],
+    "source_ids": [
+      "CBP-S01"
+    ],
+    "last_checked": "2026-08-02",
+    "review_due_at": "2026-11-02",
+    "escalation": "NONE_UNLESS_SCOPE_DIFFERS",
+    "status": "AUDITED_OFFLINE_CASE",
+    "governance_tags": {
+      "scope": {
+        "geography": "Other",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "Coinbase Retail",
+        "product_scope": "Retail",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Web help article; product-specific variants excluded"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "CBP-S01",
+          "source_url": "https://help.coinbase.com/en/coinbase/managing-my-account/get-back-into-my-account/account-recovery-lost-email-2step-verification",
+          "source_title": "Account recovery for lost email or 2-step access",
+          "source_section": "Recovery options; ID; trusted contacts; sends restriction",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "faq_id": "CBP-FAQ-092",
+    "platform_id": "coinbase",
+    "question": "During recovery, how should I handle recovery password?",
+    "answer": "A user who has also lost the password must reset it before starting the cited recovery flow.",
+    "answer_type": "OFFICIAL_FACT_SUMMARY",
+    "claim_refs": [
+      "CBP-021"
+    ],
+    "source_ids": [
+      "CBP-S01"
+    ],
+    "last_checked": "2026-08-02",
+    "review_due_at": "2026-11-02",
+    "escalation": "NONE_UNLESS_SCOPE_DIFFERS",
+    "status": "AUDITED_OFFLINE_CASE",
+    "governance_tags": {
+      "scope": {
+        "geography": "Other",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "Coinbase Retail",
+        "product_scope": "Retail",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Web help article; product-specific variants excluded"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "CBP-S01",
+          "source_url": "https://help.coinbase.com/en/coinbase/managing-my-account/get-back-into-my-account/account-recovery-lost-email-2step-verification",
+          "source_title": "Account recovery for lost email or 2-step access",
+          "source_section": "Recovery options; ID; trusted contacts; sends restriction",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "faq_id": "CBP-FAQ-093",
+    "platform_id": "coinbase",
+    "question": "During recovery, how should I handle recovery id?",
+    "answer": "One recovery option uses government ID and may require a selfie.",
+    "answer_type": "OFFICIAL_FACT_SUMMARY",
+    "claim_refs": [
+      "CBP-022"
+    ],
+    "source_ids": [
+      "CBP-S01"
+    ],
+    "last_checked": "2026-08-02",
+    "review_due_at": "2026-11-02",
+    "escalation": "NONE_UNLESS_SCOPE_DIFFERS",
+    "status": "AUDITED_OFFLINE_CASE",
+    "governance_tags": {
+      "scope": {
+        "geography": "Other",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "Coinbase Retail",
+        "product_scope": "Retail",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Web help article; product-specific variants excluded"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "CBP-S01",
+          "source_url": "https://help.coinbase.com/en/coinbase/managing-my-account/get-back-into-my-account/account-recovery-lost-email-2step-verification",
+          "source_title": "Account recovery for lost email or 2-step access",
+          "source_section": "Recovery options; ID; trusted contacts; sends restriction",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "faq_id": "CBP-FAQ-094",
+    "platform_id": "coinbase",
+    "question": "During recovery, how should I handle trusted limit?",
+    "answer": "Trusted-contact recovery does not allow email or 2-step update in the cited option.",
+    "answer_type": "OFFICIAL_FACT_SUMMARY",
+    "claim_refs": [
+      "CBP-024"
+    ],
+    "source_ids": [
+      "CBP-S01"
+    ],
+    "last_checked": "2026-08-02",
+    "review_due_at": "2026-11-02",
+    "escalation": "NONE_UNLESS_SCOPE_DIFFERS",
+    "status": "AUDITED_OFFLINE_CASE",
+    "governance_tags": {
+      "scope": {
+        "geography": "Other",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "Coinbase Retail",
+        "product_scope": "Retail",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Web help article; product-specific variants excluded"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "CBP-S01",
+          "source_url": "https://help.coinbase.com/en/coinbase/managing-my-account/get-back-into-my-account/account-recovery-lost-email-2step-verification",
+          "source_title": "Account recovery for lost email or 2-step access",
+          "source_section": "Recovery options; ID; trusted contacts; sends restriction",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "faq_id": "CBP-FAQ-095",
+    "platform_id": "coinbase",
+    "question": "During recovery, how should I handle trusted payment?",
+    "answer": "The cited trusted-contact recovery option removes previously added payment methods.",
+    "answer_type": "OFFICIAL_FACT_SUMMARY",
+    "claim_refs": [
+      "CBP-025"
+    ],
+    "source_ids": [
+      "CBP-S01"
+    ],
+    "last_checked": "2026-08-02",
+    "review_due_at": "2026-11-02",
+    "escalation": "NONE_UNLESS_SCOPE_DIFFERS",
+    "status": "AUDITED_OFFLINE_CASE",
+    "governance_tags": {
+      "scope": {
+        "geography": "Other",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "Coinbase Retail",
+        "product_scope": "Retail",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Web help article; product-specific variants excluded"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "CBP-S01",
+          "source_url": "https://help.coinbase.com/en/coinbase/managing-my-account/get-back-into-my-account/account-recovery-lost-email-2step-verification",
+          "source_title": "Account recovery for lost email or 2-step access",
+          "source_section": "Recovery options; ID; trusted contacts; sends restriction",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "faq_id": "CBP-FAQ-096",
+    "platform_id": "coinbase",
+    "question": "During recovery, how should I handle recovery update?",
+    "answer": "After recovery, the cited flow requires updating the 2-step method within 24 hours to maintain access.",
+    "answer_type": "OFFICIAL_FACT_SUMMARY",
+    "claim_refs": [
+      "CBP-026"
+    ],
+    "source_ids": [
+      "CBP-S01"
+    ],
+    "last_checked": "2026-08-02",
+    "review_due_at": "2026-11-02",
+    "escalation": "NONE_UNLESS_SCOPE_DIFFERS",
+    "status": "AUDITED_OFFLINE_CASE",
+    "governance_tags": {
+      "scope": {
+        "geography": "Other",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "Coinbase Retail",
+        "product_scope": "Retail",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Web help article; product-specific variants excluded"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "CBP-S01",
+          "source_url": "https://help.coinbase.com/en/coinbase/managing-my-account/get-back-into-my-account/account-recovery-lost-email-2step-verification",
+          "source_title": "Account recovery for lost email or 2-step access",
+          "source_section": "Recovery options; ID; trusted contacts; sends restriction",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "faq_id": "CBP-FAQ-097",
+    "platform_id": "coinbase",
+    "question": "During recovery, how should I handle recovery send lock?",
+    "answer": "The cited ID recovery may leave sends disabled for 24 hours after completion.",
+    "answer_type": "OFFICIAL_FACT_SUMMARY",
+    "claim_refs": [
+      "CBP-027"
+    ],
+    "source_ids": [
+      "CBP-S01"
+    ],
+    "last_checked": "2026-08-02",
+    "review_due_at": "2026-11-02",
+    "escalation": "NONE_UNLESS_SCOPE_DIFFERS",
+    "status": "AUDITED_OFFLINE_CASE",
+    "governance_tags": {
+      "scope": {
+        "geography": "Other",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "Coinbase Retail",
+        "product_scope": "Retail",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Web help article; product-specific variants excluded"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "CBP-S01",
+          "source_url": "https://help.coinbase.com/en/coinbase/managing-my-account/get-back-into-my-account/account-recovery-lost-email-2step-verification",
+          "source_title": "Account recovery for lost email or 2-step access",
+          "source_section": "Recovery options; ID; trusted contacts; sends restriction",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "faq_id": "CBP-FAQ-098",
+    "platform_id": "coinbase",
+    "question": "During recovery, how should I handle login not send?",
+    "answer": "Successful sign-in after recovery does not prove that sends are enabled.",
+    "answer_type": "CJAS_GUIDANCE",
+    "claim_refs": [
+      "CBP-028"
+    ],
+    "source_ids": [
+      "CBP-S01"
+    ],
+    "last_checked": "2026-08-02",
+    "review_due_at": "2026-11-02",
+    "escalation": "NONE_UNLESS_SCOPE_DIFFERS",
+    "status": "AUDITED_OFFLINE_CASE",
+    "governance_tags": {
+      "scope": {
+        "geography": "Other",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "Coinbase Retail",
+        "product_scope": "Retail",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Web help article; product-specific variants excluded"
+      },
+      "source": {
+        "primary": {
+          "source_type": "CJAS_GUIDANCE",
+          "source_id": "CBP-S01",
+          "source_url": "https://help.coinbase.com/en/coinbase/managing-my-account/get-back-into-my-account/account-recovery-lost-email-2step-verification",
+          "source_title": "Account recovery for lost email or 2-step access",
+          "source_section": "Recovery options; ID; trusted contacts; sends restriction",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "faq_id": "CBP-FAQ-099",
+    "platform_id": "coinbase",
+    "question": "During recovery, how should I handle control definition?",
+    "answer": "Operational control requires account access, current factors, unrestricted sends and an accepted destination.",
+    "answer_type": "CJAS_GUIDANCE",
+    "claim_refs": [
+      "CBP-029"
+    ],
+    "source_ids": [
+      "CBP-S01"
+    ],
+    "last_checked": "2026-08-02",
+    "review_due_at": "2026-11-02",
+    "escalation": "NONE_UNLESS_SCOPE_DIFFERS",
+    "status": "AUDITED_OFFLINE_CASE",
+    "governance_tags": {
+      "scope": {
+        "geography": "Other",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "Coinbase Retail",
+        "product_scope": "Retail",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Web help article; product-specific variants excluded"
+      },
+      "source": {
+        "primary": {
+          "source_type": "CJAS_GUIDANCE",
+          "source_id": "CBP-S01",
+          "source_url": "https://help.coinbase.com/en/coinbase/managing-my-account/get-back-into-my-account/account-recovery-lost-email-2step-verification",
+          "source_title": "Account recovery for lost email or 2-step access",
+          "source_section": "Recovery options; ID; trusted contacts; sends restriction",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "faq_id": "CBP-FAQ-100",
+    "platform_id": "coinbase",
+    "question": "During recovery, how should I handle active sessions?",
+    "answer": "Coinbase exposes active sessions and confirmed devices for review.",
+    "answer_type": "OFFICIAL_FACT_SUMMARY",
+    "claim_refs": [
+      "CBP-030"
+    ],
+    "source_ids": [
+      "CBP-S04"
+    ],
+    "last_checked": "2026-08-02",
+    "review_due_at": "2026-11-02",
+    "escalation": "NONE_UNLESS_SCOPE_DIFFERS",
+    "status": "AUDITED_OFFLINE_CASE",
+    "governance_tags": {
+      "scope": {
+        "geography": "Other",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "Coinbase Retail",
+        "product_scope": "Retail",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Web help article; product-specific variants excluded"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "CBP-S04",
+          "source_url": "https://help.coinbase.com/en/coinbase/privacy-and-security/data-privacy/how-can-i-make-my-account-more-secure",
+          "source_title": "Make your account more secure",
+          "source_section": "Password, email, devices, allowlist, support boundaries",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  }
+]

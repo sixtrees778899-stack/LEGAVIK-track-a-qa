@@ -4,11 +4,10 @@ import {assertKitEvidencePair,validateMainnetEvidence,verifyMainnetArchive} from
 import {renderRecoveryMap} from './map-view.js';
 import {summarizeVersionUpdateSource} from '../src/product-v2/version-update-diagnostics.js';
 import {canonicalCreateUrl,CURRENT_TEST_RELEASE} from '../src/ui/canonical-customer-links.js';
-import {appendRecoveryEvidenceBestEffort,createRecoveryEvent,reportRecoveryEvidenceResult} from '../src/account/recovery-evidence-client.js';
 
 const app=document.querySelector('#app'),recoveryStages=['正在读取恢复材料','正在获取加密资料','正在验证资料完整性','正在解密 Recovery Map','正在恢复附件','恢复完成'];
 document.documentElement.dataset.recoveryBundleRelease=CURRENT_TEST_RELEASE;
-const query=new URLSearchParams(location.search),versionUpdate=query.get('mode')==='version-update',evidenceVersionRowId=query.get('version_row_id');
+const query=new URLSearchParams(location.search),versionUpdate=query.get('mode')==='version-update';
 let recoveryInFlight=false,recoveredForUpdate=null,recoveredPasswordForUpdate='',recoveredSourceDiagnostics=null;
 Object.defineProperty(window,'__LEGAVIK_VERSION_UPDATE_SOURCE_DIAGNOSTICS__',{value:()=>recoveredSourceDiagnostics?structuredClone(recoveredSourceDiagnostics):null,enumerable:false,writable:false,configurable:false});
 
@@ -27,15 +26,14 @@ recoverButton.onclick=async()=>{
   const message=document.querySelector('#message'),result=document.querySelector('#result'),evidenceFile=document.querySelector('#evidence').files[0],kitFile=document.querySelector('#kit').files[0];let password=document.querySelector('#password').value;
   message.textContent='';result.textContent='';
   if(!evidenceFile||!kitFile||!password){message.className='error';message.textContent='请选择 Mainnet Recovery Evidence、Recovery Kit 并输入 Recovery Password。';return;}
-  setRecovering(true);let evidence=null,evidenceBytes=null,kitBytes=null,archiveBytes=null,recoveryAttempted=false;
+  setRecovering(true);
   try{
-    stage(0);evidenceBytes=new Uint8Array(await evidenceFile.arrayBuffer());evidence=validateMainnetEvidence(JSON.parse(new TextDecoder().decode(evidenceBytes)));kitBytes=new Uint8Array(await kitFile.arrayBuffer());const kit=recoveryKitBuilder.parseKit(kitBytes);assertKitEvidencePair({kit,evidence});if(versionUpdate&&query.get('snapshot_id')&&kit.snapshot_id!==query.get('snapshot_id'))throw new Error('所选恢复材料不属于当前 Recovery Map 版本。');
+    stage(0);const evidence=validateMainnetEvidence(JSON.parse(await evidenceFile.text())),kitBytes=new Uint8Array(await kitFile.arrayBuffer()),kit=recoveryKitBuilder.parseKit(kitBytes);assertKitEvidencePair({kit,evidence});if(versionUpdate&&query.get('snapshot_id')&&kit.snapshot_id!==query.get('snapshot_id'))throw new Error('所选恢复材料不属于当前 Recovery Map 版本。');
     stage(1);const downloaded=await verifyMainnetArchive({evidence});if(!downloaded.verified)throw new Error('Mainnet 中的加密恢复版本尚未完整可用，请稍后重试。');
-    stage(2);archiveBytes=downloaded.bytes;if(archiveBytes.length!==evidence.archive_size)throw new Error('Mainnet Archive 大小校验失败。');
-    stage(3);recoveryAttempted=true;const recovered=await recoverVaultArtifacts({kitBytes,archiveBytes,password});if(versionUpdate)recoveredPasswordForUpdate=password;stage(4);
+    stage(2);const archiveBytes=downloaded.bytes;if(archiveBytes.length!==evidence.archive_size)throw new Error('Mainnet Archive 大小校验失败。');
+    stage(3);const recovered=await recoverVaultArtifacts({kitBytes,archiveBytes,password});if(versionUpdate)recoveredPasswordForUpdate=password;stage(4);
     renderRecovered(recovered.snapshot);stage(5);message.className='success';message.textContent='恢复成功。Recovery Map 与全部附件完整性验证通过。';
-    if(evidenceVersionRowId){const eventType=query.get('verification')==='initial'?'INITIAL_RECOVERY_VERIFICATION':query.get('drill')==='guided'?'GUIDED_RECOVERY_DRILL':'ONLINE_RECOVERY',eventSource=eventType==='INITIAL_RECOVERY_VERIFICATION'?'SELF_VERIFICATION':eventType==='GUIDED_RECOVERY_DRILL'?'GUIDED_DRILL':'ONLINE';try{const payload=await createRecoveryEvent({recoveryMapVersionId:evidenceVersionRowId,eventType,eventSource,kitBytes,evidenceBytes,archiveBytes,evidence,snapshot:recovered.snapshot,releaseIdentity:CURRENT_TEST_RELEASE});reportRecoveryEvidenceResult(await appendRecoveryEvidenceBestEffort(payload));}catch{reportRecoveryEvidenceResult({recorded:false,reason:'EVIDENCE_PREPARATION_FAILED'});}}
-  }catch(error){if(evidenceVersionRowId&&evidence){try{reportRecoveryEvidenceResult(await appendRecoveryEvidenceBestEffort({recoveryMapVersionId:evidenceVersionRowId,eventType:'ONLINE_RECOVERY',eventSource:'ONLINE',result:'FAIL',archiveSha256:evidence.archive_sha256,archiveSizeBytes:evidence.archive_size,mainnetTxid:evidence.txid,pairingIdentifier:evidence.recovery_kit_identifier,recoveryFormatIdentity:evidence.format_version,recoveryEngineIdentity:'LEGAVIK-RECOVERY-ENGINE:CJAS-VAULT-ARCHIVE-V1',releaseIdentity:CURRENT_TEST_RELEASE,kitMatch:kitBytes?'PASS':'N/A',evidenceMatch:'PASS',archiveMatch:archiveBytes?'PASS':'N/A',passwordVerification:recoveryAttempted?'FAIL':'N/A',outputExactMatch:'N/A'}));}catch{reportRecoveryEvidenceResult({recorded:false,reason:'EVIDENCE_PREPARATION_FAILED'});}}stage(-1);message.className='error';message.textContent=customerRecoveryError(error);setRecovering(false);}
+  }catch(error){stage(-1);message.className='error';message.textContent=customerRecoveryError(error);setRecovering(false);}
   finally{password='';document.querySelector('#password').value='';}
 };
 stage(-1);

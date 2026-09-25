@@ -1,0 +1,57 @@
+{
+  "domain": "digital-identity-v1",
+  "source_of_truth": false,
+  "status": "DRAFT — FOR REVIEW",
+  "articles": [
+    {
+      "article_id": "SKREK-DI-V1-001",
+      "title": "Email 账户无法访问时，应先检查哪些恢复条件？",
+      "category": "数字资产与账户",
+      "status": "DRAFT — FOR REVIEW",
+      "source_file": "01-email-account-recovery-conditions.md",
+      "last_verified": "2026-08-21",
+      "approved_at": null,
+      "published": false
+    },
+    {
+      "article_id": "SKREK-DI-V1-002",
+      "title": "手机号更换或停用后，会影响哪些数字账户恢复？",
+      "category": "数字资产与账户",
+      "status": "DRAFT — FOR REVIEW",
+      "source_file": "02-phone-number-change-account-recovery-impact.md",
+      "last_verified": "2026-08-21",
+      "approved_at": null,
+      "published": false
+    },
+    {
+      "article_id": "SKREK-DI-V1-003",
+      "title": "Apple ID / Google Account 恢复前，应准备哪些身份与设备信息？",
+      "category": "数字资产与账户",
+      "status": "DRAFT — FOR REVIEW",
+      "source_file": "03-apple-google-account-recovery-preparation.md",
+      "last_verified": "2026-08-21",
+      "approved_at": null,
+      "published": false
+    },
+    {
+      "article_id": "SKREK-DI-V1-004",
+      "title": "2FA、Passkey 与备用恢复方式之间有什么区别？",
+      "category": "数字资产与账户",
+      "status": "DRAFT — FOR REVIEW",
+      "source_file": "04-2fa-passkey-recovery-method-differences.md",
+      "last_verified": "2026-08-21",
+      "approved_at": null,
+      "published": false
+    },
+    {
+      "article_id": "SKREK-DI-V1-005",
+      "title": "如何检查数字账户恢复体系中的单点故障？",
+      "category": "数字资产与账户",
+      "status": "DRAFT — FOR REVIEW",
+      "source_file": "05-digital-account-single-points-of-failure.md",
+      "last_verified": "2026-08-21",
+      "approved_at": null,
+      "published": false
+    }
+  ]
+}

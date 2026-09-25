@@ -32,7 +32,7 @@ test('plan selection hands off plan identity to account flow instead of customer
 
 test('approved test deployment preserves identity and bypasses unimplemented payment without writes',()=>{
   assert.match(product,/canonicalAccountUrl\('signup',\{purchase:'1',plan,\.\.\.\(purchaseTestMode\?\{test:'1'\}/);
-  assert.match(account,/pagesTestHost=location\.hostname==='sixtrees778899-stack\.github\.io'&&location\.pathname\.startsWith\('\/SKREK-auth-test\/'\)/);
+  assert.match(account,/pagesTestHost=location\.hostname==='sixtrees778899-stack\.github\.io'&&location\.pathname\.startsWith\('\/LEGAVIK-track-a-qa\/'\)/);
   assert.match(account,/testRecoveryMap=localTestHost\|\|pagesTestHost/);
   assert.match(account,/location\.replace\(canonicalCreateUrl\(\{test_recovery_map:'1'\}\)\+'#accounts'\)/);
   assert.match(account,/if\(purchase\.active\)\{if\(testRecoveryMap\)return continueTestPurchase\(\);return renderPaymentPending\(\);\}/);

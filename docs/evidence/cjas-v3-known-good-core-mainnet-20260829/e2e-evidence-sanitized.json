@@ -1,0 +1,73 @@
+{
+  "baseline_name": "CJAS V3 Known-Good Core Baseline",
+  "status": "CEO_REAL_MAINNET_E2E_PASS",
+  "classification": "SANITIZED_NON_SECRET_EVIDENCE",
+  "source_evidence_sha256": "046566ac7b90d9c6fce78435aced23d36235ec1c85459e483af8a6a8d527d03a",
+  "tested_at": "2026-08-29",
+  "recovery_map_version_identifier": "version-v2-local",
+  "operation_id": "e8600164-9c5d-4be7-b70e-3e37854f80ee",
+  "snapshot_id": "v2-c4b0d109-667a-495e-8d0d-6cb7b0170904",
+  "recovery_kit_identifier": "v2-c4b0d109-667a-495e-8d0d-6cb7b0170904",
+  "archive": {
+    "format": "CJAS-VAULT-ARCHIVE-V1",
+    "byte_length": 82776339,
+    "sha256": "af646e7745ce32c0469ab147815000585ce087765653ee20ba8045d5eed0a7b5"
+  },
+  "mainnet": {
+    "network": "Arweave Mainnet",
+    "txid": "aBuyeEN2UwYUVyQe7Az7PRRkr5931H0f21LhNNAyry4",
+    "broadcast_count": 1,
+    "gateway": "https://arweave.net",
+    "download_byte_length": 82776339,
+    "download_sha256": "af646e7745ce32c0469ab147815000585ce087765653ee20ba8045d5eed0a7b5",
+    "hash_match": true,
+    "background_verification": "PASS"
+  },
+  "attachments": {
+    "source": "CEO_ATTESTED_REAL_E2E",
+    "total_original_size": "approximately 44 MB",
+    "largest_single_file": "approximately 23+ MB",
+    "second_video": "approximately 20 MB",
+    "all_single_files_under": "30 MB",
+    "total_under": "50 MB",
+    "types": ["video", "image", "document", "text", "other"]
+  },
+  "results": {
+    "upload": "PASS",
+    "mainnet_storage": "PASS",
+    "gateway_download": "PASS",
+    "decrypt": "PASS",
+    "independent_recovery": "PASS",
+    "file_verification": "PASS",
+    "multi_type_attachment_integrity": "PASS"
+  },
+  "automated_regression": {
+    "core_and_mainnet_contract_tests": "52/52 PASS",
+    "real_chromium_persistence_tests": "2/2 PASS",
+    "combined": "54/54 PASS",
+    "security_scan": "EXPECTED GOVERNANCE FINDING: browser_persistence in src/ui/mainnet-stability.js; this is the approved durable checkpoint surface"
+  },
+  "protected_file_sha256": {
+    "web/v2/v2-app.js": "041efe511a8adde1fac8dc6bdbda9e26971c7b74db794184b950a8e473197639",
+    "src/ui/mainnet-stability.js": "f7b47be53d2b44c0b360567bfd4530d1e8cc3b1711e1f390f7923be5b1d02919",
+    "src/ui/mainnet-connector.js": "1ce6b938ea4dff9536cd6dc7a91fd46b9d380ee42330a806b860555e22ccae06",
+    "src/product-v2/validator.js": "4b080718382dab32c98644111d0cfd69e2db8064fdfac7542d1ca6c5a7d603fb",
+    "src/product-v2/projections.js": "d9a78f19c38b5827c2a7c028084f648afcb36ff074d4d59056450a19c5bd25bd",
+    "src/product-v2/snapshot-mapper.js": "72641a12a815dfc4fcf8160850308f6021b0b548f56c1e7bf81fabd970728f4e",
+    "src/ui/vault-pipeline.js": "ba2136d66a20c9e887c34d2aef090793bb1475b9bafa9c6da961f6e1ce878135",
+    "src/recovery-kit/recovery-kit-builder.js": "0b341ecff2bf5d1fa164f51f6d41da006bd70fecb365b66a137605bdab4b81d2",
+    "src/crypto/crypto-engine.js": "8ead95ee5aac09fddf6fd1126b17c987966719fa42804bf38f00417f1ebed8ed",
+    "src/crypto/kdf-provider.js": "e187d9301db55d0edcf0194b6188d38881427dd154b55bc47fd497a4509b3ecc",
+    "src/recovery/recovery-service.js": "dc4f6fad419aca0d06540ae2dc7dc2836c0ee02e7b47e86719935bb9c2555d07",
+    "src/recovery/attachment-recovery.js": "19bf82f495115d62ec284c3a32c14f45e976474bd2f0ce5581e567f34f9e552f",
+    "tools/ar-unified-multi-file-mainnet-pilot/pilot-core.js": "b5a063da7096263129fdd1a0d73e549240f23cc3088ab16ab4b59602b36f3e19"
+  },
+  "excluded_secrets": [
+    "Recovery Password",
+    "private keys",
+    "seed phrases",
+    "wallet export files",
+    "wallet address",
+    "customer file contents"
+  ]
+}

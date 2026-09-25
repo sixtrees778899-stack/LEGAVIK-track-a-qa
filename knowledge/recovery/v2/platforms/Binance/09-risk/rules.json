@@ -1,0 +1,2002 @@
+[
+  {
+    "rule_id": "BINP-R-001",
+    "rule_type": "RECOVERY_RULE",
+    "platform_id": "binance",
+    "statement": "A Binance account uses an account identifier and configured authentication factors for sign-in.",
+    "claim_refs": [
+      "BINP-001"
+    ],
+    "status": "INELIGIBLE",
+    "engine_eligible": false,
+    "governance_tags": {
+      "scope": {
+        "geography": "Other",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "Binance Global educational content",
+        "product_scope": "Retail / Spot educational scope",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Academy article; serving-entity applicability unconfirmed"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "BINP-S06",
+          "source_url": "https://academy.binance.com/en/articles/binance-beginner-s-guide",
+          "source_title": "Binance beginner guide",
+          "source_section": "Account access; KYC; password; 2FA; passkey; anti-phishing",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "LOW",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "rule_id": "BINP-R-002",
+    "rule_type": "RECOVERY_RULE",
+    "platform_id": "binance",
+    "statement": "A strong unique account password is an account-security control.",
+    "claim_refs": [
+      "BINP-002"
+    ],
+    "status": "INELIGIBLE",
+    "engine_eligible": false,
+    "governance_tags": {
+      "scope": {
+        "geography": "Other",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "Binance Global educational content",
+        "product_scope": "Retail / Spot educational scope",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Academy article; serving-entity applicability unconfirmed"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "BINP-S01",
+          "source_url": "https://academy.binance.com/en/articles/secure-your-binance-account-in-7-simple-steps",
+          "source_title": "Secure Your Binance Account in 7 Simple Steps",
+          "source_section": "Account security; password; 2FA; devices; address management",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "rule_id": "BINP-R-003",
+    "rule_type": "RECOVERY_RULE",
+    "platform_id": "binance",
+    "statement": "Changing the Binance account password triggers a 24-hour withdrawal suspension in the cited article scope.",
+    "claim_refs": [
+      "BINP-003"
+    ],
+    "status": "INELIGIBLE",
+    "engine_eligible": false,
+    "governance_tags": {
+      "scope": {
+        "geography": "Other",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "Binance Global educational content",
+        "product_scope": "Retail / Spot educational scope",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Academy article; serving-entity applicability unconfirmed"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "BINP-S01",
+          "source_url": "https://academy.binance.com/en/articles/secure-your-binance-account-in-7-simple-steps",
+          "source_title": "Secure Your Binance Account in 7 Simple Steps",
+          "source_section": "Account security; password; 2FA; devices; address management",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "rule_id": "BINP-R-004",
+    "rule_type": "RECOVERY_RULE",
+    "platform_id": "binance",
+    "statement": "The linked email is part of account security and withdrawal-address confirmation.",
+    "claim_refs": [
+      "BINP-004"
+    ],
+    "status": "INELIGIBLE",
+    "engine_eligible": false,
+    "governance_tags": {
+      "scope": {
+        "geography": "Other",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "Binance Global educational content",
+        "product_scope": "Retail / Spot educational scope",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Academy article; serving-entity applicability unconfirmed"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "BINP-S01",
+          "source_url": "https://academy.binance.com/en/articles/secure-your-binance-account-in-7-simple-steps",
+          "source_title": "Secure Your Binance Account in 7 Simple Steps",
+          "source_section": "Account security; password; 2FA; devices; address management",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "rule_id": "BINP-R-005",
+    "rule_type": "RECOVERY_RULE",
+    "platform_id": "binance",
+    "statement": "SMS may be configured as a second authentication factor.",
+    "claim_refs": [
+      "BINP-005"
+    ],
+    "status": "INELIGIBLE",
+    "engine_eligible": false,
+    "governance_tags": {
+      "scope": {
+        "geography": "Other",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "Binance Global educational content",
+        "product_scope": "Retail / Spot educational scope",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Academy article; serving-entity applicability unconfirmed"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "BINP-S03",
+          "source_url": "https://academy.binance.com/en/articles/what-is-two-factor-authentication-2fa",
+          "source_title": "What Is Two-Factor Authentication (2FA)?",
+          "source_section": "2FA types; passkeys; backup-code principle",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "rule_id": "BINP-R-006",
+    "rule_type": "RECOVERY_RULE",
+    "platform_id": "binance",
+    "statement": "Authenticator apps are supported as a second authentication factor.",
+    "claim_refs": [
+      "BINP-006"
+    ],
+    "status": "INELIGIBLE",
+    "engine_eligible": false,
+    "governance_tags": {
+      "scope": {
+        "geography": "Other",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "Binance Global educational content",
+        "product_scope": "Retail / Spot educational scope",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Academy article; serving-entity applicability unconfirmed"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "BINP-S03",
+          "source_url": "https://academy.binance.com/en/articles/what-is-two-factor-authentication-2fa",
+          "source_title": "What Is Two-Factor Authentication (2FA)?",
+          "source_section": "2FA types; passkeys; backup-code principle",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "rule_id": "BINP-R-007",
+    "rule_type": "RECOVERY_RULE",
+    "platform_id": "binance",
+    "statement": "Hardware security keys may be used as a strong authentication factor.",
+    "claim_refs": [
+      "BINP-007"
+    ],
+    "status": "INELIGIBLE",
+    "engine_eligible": false,
+    "governance_tags": {
+      "scope": {
+        "geography": "Other",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "Binance Global educational content",
+        "product_scope": "Retail / Spot educational scope",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Academy article; serving-entity applicability unconfirmed"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "BINP-S01",
+          "source_url": "https://academy.binance.com/en/articles/secure-your-binance-account-in-7-simple-steps",
+          "source_title": "Secure Your Binance Account in 7 Simple Steps",
+          "source_section": "Account security; password; 2FA; devices; address management",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "rule_id": "BINP-R-008",
+    "rule_type": "RECOVERY_RULE",
+    "platform_id": "binance",
+    "statement": "Passkeys authenticate through a device unlock mechanism and cryptographic credentials.",
+    "claim_refs": [
+      "BINP-008"
+    ],
+    "status": "INELIGIBLE",
+    "engine_eligible": false,
+    "governance_tags": {
+      "scope": {
+        "geography": "Other",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "Binance Global educational content",
+        "product_scope": "Retail / Spot educational scope",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Academy article; serving-entity applicability unconfirmed"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "BINP-S03",
+          "source_url": "https://academy.binance.com/en/articles/what-is-two-factor-authentication-2fa",
+          "source_title": "What Is Two-Factor Authentication (2FA)?",
+          "source_section": "2FA types; passkeys; backup-code principle",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "rule_id": "BINP-R-009",
+    "rule_type": "RECOVERY_RULE",
+    "platform_id": "binance",
+    "statement": "Two-factor authentication adds a required factor beyond a password.",
+    "claim_refs": [
+      "BINP-009"
+    ],
+    "status": "INELIGIBLE",
+    "engine_eligible": false,
+    "governance_tags": {
+      "scope": {
+        "geography": "Other",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "Binance Global educational content",
+        "product_scope": "Retail / Spot educational scope",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Academy article; serving-entity applicability unconfirmed"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "BINP-S03",
+          "source_url": "https://academy.binance.com/en/articles/what-is-two-factor-authentication-2fa",
+          "source_title": "What Is Two-Factor Authentication (2FA)?",
+          "source_section": "2FA types; passkeys; backup-code principle",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "rule_id": "BINP-R-010",
+    "rule_type": "RECOVERY_RULE",
+    "platform_id": "binance",
+    "statement": "An enabled anti-phishing code is included in official Binance communications described by the source.",
+    "claim_refs": [
+      "BINP-010"
+    ],
+    "status": "INELIGIBLE",
+    "engine_eligible": false,
+    "governance_tags": {
+      "scope": {
+        "geography": "Other",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "Binance Global educational content",
+        "product_scope": "Retail / Spot educational scope",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Academy article; serving-entity applicability unconfirmed"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "BINP-S02",
+          "source_url": "https://academy.binance.com/en/articles/5-ways-to-improve-your-binance-account-security",
+          "source_title": "5 Ways to Improve Your Binance Account Security",
+          "source_section": "API controls; anti-phishing; 2FA; withdrawal whitelist",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "rule_id": "BINP-R-011",
+    "rule_type": "STOP_RULE",
+    "platform_id": "binance",
+    "statement": "A Binance message with a missing or different configured anti-phishing code should be treated as suspicious.",
+    "claim_refs": [
+      "BINP-011"
+    ],
+    "status": "AUDITED_CANDIDATE",
+    "engine_eligible": false,
+    "governance_tags": {
+      "scope": {
+        "geography": "Other",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "Binance Global educational content",
+        "product_scope": "Retail / Spot educational scope",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Academy article; serving-entity applicability unconfirmed"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "BINP-S02",
+          "source_url": "https://academy.binance.com/en/articles/5-ways-to-improve-your-binance-account-security",
+          "source_title": "5 Ways to Improve Your Binance Account Security",
+          "source_section": "API controls; anti-phishing; 2FA; withdrawal whitelist",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "rule_id": "BINP-R-012",
+    "rule_type": "RECOVERY_RULE",
+    "platform_id": "binance",
+    "statement": "Binance recommends reviewing devices and IP addresses that accessed the account.",
+    "claim_refs": [
+      "BINP-012"
+    ],
+    "status": "INELIGIBLE",
+    "engine_eligible": false,
+    "governance_tags": {
+      "scope": {
+        "geography": "Other",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "Binance Global educational content",
+        "product_scope": "Retail / Spot educational scope",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Academy article; serving-entity applicability unconfirmed"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "BINP-S01",
+          "source_url": "https://academy.binance.com/en/articles/secure-your-binance-account-in-7-simple-steps",
+          "source_title": "Secure Your Binance Account in 7 Simple Steps",
+          "source_section": "Account security; password; 2FA; devices; address management",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "rule_id": "BINP-R-013",
+    "rule_type": "RECOVERY_RULE",
+    "platform_id": "binance",
+    "statement": "Disabling an account clears authorized devices in the cited article scope.",
+    "claim_refs": [
+      "BINP-013"
+    ],
+    "status": "INELIGIBLE",
+    "engine_eligible": false,
+    "governance_tags": {
+      "scope": {
+        "geography": "Other",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "Binance Global educational content",
+        "product_scope": "Retail / Spot educational scope",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Academy article; serving-entity applicability unconfirmed"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "BINP-S01",
+          "source_url": "https://academy.binance.com/en/articles/secure-your-binance-account-in-7-simple-steps",
+          "source_title": "Secure Your Binance Account in 7 Simple Steps",
+          "source_section": "Account security; password; 2FA; devices; address management",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "rule_id": "BINP-R-014",
+    "rule_type": "RECOVERY_RULE",
+    "platform_id": "binance",
+    "statement": "API keys are separately managed credentials and are not equivalent to ordinary account sign-in.",
+    "claim_refs": [
+      "BINP-014"
+    ],
+    "status": "INELIGIBLE",
+    "engine_eligible": false,
+    "governance_tags": {
+      "scope": {
+        "geography": "Other",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "Binance Global educational content",
+        "product_scope": "Retail / Spot educational scope",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Academy article; serving-entity applicability unconfirmed"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "BINP-S02",
+          "source_url": "https://academy.binance.com/en/articles/5-ways-to-improve-your-binance-account-security",
+          "source_title": "5 Ways to Improve Your Binance Account Security",
+          "source_section": "API controls; anti-phishing; 2FA; withdrawal whitelist",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "LOW",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "rule_id": "BINP-R-015",
+    "rule_type": "RECOVERY_RULE",
+    "platform_id": "binance",
+    "statement": "API IP whitelisting restricts requests to approved IP addresses.",
+    "claim_refs": [
+      "BINP-015"
+    ],
+    "status": "INELIGIBLE",
+    "engine_eligible": false,
+    "governance_tags": {
+      "scope": {
+        "geography": "Other",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "Binance Global educational content",
+        "product_scope": "Retail / Spot educational scope",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Academy article; serving-entity applicability unconfirmed"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "BINP-S02",
+          "source_url": "https://academy.binance.com/en/articles/5-ways-to-improve-your-binance-account-security",
+          "source_title": "5 Ways to Improve Your Binance Account Security",
+          "source_section": "API controls; anti-phishing; 2FA; withdrawal whitelist",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "rule_id": "BINP-R-016",
+    "rule_type": "RECOVERY_RULE",
+    "platform_id": "binance",
+    "statement": "The source recommends RSA signing as a stronger API request-signing option than basic shared-secret signing.",
+    "claim_refs": [
+      "BINP-016"
+    ],
+    "status": "INELIGIBLE",
+    "engine_eligible": false,
+    "governance_tags": {
+      "scope": {
+        "geography": "Other",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "Binance Global educational content",
+        "product_scope": "Retail / Spot educational scope",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Academy article; serving-entity applicability unconfirmed"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "BINP-S02",
+          "source_url": "https://academy.binance.com/en/articles/5-ways-to-improve-your-binance-account-security",
+          "source_title": "5 Ways to Improve Your Binance Account Security",
+          "source_section": "API controls; anti-phishing; 2FA; withdrawal whitelist",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "rule_id": "BINP-R-017",
+    "rule_type": "RECOVERY_RULE",
+    "platform_id": "binance",
+    "statement": "An API key or IP entry not recognized by the owner is a stop-and-revoke condition.",
+    "claim_refs": [
+      "BINP-017"
+    ],
+    "status": "AUDITED_CANDIDATE",
+    "engine_eligible": false,
+    "governance_tags": {
+      "scope": {
+        "geography": "Other",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "Binance Global educational content",
+        "product_scope": "Retail / Spot educational scope",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Academy article; serving-entity applicability unconfirmed"
+      },
+      "source": {
+        "primary": {
+          "source_type": "CJAS_GUIDANCE",
+          "source_id": "BINP-S02",
+          "source_url": "https://academy.binance.com/en/articles/5-ways-to-improve-your-binance-account-security",
+          "source_title": "5 Ways to Improve Your Binance Account Security",
+          "source_section": "API controls; anti-phishing; 2FA; withdrawal whitelist",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "rule_id": "BINP-R-018",
+    "rule_type": "RECOVERY_RULE",
+    "platform_id": "binance",
+    "statement": "Address Management stores labelled withdrawal addresses.",
+    "claim_refs": [
+      "BINP-018"
+    ],
+    "status": "INELIGIBLE",
+    "engine_eligible": false,
+    "governance_tags": {
+      "scope": {
+        "geography": "Other",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "Binance Global educational content",
+        "product_scope": "Retail / Spot educational scope",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Academy article; serving-entity applicability unconfirmed"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "BINP-S04",
+          "source_url": "https://academy.binance.com/en/articles/what-is-the-satoshi-test-and-how-does-it-help-with-the-travel-rule",
+          "source_title": "What Is the Satoshi Test and How Does It Help With the Travel Rule?",
+          "source_section": "Satoshi Test; verified address; Address Management",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "rule_id": "BINP-R-019",
+    "rule_type": "TRANSFER_RULE",
+    "platform_id": "binance",
+    "statement": "Withdrawal whitelist mode restricts outgoing transfers to pre-approved addresses.",
+    "claim_refs": [
+      "BINP-019"
+    ],
+    "status": "INELIGIBLE",
+    "engine_eligible": false,
+    "governance_tags": {
+      "scope": {
+        "geography": "Other",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "Binance Global educational content",
+        "product_scope": "Retail / Spot educational scope",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Academy article; serving-entity applicability unconfirmed"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "BINP-S01",
+          "source_url": "https://academy.binance.com/en/articles/secure-your-binance-account-in-7-simple-steps",
+          "source_title": "Secure Your Binance Account in 7 Simple Steps",
+          "source_section": "Account security; password; 2FA; devices; address management",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "rule_id": "BINP-R-020",
+    "rule_type": "RECOVERY_RULE",
+    "platform_id": "binance",
+    "statement": "The cited security article states a new withdrawal address requires email confirmation when whitelist is enabled.",
+    "claim_refs": [
+      "BINP-020"
+    ],
+    "status": "INELIGIBLE",
+    "engine_eligible": false,
+    "governance_tags": {
+      "scope": {
+        "geography": "Other",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "Binance Global educational content",
+        "product_scope": "Retail / Spot educational scope",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Academy article; serving-entity applicability unconfirmed"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "BINP-S01",
+          "source_url": "https://academy.binance.com/en/articles/secure-your-binance-account-in-7-simple-steps",
+          "source_title": "Secure Your Binance Account in 7 Simple Steps",
+          "source_section": "Account security; password; 2FA; devices; address management",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "rule_id": "BINP-R-021",
+    "rule_type": "RECOVERY_RULE",
+    "platform_id": "binance",
+    "statement": "Successful login does not bypass an enabled withdrawal whitelist.",
+    "claim_refs": [
+      "BINP-021"
+    ],
+    "status": "INELIGIBLE",
+    "engine_eligible": false,
+    "governance_tags": {
+      "scope": {
+        "geography": "Other",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "Binance Global educational content",
+        "product_scope": "Retail / Spot educational scope",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Academy article; serving-entity applicability unconfirmed"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "BINP-S01",
+          "source_url": "https://academy.binance.com/en/articles/secure-your-binance-account-in-7-simple-steps",
+          "source_title": "Secure Your Binance Account in 7 Simple Steps",
+          "source_section": "Account security; password; 2FA; devices; address management",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "LOW",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "rule_id": "BINP-R-022",
+    "rule_type": "TRANSFER_RULE",
+    "platform_id": "binance",
+    "statement": "A Satoshi Test may be required to verify control of a recipient address under applicable Travel Rule flows.",
+    "claim_refs": [
+      "BINP-022"
+    ],
+    "status": "INELIGIBLE",
+    "engine_eligible": false,
+    "governance_tags": {
+      "scope": {
+        "geography": "Other",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "Binance Global educational content",
+        "product_scope": "Retail / Spot educational scope",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Academy article; serving-entity applicability unconfirmed"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "BINP-S04",
+          "source_url": "https://academy.binance.com/en/articles/what-is-the-satoshi-test-and-how-does-it-help-with-the-travel-rule",
+          "source_title": "What Is the Satoshi Test and How Does It Help With the Travel Rule?",
+          "source_section": "Satoshi Test; verified address; Address Management",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "rule_id": "BINP-R-023",
+    "rule_type": "RECOVERY_RULE",
+    "platform_id": "binance",
+    "statement": "The Satoshi Test uses a real small crypto transfer to the destination.",
+    "claim_refs": [
+      "BINP-023"
+    ],
+    "status": "INELIGIBLE",
+    "engine_eligible": false,
+    "governance_tags": {
+      "scope": {
+        "geography": "Other",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "Binance Global educational content",
+        "product_scope": "Retail / Spot educational scope",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Academy article; serving-entity applicability unconfirmed"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "BINP-S04",
+          "source_url": "https://academy.binance.com/en/articles/what-is-the-satoshi-test-and-how-does-it-help-with-the-travel-rule",
+          "source_title": "What Is the Satoshi Test and How Does It Help With the Travel Rule?",
+          "source_section": "Satoshi Test; verified address; Address Management",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "rule_id": "BINP-R-024",
+    "rule_type": "RECOVERY_RULE",
+    "platform_id": "binance",
+    "statement": "The recipient confirms receipt before the address is marked verified in the described flow.",
+    "claim_refs": [
+      "BINP-024"
+    ],
+    "status": "INELIGIBLE",
+    "engine_eligible": false,
+    "governance_tags": {
+      "scope": {
+        "geography": "Other",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "Binance Global educational content",
+        "product_scope": "Retail / Spot educational scope",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Academy article; serving-entity applicability unconfirmed"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "BINP-S04",
+          "source_url": "https://academy.binance.com/en/articles/what-is-the-satoshi-test-and-how-does-it-help-with-the-travel-rule",
+          "source_title": "What Is the Satoshi Test and How Does It Help With the Travel Rule?",
+          "source_section": "Satoshi Test; verified address; Address Management",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "rule_id": "BINP-R-025",
+    "rule_type": "RECOVERY_RULE",
+    "platform_id": "binance",
+    "statement": "A successfully verified address can be saved in Address Management.",
+    "claim_refs": [
+      "BINP-025"
+    ],
+    "status": "INELIGIBLE",
+    "engine_eligible": false,
+    "governance_tags": {
+      "scope": {
+        "geography": "Other",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "Binance Global educational content",
+        "product_scope": "Retail / Spot educational scope",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Academy article; serving-entity applicability unconfirmed"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "BINP-S04",
+          "source_url": "https://academy.binance.com/en/articles/what-is-the-satoshi-test-and-how-does-it-help-with-the-travel-rule",
+          "source_title": "What Is the Satoshi Test and How Does It Help With the Travel Rule?",
+          "source_section": "Satoshi Test; verified address; Address Management",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "rule_id": "BINP-R-026",
+    "rule_type": "RECOVERY_RULE",
+    "platform_id": "binance",
+    "statement": "Travel Rule requirements and thresholds vary by jurisdiction.",
+    "claim_refs": [
+      "BINP-026"
+    ],
+    "status": "AUDITED_CANDIDATE",
+    "engine_eligible": false,
+    "governance_tags": {
+      "scope": {
+        "geography": "Other",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "Binance Global educational content",
+        "product_scope": "Retail / Spot educational scope",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Academy article; serving-entity applicability unconfirmed"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "BINP-S04",
+          "source_url": "https://academy.binance.com/en/articles/what-is-the-satoshi-test-and-how-does-it-help-with-the-travel-rule",
+          "source_title": "What Is the Satoshi Test and How Does It Help With the Travel Rule?",
+          "source_section": "Satoshi Test; verified address; Address Management",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "rule_id": "BINP-R-027",
+    "rule_type": "RECOVERY_RULE",
+    "platform_id": "binance",
+    "statement": "CJAS requires the asset network and receiving network to match before an exit transfer.",
+    "claim_refs": [
+      "BINP-027"
+    ],
+    "status": "INELIGIBLE",
+    "engine_eligible": false,
+    "governance_tags": {
+      "scope": {
+        "geography": "Other",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "Binance Global educational content",
+        "product_scope": "Retail / Spot educational scope",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Academy article; serving-entity applicability unconfirmed"
+      },
+      "source": {
+        "primary": {
+          "source_type": "CJAS_GUIDANCE",
+          "source_id": "BINP-S04",
+          "source_url": "https://academy.binance.com/en/articles/what-is-the-satoshi-test-and-how-does-it-help-with-the-travel-rule",
+          "source_title": "What Is the Satoshi Test and How Does It Help With the Travel Rule?",
+          "source_section": "Satoshi Test; verified address; Address Management",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "LOW",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "rule_id": "BINP-R-028",
+    "rule_type": "RECOVERY_RULE",
+    "platform_id": "binance",
+    "statement": "CJAS requires Memo or Tag requirements to be confirmed before transfer when the destination requires one.",
+    "claim_refs": [
+      "BINP-028"
+    ],
+    "status": "INELIGIBLE",
+    "engine_eligible": false,
+    "governance_tags": {
+      "scope": {
+        "geography": "Other",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "Binance Global educational content",
+        "product_scope": "Retail / Spot educational scope",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Academy article; serving-entity applicability unconfirmed"
+      },
+      "source": {
+        "primary": {
+          "source_type": "CJAS_GUIDANCE",
+          "source_id": "BINP-S04",
+          "source_url": "https://academy.binance.com/en/articles/what-is-the-satoshi-test-and-how-does-it-help-with-the-travel-rule",
+          "source_title": "What Is the Satoshi Test and How Does It Help With the Travel Rule?",
+          "source_section": "Satoshi Test; verified address; Address Management",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "LOW",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "rule_id": "BINP-R-029",
+    "rule_type": "TRANSFER_RULE",
+    "platform_id": "binance",
+    "statement": "CJAS requires a small test transfer before a material owner-verified exit.",
+    "claim_refs": [
+      "BINP-029"
+    ],
+    "status": "INELIGIBLE",
+    "engine_eligible": false,
+    "governance_tags": {
+      "scope": {
+        "geography": "Other",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "Binance Global educational content",
+        "product_scope": "Retail / Spot educational scope",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Academy article; serving-entity applicability unconfirmed"
+      },
+      "source": {
+        "primary": {
+          "source_type": "CJAS_GUIDANCE",
+          "source_id": "BINP-S04",
+          "source_url": "https://academy.binance.com/en/articles/what-is-the-satoshi-test-and-how-does-it-help-with-the-travel-rule",
+          "source_title": "What Is the Satoshi Test and How Does It Help With the Travel Rule?",
+          "source_section": "Satoshi Test; verified address; Address Management",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "LOW",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "rule_id": "BINP-R-030",
+    "rule_type": "TRANSFER_RULE",
+    "platform_id": "binance",
+    "statement": "CJAS requires the test transaction hash and destination receipt to be verified before continuing.",
+    "claim_refs": [
+      "BINP-030"
+    ],
+    "status": "INELIGIBLE",
+    "engine_eligible": false,
+    "governance_tags": {
+      "scope": {
+        "geography": "Other",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "Binance Global educational content",
+        "product_scope": "Retail / Spot educational scope",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Academy article; serving-entity applicability unconfirmed"
+      },
+      "source": {
+        "primary": {
+          "source_type": "CJAS_GUIDANCE",
+          "source_id": "BINP-S04",
+          "source_url": "https://academy.binance.com/en/articles/what-is-the-satoshi-test-and-how-does-it-help-with-the-travel-rule",
+          "source_title": "What Is the Satoshi Test and How Does It Help With the Travel Rule?",
+          "source_section": "Satoshi Test; verified address; Address Management",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "LOW",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "rule_id": "BINP-R-031",
+    "rule_type": "TRANSFER_RULE",
+    "platform_id": "binance",
+    "statement": "CJAS recommends transferring the remaining assets in controlled batches after the test succeeds.",
+    "claim_refs": [
+      "BINP-031"
+    ],
+    "status": "INELIGIBLE",
+    "engine_eligible": false,
+    "governance_tags": {
+      "scope": {
+        "geography": "Other",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "Binance Global educational content",
+        "product_scope": "Retail / Spot educational scope",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Academy article; serving-entity applicability unconfirmed"
+      },
+      "source": {
+        "primary": {
+          "source_type": "CJAS_GUIDANCE",
+          "source_id": "BINP-S04",
+          "source_url": "https://academy.binance.com/en/articles/what-is-the-satoshi-test-and-how-does-it-help-with-the-travel-rule",
+          "source_title": "What Is the Satoshi Test and How Does It Help With the Travel Rule?",
+          "source_section": "Satoshi Test; verified address; Address Management",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "LOW",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "rule_id": "BINP-R-032",
+    "rule_type": "STOP_RULE",
+    "platform_id": "binance",
+    "statement": "A destination-address mismatch is a stop condition.",
+    "claim_refs": [
+      "BINP-032"
+    ],
+    "status": "AUDITED_CANDIDATE",
+    "engine_eligible": false,
+    "governance_tags": {
+      "scope": {
+        "geography": "Other",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "Binance Global educational content",
+        "product_scope": "Retail / Spot educational scope",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Academy article; serving-entity applicability unconfirmed"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "BINP-S04",
+          "source_url": "https://academy.binance.com/en/articles/what-is-the-satoshi-test-and-how-does-it-help-with-the-travel-rule",
+          "source_title": "What Is the Satoshi Test and How Does It Help With the Travel Rule?",
+          "source_section": "Satoshi Test; verified address; Address Management",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "rule_id": "BINP-R-033",
+    "rule_type": "STOP_RULE",
+    "platform_id": "binance",
+    "statement": "An uncertain network or Memo/Tag requirement is a stop condition.",
+    "claim_refs": [
+      "BINP-033"
+    ],
+    "status": "INELIGIBLE",
+    "engine_eligible": false,
+    "governance_tags": {
+      "scope": {
+        "geography": "Other",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "Binance Global educational content",
+        "product_scope": "Retail / Spot educational scope",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Academy article; serving-entity applicability unconfirmed"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "BINP-S04",
+          "source_url": "https://academy.binance.com/en/articles/what-is-the-satoshi-test-and-how-does-it-help-with-the-travel-rule",
+          "source_title": "What Is the Satoshi Test and How Does It Help With the Travel Rule?",
+          "source_section": "Satoshi Test; verified address; Address Management",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "LOW",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "rule_id": "BINP-R-034",
+    "rule_type": "STOP_RULE",
+    "platform_id": "binance",
+    "statement": "A test transfer without confirmed destination receipt blocks the remaining transfer.",
+    "claim_refs": [
+      "BINP-034"
+    ],
+    "status": "INELIGIBLE",
+    "engine_eligible": false,
+    "governance_tags": {
+      "scope": {
+        "geography": "Other",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "Binance Global educational content",
+        "product_scope": "Retail / Spot educational scope",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Academy article; serving-entity applicability unconfirmed"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "BINP-S04",
+          "source_url": "https://academy.binance.com/en/articles/what-is-the-satoshi-test-and-how-does-it-help-with-the-travel-rule",
+          "source_title": "What Is the Satoshi Test and How Does It Help With the Travel Rule?",
+          "source_section": "Satoshi Test; verified address; Address Management",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "LOW",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "rule_id": "BINP-R-035",
+    "rule_type": "RECOVERY_RULE",
+    "platform_id": "binance",
+    "statement": "A successful sign-in alone does not prove withdrawal capability.",
+    "claim_refs": [
+      "BINP-035"
+    ],
+    "status": "AUDITED_CANDIDATE",
+    "engine_eligible": false,
+    "governance_tags": {
+      "scope": {
+        "geography": "Other",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "Binance Global educational content",
+        "product_scope": "Retail / Spot educational scope",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Academy article; serving-entity applicability unconfirmed"
+      },
+      "source": {
+        "primary": {
+          "source_type": "CJAS_GUIDANCE",
+          "source_id": "BINP-S01",
+          "source_url": "https://academy.binance.com/en/articles/secure-your-binance-account-in-7-simple-steps",
+          "source_title": "Secure Your Binance Account in 7 Simple Steps",
+          "source_section": "Account security; password; 2FA; devices; address management",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "rule_id": "BINP-R-036",
+    "rule_type": "RECOVERY_RULE",
+    "platform_id": "binance",
+    "statement": "Operational control requires current security factors, permitted account state and a usable withdrawal path.",
+    "claim_refs": [
+      "BINP-036"
+    ],
+    "status": "AUDITED_CANDIDATE",
+    "engine_eligible": false,
+    "governance_tags": {
+      "scope": {
+        "geography": "Other",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "Binance Global educational content",
+        "product_scope": "Retail / Spot educational scope",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Academy article; serving-entity applicability unconfirmed"
+      },
+      "source": {
+        "primary": {
+          "source_type": "CJAS_GUIDANCE",
+          "source_id": "BINP-S01",
+          "source_url": "https://academy.binance.com/en/articles/secure-your-binance-account-in-7-simple-steps",
+          "source_title": "Secure Your Binance Account in 7 Simple Steps",
+          "source_section": "Account security; password; 2FA; devices; address management",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "rule_id": "BINP-R-037",
+    "rule_type": "WARNING_RULE",
+    "platform_id": "binance",
+    "statement": "Platform risk controls may block a transfer even when authentication succeeds.",
+    "claim_refs": [
+      "BINP-037"
+    ],
+    "status": "INELIGIBLE",
+    "engine_eligible": false,
+    "governance_tags": {
+      "scope": {
+        "geography": "Other",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "Binance Global educational content",
+        "product_scope": "Retail / Spot educational scope",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Academy article; serving-entity applicability unconfirmed"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "BINP-S04",
+          "source_url": "https://academy.binance.com/en/articles/what-is-the-satoshi-test-and-how-does-it-help-with-the-travel-rule",
+          "source_title": "What Is the Satoshi Test and How Does It Help With the Travel Rule?",
+          "source_section": "Satoshi Test; verified address; Address Management",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "LOW",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "rule_id": "BINP-R-038",
+    "rule_type": "STOP_RULE",
+    "platform_id": "binance",
+    "statement": "A person claiming support who asks for password, OTP, authenticator seed or API secret is a stop condition.",
+    "claim_refs": [
+      "BINP-038"
+    ],
+    "status": "AUDITED_CANDIDATE",
+    "engine_eligible": false,
+    "governance_tags": {
+      "scope": {
+        "geography": "Other",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "Binance Global educational content",
+        "product_scope": "Retail / Spot educational scope",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Academy article; serving-entity applicability unconfirmed"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "BINP-S02",
+          "source_url": "https://academy.binance.com/en/articles/5-ways-to-improve-your-binance-account-security",
+          "source_title": "5 Ways to Improve Your Binance Account Security",
+          "source_section": "API controls; anti-phishing; 2FA; withdrawal whitelist",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "rule_id": "BINP-R-039",
+    "rule_type": "STOP_RULE",
+    "platform_id": "binance",
+    "statement": "A support request to install remote-control software or transfer to a supplied address is a stop condition.",
+    "claim_refs": [
+      "BINP-039"
+    ],
+    "status": "INELIGIBLE",
+    "engine_eligible": false,
+    "governance_tags": {
+      "scope": {
+        "geography": "Other",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "Binance Global educational content",
+        "product_scope": "Retail / Spot educational scope",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Academy article; serving-entity applicability unconfirmed"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "BINP-S02",
+          "source_url": "https://academy.binance.com/en/articles/5-ways-to-improve-your-binance-account-security",
+          "source_title": "5 Ways to Improve Your Binance Account Security",
+          "source_section": "API controls; anti-phishing; 2FA; withdrawal whitelist",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "LOW",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "rule_id": "BINP-R-040",
+    "rule_type": "TRANSFER_RULE",
+    "platform_id": "binance",
+    "statement": "An owner-verified exit must be performed by the account holder or a legally authorized process.",
+    "claim_refs": [
+      "BINP-040"
+    ],
+    "status": "INELIGIBLE",
+    "engine_eligible": false,
+    "governance_tags": {
+      "scope": {
+        "geography": "Other",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "Binance Global educational content",
+        "product_scope": "Retail / Spot educational scope",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Academy article; serving-entity applicability unconfirmed"
+      },
+      "source": {
+        "primary": {
+          "source_type": "CJAS_GUIDANCE",
+          "source_id": "BINP-S05",
+          "source_url": "https://academy.binance.com/en/articles/how-to-safely-pass-on-your-crypto-when-you-die",
+          "source_title": "Pass On Your Crypto",
+          "source_section": "Planning principles; no platform-specific legal entitlement",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "LOW",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "rule_id": "BINP-R-041",
+    "rule_type": "WARNING_RULE",
+    "platform_id": "binance",
+    "statement": "Possession of login factors does not establish a third party’s legal authority over assets.",
+    "claim_refs": [
+      "BINP-041"
+    ],
+    "status": "INELIGIBLE",
+    "engine_eligible": false,
+    "governance_tags": {
+      "scope": {
+        "geography": "Other",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "Binance Global educational content",
+        "product_scope": "Retail / Spot educational scope",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Academy article; serving-entity applicability unconfirmed"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "BINP-S05",
+          "source_url": "https://academy.binance.com/en/articles/how-to-safely-pass-on-your-crypto-when-you-die",
+          "source_title": "Pass On Your Crypto",
+          "source_section": "Planning principles; no platform-specific legal entitlement",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "LOW",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "rule_id": "BINP-R-042",
+    "rule_type": "RECOVERY_RULE",
+    "platform_id": "binance",
+    "statement": "Succession planning must distinguish technical instructions from legal entitlement.",
+    "claim_refs": [
+      "BINP-042"
+    ],
+    "status": "INELIGIBLE",
+    "engine_eligible": false,
+    "governance_tags": {
+      "scope": {
+        "geography": "Other",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "Binance Global educational content",
+        "product_scope": "Retail / Spot educational scope",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Academy article; serving-entity applicability unconfirmed"
+      },
+      "source": {
+        "primary": {
+          "source_type": "CJAS_GUIDANCE",
+          "source_id": "BINP-S05",
+          "source_url": "https://academy.binance.com/en/articles/how-to-safely-pass-on-your-crypto-when-you-die",
+          "source_title": "Pass On Your Crypto",
+          "source_section": "Planning principles; no platform-specific legal entitlement",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "LOW",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "rule_id": "BINP-R-043",
+    "rule_type": "UPGRADE_RULE",
+    "platform_id": "binance",
+    "statement": "Death or incapacity handling depends on applicable law and the serving Binance entity.",
+    "claim_refs": [
+      "BINP-043"
+    ],
+    "status": "INELIGIBLE",
+    "engine_eligible": false,
+    "governance_tags": {
+      "scope": {
+        "geography": "Other",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "Binance Global educational content",
+        "product_scope": "Retail / Spot educational scope",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Academy article; serving-entity applicability unconfirmed"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "BINP-S05",
+          "source_url": "https://academy.binance.com/en/articles/how-to-safely-pass-on-your-crypto-when-you-die",
+          "source_title": "Pass On Your Crypto",
+          "source_section": "Planning principles; no platform-specific legal entitlement",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "rule_id": "BINP-R-044",
+    "rule_type": "STOP_RULE",
+    "platform_id": "binance",
+    "statement": "Death, incapacity or disputed authority requires official and legal escalation.",
+    "claim_refs": [
+      "BINP-044"
+    ],
+    "status": "INELIGIBLE",
+    "engine_eligible": false,
+    "governance_tags": {
+      "scope": {
+        "geography": "Other",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "Binance Global educational content",
+        "product_scope": "Retail / Spot educational scope",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Academy article; serving-entity applicability unconfirmed"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "BINP-S05",
+          "source_url": "https://academy.binance.com/en/articles/how-to-safely-pass-on-your-crypto-when-you-die",
+          "source_title": "Pass On Your Crypto",
+          "source_section": "Planning principles; no platform-specific legal entitlement",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "rule_id": "BINP-R-045",
+    "rule_type": "RECOVERY_RULE",
+    "platform_id": "binance",
+    "statement": "CJAS may record a masked account identifier but not the account password.",
+    "claim_refs": [
+      "BINP-045"
+    ],
+    "status": "AUDITED_CANDIDATE",
+    "engine_eligible": false,
+    "governance_tags": {
+      "scope": {
+        "geography": "Other",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "Binance Global educational content",
+        "product_scope": "Retail / Spot educational scope",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Academy article; serving-entity applicability unconfirmed"
+      },
+      "source": {
+        "primary": {
+          "source_type": "CJAS_GUIDANCE",
+          "source_id": "BINP-S06",
+          "source_url": "https://academy.binance.com/en/articles/binance-beginner-s-guide",
+          "source_title": "Binance beginner guide",
+          "source_section": "Account access; KYC; password; 2FA; passkey; anti-phishing",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "rule_id": "BINP-R-046",
+    "rule_type": "RECOVERY_RULE",
+    "platform_id": "binance",
+    "statement": "CJAS may record which security factors exist and where recovery instructions are kept, but not factor secrets.",
+    "claim_refs": [
+      "BINP-046"
+    ],
+    "status": "AUDITED_CANDIDATE",
+    "engine_eligible": false,
+    "governance_tags": {
+      "scope": {
+        "geography": "Other",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "Binance Global educational content",
+        "product_scope": "Retail / Spot educational scope",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Academy article; serving-entity applicability unconfirmed"
+      },
+      "source": {
+        "primary": {
+          "source_type": "CJAS_GUIDANCE",
+          "source_id": "BINP-S03",
+          "source_url": "https://academy.binance.com/en/articles/what-is-two-factor-authentication-2fa",
+          "source_title": "What Is Two-Factor Authentication (2FA)?",
+          "source_section": "2FA types; passkeys; backup-code principle",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "rule_id": "BINP-R-047",
+    "rule_type": "RECOVERY_RULE",
+    "platform_id": "binance",
+    "statement": "CJAS may record trusted-device identification hints without storing device unlock secrets.",
+    "claim_refs": [
+      "BINP-047"
+    ],
+    "status": "AUDITED_CANDIDATE",
+    "engine_eligible": false,
+    "governance_tags": {
+      "scope": {
+        "geography": "Other",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "Binance Global educational content",
+        "product_scope": "Retail / Spot educational scope",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Academy article; serving-entity applicability unconfirmed"
+      },
+      "source": {
+        "primary": {
+          "source_type": "CJAS_GUIDANCE",
+          "source_id": "BINP-S01",
+          "source_url": "https://academy.binance.com/en/articles/secure-your-binance-account-in-7-simple-steps",
+          "source_title": "Secure Your Binance Account in 7 Simple Steps",
+          "source_section": "Account security; password; 2FA; devices; address management",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "rule_id": "BINP-R-048",
+    "rule_type": "RECOVERY_RULE",
+    "platform_id": "binance",
+    "statement": "CJAS may record whether whitelist mode is enabled and the labels of expected addresses.",
+    "claim_refs": [
+      "BINP-048"
+    ],
+    "status": "AUDITED_CANDIDATE",
+    "engine_eligible": false,
+    "governance_tags": {
+      "scope": {
+        "geography": "Other",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "Binance Global educational content",
+        "product_scope": "Retail / Spot educational scope",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Academy article; serving-entity applicability unconfirmed"
+      },
+      "source": {
+        "primary": {
+          "source_type": "CJAS_GUIDANCE",
+          "source_id": "BINP-S01",
+          "source_url": "https://academy.binance.com/en/articles/secure-your-binance-account-in-7-simple-steps",
+          "source_title": "Secure Your Binance Account in 7 Simple Steps",
+          "source_section": "Account security; password; 2FA; devices; address management",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "rule_id": "BINP-R-049",
+    "rule_type": "RECOVERY_RULE",
+    "platform_id": "binance",
+    "statement": "CJAS may record API-key existence, purpose and revocation location but not key or secret values.",
+    "claim_refs": [
+      "BINP-049"
+    ],
+    "status": "AUDITED_CANDIDATE",
+    "engine_eligible": false,
+    "governance_tags": {
+      "scope": {
+        "geography": "Other",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "Binance Global educational content",
+        "product_scope": "Retail / Spot educational scope",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Academy article; serving-entity applicability unconfirmed"
+      },
+      "source": {
+        "primary": {
+          "source_type": "CJAS_GUIDANCE",
+          "source_id": "BINP-S02",
+          "source_url": "https://academy.binance.com/en/articles/5-ways-to-improve-your-binance-account-security",
+          "source_title": "5 Ways to Improve Your Binance Account Security",
+          "source_section": "API controls; anti-phishing; 2FA; withdrawal whitelist",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "rule_id": "BINP-R-050",
+    "rule_type": "RECOVERY_RULE",
+    "platform_id": "binance",
+    "statement": "Recovery Verified requires successful sign-in, factor checks, withdrawal-control checks, address verification, test transfer and transaction-hash evidence.",
+    "claim_refs": [
+      "BINP-050"
+    ],
+    "status": "AUDITED_CANDIDATE",
+    "engine_eligible": false,
+    "governance_tags": {
+      "scope": {
+        "geography": "Other",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "Binance Global educational content",
+        "product_scope": "Retail / Spot educational scope",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Academy article; serving-entity applicability unconfirmed"
+      },
+      "source": {
+        "primary": {
+          "source_type": "CJAS_GUIDANCE",
+          "source_id": "BINP-S04",
+          "source_url": "https://academy.binance.com/en/articles/what-is-the-satoshi-test-and-how-does-it-help-with-the-travel-rule",
+          "source_title": "What Is the Satoshi Test and How Does It Help With the Travel Rule?",
+          "source_section": "Satoshi Test; verified address; Address Management",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  }
+]

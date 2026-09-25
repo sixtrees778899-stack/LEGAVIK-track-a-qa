@@ -1,0 +1,23 @@
+{
+  "registry_version": 1,
+  "updated_at": "2026-09-13",
+  "customer_version_note": "Recovery Map V1/V2/V3/V4/V5 are business lifecycle versions, not technical Recovery Format versions.",
+  "formats": [
+    {
+      "format_id": "CJAS-VAULT-ARCHIVE-V1",
+      "status": "ACTIVE",
+      "recovery_kit_format_version": 1,
+      "archive_format_version": 1,
+      "snapshot_format_version": 1,
+      "supported_knowledge_map_schema_versions": [1, 2],
+      "shared_recovery_core": "src/ui/vault-pipeline.js::recoverVaultArtifacts",
+      "recovery_engine": "src/recovery/recovery-service.js::RecoveryService",
+      "online_entry": "web/recover.js",
+      "independent_entry": "src/independent-recovery-tool/v1-app.js",
+      "independent_tool_compatibility_identity": "legavik-independent-recovery-tool-v1-20260912-1",
+      "known_good_runtime_commit": "87113d9d01401b936491628352a59d631a714f5b",
+      "known_good_standalone_sha256": "8262106d2bc70a024b50229740fb5dc1fc6459b403e47e5d72244c5c9c7c1a06",
+      "golden_vector_sets": ["technical-format-1-knowledge-schema-1", "technical-format-1-knowledge-schema-2"]
+    }
+  ]
+}

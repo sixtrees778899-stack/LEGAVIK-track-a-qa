@@ -1,0 +1,2002 @@
+[
+  {
+    "rule_id": "OKXP-R-001",
+    "rule_type": "RECOVERY_RULE",
+    "platform_id": "okx",
+    "statement": "OKX sign-in begins with the registered email address or phone number.",
+    "claim_refs": [
+      "OKXP-001"
+    ],
+    "status": "INELIGIBLE",
+    "engine_eligible": false,
+    "governance_tags": {
+      "scope": {
+        "geography": "United States",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "OKX US",
+        "product_scope": "Retail",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Web/App article version recorded in Source"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "OKXP-S06",
+          "source_url": "https://www.okx.com/en-us/help/how-do-i-change-my-login-password",
+          "source_title": "Change or reset login password",
+          "source_section": "Password reset; 2FA; withdrawal restriction",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "rule_id": "OKXP-R-002",
+    "rule_type": "RECOVERY_RULE",
+    "platform_id": "okx",
+    "statement": "A forgotten login password can be reset from the official login page.",
+    "claim_refs": [
+      "OKXP-002"
+    ],
+    "status": "INELIGIBLE",
+    "engine_eligible": false,
+    "governance_tags": {
+      "scope": {
+        "geography": "United States",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "OKX US",
+        "product_scope": "Retail",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Web/App article version recorded in Source"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "OKXP-S06",
+          "source_url": "https://www.okx.com/en-us/help/how-do-i-change-my-login-password",
+          "source_title": "Change or reset login password",
+          "source_section": "Password reset; 2FA; withdrawal restriction",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "rule_id": "OKXP-R-003",
+    "rule_type": "RECOVERY_RULE",
+    "platform_id": "okx",
+    "statement": "The cited reset page requires an 8–32 character password with lowercase, uppercase, number and symbol.",
+    "claim_refs": [
+      "OKXP-003"
+    ],
+    "status": "INELIGIBLE",
+    "engine_eligible": false,
+    "governance_tags": {
+      "scope": {
+        "geography": "United States",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "OKX US",
+        "product_scope": "Retail",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Web/App article version recorded in Source"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "OKXP-S06",
+          "source_url": "https://www.okx.com/en-us/help/how-do-i-change-my-login-password",
+          "source_title": "Change or reset login password",
+          "source_section": "Password reset; 2FA; withdrawal restriction",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "rule_id": "OKXP-R-004",
+    "rule_type": "RECOVERY_RULE",
+    "platform_id": "okx",
+    "statement": "Password change may require configured 2FA.",
+    "claim_refs": [
+      "OKXP-004"
+    ],
+    "status": "INELIGIBLE",
+    "engine_eligible": false,
+    "governance_tags": {
+      "scope": {
+        "geography": "United States",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "OKX US",
+        "product_scope": "Retail",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Web/App article version recorded in Source"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "OKXP-S06",
+          "source_url": "https://www.okx.com/en-us/help/how-do-i-change-my-login-password",
+          "source_title": "Change or reset login password",
+          "source_section": "Password reset; 2FA; withdrawal restriction",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "rule_id": "OKXP-R-005",
+    "rule_type": "RECOVERY_RULE",
+    "platform_id": "okx",
+    "statement": "Password change triggers a 24-hour withdrawal and P2P restriction in the cited scope.",
+    "claim_refs": [
+      "OKXP-005"
+    ],
+    "status": "AUDITED_CANDIDATE",
+    "engine_eligible": false,
+    "governance_tags": {
+      "scope": {
+        "geography": "United States",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "OKX US",
+        "product_scope": "Retail",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Web/App article version recorded in Source"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "OKXP-S06",
+          "source_url": "https://www.okx.com/en-us/help/how-do-i-change-my-login-password",
+          "source_title": "Change or reset login password",
+          "source_section": "Password reset; 2FA; withdrawal restriction",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "rule_id": "OKXP-R-006",
+    "rule_type": "RECOVERY_RULE",
+    "platform_id": "okx",
+    "statement": "An unavailable linked email can be reset through the official unavailable-factor flow.",
+    "claim_refs": [
+      "OKXP-006"
+    ],
+    "status": "INELIGIBLE",
+    "engine_eligible": false,
+    "governance_tags": {
+      "scope": {
+        "geography": "United States",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "OKX US",
+        "product_scope": "Retail",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Web/App article version recorded in Source"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "OKXP-S01",
+          "source_url": "https://www.okx.com/en-us/help/what-if-mobile-email-google-verification-cannot-be-used",
+          "source_title": "Reset unavailable verification factors",
+          "source_section": "Reset phone, email and authenticator; support fallback",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "rule_id": "OKXP-R-007",
+    "rule_type": "RECOVERY_RULE",
+    "platform_id": "okx",
+    "statement": "An unavailable linked phone can be reset through the official unavailable-factor flow.",
+    "claim_refs": [
+      "OKXP-007"
+    ],
+    "status": "INELIGIBLE",
+    "engine_eligible": false,
+    "governance_tags": {
+      "scope": {
+        "geography": "United States",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "OKX US",
+        "product_scope": "Retail",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Web/App article version recorded in Source"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "OKXP-S01",
+          "source_url": "https://www.okx.com/en-us/help/what-if-mobile-email-google-verification-cannot-be-used",
+          "source_title": "Reset unavailable verification factors",
+          "source_section": "Reset phone, email and authenticator; support fallback",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "rule_id": "OKXP-R-008",
+    "rule_type": "RECOVERY_RULE",
+    "platform_id": "okx",
+    "statement": "An unavailable authenticator can be reset through the official unavailable-factor flow.",
+    "claim_refs": [
+      "OKXP-008"
+    ],
+    "status": "INELIGIBLE",
+    "engine_eligible": false,
+    "governance_tags": {
+      "scope": {
+        "geography": "United States",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "OKX US",
+        "product_scope": "Retail",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Web/App article version recorded in Source"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "OKXP-S01",
+          "source_url": "https://www.okx.com/en-us/help/what-if-mobile-email-google-verification-cannot-be-used",
+          "source_title": "Reset unavailable verification factors",
+          "source_section": "Reset phone, email and authenticator; support fallback",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "rule_id": "OKXP-R-009",
+    "rule_type": "UPGRADE_RULE",
+    "platform_id": "okx",
+    "statement": "If self-service verification cannot be completed, the user must use official support.",
+    "claim_refs": [
+      "OKXP-009"
+    ],
+    "status": "INELIGIBLE",
+    "engine_eligible": false,
+    "governance_tags": {
+      "scope": {
+        "geography": "United States",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "OKX US",
+        "product_scope": "Retail",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Web/App article version recorded in Source"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "OKXP-S01",
+          "source_url": "https://www.okx.com/en-us/help/what-if-mobile-email-google-verification-cannot-be-used",
+          "source_title": "Reset unavailable verification factors",
+          "source_section": "Reset phone, email and authenticator; support fallback",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "rule_id": "OKXP-R-010",
+    "rule_type": "RECOVERY_RULE",
+    "platform_id": "okx",
+    "statement": "Linking an authenticator requires email and phone verification in the cited flow.",
+    "claim_refs": [
+      "OKXP-010"
+    ],
+    "status": "INELIGIBLE",
+    "engine_eligible": false,
+    "governance_tags": {
+      "scope": {
+        "geography": "United States",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "OKX US",
+        "product_scope": "Retail",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Web/App article version recorded in Source"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "OKXP-S04",
+          "source_url": "https://www.okx.com/en-us/help/how-do-i-link-an-authenticator-app",
+          "source_title": "Link an authenticator app",
+          "source_section": "Authenticator setup and change restriction",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "rule_id": "OKXP-R-011",
+    "rule_type": "RECOVERY_RULE",
+    "platform_id": "okx",
+    "statement": "The authenticator setup uses a current six-digit code to confirm linking.",
+    "claim_refs": [
+      "OKXP-011"
+    ],
+    "status": "INELIGIBLE",
+    "engine_eligible": false,
+    "governance_tags": {
+      "scope": {
+        "geography": "United States",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "OKX US",
+        "product_scope": "Retail",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Web/App article version recorded in Source"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "OKXP-S04",
+          "source_url": "https://www.okx.com/en-us/help/how-do-i-link-an-authenticator-app",
+          "source_title": "Link an authenticator app",
+          "source_section": "Authenticator setup and change restriction",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "rule_id": "OKXP-R-012",
+    "rule_type": "RECOVERY_RULE",
+    "platform_id": "okx",
+    "statement": "The authenticator setup key must be protected and must not be stored in CJAS.",
+    "claim_refs": [
+      "OKXP-012"
+    ],
+    "status": "AUDITED_CANDIDATE",
+    "engine_eligible": false,
+    "governance_tags": {
+      "scope": {
+        "geography": "United States",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "OKX US",
+        "product_scope": "Retail",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Web/App article version recorded in Source"
+      },
+      "source": {
+        "primary": {
+          "source_type": "CJAS_GUIDANCE",
+          "source_id": "OKXP-S04",
+          "source_url": "https://www.okx.com/en-us/help/how-do-i-link-an-authenticator-app",
+          "source_title": "Link an authenticator app",
+          "source_section": "Authenticator setup and change restriction",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "rule_id": "OKXP-R-013",
+    "rule_type": "RECOVERY_RULE",
+    "platform_id": "okx",
+    "statement": "Changing or resetting the authenticator disables withdrawal/P2P for 24 hours in the cited scope.",
+    "claim_refs": [
+      "OKXP-013"
+    ],
+    "status": "AUDITED_CANDIDATE",
+    "engine_eligible": false,
+    "governance_tags": {
+      "scope": {
+        "geography": "United States",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "OKX US",
+        "product_scope": "Retail",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Web/App article version recorded in Source"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "OKXP-S04",
+          "source_url": "https://www.okx.com/en-us/help/how-do-i-link-an-authenticator-app",
+          "source_title": "Link an authenticator app",
+          "source_section": "Authenticator setup and change restriction",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "rule_id": "OKXP-R-014",
+    "rule_type": "RECOVERY_RULE",
+    "platform_id": "okx",
+    "statement": "An OKX passkey supports password-free authentication using a device or security key.",
+    "claim_refs": [
+      "OKXP-014"
+    ],
+    "status": "INELIGIBLE",
+    "engine_eligible": false,
+    "governance_tags": {
+      "scope": {
+        "geography": "United States",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "OKX US",
+        "product_scope": "Retail",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Web/App article version recorded in Source"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "OKXP-S07",
+          "source_url": "https://www.okx.com/en-us/help/how-do-i-create-passkeys-app",
+          "source_title": "Create passkeys",
+          "source_section": "Passkey creation/removal/device change",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "rule_id": "OKXP-R-015",
+    "rule_type": "RECOVERY_RULE",
+    "platform_id": "okx",
+    "statement": "Removing a passkey requires full security verification in the cited flow.",
+    "claim_refs": [
+      "OKXP-015"
+    ],
+    "status": "INELIGIBLE",
+    "engine_eligible": false,
+    "governance_tags": {
+      "scope": {
+        "geography": "United States",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "OKX US",
+        "product_scope": "Retail",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Web/App article version recorded in Source"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "OKXP-S07",
+          "source_url": "https://www.okx.com/en-us/help/how-do-i-create-passkeys-app",
+          "source_title": "Create passkeys",
+          "source_section": "Passkey creation/removal/device change",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "rule_id": "OKXP-R-016",
+    "rule_type": "RECOVERY_RULE",
+    "platform_id": "okx",
+    "statement": "Changing phone or Apple ID may make an existing passkey unavailable.",
+    "claim_refs": [
+      "OKXP-016"
+    ],
+    "status": "INELIGIBLE",
+    "engine_eligible": false,
+    "governance_tags": {
+      "scope": {
+        "geography": "United States",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "OKX US",
+        "product_scope": "Retail",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Web/App article version recorded in Source"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "OKXP-S07",
+          "source_url": "https://www.okx.com/en-us/help/how-do-i-create-passkeys-app",
+          "source_title": "Create passkeys",
+          "source_section": "Passkey creation/removal/device change",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "rule_id": "OKXP-R-017",
+    "rule_type": "RECOVERY_RULE",
+    "platform_id": "okx",
+    "statement": "Removing a passkey without another passkey may trigger a 24-hour withdrawal/P2P restriction.",
+    "claim_refs": [
+      "OKXP-017"
+    ],
+    "status": "AUDITED_CANDIDATE",
+    "engine_eligible": false,
+    "governance_tags": {
+      "scope": {
+        "geography": "United States",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "OKX US",
+        "product_scope": "Retail",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Web/App article version recorded in Source"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "OKXP-S07",
+          "source_url": "https://www.okx.com/en-us/help/how-do-i-create-passkeys-app",
+          "source_title": "Create passkeys",
+          "source_section": "Passkey creation/removal/device change",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "rule_id": "OKXP-R-018",
+    "rule_type": "RECOVERY_RULE",
+    "platform_id": "okx",
+    "statement": "A new device can require authorization using bound one-time-password factors.",
+    "claim_refs": [
+      "OKXP-018"
+    ],
+    "status": "INELIGIBLE",
+    "engine_eligible": false,
+    "governance_tags": {
+      "scope": {
+        "geography": "United States",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "OKX US",
+        "product_scope": "Retail",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Web/App article version recorded in Source"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "OKXP-S08",
+          "source_url": "https://www.okx.com/en-us/help/how-do-i-authorize-a-new-device-when-i-log-in",
+          "source_title": "Authorize a new device",
+          "source_section": "New-device authorization",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "rule_id": "OKXP-R-019",
+    "rule_type": "RECOVERY_RULE",
+    "platform_id": "okx",
+    "statement": "Repeated SMS failure has an official troubleshooting and cooling path.",
+    "claim_refs": [
+      "OKXP-019"
+    ],
+    "status": "INELIGIBLE",
+    "engine_eligible": false,
+    "governance_tags": {
+      "scope": {
+        "geography": "United States",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "OKX US",
+        "product_scope": "Retail",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Web/App article version recorded in Source"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "OKXP-S09",
+          "source_url": "https://www.okx.com/en-us/help/i-have-not-received-the-sms-code",
+          "source_title": "Verification code troubleshooting",
+          "source_section": "SMS/email code troubleshooting and reset restriction",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "LOW",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "rule_id": "OKXP-R-020",
+    "rule_type": "RECOVERY_RULE",
+    "platform_id": "okx",
+    "statement": "Changing or unlinking the phone disables withdrawal/P2P for 24 hours in the cited scope.",
+    "claim_refs": [
+      "OKXP-020"
+    ],
+    "status": "AUDITED_CANDIDATE",
+    "engine_eligible": false,
+    "governance_tags": {
+      "scope": {
+        "geography": "United States",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "OKX US",
+        "product_scope": "Retail",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Web/App article version recorded in Source"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "OKXP-S09",
+          "source_url": "https://www.okx.com/en-us/help/i-have-not-received-the-sms-code",
+          "source_title": "Verification code troubleshooting",
+          "source_section": "SMS/email code troubleshooting and reset restriction",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "rule_id": "OKXP-R-021",
+    "rule_type": "WARNING_RULE",
+    "platform_id": "okx",
+    "statement": "OKX risk controls may partially or completely restrict account functions.",
+    "claim_refs": [
+      "OKXP-021"
+    ],
+    "status": "AUDITED_CANDIDATE",
+    "engine_eligible": false,
+    "governance_tags": {
+      "scope": {
+        "geography": "United States",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "OKX US",
+        "product_scope": "Retail",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Web/App article version recorded in Source"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "OKXP-S02",
+          "source_url": "https://www.okx.com/en-us/help/regarding-the-restriction-of-the-okx-account-of-the-okx-account",
+          "source_title": "Handle account restrictions",
+          "source_section": "Security changes; risk controls; 24/48-hour examples",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "rule_id": "OKXP-R-022",
+    "rule_type": "RECOVERY_RULE",
+    "platform_id": "okx",
+    "statement": "Available actions during a restriction depend on the specific account state.",
+    "claim_refs": [
+      "OKXP-022"
+    ],
+    "status": "AUDITED_CANDIDATE",
+    "engine_eligible": false,
+    "governance_tags": {
+      "scope": {
+        "geography": "United States",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "OKX US",
+        "product_scope": "Retail",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Web/App article version recorded in Source"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "OKXP-S02",
+          "source_url": "https://www.okx.com/en-us/help/regarding-the-restriction-of-the-okx-account-of-the-okx-account",
+          "source_title": "Handle account restrictions",
+          "source_section": "Security changes; risk controls; 24/48-hour examples",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "rule_id": "OKXP-R-023",
+    "rule_type": "WARNING_RULE",
+    "platform_id": "okx",
+    "statement": "A high-risk destination may trigger a temporary withdrawal restriction.",
+    "claim_refs": [
+      "OKXP-023"
+    ],
+    "status": "AUDITED_CANDIDATE",
+    "engine_eligible": false,
+    "governance_tags": {
+      "scope": {
+        "geography": "United States",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "OKX US",
+        "product_scope": "Retail",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Web/App article version recorded in Source"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "OKXP-S02",
+          "source_url": "https://www.okx.com/en-us/help/regarding-the-restriction-of-the-okx-account-of-the-okx-account",
+          "source_title": "Handle account restrictions",
+          "source_section": "Security changes; risk controls; 24/48-hour examples",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "rule_id": "OKXP-R-024",
+    "rule_type": "STOP_RULE",
+    "platform_id": "okx",
+    "statement": "A risk-control restriction cannot be treated as bypassable through successful login.",
+    "claim_refs": [
+      "OKXP-024"
+    ],
+    "status": "INELIGIBLE",
+    "engine_eligible": false,
+    "governance_tags": {
+      "scope": {
+        "geography": "United States",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "OKX US",
+        "product_scope": "Retail",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Web/App article version recorded in Source"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "OKXP-S02",
+          "source_url": "https://www.okx.com/en-us/help/regarding-the-restriction-of-the-okx-account-of-the-okx-account",
+          "source_title": "Handle account restrictions",
+          "source_section": "Security changes; risk controls; 24/48-hour examples",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "LOW",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "rule_id": "OKXP-R-025",
+    "rule_type": "TRANSFER_RULE",
+    "platform_id": "okx",
+    "statement": "Crypto withdrawal requires the security verification shown for the account.",
+    "claim_refs": [
+      "OKXP-025"
+    ],
+    "status": "INELIGIBLE",
+    "engine_eligible": false,
+    "governance_tags": {
+      "scope": {
+        "geography": "United States",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "OKX US",
+        "product_scope": "Retail / Spot",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Web/App article version recorded in Source"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "OKXP-S03",
+          "source_url": "https://www.okx.com/en-us/help/how-do-i-make-a-withdrawal-app",
+          "source_title": "Make a withdrawal",
+          "source_section": "Withdrawal factors; networks; whitelist; memo/tag; subaccounts",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "rule_id": "OKXP-R-026",
+    "rule_type": "TRANSFER_RULE",
+    "platform_id": "okx",
+    "statement": "A configured passkey may be used in withdrawal verification.",
+    "claim_refs": [
+      "OKXP-026"
+    ],
+    "status": "INELIGIBLE",
+    "engine_eligible": false,
+    "governance_tags": {
+      "scope": {
+        "geography": "United States",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "OKX US",
+        "product_scope": "Retail / Spot",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Web/App article version recorded in Source"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "OKXP-S03",
+          "source_url": "https://www.okx.com/en-us/help/how-do-i-make-a-withdrawal-app",
+          "source_title": "Make a withdrawal",
+          "source_section": "Withdrawal factors; networks; whitelist; memo/tag; subaccounts",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "rule_id": "OKXP-R-027",
+    "rule_type": "TRANSFER_RULE",
+    "platform_id": "okx",
+    "statement": "The cited page describes different factor combinations around a 10,000 USD 24-hour threshold.",
+    "claim_refs": [
+      "OKXP-027"
+    ],
+    "status": "AUDITED_CANDIDATE",
+    "engine_eligible": false,
+    "governance_tags": {
+      "scope": {
+        "geography": "United States",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "OKX US",
+        "product_scope": "Retail / Spot",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Web/App article version recorded in Source"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "OKXP-S03",
+          "source_url": "https://www.okx.com/en-us/help/how-do-i-make-a-withdrawal-app",
+          "source_title": "Make a withdrawal",
+          "source_section": "Withdrawal factors; networks; whitelist; memo/tag; subaccounts",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "rule_id": "OKXP-R-028",
+    "rule_type": "TRANSFER_RULE",
+    "platform_id": "okx",
+    "statement": "If three factors are configured and requested, the withdrawal flow requires the configured combination.",
+    "claim_refs": [
+      "OKXP-028"
+    ],
+    "status": "INELIGIBLE",
+    "engine_eligible": false,
+    "governance_tags": {
+      "scope": {
+        "geography": "United States",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "OKX US",
+        "product_scope": "Retail / Spot",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Web/App article version recorded in Source"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "OKXP-S03",
+          "source_url": "https://www.okx.com/en-us/help/how-do-i-make-a-withdrawal-app",
+          "source_title": "Make a withdrawal",
+          "source_section": "Withdrawal factors; networks; whitelist; memo/tag; subaccounts",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "rule_id": "OKXP-R-029",
+    "rule_type": "TRANSFER_RULE",
+    "platform_id": "okx",
+    "statement": "The destination network must match the selected OKX withdrawal network.",
+    "claim_refs": [
+      "OKXP-029"
+    ],
+    "status": "INELIGIBLE",
+    "engine_eligible": false,
+    "governance_tags": {
+      "scope": {
+        "geography": "United States",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "OKX US",
+        "product_scope": "Retail / Spot",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Web/App article version recorded in Source"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "OKXP-S03",
+          "source_url": "https://www.okx.com/en-us/help/how-do-i-make-a-withdrawal-app",
+          "source_title": "Make a withdrawal",
+          "source_section": "Withdrawal factors; networks; whitelist; memo/tag; subaccounts",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "rule_id": "OKXP-R-030",
+    "rule_type": "WARNING_RULE",
+    "platform_id": "okx",
+    "statement": "Assets that require a Memo or Tag can be lost if it is omitted.",
+    "claim_refs": [
+      "OKXP-030"
+    ],
+    "status": "AUDITED_CANDIDATE",
+    "engine_eligible": false,
+    "governance_tags": {
+      "scope": {
+        "geography": "United States",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "OKX US",
+        "product_scope": "Retail / Spot",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Web/App article version recorded in Source"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "OKXP-S03",
+          "source_url": "https://www.okx.com/en-us/help/how-do-i-make-a-withdrawal-app",
+          "source_title": "Make a withdrawal",
+          "source_section": "Withdrawal factors; networks; whitelist; memo/tag; subaccounts",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "rule_id": "OKXP-R-031",
+    "rule_type": "RECOVERY_RULE",
+    "platform_id": "okx",
+    "statement": "Whitelist mode permits withdrawals only to addresses in the Address Book.",
+    "claim_refs": [
+      "OKXP-031"
+    ],
+    "status": "INELIGIBLE",
+    "engine_eligible": false,
+    "governance_tags": {
+      "scope": {
+        "geography": "United States",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "OKX US",
+        "product_scope": "Retail / Spot",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Web/App article version recorded in Source"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "OKXP-S03",
+          "source_url": "https://www.okx.com/en-us/help/how-do-i-make-a-withdrawal-app",
+          "source_title": "Make a withdrawal",
+          "source_section": "Withdrawal factors; networks; whitelist; memo/tag; subaccounts",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "rule_id": "OKXP-R-032",
+    "rule_type": "RECOVERY_RULE",
+    "platform_id": "okx",
+    "statement": "Assets in a sub-account must be transferred to the main account before external withdrawal in the cited flow.",
+    "claim_refs": [
+      "OKXP-032"
+    ],
+    "status": "INELIGIBLE",
+    "engine_eligible": false,
+    "governance_tags": {
+      "scope": {
+        "geography": "United States",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "OKX US",
+        "product_scope": "Retail / Spot",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Web/App article version recorded in Source"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "OKXP-S03",
+          "source_url": "https://www.okx.com/en-us/help/how-do-i-make-a-withdrawal-app",
+          "source_title": "Make a withdrawal",
+          "source_section": "Withdrawal factors; networks; whitelist; memo/tag; subaccounts",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "rule_id": "OKXP-R-033",
+    "rule_type": "RECOVERY_RULE",
+    "platform_id": "okx",
+    "statement": "OKX exposes API management where unrecognized APIs can be deleted.",
+    "claim_refs": [
+      "OKXP-033"
+    ],
+    "status": "INELIGIBLE",
+    "engine_eligible": false,
+    "governance_tags": {
+      "scope": {
+        "geography": "United States",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "OKX US",
+        "product_scope": "Retail",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Web/App article version recorded in Source"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "OKXP-S05",
+          "source_url": "https://www.okx.com/en-us/help/how-do-i-secure-my-account-after-detecting-unusual-activity",
+          "source_title": "Secure account after unusual activity",
+          "source_section": "Password, API, devices, addresses, passkeys",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "rule_id": "OKXP-R-034",
+    "rule_type": "RECOVERY_RULE",
+    "platform_id": "okx",
+    "statement": "Device Management allows review and removal of unrecognized devices.",
+    "claim_refs": [
+      "OKXP-034"
+    ],
+    "status": "INELIGIBLE",
+    "engine_eligible": false,
+    "governance_tags": {
+      "scope": {
+        "geography": "United States",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "OKX US",
+        "product_scope": "Retail",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Web/App article version recorded in Source"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "OKXP-S05",
+          "source_url": "https://www.okx.com/en-us/help/how-do-i-secure-my-account-after-detecting-unusual-activity",
+          "source_title": "Secure account after unusual activity",
+          "source_section": "Password, API, devices, addresses, passkeys",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "rule_id": "OKXP-R-035",
+    "rule_type": "RECOVERY_RULE",
+    "platform_id": "okx",
+    "statement": "Address Book allows removal of unrecognized verified addresses.",
+    "claim_refs": [
+      "OKXP-035"
+    ],
+    "status": "INELIGIBLE",
+    "engine_eligible": false,
+    "governance_tags": {
+      "scope": {
+        "geography": "United States",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "OKX US",
+        "product_scope": "Retail",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Web/App article version recorded in Source"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "OKXP-S05",
+          "source_url": "https://www.okx.com/en-us/help/how-do-i-secure-my-account-after-detecting-unusual-activity",
+          "source_title": "Secure account after unusual activity",
+          "source_section": "Password, API, devices, addresses, passkeys",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "rule_id": "OKXP-R-036",
+    "rule_type": "RECOVERY_RULE",
+    "platform_id": "okx",
+    "statement": "Security Center allows review and reset of unrecognized passkeys.",
+    "claim_refs": [
+      "OKXP-036"
+    ],
+    "status": "INELIGIBLE",
+    "engine_eligible": false,
+    "governance_tags": {
+      "scope": {
+        "geography": "United States",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "OKX US",
+        "product_scope": "Retail",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Web/App article version recorded in Source"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "OKXP-S05",
+          "source_url": "https://www.okx.com/en-us/help/how-do-i-secure-my-account-after-detecting-unusual-activity",
+          "source_title": "Secure account after unusual activity",
+          "source_section": "Password, API, devices, addresses, passkeys",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "rule_id": "OKXP-R-037",
+    "rule_type": "RECOVERY_RULE",
+    "platform_id": "okx",
+    "statement": "Account recovery and security review should use a trusted malware-free device.",
+    "claim_refs": [
+      "OKXP-037"
+    ],
+    "status": "AUDITED_CANDIDATE",
+    "engine_eligible": false,
+    "governance_tags": {
+      "scope": {
+        "geography": "United States",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "OKX US",
+        "product_scope": "Retail",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Web/App article version recorded in Source"
+      },
+      "source": {
+        "primary": {
+          "source_type": "CJAS_GUIDANCE",
+          "source_id": "OKXP-S05",
+          "source_url": "https://www.okx.com/en-us/help/how-do-i-secure-my-account-after-detecting-unusual-activity",
+          "source_title": "Secure account after unusual activity",
+          "source_section": "Password, API, devices, addresses, passkeys",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "rule_id": "OKXP-R-038",
+    "rule_type": "TRANSFER_RULE",
+    "platform_id": "okx",
+    "statement": "Successful login does not prove that withdrawal is enabled.",
+    "claim_refs": [
+      "OKXP-038"
+    ],
+    "status": "AUDITED_CANDIDATE",
+    "engine_eligible": false,
+    "governance_tags": {
+      "scope": {
+        "geography": "United States",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "OKX US",
+        "product_scope": "Retail",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Web/App article version recorded in Source"
+      },
+      "source": {
+        "primary": {
+          "source_type": "CJAS_GUIDANCE",
+          "source_id": "OKXP-S02",
+          "source_url": "https://www.okx.com/en-us/help/regarding-the-restriction-of-the-okx-account-of-the-okx-account",
+          "source_title": "Handle account restrictions",
+          "source_section": "Security changes; risk controls; 24/48-hour examples",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "rule_id": "OKXP-R-039",
+    "rule_type": "RECOVERY_RULE",
+    "platform_id": "okx",
+    "statement": "Operational control requires sign-in, usable factors, unrestricted account state and a permitted withdrawal route.",
+    "claim_refs": [
+      "OKXP-039"
+    ],
+    "status": "AUDITED_CANDIDATE",
+    "engine_eligible": false,
+    "governance_tags": {
+      "scope": {
+        "geography": "United States",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "OKX US",
+        "product_scope": "Retail",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Web/App article version recorded in Source"
+      },
+      "source": {
+        "primary": {
+          "source_type": "CJAS_GUIDANCE",
+          "source_id": "OKXP-S02",
+          "source_url": "https://www.okx.com/en-us/help/regarding-the-restriction-of-the-okx-account-of-the-okx-account",
+          "source_title": "Handle account restrictions",
+          "source_section": "Security changes; risk controls; 24/48-hour examples",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "rule_id": "OKXP-R-040",
+    "rule_type": "TRANSFER_RULE",
+    "platform_id": "okx",
+    "statement": "CJAS requires a small test to the confirmed destination before a material owner exit.",
+    "claim_refs": [
+      "OKXP-040"
+    ],
+    "status": "INELIGIBLE",
+    "engine_eligible": false,
+    "governance_tags": {
+      "scope": {
+        "geography": "United States",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "OKX US",
+        "product_scope": "Retail / Spot",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Web/App article version recorded in Source"
+      },
+      "source": {
+        "primary": {
+          "source_type": "CJAS_GUIDANCE",
+          "source_id": "OKXP-S03",
+          "source_url": "https://www.okx.com/en-us/help/how-do-i-make-a-withdrawal-app",
+          "source_title": "Make a withdrawal",
+          "source_section": "Withdrawal factors; networks; whitelist; memo/tag; subaccounts",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "LOW",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "rule_id": "OKXP-R-041",
+    "rule_type": "TRANSFER_RULE",
+    "platform_id": "okx",
+    "statement": "CJAS requires transaction-hash and destination-receipt verification after the test.",
+    "claim_refs": [
+      "OKXP-041"
+    ],
+    "status": "INELIGIBLE",
+    "engine_eligible": false,
+    "governance_tags": {
+      "scope": {
+        "geography": "United States",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "OKX US",
+        "product_scope": "Retail / Spot",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Web/App article version recorded in Source"
+      },
+      "source": {
+        "primary": {
+          "source_type": "CJAS_GUIDANCE",
+          "source_id": "OKXP-S03",
+          "source_url": "https://www.okx.com/en-us/help/how-do-i-make-a-withdrawal-app",
+          "source_title": "Make a withdrawal",
+          "source_section": "Withdrawal factors; networks; whitelist; memo/tag; subaccounts",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "LOW",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "rule_id": "OKXP-R-042",
+    "rule_type": "TRANSFER_RULE",
+    "platform_id": "okx",
+    "statement": "CJAS recommends controlled batches after the test succeeds.",
+    "claim_refs": [
+      "OKXP-042"
+    ],
+    "status": "INELIGIBLE",
+    "engine_eligible": false,
+    "governance_tags": {
+      "scope": {
+        "geography": "United States",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "OKX US",
+        "product_scope": "Retail / Spot",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Web/App article version recorded in Source"
+      },
+      "source": {
+        "primary": {
+          "source_type": "CJAS_GUIDANCE",
+          "source_id": "OKXP-S03",
+          "source_url": "https://www.okx.com/en-us/help/how-do-i-make-a-withdrawal-app",
+          "source_title": "Make a withdrawal",
+          "source_section": "Withdrawal factors; networks; whitelist; memo/tag; subaccounts",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "LOW",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "rule_id": "OKXP-R-043",
+    "rule_type": "STOP_RULE",
+    "platform_id": "okx",
+    "statement": "An unexpected address-book entry or destination mismatch is a stop condition.",
+    "claim_refs": [
+      "OKXP-043"
+    ],
+    "status": "INELIGIBLE",
+    "engine_eligible": false,
+    "governance_tags": {
+      "scope": {
+        "geography": "United States",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "OKX US",
+        "product_scope": "Retail",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Web/App article version recorded in Source"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "OKXP-S05",
+          "source_url": "https://www.okx.com/en-us/help/how-do-i-secure-my-account-after-detecting-unusual-activity",
+          "source_title": "Secure account after unusual activity",
+          "source_section": "Password, API, devices, addresses, passkeys",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "LOW",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "rule_id": "OKXP-R-044",
+    "rule_type": "STOP_RULE",
+    "platform_id": "okx",
+    "statement": "Uncertain network or Memo/Tag requirements are stop conditions.",
+    "claim_refs": [
+      "OKXP-044"
+    ],
+    "status": "AUDITED_CANDIDATE",
+    "engine_eligible": false,
+    "governance_tags": {
+      "scope": {
+        "geography": "United States",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "OKX US",
+        "product_scope": "Retail / Spot",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Web/App article version recorded in Source"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "OKXP-S03",
+          "source_url": "https://www.okx.com/en-us/help/how-do-i-make-a-withdrawal-app",
+          "source_title": "Make a withdrawal",
+          "source_section": "Withdrawal factors; networks; whitelist; memo/tag; subaccounts",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "rule_id": "OKXP-R-045",
+    "rule_type": "STOP_RULE",
+    "platform_id": "okx",
+    "statement": "An active account restriction blocks Recovery Verified.",
+    "claim_refs": [
+      "OKXP-045"
+    ],
+    "status": "AUDITED_CANDIDATE",
+    "engine_eligible": false,
+    "governance_tags": {
+      "scope": {
+        "geography": "United States",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "OKX US",
+        "product_scope": "Retail",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Web/App article version recorded in Source"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "OKXP-S02",
+          "source_url": "https://www.okx.com/en-us/help/regarding-the-restriction-of-the-okx-account-of-the-okx-account",
+          "source_title": "Handle account restrictions",
+          "source_section": "Security changes; risk controls; 24/48-hour examples",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "rule_id": "OKXP-R-046",
+    "rule_type": "STOP_RULE",
+    "platform_id": "okx",
+    "statement": "Requests for passwords, OTPs or authenticator setup keys are stop conditions.",
+    "claim_refs": [
+      "OKXP-046"
+    ],
+    "status": "INELIGIBLE",
+    "engine_eligible": false,
+    "governance_tags": {
+      "scope": {
+        "geography": "United States",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "OKX US",
+        "product_scope": "Retail",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Web/App article version recorded in Source"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "OKXP-S04",
+          "source_url": "https://www.okx.com/en-us/help/how-do-i-link-an-authenticator-app",
+          "source_title": "Link an authenticator app",
+          "source_section": "Authenticator setup and change restriction",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "LOW",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "rule_id": "OKXP-R-047",
+    "rule_type": "RECOVERY_RULE",
+    "platform_id": "okx",
+    "statement": "Account-holder recovery does not authorize a third-party takeover.",
+    "claim_refs": [
+      "OKXP-047"
+    ],
+    "status": "INELIGIBLE",
+    "engine_eligible": false,
+    "governance_tags": {
+      "scope": {
+        "geography": "United States",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "OKX US",
+        "product_scope": "Retail",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Web/App article version recorded in Source"
+      },
+      "source": {
+        "primary": {
+          "source_type": "CJAS_GUIDANCE",
+          "source_id": "OKXP-S01",
+          "source_url": "https://www.okx.com/en-us/help/what-if-mobile-email-google-verification-cannot-be-used",
+          "source_title": "Reset unavailable verification factors",
+          "source_section": "Reset phone, email and authenticator; support fallback",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "LOW",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "rule_id": "OKXP-R-048",
+    "rule_type": "STOP_RULE",
+    "platform_id": "okx",
+    "statement": "Death, incapacity or disputed authority requires official/legal escalation.",
+    "claim_refs": [
+      "OKXP-048"
+    ],
+    "status": "INELIGIBLE",
+    "engine_eligible": false,
+    "governance_tags": {
+      "scope": {
+        "geography": "United States",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "OKX US",
+        "product_scope": "Retail",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Web/App article version recorded in Source"
+      },
+      "source": {
+        "primary": {
+          "source_type": "OFFICIAL",
+          "source_id": "OKXP-S01",
+          "source_url": "https://www.okx.com/en-us/help/what-if-mobile-email-google-verification-cannot-be-used",
+          "source_title": "Reset unavailable verification factors",
+          "source_section": "Reset phone, email and authenticator; support fallback",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "LOW",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "rule_id": "OKXP-R-049",
+    "rule_type": "RECOVERY_RULE",
+    "platform_id": "okx",
+    "statement": "A Succession Passport may record factor existence and recovery location, never factor values.",
+    "claim_refs": [
+      "OKXP-049"
+    ],
+    "status": "AUDITED_CANDIDATE",
+    "engine_eligible": false,
+    "governance_tags": {
+      "scope": {
+        "geography": "United States",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "OKX US",
+        "product_scope": "Retail",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Web/App article version recorded in Source"
+      },
+      "source": {
+        "primary": {
+          "source_type": "CJAS_GUIDANCE",
+          "source_id": "OKXP-S01",
+          "source_url": "https://www.okx.com/en-us/help/what-if-mobile-email-google-verification-cannot-be-used",
+          "source_title": "Reset unavailable verification factors",
+          "source_section": "Reset phone, email and authenticator; support fallback",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "MEDIUM",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  },
+  {
+    "rule_id": "OKXP-R-050",
+    "rule_type": "RECOVERY_RULE",
+    "platform_id": "okx",
+    "statement": "Recovery Verified requires successful access, factor checks, restriction checks, destination validation, small transfer and hash evidence.",
+    "claim_refs": [
+      "OKXP-050"
+    ],
+    "status": "INELIGIBLE",
+    "engine_eligible": false,
+    "governance_tags": {
+      "scope": {
+        "geography": "United States",
+        "legal_entity": "UNCONFIRMED_ENTITY",
+        "platform_variant": "OKX US",
+        "product_scope": "Retail / Spot",
+        "account_type": "Personal / Custodial",
+        "version_scope": "Web/App article version recorded in Source"
+      },
+      "source": {
+        "primary": {
+          "source_type": "CJAS_GUIDANCE",
+          "source_id": "OKXP-S03",
+          "source_url": "https://www.okx.com/en-us/help/how-do-i-make-a-withdrawal-app",
+          "source_title": "Make a withdrawal",
+          "source_section": "Withdrawal factors; networks; whitelist; memo/tag; subaccounts",
+          "source_checked_at": "2026-08-02"
+        },
+        "auxiliary": []
+      },
+      "confidence": "LOW",
+      "last_verified": {
+        "last_verified_at": "2026-08-02",
+        "verified_by": "Codex Research — independent evidence audit",
+        "verification_method": "OFFICIAL_RECHECK",
+        "review_due_at": "2026-11-02",
+        "stale_trigger": "Official page changes, disappears, conflicts, or review_due_at passes"
+      }
+    }
+  }
+]

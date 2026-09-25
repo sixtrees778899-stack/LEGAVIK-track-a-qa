@@ -1,0 +1,1148 @@
+{
+  "entry": "http://127.0.0.1:8080/web/v2/index.html",
+  "events": [
+    {
+      "event": "10_before_upload",
+      "state": {
+        "view_id": "locations",
+        "active_module_id": "locations",
+        "draft_revision": 11,
+        "accounts": [
+          {
+            "account_id": "account-5165fce7-e4e0-42a7-852d-3dbedff76211",
+            "label": "OKX · 主账户",
+            "condition_count": 2,
+            "has_instruction": false
+          },
+          {
+            "account_id": "account-f3963f44-27c9-4ce7-864b-ade382fbe699",
+            "label": "Binance · 澳洲账户",
+            "condition_count": 2,
+            "has_instruction": false
+          }
+        ],
+        "coverages": [
+          {
+            "account_id": "account-5165fce7-e4e0-42a7-852d-3dbedff76211",
+            "mode": "SUMMARY",
+            "covered_condition_ids": [
+              "email",
+              "authenticator"
+            ],
+            "has_text": true
+          },
+          {
+            "account_id": "account-f3963f44-27c9-4ce7-864b-ade382fbe699",
+            "mode": "SUMMARY",
+            "covered_condition_ids": [
+              "email",
+              "authenticator"
+            ],
+            "has_text": true
+          }
+        ],
+        "attachments": [],
+        "assistant_decision": "NOT_SET",
+        "has_personal_message": false
+      }
+    },
+    {
+      "event": "10_after_upload",
+      "state": {
+        "view_id": "locations",
+        "active_module_id": "locations",
+        "draft_revision": 13,
+        "accounts": [
+          {
+            "account_id": "account-5165fce7-e4e0-42a7-852d-3dbedff76211",
+            "label": "OKX · 主账户",
+            "condition_count": 2,
+            "has_instruction": false
+          },
+          {
+            "account_id": "account-f3963f44-27c9-4ce7-864b-ade382fbe699",
+            "label": "Binance · 澳洲账户",
+            "condition_count": 2,
+            "has_instruction": false
+          }
+        ],
+        "coverages": [
+          {
+            "account_id": "account-5165fce7-e4e0-42a7-852d-3dbedff76211",
+            "mode": "SUMMARY",
+            "covered_condition_ids": [
+              "email",
+              "authenticator"
+            ],
+            "has_text": true
+          },
+          {
+            "account_id": "account-f3963f44-27c9-4ce7-864b-ade382fbe699",
+            "mode": "SUMMARY",
+            "covered_condition_ids": [
+              "email",
+              "authenticator"
+            ],
+            "has_text": true
+          }
+        ],
+        "attachments": [
+          {
+            "attachment_id": "attachment-c0c1c185-7354-4e96-9fb2-68720bdf4af2",
+            "account_id": "account-5165fce7-e4e0-42a7-852d-3dbedff76211",
+            "module_id": "locations",
+            "purpose": "位置说明"
+          }
+        ],
+        "assistant_decision": "NOT_SET",
+        "has_personal_message": false
+      }
+    },
+    {
+      "event": "10_enter_module4",
+      "state": {
+        "view_id": "instructions",
+        "active_module_id": "instructions",
+        "draft_revision": 17,
+        "accounts": [
+          {
+            "account_id": "account-5165fce7-e4e0-42a7-852d-3dbedff76211",
+            "label": "OKX · 主账户",
+            "condition_count": 2,
+            "has_instruction": false
+          },
+          {
+            "account_id": "account-f3963f44-27c9-4ce7-864b-ade382fbe699",
+            "label": "Binance · 澳洲账户",
+            "condition_count": 2,
+            "has_instruction": false
+          }
+        ],
+        "coverages": [
+          {
+            "account_id": "account-5165fce7-e4e0-42a7-852d-3dbedff76211",
+            "mode": "SUMMARY",
+            "covered_condition_ids": [
+              "email",
+              "authenticator"
+            ],
+            "has_text": true
+          },
+          {
+            "account_id": "account-f3963f44-27c9-4ce7-864b-ade382fbe699",
+            "mode": "SUMMARY",
+            "covered_condition_ids": [
+              "email",
+              "authenticator"
+            ],
+            "has_text": true
+          }
+        ],
+        "attachments": [
+          {
+            "attachment_id": "attachment-c0c1c185-7354-4e96-9fb2-68720bdf4af2",
+            "account_id": "account-5165fce7-e4e0-42a7-852d-3dbedff76211",
+            "module_id": "locations",
+            "purpose": "位置说明"
+          }
+        ],
+        "assistant_decision": "NOT_SET",
+        "has_personal_message": false
+      }
+    },
+    {
+      "event": "11_center_1",
+      "state": {
+        "view_id": "attachments",
+        "active_module_id": "instructions",
+        "draft_revision": 20,
+        "accounts": [
+          {
+            "account_id": "account-5165fce7-e4e0-42a7-852d-3dbedff76211",
+            "label": "OKX · 主账户",
+            "condition_count": 2,
+            "has_instruction": true
+          },
+          {
+            "account_id": "account-f3963f44-27c9-4ce7-864b-ade382fbe699",
+            "label": "Binance · 澳洲账户",
+            "condition_count": 2,
+            "has_instruction": false
+          }
+        ],
+        "coverages": [
+          {
+            "account_id": "account-5165fce7-e4e0-42a7-852d-3dbedff76211",
+            "mode": "SUMMARY",
+            "covered_condition_ids": [
+              "email",
+              "authenticator"
+            ],
+            "has_text": true
+          },
+          {
+            "account_id": "account-f3963f44-27c9-4ce7-864b-ade382fbe699",
+            "mode": "SUMMARY",
+            "covered_condition_ids": [
+              "email",
+              "authenticator"
+            ],
+            "has_text": true
+          }
+        ],
+        "attachments": [
+          {
+            "attachment_id": "attachment-c0c1c185-7354-4e96-9fb2-68720bdf4af2",
+            "account_id": "account-5165fce7-e4e0-42a7-852d-3dbedff76211",
+            "module_id": "locations",
+            "purpose": "位置说明"
+          }
+        ],
+        "assistant_decision": "NOT_SET",
+        "has_personal_message": false
+      }
+    },
+    {
+      "event": "11_uploaded_1",
+      "state": {
+        "view_id": "attachments",
+        "active_module_id": "instructions",
+        "draft_revision": 22,
+        "accounts": [
+          {
+            "account_id": "account-5165fce7-e4e0-42a7-852d-3dbedff76211",
+            "label": "OKX · 主账户",
+            "condition_count": 2,
+            "has_instruction": true
+          },
+          {
+            "account_id": "account-f3963f44-27c9-4ce7-864b-ade382fbe699",
+            "label": "Binance · 澳洲账户",
+            "condition_count": 2,
+            "has_instruction": false
+          }
+        ],
+        "coverages": [
+          {
+            "account_id": "account-5165fce7-e4e0-42a7-852d-3dbedff76211",
+            "mode": "SUMMARY",
+            "covered_condition_ids": [
+              "email",
+              "authenticator"
+            ],
+            "has_text": true
+          },
+          {
+            "account_id": "account-f3963f44-27c9-4ce7-864b-ade382fbe699",
+            "mode": "SUMMARY",
+            "covered_condition_ids": [
+              "email",
+              "authenticator"
+            ],
+            "has_text": true
+          }
+        ],
+        "attachments": [
+          {
+            "attachment_id": "attachment-c0c1c185-7354-4e96-9fb2-68720bdf4af2",
+            "account_id": "account-5165fce7-e4e0-42a7-852d-3dbedff76211",
+            "module_id": "locations",
+            "purpose": "位置说明"
+          },
+          {
+            "attachment_id": "attachment-c7d3b6bf-3aa0-42c0-8dd1-26b8a3c2178e",
+            "account_id": "account-5165fce7-e4e0-42a7-852d-3dbedff76211",
+            "module_id": "instructions",
+            "purpose": "恢复与转移步骤"
+          }
+        ],
+        "assistant_decision": "NOT_SET",
+        "has_personal_message": false
+      }
+    },
+    {
+      "event": "11_center_2",
+      "state": {
+        "view_id": "attachments",
+        "active_module_id": "instructions",
+        "draft_revision": 26,
+        "accounts": [
+          {
+            "account_id": "account-5165fce7-e4e0-42a7-852d-3dbedff76211",
+            "label": "OKX · 主账户",
+            "condition_count": 2,
+            "has_instruction": true
+          },
+          {
+            "account_id": "account-f3963f44-27c9-4ce7-864b-ade382fbe699",
+            "label": "Binance · 澳洲账户",
+            "condition_count": 2,
+            "has_instruction": true
+          }
+        ],
+        "coverages": [
+          {
+            "account_id": "account-5165fce7-e4e0-42a7-852d-3dbedff76211",
+            "mode": "SUMMARY",
+            "covered_condition_ids": [
+              "email",
+              "authenticator"
+            ],
+            "has_text": true
+          },
+          {
+            "account_id": "account-f3963f44-27c9-4ce7-864b-ade382fbe699",
+            "mode": "SUMMARY",
+            "covered_condition_ids": [
+              "email",
+              "authenticator"
+            ],
+            "has_text": true
+          }
+        ],
+        "attachments": [
+          {
+            "attachment_id": "attachment-c0c1c185-7354-4e96-9fb2-68720bdf4af2",
+            "account_id": "account-5165fce7-e4e0-42a7-852d-3dbedff76211",
+            "module_id": "locations",
+            "purpose": "位置说明"
+          },
+          {
+            "attachment_id": "attachment-c7d3b6bf-3aa0-42c0-8dd1-26b8a3c2178e",
+            "account_id": "account-5165fce7-e4e0-42a7-852d-3dbedff76211",
+            "module_id": "instructions",
+            "purpose": "恢复与转移步骤"
+          }
+        ],
+        "assistant_decision": "NOT_SET",
+        "has_personal_message": false
+      }
+    },
+    {
+      "event": "11_uploaded_2",
+      "state": {
+        "view_id": "attachments",
+        "active_module_id": "instructions",
+        "draft_revision": 28,
+        "accounts": [
+          {
+            "account_id": "account-5165fce7-e4e0-42a7-852d-3dbedff76211",
+            "label": "OKX · 主账户",
+            "condition_count": 2,
+            "has_instruction": true
+          },
+          {
+            "account_id": "account-f3963f44-27c9-4ce7-864b-ade382fbe699",
+            "label": "Binance · 澳洲账户",
+            "condition_count": 2,
+            "has_instruction": true
+          }
+        ],
+        "coverages": [
+          {
+            "account_id": "account-5165fce7-e4e0-42a7-852d-3dbedff76211",
+            "mode": "SUMMARY",
+            "covered_condition_ids": [
+              "email",
+              "authenticator"
+            ],
+            "has_text": true
+          },
+          {
+            "account_id": "account-f3963f44-27c9-4ce7-864b-ade382fbe699",
+            "mode": "SUMMARY",
+            "covered_condition_ids": [
+              "email",
+              "authenticator"
+            ],
+            "has_text": true
+          }
+        ],
+        "attachments": [
+          {
+            "attachment_id": "attachment-c0c1c185-7354-4e96-9fb2-68720bdf4af2",
+            "account_id": "account-5165fce7-e4e0-42a7-852d-3dbedff76211",
+            "module_id": "locations",
+            "purpose": "位置说明"
+          },
+          {
+            "attachment_id": "attachment-c7d3b6bf-3aa0-42c0-8dd1-26b8a3c2178e",
+            "account_id": "account-5165fce7-e4e0-42a7-852d-3dbedff76211",
+            "module_id": "instructions",
+            "purpose": "恢复与转移步骤"
+          },
+          {
+            "attachment_id": "attachment-9a52f1c8-e8e6-46a1-ae9b-29b594da2c7a",
+            "account_id": "account-f3963f44-27c9-4ce7-864b-ade382fbe699",
+            "module_id": "instructions",
+            "purpose": "恢复与转移步骤"
+          }
+        ],
+        "assistant_decision": "NOT_SET",
+        "has_personal_message": false
+      }
+    },
+    {
+      "event": "11_return_module4",
+      "state": {
+        "view_id": "instructions",
+        "active_module_id": "instructions",
+        "draft_revision": 28,
+        "accounts": [
+          {
+            "account_id": "account-5165fce7-e4e0-42a7-852d-3dbedff76211",
+            "label": "OKX · 主账户",
+            "condition_count": 2,
+            "has_instruction": true
+          },
+          {
+            "account_id": "account-f3963f44-27c9-4ce7-864b-ade382fbe699",
+            "label": "Binance · 澳洲账户",
+            "condition_count": 2,
+            "has_instruction": true
+          }
+        ],
+        "coverages": [
+          {
+            "account_id": "account-5165fce7-e4e0-42a7-852d-3dbedff76211",
+            "mode": "SUMMARY",
+            "covered_condition_ids": [
+              "email",
+              "authenticator"
+            ],
+            "has_text": true
+          },
+          {
+            "account_id": "account-f3963f44-27c9-4ce7-864b-ade382fbe699",
+            "mode": "SUMMARY",
+            "covered_condition_ids": [
+              "email",
+              "authenticator"
+            ],
+            "has_text": true
+          }
+        ],
+        "attachments": [
+          {
+            "attachment_id": "attachment-c0c1c185-7354-4e96-9fb2-68720bdf4af2",
+            "account_id": "account-5165fce7-e4e0-42a7-852d-3dbedff76211",
+            "module_id": "locations",
+            "purpose": "位置说明"
+          },
+          {
+            "attachment_id": "attachment-c7d3b6bf-3aa0-42c0-8dd1-26b8a3c2178e",
+            "account_id": "account-5165fce7-e4e0-42a7-852d-3dbedff76211",
+            "module_id": "instructions",
+            "purpose": "恢复与转移步骤"
+          },
+          {
+            "attachment_id": "attachment-9a52f1c8-e8e6-46a1-ae9b-29b594da2c7a",
+            "account_id": "account-f3963f44-27c9-4ce7-864b-ade382fbe699",
+            "module_id": "instructions",
+            "purpose": "恢复与转移步骤"
+          }
+        ],
+        "assistant_decision": "NOT_SET",
+        "has_personal_message": false
+      }
+    },
+    {
+      "event": "11_enter_module5",
+      "state": {
+        "view_id": "assistants",
+        "active_module_id": "assistants",
+        "draft_revision": 32,
+        "accounts": [
+          {
+            "account_id": "account-5165fce7-e4e0-42a7-852d-3dbedff76211",
+            "label": "OKX · 主账户",
+            "condition_count": 2,
+            "has_instruction": true
+          },
+          {
+            "account_id": "account-f3963f44-27c9-4ce7-864b-ade382fbe699",
+            "label": "Binance · 澳洲账户",
+            "condition_count": 2,
+            "has_instruction": true
+          }
+        ],
+        "coverages": [
+          {
+            "account_id": "account-5165fce7-e4e0-42a7-852d-3dbedff76211",
+            "mode": "SUMMARY",
+            "covered_condition_ids": [
+              "email",
+              "authenticator"
+            ],
+            "has_text": true
+          },
+          {
+            "account_id": "account-f3963f44-27c9-4ce7-864b-ade382fbe699",
+            "mode": "SUMMARY",
+            "covered_condition_ids": [
+              "email",
+              "authenticator"
+            ],
+            "has_text": true
+          }
+        ],
+        "attachments": [
+          {
+            "attachment_id": "attachment-c0c1c185-7354-4e96-9fb2-68720bdf4af2",
+            "account_id": "account-5165fce7-e4e0-42a7-852d-3dbedff76211",
+            "module_id": "locations",
+            "purpose": "位置说明"
+          },
+          {
+            "attachment_id": "attachment-c7d3b6bf-3aa0-42c0-8dd1-26b8a3c2178e",
+            "account_id": "account-5165fce7-e4e0-42a7-852d-3dbedff76211",
+            "module_id": "instructions",
+            "purpose": "恢复与转移步骤"
+          },
+          {
+            "attachment_id": "attachment-9a52f1c8-e8e6-46a1-ae9b-29b594da2c7a",
+            "account_id": "account-f3963f44-27c9-4ce7-864b-ade382fbe699",
+            "module_id": "instructions",
+            "purpose": "恢复与转移步骤"
+          }
+        ],
+        "assistant_decision": "NOT_SET",
+        "has_personal_message": false
+      }
+    },
+    {
+      "event": "12_module5_uploaded",
+      "state": {
+        "view_id": "attachments",
+        "active_module_id": "assistants",
+        "draft_revision": 34,
+        "accounts": [
+          {
+            "account_id": "account-5165fce7-e4e0-42a7-852d-3dbedff76211",
+            "label": "OKX · 主账户",
+            "condition_count": 2,
+            "has_instruction": true
+          },
+          {
+            "account_id": "account-f3963f44-27c9-4ce7-864b-ade382fbe699",
+            "label": "Binance · 澳洲账户",
+            "condition_count": 2,
+            "has_instruction": true
+          }
+        ],
+        "coverages": [
+          {
+            "account_id": "account-5165fce7-e4e0-42a7-852d-3dbedff76211",
+            "mode": "SUMMARY",
+            "covered_condition_ids": [
+              "email",
+              "authenticator"
+            ],
+            "has_text": true
+          },
+          {
+            "account_id": "account-f3963f44-27c9-4ce7-864b-ade382fbe699",
+            "mode": "SUMMARY",
+            "covered_condition_ids": [
+              "email",
+              "authenticator"
+            ],
+            "has_text": true
+          }
+        ],
+        "attachments": [
+          {
+            "attachment_id": "attachment-c0c1c185-7354-4e96-9fb2-68720bdf4af2",
+            "account_id": "account-5165fce7-e4e0-42a7-852d-3dbedff76211",
+            "module_id": "locations",
+            "purpose": "位置说明"
+          },
+          {
+            "attachment_id": "attachment-c7d3b6bf-3aa0-42c0-8dd1-26b8a3c2178e",
+            "account_id": "account-5165fce7-e4e0-42a7-852d-3dbedff76211",
+            "module_id": "instructions",
+            "purpose": "恢复与转移步骤"
+          },
+          {
+            "attachment_id": "attachment-9a52f1c8-e8e6-46a1-ae9b-29b594da2c7a",
+            "account_id": "account-f3963f44-27c9-4ce7-864b-ade382fbe699",
+            "module_id": "instructions",
+            "purpose": "恢复与转移步骤"
+          },
+          {
+            "attachment_id": "attachment-fbd14eee-2424-4240-8ab9-4a1443908721",
+            "account_id": "account-5165fce7-e4e0-42a7-852d-3dbedff76211",
+            "module_id": "assistants",
+            "purpose": "协助人资料"
+          }
+        ],
+        "assistant_decision": "NOT_NEEDED",
+        "has_personal_message": false
+      }
+    },
+    {
+      "event": "12_enter_module6",
+      "state": {
+        "view_id": "message",
+        "active_module_id": "message",
+        "draft_revision": 34,
+        "accounts": [
+          {
+            "account_id": "account-5165fce7-e4e0-42a7-852d-3dbedff76211",
+            "label": "OKX · 主账户",
+            "condition_count": 2,
+            "has_instruction": true
+          },
+          {
+            "account_id": "account-f3963f44-27c9-4ce7-864b-ade382fbe699",
+            "label": "Binance · 澳洲账户",
+            "condition_count": 2,
+            "has_instruction": true
+          }
+        ],
+        "coverages": [
+          {
+            "account_id": "account-5165fce7-e4e0-42a7-852d-3dbedff76211",
+            "mode": "SUMMARY",
+            "covered_condition_ids": [
+              "email",
+              "authenticator"
+            ],
+            "has_text": true
+          },
+          {
+            "account_id": "account-f3963f44-27c9-4ce7-864b-ade382fbe699",
+            "mode": "SUMMARY",
+            "covered_condition_ids": [
+              "email",
+              "authenticator"
+            ],
+            "has_text": true
+          }
+        ],
+        "attachments": [
+          {
+            "attachment_id": "attachment-c0c1c185-7354-4e96-9fb2-68720bdf4af2",
+            "account_id": "account-5165fce7-e4e0-42a7-852d-3dbedff76211",
+            "module_id": "locations",
+            "purpose": "位置说明"
+          },
+          {
+            "attachment_id": "attachment-c7d3b6bf-3aa0-42c0-8dd1-26b8a3c2178e",
+            "account_id": "account-5165fce7-e4e0-42a7-852d-3dbedff76211",
+            "module_id": "instructions",
+            "purpose": "恢复与转移步骤"
+          },
+          {
+            "attachment_id": "attachment-9a52f1c8-e8e6-46a1-ae9b-29b594da2c7a",
+            "account_id": "account-f3963f44-27c9-4ce7-864b-ade382fbe699",
+            "module_id": "instructions",
+            "purpose": "恢复与转移步骤"
+          },
+          {
+            "attachment_id": "attachment-fbd14eee-2424-4240-8ab9-4a1443908721",
+            "account_id": "account-5165fce7-e4e0-42a7-852d-3dbedff76211",
+            "module_id": "assistants",
+            "purpose": "协助人资料"
+          }
+        ],
+        "assistant_decision": "NOT_NEEDED",
+        "has_personal_message": false
+      }
+    },
+    {
+      "event": "12_module6_uploaded",
+      "state": {
+        "view_id": "attachments",
+        "active_module_id": "message",
+        "draft_revision": 37,
+        "accounts": [
+          {
+            "account_id": "account-5165fce7-e4e0-42a7-852d-3dbedff76211",
+            "label": "OKX · 主账户",
+            "condition_count": 2,
+            "has_instruction": true
+          },
+          {
+            "account_id": "account-f3963f44-27c9-4ce7-864b-ade382fbe699",
+            "label": "Binance · 澳洲账户",
+            "condition_count": 2,
+            "has_instruction": true
+          }
+        ],
+        "coverages": [
+          {
+            "account_id": "account-5165fce7-e4e0-42a7-852d-3dbedff76211",
+            "mode": "SUMMARY",
+            "covered_condition_ids": [
+              "email",
+              "authenticator"
+            ],
+            "has_text": true
+          },
+          {
+            "account_id": "account-f3963f44-27c9-4ce7-864b-ade382fbe699",
+            "mode": "SUMMARY",
+            "covered_condition_ids": [
+              "email",
+              "authenticator"
+            ],
+            "has_text": true
+          }
+        ],
+        "attachments": [
+          {
+            "attachment_id": "attachment-c0c1c185-7354-4e96-9fb2-68720bdf4af2",
+            "account_id": "account-5165fce7-e4e0-42a7-852d-3dbedff76211",
+            "module_id": "locations",
+            "purpose": "位置说明"
+          },
+          {
+            "attachment_id": "attachment-c7d3b6bf-3aa0-42c0-8dd1-26b8a3c2178e",
+            "account_id": "account-5165fce7-e4e0-42a7-852d-3dbedff76211",
+            "module_id": "instructions",
+            "purpose": "恢复与转移步骤"
+          },
+          {
+            "attachment_id": "attachment-9a52f1c8-e8e6-46a1-ae9b-29b594da2c7a",
+            "account_id": "account-f3963f44-27c9-4ce7-864b-ade382fbe699",
+            "module_id": "instructions",
+            "purpose": "恢复与转移步骤"
+          },
+          {
+            "attachment_id": "attachment-fbd14eee-2424-4240-8ab9-4a1443908721",
+            "account_id": "account-5165fce7-e4e0-42a7-852d-3dbedff76211",
+            "module_id": "assistants",
+            "purpose": "协助人资料"
+          },
+          {
+            "attachment_id": "attachment-8ad1c348-6288-4928-a650-3681baa91e16",
+            "account_id": "account-5165fce7-e4e0-42a7-852d-3dbedff76211",
+            "module_id": "message",
+            "purpose": "文字嘱托"
+          }
+        ],
+        "assistant_decision": "NOT_NEEDED",
+        "has_personal_message": true
+      }
+    },
+    {
+      "event": "12_review",
+      "state": {
+        "view_id": "review",
+        "active_module_id": "message",
+        "draft_revision": 38,
+        "accounts": [
+          {
+            "account_id": "account-5165fce7-e4e0-42a7-852d-3dbedff76211",
+            "label": "OKX · 主账户",
+            "condition_count": 2,
+            "has_instruction": true
+          },
+          {
+            "account_id": "account-f3963f44-27c9-4ce7-864b-ade382fbe699",
+            "label": "Binance · 澳洲账户",
+            "condition_count": 2,
+            "has_instruction": true
+          }
+        ],
+        "coverages": [
+          {
+            "account_id": "account-5165fce7-e4e0-42a7-852d-3dbedff76211",
+            "mode": "SUMMARY",
+            "covered_condition_ids": [
+              "email",
+              "authenticator"
+            ],
+            "has_text": true
+          },
+          {
+            "account_id": "account-f3963f44-27c9-4ce7-864b-ade382fbe699",
+            "mode": "SUMMARY",
+            "covered_condition_ids": [
+              "email",
+              "authenticator"
+            ],
+            "has_text": true
+          }
+        ],
+        "attachments": [
+          {
+            "attachment_id": "attachment-c0c1c185-7354-4e96-9fb2-68720bdf4af2",
+            "account_id": "account-5165fce7-e4e0-42a7-852d-3dbedff76211",
+            "module_id": "locations",
+            "purpose": "位置说明"
+          },
+          {
+            "attachment_id": "attachment-c7d3b6bf-3aa0-42c0-8dd1-26b8a3c2178e",
+            "account_id": "account-5165fce7-e4e0-42a7-852d-3dbedff76211",
+            "module_id": "instructions",
+            "purpose": "恢复与转移步骤"
+          },
+          {
+            "attachment_id": "attachment-9a52f1c8-e8e6-46a1-ae9b-29b594da2c7a",
+            "account_id": "account-f3963f44-27c9-4ce7-864b-ade382fbe699",
+            "module_id": "instructions",
+            "purpose": "恢复与转移步骤"
+          },
+          {
+            "attachment_id": "attachment-fbd14eee-2424-4240-8ab9-4a1443908721",
+            "account_id": "account-5165fce7-e4e0-42a7-852d-3dbedff76211",
+            "module_id": "assistants",
+            "purpose": "协助人资料"
+          },
+          {
+            "attachment_id": "attachment-8ad1c348-6288-4928-a650-3681baa91e16",
+            "account_id": "account-5165fce7-e4e0-42a7-852d-3dbedff76211",
+            "module_id": "message",
+            "purpose": "文字嘱托"
+          }
+        ],
+        "assistant_decision": "NOT_NEEDED",
+        "has_personal_message": true
+      }
+    }
+  ],
+  "console": [],
+  "return_checks": [
+    {
+      "module_id": "locations",
+      "state": {
+        "view_id": "locations",
+        "active_module_id": "locations",
+        "draft_revision": 38,
+        "accounts": [
+          {
+            "account_id": "account-5165fce7-e4e0-42a7-852d-3dbedff76211",
+            "label": "OKX · 主账户",
+            "condition_count": 2,
+            "has_instruction": true
+          },
+          {
+            "account_id": "account-f3963f44-27c9-4ce7-864b-ade382fbe699",
+            "label": "Binance · 澳洲账户",
+            "condition_count": 2,
+            "has_instruction": true
+          }
+        ],
+        "coverages": [
+          {
+            "account_id": "account-5165fce7-e4e0-42a7-852d-3dbedff76211",
+            "mode": "SUMMARY",
+            "covered_condition_ids": [
+              "email",
+              "authenticator"
+            ],
+            "has_text": true
+          },
+          {
+            "account_id": "account-f3963f44-27c9-4ce7-864b-ade382fbe699",
+            "mode": "SUMMARY",
+            "covered_condition_ids": [
+              "email",
+              "authenticator"
+            ],
+            "has_text": true
+          }
+        ],
+        "attachments": [
+          {
+            "attachment_id": "attachment-c0c1c185-7354-4e96-9fb2-68720bdf4af2",
+            "account_id": "account-5165fce7-e4e0-42a7-852d-3dbedff76211",
+            "module_id": "locations",
+            "purpose": "位置说明"
+          },
+          {
+            "attachment_id": "attachment-c7d3b6bf-3aa0-42c0-8dd1-26b8a3c2178e",
+            "account_id": "account-5165fce7-e4e0-42a7-852d-3dbedff76211",
+            "module_id": "instructions",
+            "purpose": "恢复与转移步骤"
+          },
+          {
+            "attachment_id": "attachment-9a52f1c8-e8e6-46a1-ae9b-29b594da2c7a",
+            "account_id": "account-f3963f44-27c9-4ce7-864b-ade382fbe699",
+            "module_id": "instructions",
+            "purpose": "恢复与转移步骤"
+          },
+          {
+            "attachment_id": "attachment-fbd14eee-2424-4240-8ab9-4a1443908721",
+            "account_id": "account-5165fce7-e4e0-42a7-852d-3dbedff76211",
+            "module_id": "assistants",
+            "purpose": "协助人资料"
+          },
+          {
+            "attachment_id": "attachment-8ad1c348-6288-4928-a650-3681baa91e16",
+            "account_id": "account-5165fce7-e4e0-42a7-852d-3dbedff76211",
+            "module_id": "message",
+            "purpose": "文字嘱托"
+          }
+        ],
+        "assistant_decision": "NOT_NEEDED",
+        "has_personal_message": true
+      },
+      "visible": {
+        "fileNames": [
+          "location-original.txt"
+        ],
+        "heading": "位置与查找",
+        "textareas": [
+          "汇总位置说明保存在家庭保险柜",
+          "汇总位置说明保存在家庭保险柜"
+        ]
+      }
+    },
+    {
+      "module_id": "instructions",
+      "state": {
+        "view_id": "instructions",
+        "active_module_id": "instructions",
+        "draft_revision": 38,
+        "accounts": [
+          {
+            "account_id": "account-5165fce7-e4e0-42a7-852d-3dbedff76211",
+            "label": "OKX · 主账户",
+            "condition_count": 2,
+            "has_instruction": true
+          },
+          {
+            "account_id": "account-f3963f44-27c9-4ce7-864b-ade382fbe699",
+            "label": "Binance · 澳洲账户",
+            "condition_count": 2,
+            "has_instruction": true
+          }
+        ],
+        "coverages": [
+          {
+            "account_id": "account-5165fce7-e4e0-42a7-852d-3dbedff76211",
+            "mode": "SUMMARY",
+            "covered_condition_ids": [
+              "email",
+              "authenticator"
+            ],
+            "has_text": true
+          },
+          {
+            "account_id": "account-f3963f44-27c9-4ce7-864b-ade382fbe699",
+            "mode": "SUMMARY",
+            "covered_condition_ids": [
+              "email",
+              "authenticator"
+            ],
+            "has_text": true
+          }
+        ],
+        "attachments": [
+          {
+            "attachment_id": "attachment-c0c1c185-7354-4e96-9fb2-68720bdf4af2",
+            "account_id": "account-5165fce7-e4e0-42a7-852d-3dbedff76211",
+            "module_id": "locations",
+            "purpose": "位置说明"
+          },
+          {
+            "attachment_id": "attachment-c7d3b6bf-3aa0-42c0-8dd1-26b8a3c2178e",
+            "account_id": "account-5165fce7-e4e0-42a7-852d-3dbedff76211",
+            "module_id": "instructions",
+            "purpose": "恢复与转移步骤"
+          },
+          {
+            "attachment_id": "attachment-9a52f1c8-e8e6-46a1-ae9b-29b594da2c7a",
+            "account_id": "account-f3963f44-27c9-4ce7-864b-ade382fbe699",
+            "module_id": "instructions",
+            "purpose": "恢复与转移步骤"
+          },
+          {
+            "attachment_id": "attachment-fbd14eee-2424-4240-8ab9-4a1443908721",
+            "account_id": "account-5165fce7-e4e0-42a7-852d-3dbedff76211",
+            "module_id": "assistants",
+            "purpose": "协助人资料"
+          },
+          {
+            "attachment_id": "attachment-8ad1c348-6288-4928-a650-3681baa91e16",
+            "account_id": "account-5165fce7-e4e0-42a7-852d-3dbedff76211",
+            "module_id": "message",
+            "purpose": "文字嘱托"
+          }
+        ],
+        "assistant_decision": "NOT_NEEDED",
+        "has_personal_message": true
+      },
+      "visible": {
+        "fileNames": [
+          "location-original.txt",
+          "location-original.txt"
+        ],
+        "heading": "恢复与转移步骤",
+        "textareas": [
+          "账户1：从官方入口恢复，核对地址后先小额测试。",
+          "",
+          "账户2：从官方入口恢复，核对地址后先小额测试。",
+          ""
+        ]
+      }
+    },
+    {
+      "module_id": "assistants",
+      "state": {
+        "view_id": "assistants",
+        "active_module_id": "assistants",
+        "draft_revision": 38,
+        "accounts": [
+          {
+            "account_id": "account-5165fce7-e4e0-42a7-852d-3dbedff76211",
+            "label": "OKX · 主账户",
+            "condition_count": 2,
+            "has_instruction": true
+          },
+          {
+            "account_id": "account-f3963f44-27c9-4ce7-864b-ade382fbe699",
+            "label": "Binance · 澳洲账户",
+            "condition_count": 2,
+            "has_instruction": true
+          }
+        ],
+        "coverages": [
+          {
+            "account_id": "account-5165fce7-e4e0-42a7-852d-3dbedff76211",
+            "mode": "SUMMARY",
+            "covered_condition_ids": [
+              "email",
+              "authenticator"
+            ],
+            "has_text": true
+          },
+          {
+            "account_id": "account-f3963f44-27c9-4ce7-864b-ade382fbe699",
+            "mode": "SUMMARY",
+            "covered_condition_ids": [
+              "email",
+              "authenticator"
+            ],
+            "has_text": true
+          }
+        ],
+        "attachments": [
+          {
+            "attachment_id": "attachment-c0c1c185-7354-4e96-9fb2-68720bdf4af2",
+            "account_id": "account-5165fce7-e4e0-42a7-852d-3dbedff76211",
+            "module_id": "locations",
+            "purpose": "位置说明"
+          },
+          {
+            "attachment_id": "attachment-c7d3b6bf-3aa0-42c0-8dd1-26b8a3c2178e",
+            "account_id": "account-5165fce7-e4e0-42a7-852d-3dbedff76211",
+            "module_id": "instructions",
+            "purpose": "恢复与转移步骤"
+          },
+          {
+            "attachment_id": "attachment-9a52f1c8-e8e6-46a1-ae9b-29b594da2c7a",
+            "account_id": "account-f3963f44-27c9-4ce7-864b-ade382fbe699",
+            "module_id": "instructions",
+            "purpose": "恢复与转移步骤"
+          },
+          {
+            "attachment_id": "attachment-fbd14eee-2424-4240-8ab9-4a1443908721",
+            "account_id": "account-5165fce7-e4e0-42a7-852d-3dbedff76211",
+            "module_id": "assistants",
+            "purpose": "协助人资料"
+          },
+          {
+            "attachment_id": "attachment-8ad1c348-6288-4928-a650-3681baa91e16",
+            "account_id": "account-5165fce7-e4e0-42a7-852d-3dbedff76211",
+            "module_id": "message",
+            "purpose": "文字嘱托"
+          }
+        ],
+        "assistant_decision": "NOT_NEEDED",
+        "has_personal_message": true
+      },
+      "visible": {
+        "fileNames": [],
+        "heading": "协助人",
+        "textareas": []
+      }
+    },
+    {
+      "module_id": "message",
+      "state": {
+        "view_id": "message",
+        "active_module_id": "message",
+        "draft_revision": 38,
+        "accounts": [
+          {
+            "account_id": "account-5165fce7-e4e0-42a7-852d-3dbedff76211",
+            "label": "OKX · 主账户",
+            "condition_count": 2,
+            "has_instruction": true
+          },
+          {
+            "account_id": "account-f3963f44-27c9-4ce7-864b-ade382fbe699",
+            "label": "Binance · 澳洲账户",
+            "condition_count": 2,
+            "has_instruction": true
+          }
+        ],
+        "coverages": [
+          {
+            "account_id": "account-5165fce7-e4e0-42a7-852d-3dbedff76211",
+            "mode": "SUMMARY",
+            "covered_condition_ids": [
+              "email",
+              "authenticator"
+            ],
+            "has_text": true
+          },
+          {
+            "account_id": "account-f3963f44-27c9-4ce7-864b-ade382fbe699",
+            "mode": "SUMMARY",
+            "covered_condition_ids": [
+              "email",
+              "authenticator"
+            ],
+            "has_text": true
+          }
+        ],
+        "attachments": [
+          {
+            "attachment_id": "attachment-c0c1c185-7354-4e96-9fb2-68720bdf4af2",
+            "account_id": "account-5165fce7-e4e0-42a7-852d-3dbedff76211",
+            "module_id": "locations",
+            "purpose": "位置说明"
+          },
+          {
+            "attachment_id": "attachment-c7d3b6bf-3aa0-42c0-8dd1-26b8a3c2178e",
+            "account_id": "account-5165fce7-e4e0-42a7-852d-3dbedff76211",
+            "module_id": "instructions",
+            "purpose": "恢复与转移步骤"
+          },
+          {
+            "attachment_id": "attachment-9a52f1c8-e8e6-46a1-ae9b-29b594da2c7a",
+            "account_id": "account-f3963f44-27c9-4ce7-864b-ade382fbe699",
+            "module_id": "instructions",
+            "purpose": "恢复与转移步骤"
+          },
+          {
+            "attachment_id": "attachment-fbd14eee-2424-4240-8ab9-4a1443908721",
+            "account_id": "account-5165fce7-e4e0-42a7-852d-3dbedff76211",
+            "module_id": "assistants",
+            "purpose": "协助人资料"
+          },
+          {
+            "attachment_id": "attachment-8ad1c348-6288-4928-a650-3681baa91e16",
+            "account_id": "account-5165fce7-e4e0-42a7-852d-3dbedff76211",
+            "module_id": "message",
+            "purpose": "文字嘱托"
+          }
+        ],
+        "assistant_decision": "NOT_NEEDED",
+        "has_personal_message": true
+      },
+      "visible": {
+        "fileNames": [],
+        "heading": "给未来恢复人的嘱托",
+        "textareas": [
+          "请先核对账户和公开地址，再按步骤操作。"
+        ]
+      }
+    }
+  ]
+}
