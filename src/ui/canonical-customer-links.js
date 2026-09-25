@@ -1,6 +1,6 @@
 export const APPROVED_TEST_ORIGIN='https://sixtrees778899-stack.github.io';
 export const APPROVED_TEST_BASE='/LEGAVIK-track-a-qa';
-export const CURRENT_TEST_RELEASE='legavik-mainline-load-stability-20260925-1';
+export const CURRENT_TEST_RELEASE='legavik-mainline-two-blocker-20260925-1';
 export const CURRENT_DEPLOYMENT_ID=CURRENT_TEST_RELEASE;
 
 const ROUTES=Object.freeze({

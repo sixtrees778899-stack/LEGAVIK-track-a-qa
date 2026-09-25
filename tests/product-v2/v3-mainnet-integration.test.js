@@ -100,8 +100,10 @@ test('V3 customer flow uses one Archive, isolates internal controls and binds re
   assert.match(source,/customer_active_wait_ms/);
   assert.match(source,/mainnet_final_verify_ms/);
   assert.match(source,/background_verification:'PASS'/);
-  const broadcastBody=source.slice(source.indexOf('async function broadcastV3Mainnet'),source.indexOf('function decorateCustomerUI'));
-  assert.ok(broadcastBody.indexOf('verifyMainnetArchive')<broadcastBody.indexOf("status:'READY_FOR_INDEPENDENT_RECOVERY'"));
+  const verifyBody=source.slice(source.indexOf('async function completeVerifiedMainnet'),source.indexOf('async function resumeV3Mainnet'));
+  assert.ok(verifyBody.indexOf('verifyMainnetArchive')<verifyBody.indexOf("status:'READY_FOR_INDEPENDENT_RECOVERY'"));
+  const broadcastBody=source.slice(source.indexOf('async function broadcastV3Mainnet'),source.indexOf('function applyRestoredOperation'));
+  assert.match(broadcastBody,/await completeVerifiedMainnet\(customerWaitStarted\)/);
   assert.match(source,/addEventListener\('beforeunload'/);
   assert.match(source,/back\.disabled=publishSafetyLocked/);
 });
