@@ -3,12 +3,14 @@ import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
 const appSource=readFileSync(new URL('../../web/v2/v2-app.js',import.meta.url),'utf8');
 
-test('Module 3 module-summary remains exempt from account recovery-condition coverage',()=>{
-  assert.match(appSource,/scope!==MODULE_SUMMARY_SCOPE&&!document\.querySelector\('#new-file-conditions input:checked'\)/);
+test('Module 3 汇总位置说明 is classified as module-summary even when Ledger is selected',()=>{
+  assert.match(appSource,/purpose==='汇总位置说明'/);
+  assert.match(appSource,/moduleSummary=isLocationModuleSummary\(scope,context\?\.module_id,purpose\?\.value\)/);
+  assert.match(appSource,/moduleSummary=isLocationModuleSummary\(selectedScope,moduleId,purpose\)/);
 });
 
 test('Module 3 account attachment missing coverage is rejected with an actionable message',()=>{
-  assert.match(appSource,/module_id==='locations'&&scope!==MODULE_SUMMARY_SCOPE&&!document\.querySelector\('#new-file-conditions input:checked'\)/);
+  assert.match(appSource,/context\?\.module_id==='locations'&&!moduleSummary&&!document\.querySelector\('#new-file-conditions input:checked'\)/);
   assert.match(appSource,/请选择该附件需要覆盖的恢复条件。/);
 });
 

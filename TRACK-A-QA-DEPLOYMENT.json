@@ -1,9 +1,9 @@
 {
   "environment": "TRACK_A_MAIN_PRODUCT_QA",
-  "upstream_candidate_commit": "2105344",
-  "source_commit": "62ec0d0",
+  "upstream_candidate_commit": "2ce9ccd",
+  "source_commit": "79801e9",
   "historical_baseline": "a58ea66c12bb8ac577d5d98a39cc8c63de422fb8",
-  "deployment_identity": "legavik-mainline-two-blocker-20260925-1",
+  "deployment_identity": "legavik-mainline-ceo-scenario-20260926-1",
   "repository": "sixtrees778899-stack/LEGAVIK-track-a-qa",
   "branch": "main",
   "pages_base": "/LEGAVIK-track-a-qa",
