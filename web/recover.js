@@ -1,6 +1,6 @@
 import {recoverVaultArtifacts} from '../src/ui/vault-pipeline.js';
 import {recoveryKitBuilder} from '../src/recovery-kit/recovery-kit-builder.js';
-import {assertKitEvidencePair,validateMainnetEvidence,verifyMainnetArchive} from '../src/ui/mainnet-connector.js';
+import {assertKitEvidencePair,validateMainnetEvidence,verifyMainnetArchiveWithRetry} from '../src/ui/mainnet-connector.js';
 import {renderRecoveryMap} from './map-view.js';
 import {summarizeVersionUpdateSource} from '../src/product-v2/version-update-diagnostics.js';
 import {canonicalCreateUrl,CURRENT_TEST_RELEASE} from '../src/ui/canonical-customer-links.js';
@@ -29,7 +29,7 @@ recoverButton.onclick=async()=>{
   setRecovering(true);
   try{
     stage(0);const evidence=validateMainnetEvidence(JSON.parse(await evidenceFile.text())),kitBytes=new Uint8Array(await kitFile.arrayBuffer()),kit=recoveryKitBuilder.parseKit(kitBytes);assertKitEvidencePair({kit,evidence});if(versionUpdate&&query.get('snapshot_id')&&kit.snapshot_id!==query.get('snapshot_id'))throw new Error('所选恢复材料不属于当前 Recovery Map 版本。');
-    stage(1);const downloaded=await verifyMainnetArchive({evidence});if(!downloaded.verified)throw new Error('Mainnet 中的加密恢复版本尚未完整可用，请稍后重试。');
+    stage(1);const downloaded=await verifyMainnetArchiveWithRetry({evidence});if(!downloaded.verified)throw new Error('Mainnet 中的加密恢复版本尚未完整可用，请稍后重试。');
     stage(2);const archiveBytes=downloaded.bytes;if(archiveBytes.length!==evidence.archive_size)throw new Error('Mainnet Archive 大小校验失败。');
     stage(3);const recovered=await recoverVaultArtifacts({kitBytes,archiveBytes,password});if(versionUpdate)recoveredPasswordForUpdate=password;stage(4);
     renderRecovered(recovered.snapshot);stage(5);message.className='success';message.textContent='恢复成功。Recovery Map 与全部附件完整性验证通过。';

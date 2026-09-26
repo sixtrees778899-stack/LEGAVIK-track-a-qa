@@ -1,6 +1,6 @@
 import { recoverVaultArtifacts } from '../ui/vault-pipeline.js';
 import { recoveryKitBuilder } from '../recovery-kit/recovery-kit-builder.js';
-import { assertKitEvidencePair, validateMainnetEvidence, verifyMainnetArchive } from '../ui/mainnet-connector.js';
+import { assertKitEvidencePair, validateMainnetEvidence, verifyMainnetArchiveWithRetry } from '../ui/mainnet-connector.js';
 import { renderRecoveryMap } from '../../web/map-view.js';
 
 const TOOL_VERSION='1.0.0';
@@ -26,7 +26,7 @@ recoverButton.onclick=async()=>{
   setRecovering(true);
   try{
     stage(0);const evidence=validateMainnetEvidence(JSON.parse(await evidenceFile.text())),kitBytes=new Uint8Array(await kitFile.arrayBuffer()),kit=recoveryKitBuilder.parseKit(kitBytes);assertKitEvidencePair({kit,evidence});
-    stage(1);const downloaded=await verifyMainnetArchive({evidence});if(!downloaded.verified)throw new Error('Mainnet 中的加密恢复版本尚未完整可用，请稍后重试。');
+    stage(1);const downloaded=await verifyMainnetArchiveWithRetry({evidence});if(!downloaded.verified)throw new Error('Mainnet 中的加密恢复版本尚未完整可用，请稍后重试。');
     stage(2);const archiveBytes=downloaded.bytes;if(archiveBytes.length!==evidence.archive_size)throw new Error('Mainnet Archive 大小校验失败。');
     stage(3);const recovered=await recoverVaultArtifacts({kitBytes,archiveBytes,password});if(evidence.source_sha256&&recovered.snapshot.integrity.snapshot_payload_sha256!==evidence.source_sha256)throw new Error('恢复结果与创建时记录的 Snapshot SHA-256 不一致。');stage(4);renderRecovered(recovered.snapshot);stage(5);message.className='success';message.textContent='恢复成功。Recovery Map、恢复结果哈希与全部附件完整性验证通过。';
   }catch(error){stage(-1);message.className='error';message.textContent=customerError(error);setRecovering(false);}

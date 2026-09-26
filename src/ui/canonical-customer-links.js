@@ -1,6 +1,6 @@
 export const APPROVED_TEST_ORIGIN='https://sixtrees778899-stack.github.io';
 export const APPROVED_TEST_BASE='/LEGAVIK-track-a-qa';
-export const CURRENT_TEST_RELEASE='legavik-mainline-customer-center-resilience-20260926-1';
+export const CURRENT_TEST_RELEASE='legavik-mainline-gateway-recovery-20260926-1';
 export const CURRENT_DEPLOYMENT_ID=CURRENT_TEST_RELEASE;
 
 const ROUTES=Object.freeze({

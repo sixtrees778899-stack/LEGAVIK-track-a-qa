@@ -1,6 +1,6 @@
 {
-  "deployment_identity": "legavik-mainline-customer-center-resilience-20260926-1",
+  "deployment_identity": "legavik-mainline-gateway-recovery-20260926-1",
   "canonical_origin": "https://sixtrees778899-stack.github.io",
   "canonical_base": "/LEGAVIK-track-a-qa",
-  "release_timestamp": "2026-09-26T12:44:33Z"
+  "release_timestamp": "2026-09-26T13:51:41Z"
 }

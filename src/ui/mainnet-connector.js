@@ -5,6 +5,7 @@ import {MAINNET_STAGES,MainnetFlowError,normalizeMainnetError,assertFeeWithinCon
 
 export const MAINNET_NETWORK='Arweave Mainnet';
 export const MAINNET_GATEWAYS=Object.freeze(['https://arweave.net','https://ardrive.net']);
+export const MAINNET_FAST_RETRY_DELAYS_MS=Object.freeze([0,750,1500,2500,3000,4000,5000]);
 
 export function createMainnetEvidence({artifacts,sourceSize,sourceSha256}){
   return{status:'LOCAL_ENCRYPTION_PASS',network:MAINNET_NETWORK,broadcasts:0,cost_ar:0,source_filename:'LEGAVIK Recovery Map',source_mime:'application/vnd.cjas.snapshot+json',source_size:sourceSize,source_sha256:sourceSha256,archive_filename:artifacts.archiveName,archive_size:artifacts.archiveBytes.length,archive_sha256:artifacts.ciphertextSha256,recovery_kit_identifier:artifacts.snapshot.snapshot_id,format_version:'CJAS-VAULT-ARCHIVE-V1',txid:null};
@@ -66,6 +67,17 @@ export async function reconcileMainnetTransaction({txid,fetchImpl=fetch,timeoutM
   const controller=new AbortController(),timer=setTimeout(()=>controller.abort(),timeoutMs);try{const response=await fetchImpl(`https://arweave.net/tx/${txid}/status`,{cache:'no-store',signal:controller.signal});if(response.status===200){const value=await response.json().catch(()=>({}));return{state:'CONFIRMED',txid,confirmations:Number(value.number_of_confirmations??0)};}if(response.status===202)return{state:'PENDING',txid};if(response.status===404)return{state:'NOT_FOUND',txid};throw new MainnetFlowError(`交易状态查询失败（HTTP ${response.status}）。`,{stage:MAINNET_STAGES.TX_RECONCILIATION,code:'TX_RECONCILIATION_HTTP_FAILED',transactionId:txid,operationId});}catch(error){if(error?.name==='AbortError')throw new MainnetFlowError('交易状态查询超时。',{stage:MAINNET_STAGES.TX_RECONCILIATION,code:'TX_RECONCILIATION_TIMEOUT',transactionId:txid,operationId});throw normalizeMainnetError(error,{stage:MAINNET_STAGES.TX_RECONCILIATION,transactionId:txid,operationId});}finally{clearTimeout(timer);}
 }
 
-export async function verifyMainnetArchive({evidence,gateways=MAINNET_GATEWAYS,timeoutMs=12000}){
-  return verifyGatewaysParallel({gateways,txid:evidence.txid,expectedSize:evidence.archive_size,expectedHash:evidence.archive_sha256,hashBytes:bytes=>cryptoEngine.hashHex(bytes),timeoutMs});
+export async function verifyMainnetArchive({evidence,gateways=MAINNET_GATEWAYS,timeoutMs=12000,connectionTimeoutMs=timeoutMs,bodyTimeoutMs,preferredGateway=evidence?.download_gateway??null,fetchImpl=fetch}){
+  return verifyGatewaysParallel({gateways,txid:evidence.txid,expectedSize:evidence.archive_size,expectedHash:evidence.archive_sha256,hashBytes:bytes=>cryptoEngine.hashHex(bytes),connectionTimeoutMs,bodyTimeoutMs,preferredGateway,fetchImpl});
+}
+
+export async function verifyMainnetArchiveWithRetry({evidence,gateways=MAINNET_GATEWAYS,retryDelaysMs=MAINNET_FAST_RETRY_DELAYS_MS,connectionTimeoutMs=12000,bodyTimeoutMs,fetchImpl=fetch,onAttempt=()=>{},sleep=ms=>new Promise(resolve=>setTimeout(resolve,ms))}){
+  const attempts=[];
+  for(let round=0;round<retryDelaysMs.length;round++){
+    const delay=retryDelaysMs[round];if(delay)await sleep(delay);
+    const result=await verifyMainnetArchive({evidence,gateways,connectionTimeoutMs,bodyTimeoutMs,preferredGateway:evidence?.download_gateway??null,fetchImpl});
+    const roundAttempts=result.attempts.map(item=>({...item,round:round+1}));attempts.push(...roundAttempts);onAttempt({round:round+1,delay_ms:delay,verified:result.verified,attempts:roundAttempts});
+    if(result.verified)return{...result,attempts};
+  }
+  return{verified:false,attempts};
 }
