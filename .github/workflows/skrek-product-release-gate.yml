@@ -1,0 +1,46 @@
+name: SKREK Product Release Gate
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [feature/week3-recovery-experience]
+    paths:
+      - 'web/v3-crypto/**'
+      - 'web/v2/**'
+      - 'src/product-v2/**'
+      - 'config/recovery-map/v2/**'
+      - 'tests/browser/**'
+      - 'tests/v3-crypto/**'
+      - 'playwright.config.js'
+      - 'package*.json'
+      - '.github/workflows/skrek-product-release-gate.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  product-release-gate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npx playwright install --with-deps chromium
+      - run: npm test
+      - run: npm audit --audit-level=low
+      - run: npm run check:security
+      - run: npm run test:browser
+      - name: Upload browser QA evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: skrek-product-release-gate
+          path: |
+            playwright-report/
+            test-results/skrek-product-v1/
+            docs/evidence/skrek-product-v1/
+          retention-days: 30

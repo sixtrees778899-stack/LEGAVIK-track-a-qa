@@ -1,6 +1,6 @@
 {
-  "deployment_identity": "legavik-mainline-gateway-recovery-20260926-1",
+  "deployment_identity": "legavik-mainline-gateway-streaming-20260927-1",
   "canonical_origin": "https://sixtrees778899-stack.github.io",
   "canonical_base": "/LEGAVIK-track-a-qa",
-  "release_timestamp": "2026-09-26T13:51:41Z"
+  "release_timestamp": "2026-09-27T00:00:00Z"
 }
