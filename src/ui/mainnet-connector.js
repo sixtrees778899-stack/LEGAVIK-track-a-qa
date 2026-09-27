@@ -2,6 +2,7 @@ import {cryptoEngine} from '../crypto/crypto-engine.js';
 import {uploadSignedTransaction} from '../../tools/ar-unified-multi-file-mainnet-pilot/pilot-core.js';
 import {verifyGatewaysParallel} from '../../tools/ar-generic-file-mainnet-pilot/gateway-verifier.js';
 import {MAINNET_STAGES,MainnetFlowError,normalizeMainnetError,assertFeeWithinConfirmation} from './mainnet-stability.js';
+import {createWalletAdapter} from './wallet-adapter.js';
 
 export const MAINNET_NETWORK='Arweave Mainnet';
 export const MAINNET_GATEWAYS=Object.freeze(['https://arweave.net','https://ardrive.net']);
@@ -47,7 +48,7 @@ export async function quoteMainnetArchive({archiveBytes,wallet=globalThis.arweav
   }catch(error){throw normalizeMainnetError(error,{stage:error?.stage??MAINNET_STAGES.QUOTE,operationId});}
 }
 
-export async function broadcastMainnetArchive({artifacts,evidence,arweave,wallet=globalThis.arweaveWallet,onProgress=()=>{},signedTransaction=null,onTransactionSigned=()=>{},confirmedQuote=null,operationId=null}){
+export async function broadcastMainnetArchive({artifacts,evidence,arweave,wallet=globalThis.arweaveWallet,walletAdapter=null,onProgress=()=>{},signedTransaction=null,onTransactionSigned=()=>{},confirmedQuote=null,operationId=null,candidateIdentity=null}){
   if(evidence.txid||evidence.broadcasts)throw new Error('当前恢复版本已广播，禁止重复交易。');
   if(await cryptoEngine.hashHex(artifacts.archiveBytes)!==evidence.archive_sha256)throw new Error('Archive完整性已变化，禁止签名。');
   let tx=signedTransaction,signatureMs=0;if(tx&&typeof tx.addTag!=='function'&&typeof arweave?.transactions?.fromRaw==='function')tx=arweave.transactions.fromRaw(tx);let actualFee=Number(tx?.reward??0)/1e12;
@@ -56,7 +57,7 @@ export async function broadcastMainnetArchive({artifacts,evidence,arweave,wallet
     let permissions;try{permissions=await wallet.getPermissions();}catch(error){throw normalizeMainnetError(error,{stage:MAINNET_STAGES.WALLET_CONNECT,operationId,path:'wallet.getPermissions'});}if(!permissions.includes('SIGN_TRANSACTION'))await wallet.connect(['ACCESS_ADDRESS','SIGN_TRANSACTION'],{name:'SKREK Mainnet Experience Test'});
     tx=await arweave.createTransaction({data:artifacts.archiveBytes});tx.addTag('Content-Type','application/octet-stream');tx.addTag('App-Name','SKREK-Recovery-Map-V3');tx.addTag('Format','CJAS-Vault-Archive-V1');
     actualFee=Number(tx.reward)/1e12;if(!Number.isFinite(actualFee)||actualFee<0||actualFee>evidence.balance_before_ar)throw new MainnetFlowError('无法确认本次Mainnet交易费用，未签名。',{stage:MAINNET_STAGES.SIGNATURE,code:'TRANSACTION_FEE_INVALID',operationId});if(confirmedQuote)assertFeeWithinConfirmation({quotedAR:confirmedQuote.quote_ar,actualAR:actualFee});
-    const signStarted=performance.now();await arweave.transactions.sign(tx);signatureMs=Number((performance.now()-signStarted).toFixed(1));await onTransactionSigned(tx);
+    const adapter=walletAdapter??createWalletAdapter({arweave,wallet}),signStarted=performance.now();await adapter.signTransaction(tx,{operation_id:operationId,package_identity:artifacts.snapshot?.snapshot_id??null,archive_size:artifacts.archiveBytes.length,archive_sha256:evidence.archive_sha256,package_digest:evidence.source_sha256??null,quantity:String(tx.quantity??'0'),recipient:tx.target??'',fee_cap_winston:confirmedQuote?String(Math.ceil(confirmedQuote.quote_ar*1e12)):null,network:MAINNET_NETWORK,candidate_identity:candidateIdentity});signatureMs=Number((performance.now()-signStarted).toFixed(1));await onTransactionSigned(tx);
   }
   const uploaded=await uploadSignedTransaction({arweave,transaction:tx,onProgress});
   return{txid:uploaded.txid,broadcasts:1,cost_ar:actualFee,actual_fee_ar:actualFee,signature_wait_ms:signatureMs,broadcast_to_txid_ms:uploaded.upload_ms,upload_strategy:uploaded.upload_strategy,upload_chunk_count:uploaded.chunk_count,upload_chunk_timings:uploaded.chunks,upload_performance:uploaded.performance,broadcasted_at:new Date().toISOString()};

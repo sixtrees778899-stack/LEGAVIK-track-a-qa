@@ -46,6 +46,17 @@ test('connector broadcasts the supplied V3 Archive exactly once and never create
   await assert.rejects(()=>broadcastMainnetArchive({artifacts,evidence:{...evidence,txid,broadcasts:1},arweave,wallet}),/禁止重复交易/);
 });
 
+test('connector sends the immutable signing context through the explicit wallet adapter',async()=>{
+  const hash=await cryptoEngine.hashHex(archiveBytes),sourceSha='e'.repeat(64),artifacts={archiveBytes,archiveName:'adapter.cjasvault',ciphertextSha256:hash,snapshot:{snapshot_id:snapshotId}},evidence={...createMainnetEvidence({artifacts,sourceSize:1,sourceSha256:sourceSha}),balance_before_ar:1};
+  const transaction={id:txid,reward:'123',quantity:'0',target:'',addTag(){}};
+  const wallet={getPermissions:async()=>['SIGN_TRANSACTION']},contexts=[];
+  const walletAdapter={getAddress:async()=>'adapter-address',signTransaction:async(tx,context)=>{assert.equal(tx,transaction);contexts.push(context);}};
+  const uploader={isComplete:false,uploadedChunks:0,totalChunks:1,pctComplete:0,async uploadChunk(){this.uploadedChunks=1;this.pctComplete=100;this.isComplete=true;}};
+  const arweave={createTransaction:async()=>transaction,transactions:{sign:async()=>{throw new Error('DIRECT_SIGN_FORBIDDEN');},getUploader:async()=>uploader}};
+  await broadcastMainnetArchive({artifacts,evidence,arweave,wallet,walletAdapter,operationId:'adapter-operation',confirmedQuote:{quote_ar:0.000000000123},candidateIdentity:'adapter-candidate'});
+  assert.deepEqual(contexts,[{operation_id:'adapter-operation',package_identity:snapshotId,archive_size:archiveBytes.length,archive_sha256:hash,package_digest:sourceSha,quantity:'0',recipient:'',fee_cap_winston:'123',network:'Arweave Mainnet',candidate_identity:'adapter-candidate'}]);
+});
+
 test('failed upload retries the same signed transaction without a second signature or fee',async()=>{
   const hash=await cryptoEngine.hashHex(archiveBytes),artifacts={archiveBytes,archiveName:'retry.cjasvault',ciphertextSha256:hash,snapshot:{snapshot_id:snapshotId}},evidence={...createMainnetEvidence({artifacts,sourceSize:1,sourceSha256:'d'.repeat(64)}),balance_before_ar:1};
   let createCalls=0,signCalls=0,uploaderCalls=0,signedTransaction=null;
